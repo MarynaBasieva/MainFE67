@@ -1,0 +1,4 @@
+<ifModule mod_rewrite.c>
+   Redirect 301 /uslugi/esteticheskaya-stomatologiya /uslugi
+   Redirect 301 /uslugi/vse-vidy-protezirovaniya /uslugi 
+</ifModule>
