@@ -1,0 +1,7 @@
+<ifModule mod_rewrite.c>
+   Redirect 301 /products/curtain-special-edition-210-leds /products
+   Redirect 301 /products/line-1-5-meter-multicolor-led-strip/ /products
+   Redirect 301 /products/cluster-multicolor-400-leds/ /products
+   Redirect 301 /products/icicle-190-leds-gold-edition/ /products
+   Redirect 301 /products/flex-multicolor-2-meter/ /products
+</ifModule>
