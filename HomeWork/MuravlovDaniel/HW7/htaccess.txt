@@ -1,0 +1,7 @@
+<ifModule mod_rewrite.c>
+	Redirect 301 /ua/p822400246-elektrogitara-epiphone-les.html /ua/g31501661-elektrogitary
+	Redirect 301 /ua/about_us /ua/
+	Redirect 301 /ua/g29524475-elektroakusticheskie-gitary /ua/
+	Redirect 301 /ua/p923758246-klavinova-yamaha-ydp.html /ua/g44612979-tsifrovye-pianino
+	Redirect 301 /ua/p1554234075-skripka-deviser-kofr.html /ua/g104745720-skripki
+</ifModule>
