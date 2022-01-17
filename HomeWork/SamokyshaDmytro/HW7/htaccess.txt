@@ -1,0 +1,7 @@
+<ifModule mod_rewrite.c>
+Redirect 301 /detailed/avtomaticheskie_kofemashinyi/delonghi_etam_29510_b_autentica.htm /products/avtomaticheskie_kofemashinyi.htm
+Redirect 301 /products/avtomaticheskie_kofemashinyi.htm /products/ochistiteli_vozduha.htm
+Redirect 301 /products/ochistiteli_vozduha.htm /articles.htm
+Redirect 301 /articles.htm /guarantee.htm
+Redirect 301 /guarantee.htm /detailed/pompovyie_kofevarki_espresso/delonghi_ec_685_w.htm
+</ifModule>
