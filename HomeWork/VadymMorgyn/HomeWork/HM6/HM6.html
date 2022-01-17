@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>HM6</title>
+</head>
+<body>
+	<h1 align="center">Home Work 6</h1>
+		<table border="5" align="center" cellspacing="0" cellpadding="20px">
+			<tr>
+				<td rowspan="2">row1, cell1</td>
+				<td>row1, cell2</td>
+				<td>row1, cell3</td>
+				<td>row1, cell4</td>
+				<td>row1, cell5</td>
+			</tr>
+			<tr>				
+				<td colspan="3">row2, cell2</td>
+				<td>row2, cell5</td>
+			</tr>
+						<tr>
+				<td>row3, cell1</td>
+				<td colspan="3">row3, cell2</td>				
+				<td>row3, cell5</td>
+			</tr>
+						<tr>
+				<td>row4, cell1</td>
+				<td colspan="3">row4, cell2</td>
+				<td>row4, cell5</td>
+			</tr>
+						<tr>
+				<td>row5, cell1</td>
+				<td colspan="3" rowspan="3">row5, cell2</td>				
+				<td rowspan="3">row5, cell5</td>
+			</tr>
+						<tr>
+				<td>row6, cell1</td>								
+			</tr>
+						<tr>								
+				<td>row7, cell5</td>
+			</tr>
+						<tr>
+				<td colspan="4">row8, cell1</td>
+				<td>row8, cell5</td>
+			</tr>			
+		</table>
+		<div align="center">
+			<h2>Link</h2>
+			<p><a href="tel:+380951208203">(095) 120 82 03</a></p>
+			<p><a href="pdf/Student_instruction_Lms_.pdf" target="_blank">instruction Lms</a></p>
+			<p><a href="https://lms.mainacad.com/" target="_blank">main academy</a></p>
+			<p><a href="mailto:wadim9822@gmail.com">wadim9822@gmail.com</a></p>			
+		</div> 
+		<h2 align="center">Form</h2>
+		<form action="/action_page.php" target="_blank" method="post">
+		<div align="center">
+				<input placeholder="Имя" tabindex="1" name="name" type="text" maxlength="20" required />
+		</div>
+		<div align="center">
+			<input placeholder="Номер телефона" tabindex="2" name="name" type="tel" maxlength="20" required />
+		</div>
+		<div align="center">
+			<textarea  name="Text"  maxlength="150" rows="10" cols="30" tabindex="3" placeholder="Дополнительные пожелания"></textarea>
+		</div>
+			<div align="center">
+					<select name="Услуги" sice="4" tabindex="4" multiple>
+					<option value="Одностраничный сайт">Одностраничный сайт</option>
+					<option value="Многостраничный сайт">Многостраничный сайт</option>
+					<option value="Интернет магазин">Интернет магазин</option>
+					<option value="Сайт на тильде">Сайт на тильде</option>
+    		</select>
+			</div>
+			<div align="center">
+				<button type="submit">Отправить</button>
+				<button type="reset">Очистить</button>
+			</div>
+			</form>
+		</div>
+</body>
+</html>
