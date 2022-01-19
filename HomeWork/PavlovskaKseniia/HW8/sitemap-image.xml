@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.spotware.com/</loc>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/pages/home/_showcase/05_ccopy_carousel_cut-min.webp</image:loc>
+        </image:image>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/pages/home/_solutions/devices-min.png</image:loc>
+        </image:image>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/pages/home/_brand_value/brand_value.webp</image:loc>
+        </image:image>
+
+        <loc>https://www.spotware.com/custom-development</loc>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/pages/03.custom-development/_specialists/hero_.png</image:loc>
+        </image:image>
+        
+        <loc>https://www.spotware.com/company/careers/why-spotware</loc>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/pages/05.company/02.careers/01.why-spotware/_we_make/hero_image.png</image:loc>
+        </image:image>
+                
+        <loc>https://www.spotware.com/company/careers/vacancies</loc>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/themes/spotware/images/svg/logo-10years.svg</image:loc>
+        </image:image>
+                        
+        <loc>https://www.spotware.com/company/careers/vacancies</loc>
+        <image:image>
+        <image:loc>https://www.spotware.com/user/themes/spotware/images/logo-10years-white.png</image:loc>
+        </image:image>
+    </url>
+</urlset>

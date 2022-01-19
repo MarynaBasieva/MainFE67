@@ -1,0 +1,33 @@
+<script type ="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://group-of-lawyers.com/,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality":  "Киев, Украина"
+    "streetAddress": "ул. Владимирская, 42-А, офис 28-Б (метро Золотые Ворота)"
+}
+"email": "advocate.avgustinov@gmail.com",
+"name": "Юридические услуги",
+"telephone": "0 800 334 021, +38(097)888-50-77, +38(050)999-50-77"
+}
+</script> 
+
+
+
+<script type="application/ld+json>
+{
+"@context": "http://schema.org",
+"@type": "Product",
+"name": "Женская классическая кожаная сумка ALEX"
+"image": [
+"/img/bag.jpg"
+],
+"type": "Thing",
+"color": "blue",
+"size": "31*22*13",
+"url": "https://podium.ua/product/35947-sumka-zhenskaya-klassicheskaya-kozha-alex-rai-01-12-24-83104-9-l-blue.html",
+"telephone": "+38(048) 705-777-0"
+}
+</script>
