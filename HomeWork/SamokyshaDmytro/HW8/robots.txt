@@ -1,0 +1,12 @@
+User-agent: *
+Sitemap: http://papafeta.com//sitemap.xml
+Sitemap: http://papafeta.com//sitemap_images.xml
+Sitemap: http://papafeta.com//sitemap_video.xml
+Allow: /optimize/
+Disallow: /admin/
+Disallow: /author/
+User-agent: Yandex 
+Host: https://papafeta.com/
+Disallow: /
+User-agent: Googlebot
+Disallow: /
