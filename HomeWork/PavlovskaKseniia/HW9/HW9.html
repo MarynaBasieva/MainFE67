@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HW9</title>
+    </head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        background-image: url("img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 150px 0;
+        }
+    .text {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+        color: rgb(4, 67, 70);
+    }
+    .form{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .feedback input, textarea{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+</style>
+
+<body>
+     <div class="container">
+         <div class="text">
+             <h2>Почему Мальдивы?</h2><br>
+            <p>Среди путешественников Мальдивы по праву считаются чудом света. Мальдивы — это теплый тропический климат и радушное гостеприимство.
+Мальдивы славятся красотой своего подводного мира. Обилие психоделических цветов и разнообразие подводной жизни очаровали дайверов и любителей подводного плавания, с того момента, как Мальдивские острова были открыты как место для подводного плавания.
+Дружелюбная природа Мальдив поможет вам расслабиться и приятно провести отдых на Мальдивах.
+Добраться на Мальдивы не составит для вас никаких проблем. На Мальдивы отправляется большое количество авиарейсов из разных городов.
+Для отдыха на Мальдивах виза вам не понадобится. А дружественный персонал Международного аэропорта Мале поможет вам оформить 30-ти дневную визу по прибытии.</p>
+<p>Для заказа пакетного тура оставьте заявку ниже.</p>
+         </div>
+         <div class="form">
+            <form class="feedback">
+                <p>
+                    <input type="text" name="name" placeholder="Имя" maxlength="10">
+                </p>
+                <p>
+                    <input type="text" name="phone" placeholder="Ваш телефон" maxlength="10" required>
+                </p>
+                <p>
+                    <textarea type="textarea" rows="3" cols="20" placeholder="Ваше сообщение"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+         </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9/">
+    <url>
+        <loc>https://www.spotware.com/</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.spotware.com/crypto-exchange</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.spotware.com/custom-development</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.spotware.com/integrations</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.spotware.com/crypto-exchange</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.spotware.com/crypto-exchange</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.9</priority>
+    </url>
+
+
+    <url>
+        <loc>https://www.spotware.com/company/careers/why-spotware</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.spotware.com/company/careers/vacancies</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.spotware.com/company/about/spotware</loc>
+        <lastmod>2021-01-19</lastmod>
+        <changefreg>monthly</changefreg>
+        <priority>0.3</priority>
+    </url>  
+
+
+</urlset>

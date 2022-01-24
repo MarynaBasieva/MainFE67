@@ -1,0 +1,12 @@
+user-agent: * (доступ открыть для всех происковиков роботов гугла)
+allow: (допустить сканирование страниц и папок и файлов)
+Disallow: (Запретить скаанирование страниц или папок и файлов)
+Dissallow: /admin/
+Sitemap: https://sitecore.com.ua/sitemap.xml
+Sitemap: https://sitecore.com.ua/sitemap_images.xml
+Sitemap: https://sitecore.com.ua/sitemap_video.xml
+
+User-agent: Yandex (доступ открыт только для Yandex)
+Host: https://sitecore.com.ua/
+
+user-agent: Googlebot (только для Гугл)

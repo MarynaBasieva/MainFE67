@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bgr {
+           background-image:  url("main-screen__bgc.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           padding: 100px 0;
+        }
+        .text-wrapper, 
+        .form {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .text-wrapper {
+            color: rgb(253, 253, 253);
+        }
+        .text-wrapper h1 {
+            font-size: 52px;
+            padding: 50px 0;
+        }
+        .text-wrapper p {
+            font-size: 28px;
+            padding: 30px 0 50px 0;
+        }
+        #connection input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .btn {
+            padding-bottom: 50px;
+        }
+        .btn button {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            /*background-color: rgb(255, 244, 95);*/
+            background-image: linear-gradient(to bottom, rgb(223, 223, 223) 0%,rgb(75, 16, 214) 50%,rgb(223, 223, 223) 100%);
+            color: white;
+        }
+    </style>    
+</head>
+<body>
+    <div class="bgr">
+        <div class="text-wrapper">
+            <h1>
+                Lorem ipsum dolor 
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit porro quasi optio veniam qui architecto placeat, enim voluptatibus animi recusandae cum, necessitatibus excepturi aperiam? Explicabo alias architecto et neque. Molestiae.
+            </p>
+        </div>
+        <div class="form">
+            <form action="#" id="connection">
+                <p class="first-name">
+                    <input type="text" name="name" required placeholder="Ваше і'мя" />
+                </p>
+                <p class="phone">
+                    <input type="tel" name="tel" required placeholder="Ваш телефон" maxlength="20">
+                </p>
+                <p class="message">
+                    <textarea ame="message"placeholder="Повідомлення"></textarea>
+                </p>
+                <p class="btn">
+                    <button type="submit">Відправити</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
