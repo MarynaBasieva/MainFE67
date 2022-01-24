@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Combinators</title>
+</head>
+<style>
+	/*div p{
+		background: #ccc; /стили задаются для всех р если родитель div
+	}*/
+	
+	/*div > p{
+	   background: #ccc; / стили задаются для всех р если родитель div больше на ранг р	
+	}*/
+	/*div+p+p+p{
+       background: #ccc; / Стили задаются для р от первого div
+	}*/
+	div ~ p{
+		background: #ccc; /*это сравнивает селекторы которые которые не являются div~p  и не относится к родителю тега div*/
+	}
+	
+	
+</style>
+<body>
+	<div>
+		<h2>Lorem ipsum</h2>
+	</div>
+	<p>color</p>
+	<p>color</p>
+	<p>color</p>
+	<div>
+		<p>color</p>
+		<p>color</p>
+		<p>color</p>
+	</div>
+</body>
+</html>
