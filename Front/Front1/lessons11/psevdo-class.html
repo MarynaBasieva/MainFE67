@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>psevdo class</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.nthChild{
+		font-size: 20px;
+		color:#CC36EA;
+		background: #C9D080;
+		padding: 20px;
+		margin-bottom: 40px;
+	}
+	.nthChild .nthChildItem:first-child{
+		color: #1F0EDC;
+	}
+	.nthChild .nthChildItem:last-child{
+		color: #1FA408;
+	}
+	.nthChild .nthChildItem:nth-child(2){
+		color:#DF194B;
+	}
+	.nthChild .nthChildItem:nth-child(3){
+		color:#120304;
+	}
+	.nthChild .nthChildItem:nth-child(4){
+		color:#A8660D;
+	}
+	.table{
+		border-collapse: collapse;
+		margin-top: 20px;
+	}
+	.table tr td{
+		border: solid 1px #333;
+		padding: 10px;
+	}
+	.table tr:nth-child(odd){
+		background: #ccc;
+	}
+	.table tr:nth-child(even){
+		background:#7AD3C6;
+	}
+	ul.psevdoBeforeAfter{
+		font-size: 20px;
+		font-weight: bold;
+		color: aqua;
+		list-style: none;
+		width: 209px;
+	}
+	ul.psevdoBeforeAfter li{
+		position: relative;
+		padding-left: 70px;
+	}
+	ul.psevdoBeforeAfter li:nth-child(1):before{
+		content: "Before";
+		position: absolute;
+		left: 0;
+		top: 0px;
+		color: #333;
+	}
+	ul.psevdoBeforeAfter li:after{
+		content: "+";
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: #333;
+	}
+	.tel{
+		position: relative;
+		font-size: 20px;
+		padding-left: 30px;
+	}
+	.tel:before{
+		content: "";
+		position: absolute;
+		left: 6px;
+		top: 5px;
+		background: url("img/before.jpeg")no-repeat;
+		width: 14px;
+		height: 14px;
+	}
+	.tel:after{
+		content: "";
+		position: absolute;
+		right: -26px;
+		top: 3px;
+		background: url("img/after.jpeg")no-repeat;
+		width: 15px;
+		height: 16px;
+	}
+</style>
+<body>
+	<div class="nthChild">
+		<div class="nthChildItem">Lorem isum dolar</div>
+		<div class="nthChildItem">Lorem isum dolar</div>
+		<div class="nthChildItem">Lorem isum dolar</div>
+		<div class="nthChildItem">Lorem isum dolar</div>
+		<div class="nthChildItem">Lorem isum dolar</div>
+	</div>
+	<table class="table">
+		<tr>
+			<td>column1</td>
+			<td>column1</td>
+			<td>column1</td>
+		</tr>
+		<tr>
+			<td>column2</td>
+			<td>column2</td>
+			<td>column2</td>
+		</tr>
+		<tr>
+			<td>column3</td>
+			<td>column3</td>
+			<td>column3</td>
+		</tr>
+		<tr>
+			<td>column4</td>
+			<td>column4</td>
+			<td>column4</td>
+		</tr>
+	</table>
+	
+	<ul class="psevdoBeforeAfter">
+		<li>psevdo class1</li>
+		<li>psevdo class2</li>
+		<li>psevdo class3</li>
+		<li>psevdo class4</li>
+		<li>psevdo class5</li>
+	</ul>
+	<a class="tel" href="tel:+38099999999">(099) 999 99 99</a>
+</body>
+</html>
