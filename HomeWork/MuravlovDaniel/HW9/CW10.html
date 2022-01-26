@@ -1,0 +1,37 @@
+    <!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CW10</title>
+</head>
+<style>
+    div p{
+        background-color: blue; /*only for ones inside div*/
+    }
+    div>p{
+        background-color: crimson; /*стиль задаеться для всех р если родитель div выше*/
+    }
+    div+p+p+p{
+        background-color: rgb(92, 230, 0); /*от первого дива для третьего р*/
+    }
+    div ~ p{
+        background-color: darkmagenta;
+    }
+
+</style>
+<body>
+    <div>
+        <h2>Colors</h2>
+    </div>
+    <p>color</p>
+    <p>color</p>
+    <p>color</p>
+    <p>color</p>
+    <div>
+        <p>color</p>
+        <p>color</p>
+        <p>color</p>
+        <p>color</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body{
+    font-family: 'shin_akiba_punxbold_italic';
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+} 
+  .heading{
+    font-family: 'shin_akiba_punxbold';
+    font-size: 30px;
+    color: rgb(225, 0, 0);
+}
+.secondList{
+  font-family: 'Comforter', cursive;
+  font-size: 30px;
+  
+  color: rgb(0, 0, 0);
+}
+ 
