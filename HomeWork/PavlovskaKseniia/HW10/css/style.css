@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'open_sansitalic';
+    font-size: 20px;
+    color: blueviolet;
+    text-align: center;
+}
+    .main{
+        text-align: justify;
+        font-size: 24px;
+        font-family: 'Comforter', cursive;
+        color:darkolivegreen
+}
+    .list{
+        text-align: left;
+        font-size: 30px;
+        font-family: 'open_sanslight_italic';
+        color: darkorange;
+
+    }
+
+/*
+font-family: 'open_sansbold';
+font-family: 'open_sansbold_italic';
+font-family: 'open_sansextrabold';
+font-family: 'open_sansextrabold_italic';
+font-family: 'open_sansitalic';
+font-family: 'open_sanslight';
+font-family: 'open_sanslight_italic';
+font-family: 'open_sansregular';
+font-family: 'open_sanssemibold';
+font-family: 'open_sanssemibold_italic';
+font-family: 'Sedgwick Ave', cursive;
+font-family: 'Comforter', cursive;
+*/
