@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document*/
+
+body{
+    font-family: 'futuralight';
+    font-size: 15px;
+    color: deeppink;
+}
+.main h2{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    font-family: 'Comforter', cursive;
+}
+
+.main h3{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    font-family: 'Mukta', sans-serif;
+
+.list{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Mukta', sans-serif;
+/*
+font-family: 'futuralight';
+font-family: 'futurabold';
+font-family: 'futuraheavy';
+font-family: 'Comforter', cursive;
+font-family: 'Mukta', sans-serif;
+*/
