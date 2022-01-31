@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Button HW11</title>
+</head>
+<style>
+	  .btn{
+        visibility: hidden;
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: 0;
+    }
+	.btn::after{
+    content: "Push me";
+	visibility: visible;
+        display: block;
+        position: absolute;
+        background-color: rgb(255, 208, 0);
+        border: solid 5px  rgb(10, 10, 10);
+		color:rgb(0, 0, 0);
+        padding: 5px;
+        top: 2px;
+		margin-top: 400px;
+		border-radius: 25px;
+		
+	}
+</style>
+<body>
+	<a class="btn" href="#">Button</a>
+</body>
+</html>
