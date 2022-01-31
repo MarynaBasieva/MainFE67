@@ -1,0 +1,59 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Sarala";
+    font-size: 18px;
+}
+
+.wrap  {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    border-bottom: rgb(0, 0, 0) 3px dashed;
+}
+
+h2::before {
+    content: "hover me ;)";
+    display: block;
+    position: absolute;
+    padding: 0px 0px 20px 0px;
+    margin: 56px 0px 20px 0px;
+    color: darkred;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50px;
+    height: 0px;
+    width: 100px;
+    transition: transform 3s, filter 3s, margin-left 3s;
+    margin-left: 0px;
+    filter: blur(0px);
+}
+
+h2:hover::before {
+    display: block;
+    transition: transform 3s, background-color 3s, filter 15s, margin-left 3s;
+    background-color: coral;
+    transform: rotate(360deg);
+    filter: blur(100px);
+    margin-left: 1073px;
+
+}
+
+p {
+
+    text-align: justify;
+}
