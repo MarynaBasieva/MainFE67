@@ -1,0 +1,69 @@
+<html>
+    <head>
+<meta charset="UTF-8">
+<title>Button HW11</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;		
+}
+	.main{
+		width: 800px;
+		margin: 0 auto;
+	}
+	h2{
+		border-color: black;
+		border-width: 0 0 2px 0;
+		border-style: solid;
+		position: relative;
+		padding: 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	h2:before{
+		content: "";
+		width: 40px;
+		height: 20px;
+		position: absolute;
+		background-color: black;
+		left: 0;
+		bottom: -10px;
+	}
+	p{
+		text-align: justify;
+        font-weight: bold;
+	}
+	
+	a {
+			display: block;
+			height: 40px;
+			width: 200px;
+			position: relative;
+			margin: 0 auto;
+			top: 50%;
+	}
+	.btn:before {
+			content:"Buy Now";
+			color: white;
+			border: 2px solid black);
+			padding-top: 10px;
+			height: 40px;
+			width: 200px;
+			box-sizing: border-box;
+			background-color: black;
+			text-align: center;
+			position: absolute;
+	}
+</style>
+
+<body>
+	<div class="main">
+	<h2>Meanigful Title</h2>
+	<p>
+        Something meaningful something meaningful something meaningful something meaningful something meaningful something meaningful something meaningful  something meaningful  something meaningful  something meaningful  something meaningful  something meaningful  something meaningful  something meaningful  something meaningful  something meaningful 
+    </p>
+	</div>
+	<a class="btn" href="#">Button</a>
+    </body>
+</html>
