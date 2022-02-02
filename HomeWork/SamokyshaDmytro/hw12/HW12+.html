@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Button HW12</title>
+<link rel="stylesheet" href="../hw12/css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300&family=Sarala&display=swap" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body>
+	<div class="background"></div>
+	<div class="modal" id="mainmodal">
+				<form class="formflex">
+					<input class="input" type="text" placeholder="Имя" title="Введите Ваше имя в это поле" >
+					<input class="input" type="text" placeholder="Фамилия" title="Введите Вашу фамилию в это поле" >
+					<input class="input" type="tel" placeholder="Номер телефона" title="Введите Ваш номер телефона в это поле" >
+					<input class="input" type="email" placeholder="Электронная почта" title="Введите Ваш электронный адрес в это поле" >
+					<input type="submit" class="input btn" title="Отпавить" >
+					<button class="modal-cls">X</button>
+				</form>
+				<div class="overlay"></div>
+				
+
+		</div>
+	</div>
+	<div class="main-wrapper">
+		<div class="header">
+			<div class="header-wrap">
+					<img class="logo" src="../hw12/image/logo.png" title="logo">
+					<ul class="list">
+						<li class="list-item"><a class="list-item-link" href="!#"> О комании</a></li>
+						<li class="list-item"><a class="list-item-link" href="!#">Цены</a></li>
+						<li class="list-item"><a class="list-item-link" href="!#">Отзывы</a></li>
+						<li class="list-item"><a class="list-item-link" href="!#">Галерея</a></li>
+						<li class="list-item contacts"><a class="list-item-link" href="!#">Контакты</a></li>
+						
+					</ul>	
+					<div class="main-item-2"><a href="#"  class="list-item-link" href="#!" data-easy-toggle="#mainmodal" data-easy-class="show" data-easy-rcoe >КУПИТЬ</a></div>
+			</div>
+
+
+
+		</div>
+			<div class="wraper">
+				<div class="wraper-img">
+					<div class="wraper-text">
+						<a class="link-japan" href="https://ru.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F" target="_blank
+						"><p>Прекрасная Япония</p></a>
+					</div>
+				</div>
+				
+					<figure>
+						<div class="wraper-img2">
+							<div class="wraper-text">
+								<a class="link-japan" href="https://experience.tripster.ru/destinations/japan/" target="_blank
+								"><p>Экскурсии</p></a>
+							</div>
+							<div class="price">АКЦИЯ:<s>5000</s><p>3999</p></div>	
+						</div>
+						
+					</figure>
+				<div class="text-img"><p>Вас ждет полноценное погружение в Японию: вы узнаете о самураях и сёгунах, посетите синтоистский храм и расшифруете символику фонарей и камней в традиционном саду. Кроме того, я расскажу о современных обычаях и традициях: где японцы любят проводить время, что готовят дома и как воспитывают детей.</p></div>
+			
+			</div>
+			
+	</div>	
+	<script>
+		!function () { "use strict"; document.addEventListener("click", function (t) { const e = t.target.closest("[data-easy-toggle]"); if (e) { t.preventDefault(); let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); try { document.querySelectorAll("[data-easy-toggle]").forEach(t => { t.hasAttribute("data-easy-parallel") || t === e || document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class")) }), document.querySelector(a).classList.toggle(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } } if (!e) { let e = document.querySelectorAll("[data-easy-rcoe]"); Array.from(e).forEach.call(e, function (e) { let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); if (!t.target.closest(a)) try { document.querySelector(a).classList.remove(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } }) } }) }();
+
+	</script>
+</body>
+</html>
