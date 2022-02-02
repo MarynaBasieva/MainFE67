@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@0;1&family=Rubik+Beastly&display=swap" rel="stylesheet">
+</head>
+<style>
+	html,
+	body{
+		height: 100%;
+		position: relative;
+	}
+	body{
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+	}
+	.for_page{
+		min-height: 100%;
+		position: relative;
+	}
+	.page{
+		padding-bottom: 116px;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	img{
+		width: auto;
+		height: auto;
+		max-width: 100%;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.header{
+		padding-top: 20px;
+		background:#ccc;
+	}
+	.fl{
+		float: left;
+	}
+	.fr{
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	.header_box1{
+		width: 250px;
+	}
+	.header_box2{
+		width: 630px;
+		font-family: 'Poppins', sans-serif;
+		font-size: 15px;
+		text-align: center;
+	}
+	.header_box3{
+		width: 290px;
+	}
+	.header_box3 a{
+		display: block;
+		text-align: right;
+		text-decoration: none;
+		color: #333;
+		font-weight: bold;
+		line-height: 22px;
+	}
+	.header_box3 a:hover{
+		text-decoration: underline;
+	}
+	.nav{
+		background: #052D65;
+	}
+	.nav ul{
+		list-style: none;
+	}
+	.nav ul li a{
+		color: #fff;
+		text-decoration: none;
+		padding: 15px 25px;
+		display: inline-block;
+		font-size: 15px;
+		
+	}
+	.nav ul li a:hover{
+		background: #020B35;
+	}
+	.nav ul li{
+		display: inline-block;
+		position: relative;
+	}
+	.nav ul.sub-menu li ul.child-sub-menu{
+		display: none;
+		position: absolute;
+		background: #396c63;
+		width: 200px;
+		top: 44px;
+		left: 0;
+		z-index: 2;
+	}
+	.nav ul.sub-menu li ul.child-sub-menu li a,
+	.nav ul.sub-menu li ul.child-sub-menu li{
+		display: block;
+	}
+	.nav ul.sub-menu li:nth-child(4):hover ul.child-sub-menu{
+		display: block;
+	}
+	.banner{
+		background: url("img/bg.jpeg") no-repeat;
+		background-size: cover;
+		width: 100%;
+		padding: 100px 0;
+		background-position: top center;
+	}
+	.text_baner_parent{
+		width: 500px;
+		position: relative;
+		padding: 40px;
+		background: rgba(254,254,254, 0.5);
+	}
+	.text_baner_parent h1{
+		font-size: 50px;
+		font-family: 'Poppins', sans-serif;
+	}
+	.text_baner_parent p{
+		font-size: 17px;
+		font-family: 'Roboto', sans-serif;
+	}
+	.about{
+		padding: 60px 0;
+	}
+	.about_text{
+		width: 50%;
+		width: 50%;
+		padding-left: 30px;
+		box-sizing: border-box;
+	}
+	.about_img{
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.footer{
+		background: #03082A;
+		padding: 50px 0;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+	.footer a{
+		color:#fff;
+		text-align: center;
+		display: block;
+		text-decoration: none;
+	}
+	.footer a:hover{
+		text-decoration: underline;
+	}
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Beastly', cursive;
+	*/
+</style>
+<body>
+	<div class="for_page">
+		<div class="page">
+			<header class="header">
+				<div class="container">
+					<div class="header_box1 fl">
+						<a href="#" class="logo">
+							<img src="img/logo-main.png" alt="" />
+						</a>
+					</div>
+					<div class="header_box2 fl">
+						Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний
+					</div>
+					<div class="header_box3 fl">
+						<a href="tel:+380998889967">(099) 888 99 67</a>
+						<a href="mailto:mail@gmail.com">mail@gmail.com</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<nav class="nav">
+					<div class="container">
+						<ul class="sub-menu">
+							<li class="item-menu">
+								<a class="item-link-menu" href="#">Home</a>
+							</li>
+							<li class="item-menu">
+								<a class="item-link-menu" href="#">About</a>
+							</li>
+							<li class="item-menu">
+								<a class="item-link-menu" href="#">Profile</a>
+							</li>
+							<li class="item-menu">
+								<a class="item-link-menu" href="#">Catalog</a>
+								<ul class="child-sub-menu">
+									<li class="item-menu">
+										<a class="item-link-menu" href="#">Catalog1</a>
+									</li>
+									<li class="item-menu">
+										<a class="item-link-menu" href="#">Catalog2</a>
+									</li>
+									<li class="item-menu">
+										<a class="item-link-menu" href="#">Catalog3</a>
+									</li>
+									<li class="item-menu">
+										<a class="item-link-menu" href="#">Catalog4</a>
+									</li>
+									<li class="item-menu">
+										<a class="item-link-menu" href="#">Catalog5</a>
+									</li>
+								</ul>
+							</li>
+							<li class="item-menu">
+								<a class="item-link-menu" href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<main class="main">
+				<section class="banner">
+					<div class="container">
+						<div class="text_baner_parent">
+							<h1>Mаin Academy</h1>
+							<p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+						</div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="container">
+						<div class="about_img fl">
+							<img src="img/float.jpeg" alt="" />
+						</div>
+						<div class="about_text fl">
+							 <p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+							<p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+							<p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+							<p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p><p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+							<p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+							<p>Первая и крупнейшая в Украине комплексная система подготовки сертифицированных специалистов для IT-компаний</p>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<a class="copy_right" href="#">copy right Main Academy</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

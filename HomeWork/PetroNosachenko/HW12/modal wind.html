@@ -21,7 +21,7 @@
             position: fixed;
             left: 0;
             top:0;
-            background:  rgba(131, 131, 131, 0.31);
+            background:  rgba(131, 131, 131, 0.7);
             width: 100%;
             height: 100%;
             z-index: 2;
@@ -46,8 +46,8 @@
         .modalWind {
             width: 300px;
             color: #fff;
-            position: fixed;
-            top: 5%;
+            position: absolute;
+            top: 50%;
             left: 50%;
             margin-left: -150px;
             /*transform: translate(50% 50%);*/ /* не работает transform: translate*/
@@ -126,7 +126,7 @@
         <img src="img/img1.png" alt="">
     </div>    
     
-    <div class="bgr-img">
+    
         <!--
         <div class="modalWind">
             <div class="close">
@@ -145,7 +145,7 @@
         </div> 
         ---------В таком расположении рабртает position: absolute относительно .bgr-img и position: fixed относительно body, Но (!!!!) не работает z-index -------
     -->
-    </div>
+    <div class="bgr-img">
     <div class="modalWind">
         <div class="close">
             x
@@ -161,6 +161,7 @@
             <button type="submit" name="submit">Отправить</button>
         </form>
     </div>
+	</div>
     <div class="link">
         <div>
             Для просмотра задания №1 нажмите на кнопку 
