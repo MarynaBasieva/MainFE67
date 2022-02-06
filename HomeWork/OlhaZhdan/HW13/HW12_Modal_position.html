@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW12_Modal_position</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    }
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+    .wraper_modal {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal {
+        z-index: 9999;
+        background: darkorange;
+        position: absolute;
+        left: 50%;
+        margin-left: -125px;
+        top: 50%;
+        margin-top: -125,45;
+    }
+
+    .closed {
+        z-index: 999999;
+        position: absolute;
+        right: 9px;
+        top: 5px;
+        cursor: pointer;
+        color: darkolivegreen;
+        font-weight: bold;
+    }
+
+    .closed:hover {
+        color: darkolivegreen;
+    }
+
+    .input {
+        font-size: 15px;
+        color: darkolivegreen;
+        border: none;
+        width: 100%;
+        padding: 8px, 0px, 9px, 15px;
+        outline: none;
+        margin-bottom: 15px;
+    }
+
+    #form1 {
+        width: 200px;
+        padding: 25px;
+    }
+
+    #button {
+        font-size: 15px;
+        color: white;
+        border: none;
+        width: 200px;
+        background: darkolivegreen;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .modal h2 {
+        font-size: 20px;
+        color: darkolivegreen;
+        text-align: center;
+        margin-top: 26px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    #form1 input {
+        width: 100%;
+        display: block;
+    }
+</style>
+<body>
+        <div class="wraper_modal">
+            <div class="modal">
+                <h2>Задать вопрос</h2>
+                <span class="closed">X</span>
+                <form id="form1" name="form1">
+                    <input type="text" name="name" id="name" class="input" placeholder="Имя"/>
+                    <input type="email" name="email" id="email" class="input" placeholder="E-mail"/>
+                    <input type="textarea" name="textarea" id="textarea" class="input" placeholder="Комментарий"/>
+                    <button id="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <img src="img/bg_organic.jpg" alt=""/>
+        <img src="img/bg_organic.jpg" alt=""/>
+        <img src="img/bg_organic.jpg" alt=""/>
+</body>
+</html>
