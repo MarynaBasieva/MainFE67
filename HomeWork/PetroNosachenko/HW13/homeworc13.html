@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Home work 13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto";
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        ul {
+            list-style: none;
+        }
+        .clear {
+            clear: both;
+        }
+        header {
+            background: #2F343A;
+            padding: 27px 0;
+        }
+        section {
+            background-image: url(img/Rectangle\ 2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .logo-wrapper, .nav-wrapper, .content, .footer-wrapper {
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+        .logo, .company, .link{
+            float: left;
+        }
+        .logo, .link {
+            max-width: 305px ;
+            width: 100%;
+        }
+        .company {
+           width: 500px; 
+           text-align: center;
+           font-size: 28px;
+           font-weight: 700;
+           color: #fff;
+        }
+        div.link a {
+            display: block;
+            padding: 15px 5px;
+            float: left;
+        }
+        div.link a:first-child {
+            margin-right: 20px;
+        }
+        div.link a:hover {
+            text-decoration: underline;
+        }
+/*--------------------------MENU START---------------------------------------------*/
+        .nav {
+            background: #C8A35F;
+        }
+        ul.first-list {
+            margin: 0 auto;
+        }
+        ul.first-list li {
+           display: inline-block;
+           position: relative;
+        }
+        ul.first-list li a, ul.second-list li a {
+            display: block;
+        }
+        ul.first-list li a {
+            padding: 20px 40px;
+        }
+        ul.first-list li a:hover {
+            background: #9e7935;
+        }
+        ul.second-list {
+           display: none; 
+            position: absolute;
+            background: #c8a35fcb;
+            left: 0;
+            width: 250px;
+        /*---скртие вложеного меню ----обязательно задавать absolute скрываемому и reletive родителю---*/
+        /* -- позеционирование с помощью top: left: right: botom: */
+        }
+        ul.second-list li  {
+            display: block;
+        /* --расяжение елемента li на всю ширину блока--*/
+        }
+        ul.first-list li:nth-child(2):hover ul.second-list {
+            display: block; 
+        /*------отображение вложеного меню2-----------------*/
+        }
+        ul.first-list li:nth-child(5):hover ul.second-list {
+            display: block; 
+        /*------отображение вложеного меню5-----------------*/
+        }
+
+/*---------------------MENU STOP----------------------------------------------*/
+
+        .content {
+            padding: 50px 10px;
+        }
+        .box1 {
+            max-width: 500px;
+            background-color: rgba(204, 204, 204, 0.308);
+            padding: 20px 20px;
+        }
+        .img {
+            width: 400px;
+            padding: 20px 0;
+        }
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+        
+
+        .float {
+            float: left;
+        }
+        h1  {
+            color: #fff;
+            padding: 0px 10px 10px 10px;
+        }
+        h2 {
+            padding: 20px 10px;
+        }
+        .box1 p {
+            color: #fff;
+            text-align: justify;
+            text-indent: 35px;  
+            line-height: 1.5;
+            padding: 5px 10px;
+        }
+        .box2 p {
+            text-align: justify;
+            text-indent: 35px;  
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+        /*--footer------------------------------------*/
+        footer {
+            background-color: #2F343A;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .copy {
+            float: left;
+            padding: 35px;
+            width: 450px;
+            color: #fff;
+        }
+        .footer {
+
+            padding: 23px 0;
+        }
+        /*--- привязка футера к низу екрана----*/
+       /*html, body {
+            height: 100%;
+           position: relative;
+        }
+
+        .for_page {
+            min-height: 100%;
+            position: relative;
+        }*/
+        .page {
+            padding-bottom: 95px;
+        }
+        /*----------------test------------------*/
+        .blok1 {
+            max-width: 620px;
+            /*height: ;*/
+           float: right;
+        }
+
+       
+        .blok2 {
+            background-color: rgba(204, 204, 204, 0.308);
+            max-width: 610px;
+            width: 100%;
+            /*height: ;*/
+            padding-bottom: 25px;
+            color: #fff;
+            margin: 50px 15px ;
+        }
+        .blok2 p {
+            text-align: justify;
+            text-indent: 35px;  
+            line-height: 1.5;
+            padding: 0px 10px ;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="for-page">
+        <div class="page">
+
+            <header>
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <p class="company">
+                        Lorem ipsum dolor
+                    </p>
+                    <div class="link">
+                        
+                        <a href="#" type="tel:+380010010010">+3800 100 100 10</a>
+                        
+                        <a href="#" type="mailto:mail@mail.com">mail@mail.com</a>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+            </header>
+            
+            <!----------------------------menu start----------------------------------->
+            <nav class="nav">
+                <div class="nav-wrapper"> 
+                    <ul class="first-list">
+                        <li>
+                            <a href="#">Button 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Button 2</a>
+                            <ul class="second-list">
+                                <li>
+                                    <a href="#">Button 2-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button 2-2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button 2-3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button 2-4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Button 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Button 4</a>
+                        </li>
+                        <li>
+                            <a href="#">Button 5</a>
+                            <ul class="second-list">
+                                <li>
+                                    <a href="#">Button 5-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button 5-2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button 5-3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Button 5-4</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                <div class="clear"></div>
+                </div>
+            </nav>
+            <!-----------------------------menu stop-------------------->
+            
+            <section>
+                <div class="content">
+                    <!---   текст на бакраунде -----
+                    <div class="box1">
+                        <h1>
+                            Lorem, ipsum dolor
+                        </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        </p>
+                    </div>
+                -->
+                <div class="content-on-bgr"> 
+
+                    <div class="blok1">
+                        <img src="img/Rectangle 4.png" alt="daf">
+                    </div>
+                    <div class=" blok1 blok2"> 
+                        <h2>
+                            Lorem, ipsum.
+                        </h2>
+                        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt minus aliquid maiores. Vitae id inventore modi voluptatibus optio cumque non veritatis rerum, nulla ex voluptatum .
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                   
+                </div>
+            </section>    
+                    
+            <div class="content">    
+                    <div class="box2">
+
+                            <div class="img float">
+                                <img src="img/Rectangle 4.png" alt="daf">
+                            </div>
+                            <div class="text">
+                                <h2>
+                                    Lorem ipsum dolor sit.
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae dolores minus harum eligendi aliquid ullam laborum repellendus sed assumenda in magni neque, atque illum iste doloremque quod ipsum enim, deserunt voluptate! Similique quod nisi cumque maiores unde soluta quae distinctio perferendis hic quam, ab officiis ducimus. Molestias, reprehenderit corrupti quibusdam minus vel sunt, beatae nesciunt magni, eum asperiores id.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae dolores minus harum eligendi aliquid ullam laborum repellendus sed assumenda in magni neque, atque illum iste doloremque quod ipsum enim, deserunt voluptate! Similique quod nisi cumque maiores unde soluta quae distinctio perferendis hic quam, ab officiis ducimus. Molestias, reprehenderit corrupti quibusdam minus vel sunt, beatae nesciunt magni, eum asperiores id.
+                                </p>
+                            </div>
+                    </div>
+                        <div class="clear"></div>
+            </div>
+  
+        </div>
+       <!-------------------------------------------------------------------->
+        <footer>
+            <div class="footer-wrapper">
+                <p class="copy">
+                    &copy; Все права защищены.
+                </p>
+                <div class="link footer">
+                    <a href="script.php" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="link footer">
+                    <a href="script.php" target="_blank">Правила использования</a>
+                </div>
+            </div>
+            <div class="clear"> </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
