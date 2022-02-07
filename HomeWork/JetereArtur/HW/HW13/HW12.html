@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW13_2</title>
+   
+    <link rel="stylesheet" href="./vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+
+
+
+
+<style>
+    html,
+    body{
+        height: 100%;
+        position: relative;
+        background: no-repeat;
+        background: rgb(6,2,85);
+        background: linear-gradient(45deg, rgba(6,2,85,1) 0%, rgba(15,9,45,0.969625350140056) 44%);
+        
+    }
+    body{
+        z-index: -1;
+        animation: background 1s infinite alternate;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 14px;
+        background: no-repeat;
+    }
+    .for_page{
+        min-width: 100%;
+        position: relative;
+    }
+    .page{
+        padding-bottom: 60px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+    p{
+        margin-bottom: 200px;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+
+/*Header*/
+
+    .header{
+        padding-top: 5px;
+        background: rgb(5,2,51);
+        background: linear-gradient(239deg, rgba(5,2,51,1) 0%, rgba(6,3,20,0.9304096638655462) 50%);
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float:right;
+    }
+    .clear{
+        clear: both;
+    }
+    .header_box1{
+        width: 100px;
+    }
+    .header_box2{
+        width: 700px;
+        align-items: center;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 30px;
+        text-align: center;
+        color: #dfdcd9;
+    }
+    .header_box3{
+        width: 370px;
+    }
+    .header_box3 a{
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        color: #dfdcd9;
+        font-weight: bold;
+        line-height: 22px;
+    }
+    .header_box3 a:hover{
+        text-decoration: underline;
+    }
+
+
+/*nav*/
+
+    .nav{
+        background: rgb(3,1,40);
+        background: linear-gradient(45deg, rgba(3,1,40,1) 0%, rgba(6,3,20,0.969625350140056) 44%);
+    }
+    .nav ul{
+        list-style: none;
+    }
+    .nav ul li a{
+        color: #dfdcd9;
+        text-decoration: none;
+        padding: 15px 25px;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .nav ul li a:hover{
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,1) 0%, rgba(6,3,20,0.7903536414565826) 65%);
+    }
+    .nav ul li{
+        display: inline-block;
+        position: relative;
+    }
+    .nav ul.sub-menu li ul.cild-sub-menu{
+        display: none;
+        position: absolute;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,1) 0%, rgba(6,3,20,0.7903536414565826) 65%);
+        width: 200px;
+        top: 49px;
+        left: 0;
+        z-index: 100;
+    }
+    .nav ul.sub-menu li ul.cild-sub-menu li a,
+    .nav ul.sub-menu li ul.cild-sub-menu li{
+        display: block;
+    }
+    .nav ul.sub-menu li:nth-child(4):hover ul.cild-sub-menu{
+        display: block;
+    }
+
+
+/*main*/
+
+    .banner{
+        background: url("img/banner_4728_16.jpg") no-repeat;
+        background-size: 100%;
+        width: 100%;
+        padding: 200px 0;
+        background-position: center;
+        color: #dfdcd9;
+        
+    }
+    
+    .text_banner_parent{
+        width: 506px;
+        position: relative;
+        padding: 18px;
+        border-radius: 20px;
+        text-align: center;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,0.5) 0%, rgba(6,3,20,0.5) 65%);
+    }
+    .text_banner_parent:before{
+        content: "";
+        filter: blur(10px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .text_banner_parent h1{
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        border-radius: 10px;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,0.5) 0%, rgba(6,3,20,0.5) 65%);
+    }
+    .text_banner_parent h1 p{
+        font-size: 40px;
+        font-family: 'Quintessential', cursive;
+        color: #dfdcd9;
+    }  
+
+
+/*slider-carousel*/
+
+
+/*abaut float*/
+    .game_inform{
+        width: 1170px;
+        padding: 60px 0;
+    }
+    
+
+    
+    .float_right_img{
+        float:right;
+        width: 50%;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    .float_left_img{
+        float: left;
+        width: 50%;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+    .float_right_text{
+        float:left;
+        width: 50%;
+        padding-right: 30px;
+        box-sizing: border-box;
+        color: #dfdcd9;
+        padding-top: 50px;
+    }
+
+    .float_left_text{
+        float: right;
+        width: 50%;
+        padding-right: 30px;
+        box-sizing: border-box;
+        color: #dfdcd9;
+        padding-top: 50px;
+    }
+
+
+/*baner_game*/
+    .banner_game{
+        background: url("img/1.jpg") no-repeat;
+        background-size: 100%;
+        width: 100%;
+        padding: 200px 0;
+        background-position: center;
+        color: #dfdcd9;
+        
+    }
+    .text_banner_parent_game{
+        width: 506px;
+        position: relative;
+        padding: 18px;
+        border-radius: 20px;
+        text-align: center;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,0.5) 0%, rgba(6,3,20,0.5) 65%);
+    }
+    .text_banner_parent_game:before{
+        content: "";
+        filter: blur(10px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .text_banner_parent_game h1{
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        border-radius: 10px;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,0.5) 0%, rgba(6,3,20,0.5) 65%);
+    }
+    .text_banner_parent_game h1 p{
+        font-size: 40px;
+        font-family: 'Quintessential', cursive;
+        color: #dfdcd9;
+    }
+
+    .game_text1{
+        position: relative;
+        text-align: center;
+        color: #dfdcd9;
+    }
+
+/*game_inform*/
+    .game_inform{
+        padding: 60px;
+    }
+    .game_text1{
+        width: 50%;
+        padding-left: 30px;
+        box-sizing: border-box;
+        
+    }
+    .game_img1{
+        width: 50%;
+        box-sizing: border-box;
+        
+    }
+    .game_text2{
+        width: 50%;
+        
+    }
+    .game_img2{
+        width: 50%;
+        
+    }
+    .game_text3{
+        width: 50%;
+        
+    }
+    .game_img3{
+        width: 50%;
+        
+    }.game_text4{
+        width: 50%;
+        
+    }
+    .game_img4{
+        width: 50%;
+        
+    }
+
+
+
+/*baner1_game*/
+.banner_chorvs_game{
+        background: url("img/CHORVS_BANER.jpg") no-repeat;
+        background-size: 100%;
+        width: 100%;
+        padding: 200px 0;
+        background-position: center;
+        color: #dfdcd9;
+        
+    }
+    .text_banner_chorvs_parent_game{
+        width: 600px;
+        position: relative;
+        padding: 4px;
+        border-radius: 20px;
+        text-align: center;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,0.5) 0%, rgba(6,3,20,0.5) 65%);
+    }
+    .text_banner_chorvs_parent_game:before{
+        content: "";
+        filter: blur(10px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .text_banner_chorvs_parent_game h1{
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        border-radius: 10px;
+        background: rgb(6,2,69);
+        background: linear-gradient(239deg, rgba(6,2,69,0.5) 0%, rgba(6,3,20,0.5) 65%);
+    }
+    .text_banner_chorvs_parent_game h1 p{
+        font-size: 40px;
+        font-family: 'Quintessential', cursive;
+        color: #dfdcd9;
+    }
+
+
+
+
+/*footer*/
+
+    .footer{
+        padding-top: 5px;
+        background: rgb(5,2,51);
+        background: linear-gradient(239deg, rgba(5,2,51,1) 0%, rgba(6,3,20,0.9304096638655462) 50%);
+    }    
+    .footer_box1{
+        width: 500px;
+        align-items: center;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 30px;
+        text-align: center;
+        color: #dfdcd9;
+    }
+    .footer_box2{
+        width: 200px;
+        height: auto;
+    }
+    .footer_box3{
+        width: 470px;
+    }
+    .footer_box3 a{
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        color: #dfdcd9;
+        font-weight: bold;
+        line-height: 22px;
+    }
+    .footer_box3 a:hover{
+        text-decoration: underline;
+    }
+    
+
+/*font-family: 'Architects Daughter', cursive;
+font-family: 'Quintessential', cursive;*/
+
+
+</style>
+
+
+
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+                <div class="container">
+                    <div class="header_box1 fl">
+                        <a href="#" class="logo">
+                            <img src="img/xbox4.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="header_box2 fl">
+                        Power Your Dreams
+                    </div>
+                    <div class="header_box3 fl">
+                        <a href="tel:+380672426057">+380672426057</a>
+                        <a href="mailto:artur@gmail.com">artur@gmail.com</a>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+
+                <nav class="nav">
+                    <div class="container">
+                        <ul class="sub-menu">
+                            <li class="item-menu">
+                                <a class="item-link-menu" href="#">HOME</a>
+                            </li>
+                            <li class="item-menu">
+                                <a class="item-link-menu" href="#">ABOUT</a>
+                            </li>
+                            <li class="item-menu">
+                                <a class="item-link-menu" href="#">PROFILE</a>
+                                
+                            </li>
+                            <li class="item-menu">
+                                <a class="item-link-menu" href="#">GAME</a>
+                                <ul class="cild-sub-menu">
+                                    <li class="item-menu">
+                                        <a class="item-link-menu" href="#">CHORVS</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="item-link-menu" href="#">DISCOVER</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="item-link-menu" href="#">CROSSFIRE</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="item-link-menu" href="#">STARFILED</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="item-link-menu" href="#">RIDERS REPUBLIC</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu">
+                                <a class="item-link-menu" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+            <main class="main">
+                <section class="banner">
+                    <div class="container">
+                        <div class="text_banner_parent">
+                            <h1>XBOX</h1>
+                            <p>
+                            BEST GAME FOR UOY!!!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="owl-carousel">
+                    <img src="./img/1.jpg">
+                    <img src="./img/2.jpg">
+                    <img src="./img/3.jpg">
+                    <img src="./img/4.jpg">
+                    <img src="./img/5.jpg">
+                </div>
+
+                <section class="banner_game">
+                    <div class="container">
+                        <div class="text_banner_parent_game">
+                            <h1>THIS ENDS WITH US</h1>
+                            <p>
+                                Take control of Nara, once the Circle’s deadliest warrior, now their most wanted fugitive, on a quest to destroy the dark cult that created her. Along with Forsaken, her sentient starfighter, explore ancient temples, engage in exhilarating zero-g combat, and venture beyond our waking reality.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section clas="game_inform">
+                    <div class="container">
+                            <div class="float_left_img">
+                                <img src="img/CHORVS1.jpg" alt="" />
+                            </div>
+                            <div class="float_right_text">
+                                <h1>A journey of redemption</h1>
+                                <p>Lead Nara and Forsaken, her sentient ship, as their quest for redemption takes them across the galaxy and beyond the boundaries of reality.
+                                </p>
+                            </div>
+
+
+                            <div class="float_right_img">
+                                <img src="img/CHORVS2.jpg" alt="" />
+                            </div>
+                            <div class="float_left_text">
+                                <h1>Venture beyond the void</h1>
+                                <p>Enter a dark new universe, teeming with mystery and rife with conflict. Explore epic locations such as sprawling space stations and strange planes of existence beyond our own.
+                                </p>
+                            </div>
+
+
+                            <div class="float_left_img">
+                                <img src="img/CHORVS3.jpg" alt="" />
+                            </div>
+                            <div class="float_right_text">
+                                <h1>One pilot, one ship, one living weapon</h1>
+                                <p>Attain powerful weapons and combat upgrades. Master your ship’s unique drift mechanic and deadly mind-bending abilities, including extra-sensory perception, teleportation, and telekinesis. Chain your powers together to become the ultimate living weapon.
+                                </p>
+                            </div>
+                            
+                            <div class="clear"></div>
+                    </div>
+                </section>
+                <section class="banner_chorvs_game">
+                    <div class="container">
+                        <div class="text_banner_chorvs_parent_game">
+                            <h1>Game details</h1>
+                            <p>
+                                Play as ex-cultist Nara and her sentient AI companion and starfighter, Forsaken, in Chorus’ concise and compelling single-player experience. Experience fast-paced, frenetic action that evolves the spirit of classic space shooters, and fight to unite resistance forces against the Circle and their ominous leader, the Great Prophet. Outgun, outwit, and outmaneuver hordes of enemy starfighters, titanic battleships and unknown Void entities.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_box1 fl">
+                    Power Your Dreams
+                </div>
+                <div class="footer_box2 fl">
+                    <a href="#" class="logo">
+                        <img src="img/xbox4.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="footer_box3 fl">
+                    <a href="tel:+380672426057">+380672426057</a>
+                    <a href="mailto:artur@gmail.com">artur@gmail.com</a>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+    
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./js/$(document).ready(function(){.js"></script>
+
+
+</body>
+</html>
