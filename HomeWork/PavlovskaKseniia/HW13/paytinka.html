@@ -82,6 +82,7 @@
     }
     .nav ul {
         list-style: none;
+        z-index: 999;
     }
     .nav ul li a {
         color: rgb(196, 179, 187);
@@ -174,9 +175,20 @@
         padding-left: 40px;
         box-sizing: border-box;
     }
-    .sw_photo {
-        width: 22%;
-        padding: 20px 10px;
+    .sw_photo img{
+        display: block;
+        margin: 0 auto;
+        max-width: 280px;
+        max-height: 500px;
+        -webkit-transform:scale(0.9); 
+        -webkit-transition-duration: 0.5s;         
+    }
+    .sw_photo img:hover{
+        -webkit-transform:scale(1.5); 
+        box-shadow:0px 0px 20px gray;       
+        border: gray; 
+        z-index:2; 
+        position: absolute;
     }
     .footer {
         background: rgb(138, 116, 126, 0.3);
@@ -205,8 +217,12 @@
     }
     .nav ul.submenu li:nth-child(2):hover ul.child_submenu_about {
         display: block;
+    }    
+    .text {
+        text-align: justify;
+        margin: 20px 60px 30px 14px;
+        text-indent: 30px;
     }
-    
 /*font-family: 'Comforter', cursive;
 font-family: 'Sedgwick Ave', cursive;*/
 </style>
@@ -376,6 +392,11 @@ font-family: 'Sedgwick Ave', cursive;*/
                             <img src="img/pw12.jpg" alt=""/>
                            </div>
                         <div class="clear"></div>
+                        <div class="text">
+                            <p><b>Свитер-паутинка</b> — новый тренд в вязании. Это ультратонкий свитер, с прозрачной текстурой, напоминающей сетку. Носить такой свитер рекомендуется с майкой или платьем, поверх которых он как раз и надевается. Результат выглядит очень эффектно!</p>
+                            <p>Одним из несомненных преимуществ свитера является то, что он очень легкий, на теле практически не ощущается. Если вы хотите модель оверсайз, которая по-прежнему актуальна, вяжите свитер на два, а то и три размера больше.</p>
+                            <p>Свитер-паутинку вяжут из мохеровой пряжи, так как пушистая нить очень привлекательна в низкой плотности вязания. Мохер — это удивительный материал из пуха коз ангорской породы. Он обладает множеством преимуществ, среди которых красивый внешний облик, эластичность, прочность, хорошая воздухопроводимость. Неспроста у мохеровой пряжи много поклонников!</p>
+                        </div>
                     </div>
 
             </main>
