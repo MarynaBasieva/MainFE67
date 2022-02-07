@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border-radius</title>
+</head>
+<style>
+	div{
+		width: 200px;
+		height: 200px;
+		background: #1BC6D5;
+		margin: 10px;
+	}
+	.simple_round{
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.different_oneline{
+		-webkit-border-radius: 15px 50px 20px 30px;
+		-moz-border-radius: 15px 50px 20px 30px;
+		-o-border-radius: 15px 50px 20px 30px;
+		border-radius: 15px 50px 20px 30px;
+	}
+	.different{
+		-webkit-border-bottom-left-radius: 15px;
+		-moz-border-bottom-left-radius: 15px;
+		-o-border-bottom-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		
+		-webkit-border-bottom-right-radius: 50px;
+		-moz-border-bottom-right-radius: 50px;
+		-o-border-bottom-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+		
+		
+		-webkit-border-top-left-radius: 18px;
+		-moz-border-top-left-radius: 18px;
+		-o-border-top-left-radius: 18px;
+		border-top-left-radius: 18px;
+		
+		
+		-webkit-border-top-right-radius:35px; 
+		-moz-border-top-right-radius:35px; 
+		-o-border-top-right-radius:35px; 
+		border-top-right-radius:35px; 
+	}
+	.circle{
+		border-radius: 100px;
+	}
+	.triangle{
+		height: 0;
+		width: 0;
+		background: transparent;
+		border-left: 40px solid transparent;
+		border-right: 150px solid transparent;
+		border-bottom: 180px solid blue;
+	}
+	.trileft{
+		height: 0;
+		width: 0;
+		background: transparent;
+		border-left: 150px solid blue;
+		border-right: 150px solid transparent;
+		border-bottom: 150px solid transparent;
+	}
+	.box{
+		display: block;
+		width: 200px;
+		padding: 15px 0;
+		text-align: center;
+		text-decoration: none;	
+		color: #fff;
+		background: #0B1031;
+		border: solid 2px #DF070A;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.box:hover{
+		background: #590ADD;
+		color: #fff;
+		border: solid 2px transparent;
+	}
+</style>
+<body>
+	<div class="simple_round"></div>
+	<div class="different_oneline"></div>
+	<div class="different"></div>
+	<div class="circle"></div>
+	<div class="triangle"></div>
+	<div class="trileft"></div>
+	
+	<a href="#" class="box">Button</a>
+</body>
+</html>

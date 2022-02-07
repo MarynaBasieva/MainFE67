@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text-overflow</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	div{
+		margin: 30px;
+	}
+	.clip{
+		border:1px solid #000;
+		padding: 5px;
+		width: 300px;
+		white-space: nowrap;/*запрещает перенос строк*/
+		overflow: hidden;/*Обрезает все что не помещается*/
+		text-overflow: ellipsis;/*Дрбавляет много точие*/
+	}
+	.word-break{
+		border:1px solid #000;
+		padding: 10px;
+		width: 200px;
+		font-size: 18px;
+	}
+	.word-wrapp{
+		border:1px solid #000;
+		padding: 10px;
+		width: 200px;
+		font-size: 18px;
+		word-break: break-all;/*для переноса строки*/
+	}
+</style>
+<body>
+	<main class="main">
+		<div class="clip">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum</div>
+		<div class="word-wrapp">
+			<p>lorem isum dolar isum dolar isum dolar isum dolar isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+		</div>
+		
+		<div class="word-break">
+			<p>lorem isum dolar isum dolar isum dolar isum dolar isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+			<p>lorem isum dolar</p>
+		</div>
+	</main>
+</body>
+</html>
