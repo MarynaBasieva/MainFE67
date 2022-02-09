@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+</head>
+<style>
+	.table_main,
+	th,
+	td{
+		border: solid 1px #000;
+	}
+	.table_main{
+		border-collapse: collapse;
+	}
+	.table_main tr td,
+	.table_main tr th{
+		vertical-align: bottom;
+		padding: 20px;
+	}
+</style>
+<body>
+	<table class="table_main">
+		<h2>Table title</h2>
+		<tr>
+			<th>first column</th>
+			<th>Second column</th>
+			<th rowspan="6">Last column</th>
+		</tr>
+		<tr>
+			<td>row1, cell1</td>
+			<td>row1, cell2</td>
+		</tr>
+		<tr>
+			<td>row2, cell1</td>
+			<td rowspan="2">row2, cell2</td>
+		</tr>
+		<tr>
+			<td>row3, cell1</td>
+		</tr>
+		<tr>
+			<td colspan="2">row4, cell1</td>
+		</tr>
+		<tr>
+			<td>row5, cell1</td>
+			<td>row5, cell2</td>
+		</tr>
+		<tr>
+			<td colspan="3">row6, cell1</td>
+		</tr>
+	</table>
+</body>
+</html>
