@@ -1,0 +1,121 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  background: rgb(255, 255, 255);
+}
+
+main {
+  padding-bottom: 150px;
+}
+
+.for-page {
+  min-height: 100%;
+  position: relative;
+}
+
+.page {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  padding: 35px;
+ background: rgb(192, 255, 67);
+ text-align: center;
+}
+
+.foto-container {
+  display: block;
+}
+
+.foto-container .card {
+  width: 30%;
+  float: left;
+  margin: 10px 10px;
+  min-height: 484px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 40px;
+  background: yellowgreen;
+
+}
+
+.float {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+a:hover {
+  color: brown;
+}
+
+ p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+h2 {
+  margin-top: 10px;
+  max-height: 16px;
+  width: 295px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 5px;
+  background: rgb(114, 114, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  
+}
+.text {
+    max-height: 93px;
+    width: 355px;
+    margin-top: 20px;
+    overflow: hidden;
+    max-height: 93px;
+    width: 355px;
+
+ 
+}
+
+.title {
+  overflow: hidden;
+  color: black;
+  font-size: 10px;
+}
