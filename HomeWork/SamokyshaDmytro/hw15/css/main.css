@@ -1,0 +1,230 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+html, body {
+  height: 100%;
+  background: linear-gradient(
+  #004c6d,
+  rgb(0, 255, 255));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  background: rgba(0, 128, 0, 0);
+}
+/*________________________________________*/
+
+.for-page {
+  min-height: 100%;
+  position: relative;
+}
+/*______________HEADER_____________________*/
+.page {
+  padding-bottom: 150px;
+}
+header {
+  width: 100%;
+  padding: 35px;
+  background: rgba(255, 0, 0, 0);
+}
+/*______________MAIN______________________*/
+
+.p0 {
+  margin-right: 25px;
+  font-family: "Nunito";
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.p0:hover {
+  width: 400px;
+  height: 400px;
+  animation: border 2s infinite alternate, shadow 2s infinite alternate;
+  transition: 2s ease-in-out;
+}
+
+.p1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(rgb(0, 255, 255),
+  #004c6d);
+  border-radius: 50px;
+  box-shadow:  20px 20px 60px #004c6d,
+ -20px -20px 60px rgb(0, 255, 255);
+ transition: 2s ease;
+}
+
+.p1:hover {
+  text-shadow: 30px 2px 2px black, 2px -30px 1px red;
+}
+
+.p2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(rgb(0, 255, 255),
+  #004c6d);
+  border-radius: 50px;
+  box-shadow:  20px 20px 60px #004c6d,
+ -20px -20px 60px rgb(0, 255, 255);
+ text-shadow:  -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+ transition: 2s ease;
+}
+
+.p2:hover {
+  background: linear-gradient(to left, red, white,blue,red );
+}
+
+.p3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px #00ffff, -2px -2px 3px #004c6d;
+  border-radius: 50px;
+  box-shadow:  20px 20px 60px #004c6d,
+ -20px -20px 60px rgb(0, 255, 255);
+ transition: 2s ease;
+}
+
+.p3:hover {
+  background: radial-gradient(blue, white,black);
+}
+
+.p4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(rgb(0, 255, 255),
+  #004c6d);
+  text-shadow: -2px -2px 3px #00ffff, 2px 2px 3px #004c6d;
+  border-radius: 50px;
+  box-shadow:  20px 20px  #004c6d,
+ -20px -20px  rgb(0, 255, 255);
+ transition: 2s ease;
+}
+
+
+.p4:hover {
+  background: radial-gradient(at 10% 30%, blue, red, green, yellow);
+}
+
+.p5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(rgb(0, 255, 255),
+  #004c6d);
+  border-radius: 50px;
+  box-shadow: inset -5px -5px 2px 0px #ffffff, inset 7px 6px 4px 0px #000000;
+ transition: 2s ease;
+}
+
+.p5:hover{
+  background: linear-gradient(to bottom, rgb(255, 0, 0) 33%, rgb(255, 255, 255) 33% 66%, rgb(255, 0, 0) 66% 100%);
+}
+
+.batt {
+  display: flex;
+  position: relative;
+  background: rgba(238, 130, 238, 0);
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.adres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(rgb(0, 255, 255),
+  #004c6d);
+  border-radius: 50px;
+  box-shadow:  20px 20px 60px #004c6d,
+ -20px -20px 60px rgb(0, 255, 255);
+ transition: 2s ease;
+}
+
+
+
+.adres:hover {
+  background-image:  url("../img/gifka.gif") ;
+  width: 400px;
+  height: 400px;
+  animation: border 2s infinite alternate, shadow 2s infinite alternate;
+  transition: 2s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow:  -20px -20px 60px rgb(255, 0, 0), 20px 20px 60px #001aff;
+  }
+  100% {
+    box-shadow:  -20px -20px 60px rgb(51, 255, 0), 20px 20px 60px #ffee01;
+  }
+}
+
+@keyframes border {
+  0% {
+    border-radius:  30% 30% 70% 70% ;
+  }
+  100%{
+  }
+}
+
+.text {
+  font-family: "Nunito";
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #00ffff, -2px -2px 3px #004c6d;
+}
+
+/*______________MAiN____________________*/
+/*______________FOOTER__________________________*/
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 40px;
+  background: rgba(255, 0, 0, 0);
+}
+
+
+
+
