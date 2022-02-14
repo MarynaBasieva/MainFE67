@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blog</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	html,
+	body{
+		height: 100%;
+	}
+	.for_page{
+		position: relative;
+		min-height: 100%;
+	}
+	.page{
+		padding-bottom: 300px;
+	}
+	.header{
+		padding: 100px 0;
+		background: #9AF5DD;
+	}
+	.footer{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background: #091751;
+		padding: 150px 0;
+	}
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.main_blog{
+		margin: 60px 0;
+	}
+	.main_blog .child_item_blog{
+		width: 32%;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 40px;
+	}
+	.main_blog .child_item_blog:nth-child(3),
+	.main_blog .child_item_blog:nth-child(6),
+	.main_blog .child_item_blog:nth-child(9){
+		margin-right: 0px;
+	}
+	.child_item_blog .img_parent img{
+		transition: all 1s ease-out;
+	}
+	.child_item_blog .img_parent img:hover{
+		transform: scale(1.1);
+	}
+	.text_hover{
+		color: #fff;
+		font-size: 40px;
+		position: absolute;
+		bottom: -90px;
+		left: 50%;
+		transition: all 0.7s ease-out;
+	}
+	.img_parent:hover .text_hover{
+		transform: translate(-50%, -50%);
+		bottom: 50%;
+	}
+	.clear{
+		clear: both;
+	}
+	img{
+		width: auto;
+		height: auto;
+		max-width: 100%;
+	}
+	.img_parent{
+		display: block;
+		overflow: hidden;
+		max-height: 239px;
+		position: relative;
+	}
+	.main_blog .child_item_blog h2 a{
+		font-size: 18px;
+		display: block;
+		color: #140203;
+		text-decoration: none;
+		line-height: 20px;
+		transition: all 1s linear;
+	}
+	.main_blog .child_item_blog h2 {
+		margin: 8px 0;
+		max-height: 40px;
+		overflow: hidden;
+	}
+	.main_blog .child_item_blog h2 a:hover{
+		color:red;
+	}
+	.description_text{
+		font-size: 16px;
+		color: #333;
+		margin-bottom: 15px;
+	    line-height: 18px;
+		max-height: 55px;
+		overflow: hidden;
+	}
+	.btn_blog{
+		display: block;
+		width: 170px;
+		text-decoration: none;
+		color: #fff;
+		background: #041C39;
+		text-align: center;
+		padding: 10px 0;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
+		transition: all 1s ease-in-out;
+		
+	}
+	.btn_blog:hover{
+		background: #183CCA;
+	}
+</style>
+<body>
+	<div class="for_page">
+		<div class="page">
+			<header class="header">
+			</header>
+			<main class="main">
+			  <div class="container">
+				<div class="main_blog">
+					 <div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/prezident-marvel.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем.</div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					<div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel2.jpg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году «Мстители: Финал»</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. </div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					
+					<div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel4.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году Блокбастер «Мстители: Финал» вышел в 2019 году</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем.</div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					 <div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel3.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем.</div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					<div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/prezident-marvel.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году «Мстители: Финал»</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. </div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					
+					<div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel4.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году Блокбастер «Мстители: Финал» вышел в 2019 году</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем.</div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					 <div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel2.jpg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем.</div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					<div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel3.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году «Мстители: Финал»</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. </div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					
+					
+					<div class="child_item_blog">
+						 <a href="#" class="img_parent">
+							 <img src="img/marvel4.jpeg" alt="" />
+							 <div class="text_hover">Marvel</div>
+						 </a>
+						 <h2><a href="">Блокбастер «Мстители: Финал» вышел в 2019 году Блокбастер «Мстители: Финал» вышел в 2019 году</a></h2>
+						 <div class="description_text">Об этом рассказал режиссёр картины Джо Руссо в новой книге The Story of Marvel Studios: The Making of the Marvel Cinematic Univers. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем. По его словам, такая идея была сразу отклонена, потому что тогда фильм пришлось бы растягивать и уделить время для прощания с каждым героем.</div>
+						 <a class="btn_blog" href="#">Read more</a>
+					 </div>
+					<div class="clear"></div>
+				</div>
+		      </div>
+			</main>
+		</div>
+		<footer class="footer">
+		</footer>
+	</div>
+</body>
+</html>

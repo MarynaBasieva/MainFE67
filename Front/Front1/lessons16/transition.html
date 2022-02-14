@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+</head>
+<style>
+	
+/*
+ease- указывает эффект перехода с медленным началом, затем быстрым, а затем медленным завершением (по умолчанию)
+linear- задает эффект перехода с одинаковой скоростью от начала до конца
+ease-in- указывает эффект перехода с медленным стартом
+ease-out- указывает эффект перехода с медленным концом
+ease-in-out- указывает эффект перехода с медленным началом и концом
+*/
+	
+	
+	.transition{
+		margin-bottom: 40px;
+		width: 100px;
+		height: 100px;
+		background: #042F8A;
+	}
+	.transition1{
+		transition: width 2s;
+	}
+	.transition1:hover{
+		width: 300px;
+	}
+	.transition2{
+		transition: width 2s, height 4s;
+	}
+	.transition2:hover{
+		width: 300px;
+		height: 300px;
+	}
+	.ease{
+		transition-timing-function: ease ;
+	}
+	.liner{
+		transition-timing-function: linear;
+	}
+	.ease-in{
+		transition-timing-function: ease-in;
+	}
+	.ease-out{
+		transition-timing-function: ease-out;
+	}
+	.anim{
+		width: 100px;
+		height: 100px;
+		background: #07528A;
+		transition: width 2s;
+		margin-bottom: 20px;
+	}
+	.anim:hover{
+		width: 300px;
+	}
+	.dealy{
+		width: 100px;
+		height: 100px;
+		background: #0D3A77;
+		transition: width 2s;
+		margin-bottom: 20px;
+	}
+	.dealy:hover{
+		width: 300px;
+	}
+	.transform_transition{
+		width: 100px;
+		height: 100px;
+		background: #0D3A77;
+		transition: width 2s, height 2s;
+		margin-bottom: 30px;
+	}
+	.transform_transition:hover{
+		width: 300px;
+		height: 300px;
+		transform: rotate(100deg);
+	}
+</style>
+<body>
+	<div class="transition1 transition"></div>
+	<div class="transition2 transition"></div>
+	<div class="ease anim"></div>
+	<div class="liner anim"></div>
+	<div class="ease-in anim"></div>
+	<div class="ease-out anim"></div>
+	<div class="ease-in-out anim"></div>
+	
+	<div class="dealy"></div>
+	<div class="transform_transition"></div>
+</body>
+</html>

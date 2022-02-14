@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>img filter</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.img_overflow{
+		margin-bottom: 30px;
+		max-width: 400px;
+	}
+	img{
+		width: auto;
+		height: auto;
+		max-width: 100%;
+	}
+	.img_parent1 img{
+		border-radius: 100%;
+	}
+	.img_parent2 img{
+		border-radius: 5px;
+		border: solid 2px red;
+	}
+	.img_parent3{
+			max-width: 800px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+	}
+	.img_parent3 img{
+		max-width: 400px;
+		margin: 0 auto;
+		display: block;
+	}
+	.img_parent4 img{
+		opacity: 0;
+		transition: 1s;
+	}
+	.img_parent4:hover img{
+		opacity: 1;
+	}
+	.img_parent4 .text{
+		opacity: 1;
+		transition: 1s;
+	}
+	.img_parent4:hover .text{
+		opacity: 0;
+
+	}
+	.img_parent5 img{
+		filter: grayscale(100%);
+		transition: 0.7s;
+	}
+	.img_parent5 img:hover{
+		filter: none;
+	}
+	.img_parent6 img{
+		width: 600px;
+		height: 500px;
+		object-fit: cover;
+		object-position: right top;
+	}
+	.img_parent7 img{
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 100px;
+		object-position: right top;
+	}
+	.img_parent8 img{
+		width: 150px;
+		height: 300px;
+		object-fit: fill;
+	}
+	.img_parent9 img{
+		width: 150px;
+		height: 300px;
+		object-fit: contain;
+	}
+	.img_parent10 img{
+		width: 150px;
+		height: 300px;
+		object-fit:scale-down;
+	}
+	.img_parent11 img{
+		filter: blur(4px);
+	}
+	.img_parent12 img{
+		filter: brightness(24%);
+	}
+	.img_parent13 img{
+		filter: contrast(19);
+	}
+	.img_parent14 img{
+		filter: drop-shadow(16px 16px 20px black);
+	}
+	.img_parent15 img{
+		filter: invert(41%);
+	}
+	.img_parent16 img{
+		filter: hue-rotate(90deg);
+	}
+	.img_parent17 img{
+		filter: saturate(30%);
+	}
+	.img_parent18 img{
+		filter: sepia(100%);
+	}
+	.img_parent19 img{
+		filter: opacity(25%);
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="img_parent1 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent2 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent3 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent4 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+			<div class="text">Text</div>
+		</div>
+		<div class="img_parent5 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent6 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent7 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent8 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent9 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent10 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent11 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent12 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent13 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent14 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent15 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent16 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent17 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent18 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+		<div class="img_parent19 img_overflow">
+			<img src="img/star.jpeg" alt="img" />
+		</div>
+	</div>
+</body>
+</html>
