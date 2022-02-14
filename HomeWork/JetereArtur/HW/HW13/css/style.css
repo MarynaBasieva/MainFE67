@@ -3,8 +3,6 @@
     body{
         height: 100%;
         position: relative;
-        background: rgb(6,2,85);
-        background: linear-gradient(45deg, rgba(6,2,85,1) 0%, rgba(15,9,45,0.969625350140056) 44%);
     }
     body{
         z-index: -1;
