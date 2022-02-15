@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 16</title>
+    <style>
+        /*------
+        @keyframes {} - правила анимации;
+
+        animation-name: - имя анимации;  
+
+        animation-duration: - свойство определяет, сколько времени потребуется для завершения анимации. Если свойство не указано, анимация не произойдет, поскольку значение по умолчанию равно 0 с (0 секунд).
+
+        animation-timing-function: - определяет кривую скорости анимации.
+                    (ease- Определяет анимацию с медленным началом, затем быстрым, а затем медленным завершением (по умолчанию)
+                    linear- Задает анимацию с одинаковой скоростью от начала до конца
+                    ease-in- Задает анимацию с медленным стартом
+                    ease-out- Определяет анимацию с медленным концом
+                    ease-in-out- Указывает анимацию с медленным началом и концом
+                    cubic-bezier(n,n,n,n)- Позволяет определять собственные значения в кубической функции Безье.)
+        
+        animation-delay: - указывает задержку начала анимации.
+
+        animation-iteration-count: - указывает, сколько раз должна запускаться анимация.
+        
+        animation-direction: - указывает, должна ли анимация воспроизводиться вперед, назад или в чередующихся циклах. 
+                    (normal- Анимация воспроизводится как обычно (вперед). Это по умолчанию.
+                    reverse- Анимация воспроизводится в обратном направлении (назад)
+                    alternate - Анимация сначала воспроизводится вперед, затем назад
+                    alternate-reverse- Анимация сначала воспроизводится назад, затем вперед).
+
+        animation-fill-mode: - указывает стиль для целевого элемента, когда анимация не воспроизводится (до ее запуска, после ее завершения или в обоих случаях).
+                    (none- Значение по умолчанию. Анимация не будет применять какие-либо стили к элементу до или после его выполнения.
+                    forwards- Элемент сохранит значения стиля, установленные последним ключевым кадром (зависит от направления анимации и количества итераций анимации).
+                    backwards- Элемент получит значения стиля, установленные первым ключевым кадром (зависит от направления анимации), и сохранит их в течение периода задержки анимации.
+                    both- Анимация будет следовать правилам как вперед, так и назад, расширяя свойства анимации в обоих направлениях.)
+
+        animation: - сокращенноe свойствo
+                    (animation: (1)name (2)duration (3)timing-funktion (4)delay   (5)iteration-count (6)direction).
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgb(255, 246, 192);
+            padding: 50px 0 ;
+        }
+        /*-----------Animation--------------------------*/
+        div.animation {
+            width: 600px;
+            height: 600px;
+            border: 1px solid #000;
+            margin: 25px auto;
+            position: relative;
+        }
+        div.square {
+            width: 100px;
+            height: 100px;
+            background: rgb(94, 255, 0);
+            border: none;
+            position: relative;
+            animation-name: square;
+            animation-delay: 1s;
+           /* animation-duration: 8s;*/
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+            }
+        @keyframes square {
+            0% {
+                left: 0;
+                top:0;
+            }
+            25% {
+                left: 498px;
+                top:0px;
+                background: aqua;
+            }
+            50% {
+                top: 498px;
+                left: 498px;
+                background-color: rgb(103, 103, 255);
+            }
+            75%{
+                top: 498px;
+                left: 0;
+                 background-color: blueviolet;  
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+        /*---------------фильтр-------------------------*/
+
+        div.filter {
+            max-width: 600px;
+            margin: 25px auto;
+            /*position: relative;*/
+            /* overflow: hidden; - использовать для transform: scale(1.3);*/
+           
+        }
+
+       /* div.filter:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left:0;
+            top: 0;
+            background-color: rgba(160, 160, 160, 0.5);
+        }*/
+
+        .filter img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            /*filter: brightness(60%); - не работает "transition:" при переходе с одного фильтра на другой*/
+            transition: 3.5s;
+        }
+
+        .filter:hover img {
+            filter: grayscale(100%);
+            cursor: pointer;
+            /*transform: scale(1.3); - использовать с overflow: hidden; для блока*/
+        }
+/*--------------------------------------------------------------------------*/
+        div.ob-fit {
+            width: 400px;
+            height: 700px;
+            background-color: aqua;
+            margin: 25px auto;
+        }
+        div.ob-fit img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="animation">
+                <div class="square"></div>
+            </div>
+        <hr>
+            <div class="filter">
+                <img src="img6.jpg" alt="img">
+            </div>
+        <hr>
+            <div class="ob-fit">
+                <img src="img6.jpg" alt="">
+            </div>
+            
+
+
+        </section>
+    </main>
+</body>
+</html>
