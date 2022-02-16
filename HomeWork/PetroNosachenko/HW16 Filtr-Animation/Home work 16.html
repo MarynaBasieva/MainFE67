@@ -115,17 +115,22 @@
             max-width: 100%;
             display: block;
             /*filter: brightness(60%); /*- не работает "transition:" при переходе с одного фильтра на другой*/
-            transition: 1.5s;
-            opacity: 0.6;
+            transition: 1.5s linear;
+            /*opacity: 0.6;*/
+			filter: brightness(60%);
         }
+		.filter img.img-filter:hover{
+			filter:  grayscale(100%);
+            cursor: pointer;
+		}
 
-        .filter:hover img.img-filter {
+        /*.filter:hover img.img-filter {
             filter:  grayscale(100%);
             cursor: pointer;
             transition: 1.5s;
             opacity: 1;
             
-        }
+        }*/
        
 /*---------------------фильтр-----------------------------------------------------*/
         div.ob-fit {

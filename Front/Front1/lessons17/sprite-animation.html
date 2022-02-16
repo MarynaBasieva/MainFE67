@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sprite animation</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.sprite{
+		background: url("img/spritesheet.png") no-repeat;
+		overflow: hidden;
+		width:123px;
+		height:272px;
+		background-position: -0px -0px;
+	}
+	.sprite:hover{
+		width:123px;
+		height:272px;
+		background-position: -123px -0px;
+	}
+	.capguy{
+		height: 325px;
+		width: 184px;
+		background: url("img/capguy-walk.png") no-repeat;
+		margin: 0 auto;
+		-webkit-animation:capguy 1s steps(8) infinite;
+		-moz-animation:capguy 1s steps(8) infinite;
+		-o-animation:capguy 1s steps(8) infinite;
+		animation:capguy 1s steps(8) infinite;
+	}
+	.parent_sprite{
+		position: relative;
+	}
+	.doroga{
+		height: 540px;
+		background: url("img/doroga.jpeg") repeat-x;
+		background-position: bottom left;
+		animation:doroga 3s infinite linear forwards;
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+		
+	}
+	.man{
+		height: 325px;
+		width: calc(1472px/8);
+		overflow: hidden;
+		background: url("img/capguy-walk.png") no-repeat;
+		margin: 0 auto;
+		animation:man 0.6s steps(8) infinite;
+		position: relative;
+		top: -336px;
+		z-index: 3;
+	}
+	@keyframes doroga{
+		from{background-position: 0px -100%;}
+		to{background-position: -100%;}
+	}
+	@keyframes man{
+		from{background-position: 0px;}
+		to{background-position: -1472px;}
+	}
+/*cupguy*/
+	-webkit-@keyframes capguy{
+		from{
+			background-position: 0;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	-moz-@keyframes capguy{
+		from{
+			background-position: 0;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	-o-@keyframes capguy{
+		from{
+			background-position: 0;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@keyframes capguy{
+		from{
+			background-position: 0;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+/*cupguy*/
+	
+</style>
+<body>
+	<div class="sprite"></div>
+	<div class="capguy"></div>
+	<div class="parent_sprite">
+		<div class="doroga"></div>
+		<div class="man"></div>
+	</div>
+</body>
+</html>
