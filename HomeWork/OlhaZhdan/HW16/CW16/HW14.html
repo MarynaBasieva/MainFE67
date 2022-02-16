@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW14</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html,
+    body{
+        height: 100%;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 15px;
+    }
+    .for_page{
+        position: relative;
+        min-height: 100%;
+    }
+    .page{
+        padding-bottom: 300px;
+    }
+    .header{
+        padding: 100px 0;
+        background: #df6e23;
+    }
+    .footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background:#df6e23;
+        padding: 150px 0;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .main_blog{
+        margin: 60px 0;
+    }
+    .main_blog .child_item_blog{
+        width: 31%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    .img_parent{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        max-height: 170px;
+        border:-radius: 10px;
+        transition: 2s;
+    }
+    .img_parent::before{
+        content: "";
+        background: rgb(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .img_parent:hover::before{
+        display: block;
+    }
+
+    .child_item_blog .img_parent img{
+        transition: all 1s ease-out;
+    }
+    .child_item_blog .img_parent img:hover{
+        transform: scale(1.1);
+    }
+    .text_hover{
+        color:#fff;
+        font-size: 40px;
+        position: absolute;
+        bottom: -90px;
+        left:50%;
+        transition: all 0.7s ease-out;
+    }
+    .img_parent:hover .text_hover{
+        transform: translate(-50%, -50%);
+        bottom: 50%;
+    }
+    .clear{
+        clear:both;
+    }
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+    .img_parent{
+        display: block;
+        overflow: hidden;
+        max-height: 508px;
+    }
+    .main_blog .child_item_blog h2 a{
+        font-size: 18px;
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    .main_blog .child_item_blog h2 a:hover{
+        color: #df6e23;
+    }
+    .main_blog .child_item_blog h2{
+        margin: 8px 0;
+        min-height: 44px;
+        overflow: hidden;
+    }
+    .description_text{
+        font-size: 16px;
+        color:black;
+        margin-bottom: 15px;
+        line-height: 18px;
+        max-height: 55px;
+        overflow: hidden;
+    }
+    .btn_blog{
+        display: block;
+        width: 200px;
+        text-decoration: none;
+        color: black;
+        background: #df6e23;
+        text-align: center;
+        padding: 10px 0;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .btn_blog:hover{
+        background: darkolivegreen;
+        s}
+    /*
+    font-family: 'Maven Pro', sans-serif;
+     */
+</style>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+            </header>
+            <main class="main">
+                <div class="container">
+                   <div class="main_blog">
+                       <div class="child_item_blog">
+                           <a href="#" class="img_parent"> 
+                                <img src="img/Death-on-the-Nile.jpeg" alt="" />
+                           </a>
+                           <h2><a href="">Смерть на Ниле (2022)</a></h2>
+                            <div class="description_text">На этот раз необходимость расследовать загадочное убийство, 
+                               отвлекаясь от собственного отдыха, настигает Пуаро на борту роскошного круизного парохода,
+                               следующего вдоль по Нилу
+                            </div>
+                           <a class="btn_blog" href="#">Читать дальше</a>
+                       </div>
+
+                       <div class="child_item_blog">
+                            <a href="#" class="img_parent">
+                                <img src="img/The-Batman.jpeg" alt=""/>
+                            </a>
+                            <h2><a href="">Бэтмен (2022)</a></h2>
+                            <div class="description_text">Ставший Темным Рыцарем – легендарным защитником Готэма – Брюс Уэйн 
+                                продолжает разбираться не только с врагами своего города, но и со своей ролью, которую он для себя избрал
+                            </div>
+                            <a class="btn_blog" href="#">Читать дальше</a>
+                        </div>
+
+                        <div class="child_item_blog">
+                            <a href="#"class="img_parent">
+                                <img src="img/Doctor-Strange.jpeg" alt=""/>
+                            </a>
+                            <h2><a href="">Доктор Стрэндж 2: В мультивселенной безумия (2022)</a></h2>
+                            <div class="description_text">После событий «Мстителей: Финал», «ВандаВижен», «Локи» и «Человек-паук:
+                            Нет пути домой» доктор Стивен Стрэндж продолжает поиски Камня времени и исправление последствий 
+                            освобождения Мультивселенной, но ему мешает друг, ставший врагом, в результате чего Стрэндж 
+                            высвобождает невообразимое зло</div>
+                            <a class="btn_blog" href="#">Читать дальше</a>
+                        </div>
+                        <div class="child_item_blog">
+                            <a href="#" class="img_parent"> 
+                                 <img src="img/Morbius.jpeg" alt="" />
+                            </a>
+                            <h2><a href="">Морбиус (2022)</a></h2>
+                             <div class="description_text">Чтобы излечиться от редкого заболевания крови, доктор Майкл Морбиус 
+                                 соглашается на участие в опасном эксперименте, в результате которого становится вампиром
+                             </div>
+                            <a class="btn_blog" href="#">Читать дальше</a>
+                        </div>
+ 
+                        <div class="child_item_blog">
+                             <a href="#" class="img_parent">
+                                 <img src="img/Kingsman-Begin.jpeg" alt=""/>
+                             </a>
+                             <h2><a href="">King’s man: Начало” (2022)</a></h2>
+                             <div class="description_text">Самые ужасные в истории тираны и криминальные гении собираются вместе,
+                                 чтобы развязать войну и уничтожить миллионы людей. Но есть один человек, который при помощи 
+                                 своего сына, соратников и личного стиля готов принять вызов и остановить злодеев
+                             </div>
+                             <a class="btn_blog" href="#">Читать дальше</a>
+                         </div>
+ 
+                         <div class="child_item_blog">
+                             <a href="#"class="img_parent">
+                                 <img src="img/Fantastic-Beasts.jpeg" alt=""/>
+                             </a>
+                             <h2><a href="">Фантастические твари 3: Тайны Дамблдора” (2022)</a></h2>
+                             <div class="description_text">Профессор Альбус Дамблдор узнает, что могущественный темный волшебник Геллерт
+                                  Грин-де-Вальд планирует захватить власть над миром. Понимая, что не сможет остановить его в одиночку,
+                                  Дамблдор просит магозоолога Ньюта Саламандера возглавить команду из выдающихся волшебников и одного 
+                                  отважного магла-пекаря. Им предстоят невероятно опасные приключения, встреча со старыми и укрощение 
+                                  новых магических существ и борьба со сторонниками Грин-де-Вальда, которых становится все больше. Но
+                                  какая роль в этой миссии уготована самому Дамблдору?
+                             </div>
+                             <a class="btn_blog" href="#">Читать дальше</a>
+                         </div>
+                        <div class="clear"></div>
+                   </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+</body>
+</html>
