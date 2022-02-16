@@ -1,0 +1,254 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+html, body {
+  height: 100%;
+  /* background: url("../img/q.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  background: rgba(0, 128, 0, 0);
+}
+/*________________________________________*/
+
+.for-page {
+  min-height: 100%;
+  position: relative;
+}
+/*______________HEADER_____________________*/
+.page {
+  padding-bottom: 150px;
+}
+header {
+  width: 100%;
+  padding: 35px;
+  background: rgba(255, 0, 0, 0);
+}
+/*______________MAIN______________________*/
+
+.card {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+.link-foto {
+  display: block; 
+  position: relative;
+  background: black;
+  margin-bottom: 20px;
+  max-width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.foto {
+  display: block;
+  transition: all 2s ease;
+}
+
+.foto:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  transition: all 2s ease-out;
+}
+
+.link-foto::before {
+  content: "КУПИТЬ";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: antiquewhite;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  height: 266px;
+  opacity: 0;
+}
+
+.link-foto:hover::before {
+opacity: 1;
+z-index: -1;
+transition: all 2s ease;
+}
+
+.border-cube {
+  border:solid black 4px ;
+  width: 258px;
+  height: 258px;
+  margin: 0 auto;
+}
+
+.cube {
+  /* margin: 0 auto; */
+  width: 100px;
+  height: 100px;
+  background: black;
+  transition: 5s;
+  animation: anima 5s infinite;
+}
+
+@keyframes anima {
+  0% {
+    transform: translate(150px, 0px) rotate(180deg) scale(1);
+    background: rgb(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(150px, 150px) rotate(0deg) scale(1);
+    background: rgb(0, 255, 34);
+  }
+  50% {
+    transform: translate(0px, 150px) rotate(-180deg) scale(0.5);
+    background: rgb(0, 17, 255);
+  }
+ 
+  75% {
+    transform: translate(0px, 0px) rotate(0deg) scale(-1);
+    background: rgb(255, 0, 0);
+  }
+
+  100% {
+    transform: translate(150px, 0px) rotate(720deg) scale(1);
+    background: rgb(0, 0, 0);
+  }
+}
+
+.filterbox {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 400px;
+  height: 700px;
+  background: black;
+}
+
+.filterimg {
+  width: 400px;
+  height: 700px;
+  object-fit: cover;
+  transition: all 4s ease-in-out;
+  filter: brightness(50%) opacity(50%);
+  -webkit-filter: brightness(50%) opacity(50%);
+  -moz-filter: brightness(50%) opacity(50%);
+}
+
+.filterimg:hover {
+  cursor: pointer;
+  transition: all 4s ease-in-out;
+  filter: brightness(100%) opacity(100%) grayscale(100%);
+  -webkit-filter: brightness(100%) opacity(100%) grayscale(100%);
+  -moz-filter: brightness(100%) opacity(100%) grayscale(100%);
+}
+
+.bestfoto-con {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 920px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+.bestfoto-link {
+  width: 170px;
+  height: 70px;
+  display: flex;
+  background-color:  red;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: bisque;
+  font-family: "Nunito";
+  font-size: 24px;
+  transition: all 1s linear;
+}
+
+.bestfoto-link:hover{
+  
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  
+  animation: rainbow 2s infinite alternate;  
+  transform: scale(1.1);
+  transition: all 1s linear;
+  
+}
+
+
+.bestfoto-link:active {
+  width: 500px;
+  height: 500px;
+  background: url("../img/bestfoto.jpg");
+  background-size: cover;
+  box-shadow: 0px 0px 10px 0px #000000, 0px 0px 10px 0px #363636, 0px 0px 10px 0px #7a7a7a, 0px 0px 10px 0px #aaaaaa, 0px 0px 10px 0px #ff7f00, 0px 0px 10px 0px #776767, 0px 0px 21px 5px rgba(37, 29, 29, 0);
+  text-shadow: none;
+  color: #0000ff00;
+  animation: border 2s infinite alternate, shadow 2s infinite alternate;
+  transition: all 2s linear;
+}
+
+
+@keyframes border {
+  0% {
+    border-radius:  100% 100% 100% 100% ;
+  }
+  100%{
+    border-radius: 10%;
+  }
+}
+
+
+@keyframes rainbow{
+  0%{
+    box-shadow: 0px -5px 10px 0px #9500ff, 0px -9px 10px 0px #3535ff, 0px -14px 10px 0px #006e00, 0px -17px 10px 0px #8b8b00, 0px -19px 10px 0px #ff962d, 0px -23px 10px 0px #ff3838, 0px 5px 21px 5px rgb(0 0 0 / 0%);
+  }
+  100%{
+    box-shadow: 0px -5px 10px 0px #00ff22, 0px -9px 10px 0px #ff0000, 0px -14px 10px 0px #ff00c8, 0px -17px 10px 0px #00b7ff, 0px -19px 10px 0px #1900ff, 0px -23px 10px 0px #ff0000, 0px 5px 21px 5px rgb(0 0 0 / 0%);
+
+  }
+}
+
+
+/*______________MAiN____________________*/
+/*______________FOOTER__________________________*/
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 40px;
+  background: rgba(255, 0, 0, 0);
+}
+
+
+
+
