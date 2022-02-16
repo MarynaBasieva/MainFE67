@@ -11,7 +11,7 @@
 
         animation-name: - имя анимации;  
 
-        animation-duration: - свойство определяет, сколько времени потребуется для завершения анимации. Если свойство не указано, анимация не произойдет, поскольку значение по умолчанию равно 0 с (0 секунд).
+        animation-duration: - Длительность анимации. Если свойство не указано, анимация не произойдет, поскольку значение по умолчанию равно 0 с (0 секунд).
 
         animation-timing-function: - определяет кривую скорости анимации.
                     (ease- Определяет анимацию с медленным началом, затем быстрым, а затем медленным завершением (по умолчанию)
@@ -39,7 +39,7 @@
 
         animation: - сокращенноe свойствo
                     (animation: (1)name (2)duration (3)timing-funktion (4)delay   (5)iteration-count (6)direction).
-        */
+        -----------*/
         * {
             margin: 0;
             padding: 0;
@@ -48,9 +48,15 @@
         main {
             max-width: 1100px;
             margin: 0 auto;
-            background: rgb(255, 246, 192);
+            background: rgb(226, 226, 226);
             padding: 50px 0 ;
         }
+       /* img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }*/
         /*-----------Animation--------------------------*/
         div.animation {
             width: 600px;
@@ -67,7 +73,7 @@
             position: relative;
             animation-name: square;
             animation-delay: 1s;
-           /* animation-duration: 8s;*/
+            animation-duration: 4s;
             animation-timing-function: linear;
             animation-iteration-count: 2;
             }
@@ -101,71 +107,173 @@
         div.filter {
             max-width: 600px;
             margin: 25px auto;
-            /*position: relative;*/
-            /* overflow: hidden; - использовать для transform: scale(1.3);*/
-           
         }
 
-       /* div.filter:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left:0;
-            top: 0;
-            background-color: rgba(160, 160, 160, 0.5);
-        }*/
-
-        .filter img {
+        .filter img.img-filter {
             width: auto;
             height: auto;
             max-width: 100%;
             display: block;
-            /*filter: brightness(60%); - не работает "transition:" при переходе с одного фильтра на другой*/
-            transition: 3.5s;
+            /*filter: brightness(60%); /*- не работает "transition:" при переходе с одного фильтра на другой*/
+            transition: 1.5s;
+            opacity: 0.6;
         }
 
-        .filter:hover img {
-            filter: grayscale(100%);
+        .filter:hover img.img-filter {
+            filter:  grayscale(100%);
             cursor: pointer;
-            /*transform: scale(1.3); - использовать с overflow: hidden; для блока*/
+            transition: 1.5s;
+            opacity: 1;
+            
         }
-/*--------------------------------------------------------------------------*/
+       
+/*---------------------фильтр-----------------------------------------------------*/
         div.ob-fit {
             width: 400px;
             height: 700px;
-            background-color: aqua;
             margin: 25px auto;
+           
         }
         div.ob-fit img {
+            width: 400px;
+            height: 700px;
+            object-fit: cover;
+            /*object-position: left;*/
+        }
+        /*-----------------------анимация кнопки---------------------------------------*/
+        div.animation-button {
+            width: 600px;
+            position: relative;
+            margin: 25px auto;
+            overflow: hidden;
+        }
+        div.animation-button img {
             width: auto;
             height: auto;
             max-width: 100%;
-            object-fit: cover;
+            display: block;
         }
+        div.animation-button a.btn {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(250, 250, 250);
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px 50px;
+            border: 2px solid rgb(24, 255, 3, 0.5);
+            border-radius: 50px;
+            background-image: linear-gradient(rgba(51, 255, 0, 0.5), rgba(0, 200, 100, 0.5));
+            position: absolute;
+            top: 100%;
+            left: 33%;
+            transform: scale(0);
+            transition: 2s;
+            overflow: hidden;
+            box-shadow: inset 0 0 25px rgba(124, 124, 124, 0.7);
+        }
+        div.animation-button:hover a.btn {
+            top: 42%;
+            left: 33%;
+            transform: scale(1);
+            /*transform: rotateX(360deg);*/
+        }
+         /*---------------------------------------*/
 
-      
-
+        /*--------эффект блика на кнопке----------*/
+        a.btn:after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -70px;
+            height: 58px;
+            width: 60px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(207, 207, 207, 0.5));
+            /*transform: skewX(-40deg);*/
+        }
+        a.btn:hover:after {
+            left: 200px;
+            transition: 0.5s linear;
+        }
+        /*----------анимация кнопки с поощью свойства "animation"----------------------*/
+        div.animation-button-alt {
+            width: 600px;
+            position: relative;
+            margin: 25px auto;
+            overflow: hidden;
+        }
+        div.animation-button-alt img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+        div.animation-button-alt a.btn {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(250, 250, 250);
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px 50px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            background-image: linear-gradient(rgba(0, 98, 255, 0.5), rgba(126, 148, 0, 0.5));
+            position: absolute;
+            top: 100%;
+            left: 33%;
+            transform: scale(0);
+            transition: 2s ease-in;
+            overflow: hidden;
+            
+        }
+        div.animation-button-alt:hover a.btn {
+            animation-name: btn; /*--имя анимации--*/
+            animation-duration:2s; /*--длительность анимации--*/
+            animation-timing-function:linear; /*--линия выполнения анимации--*/
+            animation-delay:0.1s; /*--задержка анимации--*/
+            animation-iteration-count:1; /*--количество повторений анимации--*/
+            animation-fill-mode: forwards; /*--фиксация кадра--*/
+            
+        }
+        @keyframes btn {
+            0% {
+                top: 100%;
+                left: 33%;
+                transform: scale(0);
+            }
+            100% {
+                top: 42%;
+                left: 33%;
+                transform: scale(1);
+            }
+        }
+        /*---------------------------------------------------------------------*/
     </style>
 </head>
 <body>
     <main>
-        <section>
+        
             <div class="animation">
                 <div class="square"></div>
             </div>
         <hr>
             <div class="filter">
-                <img src="img6.jpg" alt="img">
+                <img class="img-filter" src="img6.jpg" alt="img">
             </div>
         <hr>
             <div class="ob-fit">
-                <img src="img6.jpg" alt="">
+                <img src="img4.jpg" alt="">
             </div>
-            
-
-
-        </section>
+        <hr>    
+            <div class="animation-button">
+                <img src="img5.jpg" alt="img">
+                <a href="#" class="btn">Button</a>
+            </div>
+        <hr>
+            <div class="animation-button-alt">
+                <img src="img5.jpg" alt="img">
+                <a href="#" class="btn">Button</a>
+            </div>
+        
     </main>
 </body>
 </html>
