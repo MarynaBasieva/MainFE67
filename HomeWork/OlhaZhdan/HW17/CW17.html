@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CW17</title>
+</head>
+<style>
+    .sprite{
+        height: 450px;
+        width: 400px;
+        background: url("img/sprite.png") no-repeat;
+        margin: 0 auto;
+        -webkit-animation:sprite 1s steps(10) infinite;
+        -moz-animation:sprite 1s steps(10) infinite;
+        -o-animation:sprite 1s steps(10) infinite;
+        animation:sprite 1s steps(10) infinite;
+    }
+    @keyframes sprite{
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position: -4000px;
+         }
+    }
+    -webkit-@keyframes sprite{
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position: -4000px;
+         }
+    }
+    -moz-@keyframes sprite{
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position: -4000px;
+         }
+    }
+    -o-@keyframes sprite{
+        from{
+            background-position: 0;
+        }
+        to{
+            background-position: -4000px;
+         }
+    }
+</style>
+<body>
+        <div class="sprite"></div>
+</body>
+</html>
