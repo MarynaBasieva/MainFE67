@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW17</title>
+</head>
+<style>
+   .container{
+    display: -webkit-flex;
+    display: -moz-flex; 
+    display: -o-flex; 
+    display: flex;  
+   }
+    div > div {
+    width: 750px; 
+    height: 600px;  
+} 
+    .container div:nth-of-type(2){  
+    order: -1; 
+    }
+    h1{
+        text-align: center;
+        color: rgb(2, 57, 107);
+        margin-top: 30%;
+        font-size: 50px;
+    }
+    h2,h3{
+        text-align: center;
+        color: rgb(2, 57, 107);
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .main{
+        
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        box-sizing: border-box;
+        background-color: rgb(2, 57, 107);
+        border-radius: 5px;
+        padding: 10px 5px 10px 5px;
+        position: relative;
+        left: 36%;
+        transform: translate(-50%, 0); 
+    }
+    .main:hover{
+        box-shadow: 0 0 10px 0 #76d6dd inset, 0 0 10px 4px #1facb6;
+    }
+   
+</style>
+<body>
+    <div class=container>
+        <div class="1">
+                <h1>404</h1>
+                <h2>Страница не найдена</h2>
+                <h3>Такой страницы нет, но есть интересная работа после прохождения обучения. Посмотреть все курсы</h3>
+                <a href="#" class="main">Вернуться на главную</a>
+        </div>
+        <div class="2">
+            <img src="img/404_animation.gif">
+        </div>
+    </div>
+</body>
+</html>
