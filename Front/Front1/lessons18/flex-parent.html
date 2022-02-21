@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>flex-parent</title>
+</head>
+<style>
+	/*
+	flex-direction
+	flex-wrap
+	flex-flow
+	justify-content
+	align-items
+	align-content
+	*/
+	
+	.container{
+		display: flex;
+		background: #CAD87A;
+		margin-bottom: 40px;
+		width: 700px;
+	}
+	.flex-direction{
+		flex-direction: column; /*column - вертикально, row - горизонтально*/
+	}
+	.flex-container-reverse{
+		flex-direction: column-reverse;/*column-reverse сверху вниз ,row-reverse - справа на лево */
+		
+	}
+	.flex-container-wrap{
+		flex-wrap: wrap;/*wrap- перенос элемента если не входитв ширину контейнера, nowrap- по умолчанию row гн переносит на новую строку, wrap-revers - переноситься при необходимости в обратном порядке*/
+	}
+	.flex-container-flow{
+		flex-flow: row wrap;/*flex-flow -  является сокращением свойства flex-direction и flex-wrap*/
+	}
+	.flex-container-justify-content{
+		justify-content: space-between;/*justify-content - используется для вертикального выравнивание элементов*/
+		height: 600px;
+	}
+	.flex-container-align-items{
+		align-items: center; /*используется для вертикального выравнивание flex линии*/
+		height: 300px;
+	}
+	.flex-container-align-content{
+		align-content: space-between; /*используется выравнивание flex линии*/
+		height: 600px;
+	}
+	
+	.flex-direction > div,
+	.flex-container-reverse > div,
+	.flex-container-wrap > div,
+	.flex-container-flow > div,
+	.flex-container-justify-content > div,
+	.flex-container-align-items > div,
+	.flex-container-align-content > div{
+		background: #07086F;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+</style>
+<body>
+	 <!--flex-direction-->
+	   <div class="flex-direction container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+	   </div>
+	<!--flex-direction-->
+	
+	<!--flex-container-reverse-->
+	   <div class="flex-container-reverse container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+	   </div>
+	<!--flex-container-reverse-->
+	
+	<!--flex-wrap-->
+	   <div class="flex-container-wrap container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			   <div>4</div>
+			   <div>5</div>
+			   <div>6</div>
+			   <div>7</div>
+			   <div>8</div>
+			   <div>9</div>
+			   <div>10</div>
+			   <div>11</div>
+			   <div>12</div>
+	   </div>
+	<!--flex-wrap-->
+	
+	
+	<!--flex-flow-->
+	   <div class="flex-container-flow container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			   <div>4</div>
+			   <div>5</div>
+			   <div>6</div>
+			   <div>7</div>
+			   <div>8</div>
+			   <div>9</div>
+			   <div>10</div>
+			   <div>11</div>
+			   <div>12</div>
+	   </div>
+	<!--flex-flow-->
+	
+	<!--flex-container-justify-content-->
+	   <div class="flex-container-justify-content container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			   <div>4</div>
+	   </div>
+	<!--flex-flow-->
+	
+	<!--flex-container-align-items-->
+	   <div class="flex-container-align-items container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			   <div>4</div>
+	   </div>
+	<!--flex-flow-->
+	
+	<!--flex-align-content-->
+	   <div class="flex-container-align-content container">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+			   <div>4</div>
+	   </div>
+	<!--flex-align-content-->
+</body>
+</html>

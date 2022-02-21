@@ -13,24 +13,21 @@
         width: 0;
     }
     .car{
-        margin-top: 0;
-        width: 700px ;
-        height: 350px;
+        width:calc(1200px/10);
+        height: 59px;
         background: url(img/360_page1_40_sprite_grey.jpg) no-repeat;
+		background-position: -0px -0px;
         margin: 0 auto;
-        -webkit-animation:car 0.5s steps(10) infinite;
-        -mox-animation:car 0.5s steps(10) infinite;
-        -o-animation:car 0.5s steps(10) infinite;
-        animation:car 0.5s steps(10) infinite;
+        animation: car 4s steps(4) infinite;
     }
     @keyframes car{
         from{
             
-            background-position: 0;
+            background-position: -0px -0px;
         }
         to{
             
-            background-position: -7075px;
+            background-position: -1200px;
         }
 
 
