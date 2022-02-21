@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>cw 17</title>
+    </head>
+<style>
+    .bird {
+        height: 150px;
+        width: 150px;
+        top: 100px;
+        background: url("bird.png") no-repeat;
+        margin: 0 auto;
+        -webkit-animation:bird 0.3s steps(4) infinite;
+        -moz-animation:bird 0.3s steps(4) infinite;
+        -o-animation:bird 0.3s steps(4) infinite;
+        animation:bird 0.3s steps(4) infinite;
+    }
+
+    @keyframes bird{
+        from {
+            background-position: 0;
+        }
+        to {
+            background-position: -600px;
+        }
+    }
+</style>
+<body>
+    <div class="bird"></div>
+</body>
+</html>
