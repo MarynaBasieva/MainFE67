@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style>
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				margin: 0;
+			}
+			.grass,
+			.sky,
+			.road {
+				position: relative;
+			}
+			.sky {
+				height: 300px;
+				background: skyblue;
+			}
+			.grass {
+				height: 200px;
+				background: seagreen;
+			}
+			.road {
+				height: 500px;
+				background: dimgray;
+				box-sizing: border-box;
+				border-top: 10px solid grey;
+				border-bottom: 10px solid grey;
+				width: 100%;
+				position: relative;
+			}
+			.lines {
+				box-sizing: border-box;
+				border: 5px dashed #fff;
+				height: 0;
+				width: 100%;
+				position: absolute;
+				top: 45%;
+			}
+			.car {
+				position: absolute;
+				top: -40px;
+				left: 0;
+				width: 250px;
+				animation: drive 3s both infinite linear, jump 0.3s 1.2s ease;
+			}
+			.road:before {
+				content: '';
+				height: 500px;
+				width: 10px;
+				background-color: #fff;
+				position: absolute;
+				left: 240px;
+			}
+
+			.car2 {
+				position: absolute;
+				top: 200px;
+				left: 0;
+				width: 250px;
+				animation: drive 4s both infinite linear;
+			}
+
+			.cloud {
+				position: absolute;
+			}
+			.cloud:nth-child(1) {
+				width: 200px;
+				top: 120px;
+				opacity: 0.5;
+				animation: wind 80s linear infinite reverse;
+			}
+			.cloud:nth-child(2) {
+				width: 300px;
+				top: 0;
+				animation: wind 50s linear infinite reverse;
+			}
+
+			@keyframes drive {
+				0% {
+					transform: translateX(-250px) rotate(0);
+				}
+
+				100% {
+					transform: translateX(2170px) rotate(0deg);
+				}
+			}
+
+			@keyframes wind {
+				from {
+					left: -300px;
+				}
+				to {
+					left: 100%;
+				}
+			}
+			@keyframes jump {
+				0% {
+					top: -40px;
+				}
+				50% {
+					top: -100px;
+				}
+				100% {
+					top: -40px;
+				}
+			}
+		</style>
+		<title>HM18</title>
+	</head>
+	<body>
+		<div class="car_anim">
+			<div class="sky">
+				<img class="cloud" src="img/cloud.png" alt="cloud" />
+				<img class="cloud" src="img/cloud.png" alt="cloud" />
+			</div>
+			<div class="grass"></div>
+			<div class="road">
+				<div class="lines"></div>
+				<img class="car" src="img/bike.png" alt="bike" />
+				<img class="car2" src="img/car.png" alt="car" />
+			</div>
+		</div>
+	</body>
+</html>
