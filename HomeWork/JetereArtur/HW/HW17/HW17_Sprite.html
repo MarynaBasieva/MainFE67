@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRITE</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        width: 0;
+    }
+    .car{
+        margin-top: 0;
+        width: 700px ;
+        height: 350px;
+        background: url(img/360_page1_40_sprite_grey.jpg) no-repeat;
+        margin: 0 auto;
+        -webkit-animation:car 0.5s steps(10) infinite;
+        -mox-animation:car 0.5s steps(10) infinite;
+        -o-animation:car 0.5s steps(10) infinite;
+        animation:car 0.5s steps(10) infinite;
+    }
+    @keyframes car{
+        from{
+            
+            background-position: 0;
+        }
+        to{
+            
+            background-position: -7075px;
+        }
+
+
+</style>
+
+<body>
+    <div class="car">
+    </div>
+    
+    
+</body>
+</html>

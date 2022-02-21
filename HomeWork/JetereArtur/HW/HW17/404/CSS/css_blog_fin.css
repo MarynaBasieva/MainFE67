@@ -385,3 +385,123 @@
         color: #fff;
         transform: scale(1.75) translateZ(50px);
 }
+<>
+    html,
+    body{
+        height: 100%;
+        position: relative;
+        background: no-repeat;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.97) 44%);
+        
+    }
+    body{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 14px;
+        background: no-repeat;
+    }
+    .for_page{
+        min-width: 100%;
+        position: relative;
+    }
+    .page{
+        padding-bottom: 60px;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+    p{
+        margin-bottom: 200px;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+
+/*Header*/
+
+    .header{
+        padding-top: 5px;
+        background: rgb(5,2,51);
+        background: linear-gradient(239deg, rgba(5,2,51,1) 0%, rgba(6,3,20,0.9304096638655462) 50%);
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float:right;
+    }
+    .clear{
+        clear: both;
+    }
+    .header_box1{
+        width: 100px;
+    }
+    .header_box2{
+        width: 700px;
+        align-items: center;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 30px;
+        text-align: center;
+        color: #dfdcd9;
+    }
+    .header_box3{
+        width: 370px;
+    }
+    .header_box3 a{
+        display: block;
+        text-align: right;
+        text-decoration: none;
+        color: #dfdcd9;
+        font-weight: bold;
+        line-height: 22px;
+    }
+    .header_box3 a:hover{
+        text-decoration: underline;
+    }
+
+
+
+/*main*/
+
+    .banner_matrix{
+        background: url("img/bac.gif") no-repeat;
+        background-size: 100%;
+        width: 100%;
+        padding: 200px 0;
+        background-position: center;
+        color: #dfdcd9;
+        
+    }
+
+/*footer*/
+
+    .footer{
+        padding-top: 5px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(239deg, rgba(5,2,51,1) 0%, rgba(6,3,20,0.9304096638655462) 20%);
+    }   
+	.footer .container{
+		width: 435px;
+        align-items: center;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 15px;
+        text-align: center;
+        color: #dfdcd9;
+	}
+    
+
+/*font-family: 'Architects Daughter', cursive;
+font-family: 'Quintessential', cursive;*/
