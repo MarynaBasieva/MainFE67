@@ -1,0 +1,162 @@
+/* font-family: 'Roboto', sans-serif; */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+/* header */
+
+.header {
+	background: #eeeff1;
+	padding-top: 57px;
+}
+
+/* menu */
+
+.nav_menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav_menu ul li a {
+	padding-right: 42px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	color: #34547a;
+	transition: 0.5s;
+}
+.nav_menu ul li a:hover {
+	text-decoration: none;
+	color: #03d5e4;
+}
+.nav_menu ul li:last-child a {
+	padding-right: 0;
+}
+
+/* menu */
+
+/* header */
+
+/* banner */
+.banner {
+	background: #eeeff1;
+	padding-top: 165px;
+	padding-bottom: 146px;
+}
+.banner_img img {
+	margin: 0 auto;
+	display: block;
+}
+.banner_img {
+	padding-top: 20px;
+}
+
+.text_banner h1 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 79px;
+	color: #000000;
+	padding-bottom: 60px;
+	margin-bottom: 0;
+}
+.text_banner p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: normal;
+	color: #727272;
+	padding-bottom: 60px;
+}
+.btn_banner {
+	background: #34547a;
+	display: block;
+	border: none;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	padding: 20px 34px;
+	transition: 0.2s linear;
+}
+.btn_banner:hover {
+	background: #03d5e4;
+}
+
+/* banner */
+
+/* about */
+.about {
+	padding: 100px 0;
+}
+.about h2 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 37px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 50px;
+}
+.about p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: #727272;
+	max-width: 540px;
+	margin: 0 auto;
+}
+/* about */
+
+/* number_projects */
+.number_projects {
+	background: #34547a;
+	padding: 0 25px;
+}
+.text_projects {
+	position: relative;
+	width: 141px;
+	padding: 100px 0;
+}
+.text_projects p {
+	margin: 0;
+	margin-left: 70px;
+}
+
+.text_projects p:first-child {
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 25px;
+	color: #ffffff;
+}
+.text_projects p:last-child {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #ffffff;
+}
+.text_projects p:first-child::before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background: url('../img/project.png') 0 0/100% 100% no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+}
+
+/* number_projects */
