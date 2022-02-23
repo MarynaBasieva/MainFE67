@@ -8,12 +8,17 @@
 	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
 	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
 	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
 	
 	
 	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
 </head>
@@ -24,12 +29,18 @@
 			<header class="header">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-5 col-lg-5 col-md-2 col-sm-12">
-							<a href="/" class="logo">
-								<img src="img/logo.png" alt="" />
-							</a>
+						<div class="col-xl-5 col-lg-4 col-md-12 col-sm-12">
+							<div class="parent_responsive_menu">
+								<a href="/" class="logo">
+									<img src="img/logo.png" alt="" />
+								</a>
+								<div class="responsive_menu">
+									<i class="fas fa-bars"></i>
+								</div>
+							</div>
+							
 						</div>
-						<div class="col-xl-7 col-lg-7 col-md-10 col-sm-12">
+						<div class="col-xl-7 col-lg-8 col-md-12 col-sm-12">
 							<nav class="nav_menu">
 								<ul class="sum-menu">
 									<li class="item-sub-menu">
@@ -56,12 +67,12 @@
 			<section class="banner">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 							<div class="banner_img">
 								<img src="img/img_baner.png" alt="" />
 							</div>
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
 							<div class="text_baner">
 								<h1>Дизайн и верстка</h1>
 								<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -79,6 +90,102 @@
 						<div class="col">
 							<h2>Обо мне</h2>
 							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="video">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="youtube" id="S4-7EVu2HVE"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<a href="img/img1.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img1.jpg" alt="" />
+				</a>
+				<a href="img/img2.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img2.jpg" alt="" />
+				</a>
+				<a href="img/img1.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img1.jpg" alt="" />
+				</a>
+				<a href="img/img2.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img2.jpg" alt="" />
+				</a>
+				
+				<a href="img/img2.jpg" data-fancybox="gallery"  class=" box_galery">
+					<img src="img/img2.jpg" alt="" />
+				</a>
+				
+				<a href="img/img1.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img1.jpg" alt="" />
+				</a>
+				<a href="img/img2.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img2.jpg" alt="" />
+				</a>
+				<a href="img/img1.jpg" data-fancybox="gallery" class=" box_galery">
+					<img src="img/img1.jpg" alt="" />
+				</a>
+			</section>
+			<section class="Slider">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="owl-carousel" id="slider_img">
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/slide.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tab_parent">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+	<ul class="nav" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">1 Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor,</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2 Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor,</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3 Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor,</div>
+</div>
 						</div>
 					</div>
 				</div>

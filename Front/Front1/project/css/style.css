@@ -42,6 +42,9 @@ img{
 		.nav_menu ul li:last-child a{
 			padding-right: 0
 		}
+.responsive_menu{
+	display: none;
+}
   /*menu*/
 /*header*/
 
@@ -112,3 +115,105 @@ img{
 	color: #727272;
 }
 /*about*/
+
+/*video*/
+.video{
+	padding: 100px 0;
+	background:#EEEFF1;
+}
+.youtube {
+	width: 100%;
+	height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+	background-size: cover;
+}
+.youtube .play {
+    background: url(../img/play.png) no-repeat; 
+    background-position: 0 0px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.youtube .play:hover  {
+    background-position: 0 -100px;
+}
+.video iframe{
+	width: 100%;
+	height: 600px;
+}
+/*video*/
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 28px;
+}
+.box_galery{
+	width: 25%;
+	position: relative;
+	display: block;
+    max-height: 360px;
+    overflow: hidden;
+}
+.box_galery:hover:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url("../img/view.png") no-repeat, linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+	background-position: center center;
+}
+/*video*/
+/*slider*/
+.Slider{
+	padding: 100px 0;
+}
+.Slider .owl-dots{
+	display: flex;
+	justify-content: center;
+}
+.Slider .owl-dots .owl-dot.active{
+	background: #03d5e4;
+}
+.Slider .owl-dots .owl-dot{
+	width: 15px;
+	height: 15px;
+	background: #34547A;
+	border-radius: 100px;
+	margin-right: 2px;
+	outline: none;
+}
+/*slider*/
+.tab_parent{
+	background:#EEEFF1;
+	padding: 100px 0;
+}
+.tab_parent ul.nav li a{
+	background: #34547A;
+	color: #fff;
+	display: block;
+	padding: 10px 15px;
+	transition: all 0.6s linear;
+}
+.tab_parent ul.nav li a:hover,
+.tab_parent ul.nav li a.active{
+	background: #03d5e4;
+}
+.tab-content .tab-pane{
+	padding: 20px;
+	border: 1px solid #ccc;
+	background: #fff;
+}

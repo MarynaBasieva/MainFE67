@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
 	
 	jQuery(".fancybox").fancybox();
 	
-	let carousel = jQuery('#carousel_partners');
+	let carousel = jQuery('#slider_img');
 		
 	carousel.owlCarousel({
 		items: 4,
@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
 		loop: true,
 		nav: false,
 		navText: [''],
-		dots: true,
+		dots: false,
 		mouseDrag: true,
 		margin: 30,
 		stagePadding: 0,
@@ -56,7 +56,7 @@ jQuery(document).ready(function () {
 			},
 			1099:{
 				items: 4,
-				dots: true,
+				dots: false,
 				mouseDrag: true
 			}
 		}
