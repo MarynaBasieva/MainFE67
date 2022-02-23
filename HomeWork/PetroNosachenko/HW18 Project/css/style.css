@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*--- фиксация футера внизу экрана----старт-----*/
+html, body {
+    height: 100%;
+}
+div.wrapper-page {
+    min-height: 100%;
+    position: relative;
+}
+div.page {
+    padding-bottom: 200px;/*---на высоту футера----*/
+}
+footer.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*----*/
+    padding: 50px 0;
+    background: gray;
+    /*----*/
+}
+/*---фиксация футера внизу экрана ----финиш-----*/
+/*--------------*/
+
+.header {
+    padding: 57px 0px;
+    background: #EEEFF1;
+}
+
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+ul.list-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+ul.list-menu li.item-list-menu a {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 21px;
+    color: #34547A;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+ul.list-menu li.item-list-menu:last-child a {
+    padding-right: 0%;
+}
+ul.list-menu li.item-list-menu a:hover {
+    text-decoration: underline;
+    color: #4186db;
+    
+}
+/*------------------*/
+.baner {
+    padding: 100px 0 145px 0;
+    margin: 0 auto;
+    background: #EEEFF1;
+}
+.frame-img {
+    padding-top: 30px;
+}
+.frame-img img {
+    margin: 0 auto;
+}
+.text-baner h1 {
+    font-weight: 500;
+    font-size: 48px;
+}
+.text-baner p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #727272; 
+    margin: 60px 0;
+}
+.btn-baner {
+    background: #34547A;
+    color: #fff;
+    padding: 25px 41px;
+    border: transparent;
+    transition: 0.3s linear;
+}
+.btn-baner:hover {
+    background: #3d8beb;
+}
+
+form {
+    padding: 20px;  
+  }
+ 
+  .form-input  {
+      display: block;
+      width: 100%;
+      margin: 20px 0;
+      padding: 12px 10px;
+      border: 1px solid #727272;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #000;
+      outline: none; /*удаляет рамку при клике на input*/
+      resize: none; /*убирает растяжение textarea*/
+  }
+  .btn-form {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    background: #34547A;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.btn-form:hover {
+    background: #3d8beb;
+}
+/*------------------------*/
+.about-me {
+    padding: 100px 0;
+  
+}
+.about-me h2{
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+  
+}
+.about-me p {
+    max-width: 540px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*--------numbers----------*/
+.numbers {
+    background-color:  #34547A;
+    padding: 100px 0;
+    
+}
+.nambers-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.wrapper-nambers-item h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0;
+}
+.wrapper-nambers-item p {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/*---------skills----------*/
+.skills {
+    padding: 100px 0;
+
+}
+.skills-list h2 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+}
+.skills-list p {
+    max-width: 445px;
+    
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #727272;
+    border-bottom: 4px solid #C4C4C4;
+    position: relative;
+}
+
+.skills-list p:after {
+    content: "";
+    position: absolute;
+    max-width: 349px;
+    width: 100%;
+    max-height: 4px;
+    height: 100%;
+    background: #727272;
+    left: 0;
+    bottom: -4px;
+}
+.skill-img {
+    max-width:555px ;
+}
+
