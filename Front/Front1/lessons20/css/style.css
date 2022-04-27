@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,
+body{
+	height: 100%;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+.section{
+	background: #ccc;
+	padding: 100px 0;
+}
