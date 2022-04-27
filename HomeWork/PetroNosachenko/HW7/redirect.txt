@@ -1,5 +1,0 @@
-<ifModule mod_rewrite.c>
-	Redirect 301 /catalog/smartfony_tv_i_elektronika/telefony/smartfon/mobilniy_telefon_zte_blade_v2020_smart_4_64gb_blue /telefony
-	Redirect 301 /catalog/kompyuternaya_tekhnika /catalog
-<ifModule>
-/*имя файла Redirect должно быть -> .htaccess */

@@ -1,7 +1,0 @@
-<ifModule mod_rewrite.c>
-   Redirect 301 /car/VF3MJAHXNMS252304 /model/NEW%203008
-   Redirect 301 /car/VR3FHEHZNMY532833 /car
-   Redirect 301 /car/VF3MJAHXNMS249099 /car
-   Redirect 301 /car/VR3EFYHT2MJ954815 /car
-   Redirect 301 /car/VR3EF9HPAMJ925443 /car
-</ifModule>

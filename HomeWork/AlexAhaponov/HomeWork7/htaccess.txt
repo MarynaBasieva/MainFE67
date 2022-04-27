@@ -1,7 +1,0 @@
-<ifModule mod_rewrite.c>
-   Redirect 301 /computer-videokarty/palit-geforce-rtx-3070-ti-gamingpro-ned307t019p2-1046a          /sr/?q=rtx%203070%20ti
-   Redirect 301 /https://hotline.ua/sr/?q=rtx%203070%20ti      /computer/videokarty/?q=rtx%203070%20ti
-   Redirect 301 /computer/videokarty/?q=rtx%203070%20ti         /computer/videokarty
-   Redirect 301 /computer/videokarty         /computer
-   Redirect 301 /computer     /hotline.ua
-</ifModule>
