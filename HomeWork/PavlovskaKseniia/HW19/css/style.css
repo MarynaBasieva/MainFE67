@@ -262,6 +262,9 @@ meter::-webkit-meter-optimum-value {
     margin: 30px 25px 30px 0;
     border: none;
 }
+.form_q input:focus{
+	outline: none;
+}
 textarea {
     width: 540px;
     height: 175px;

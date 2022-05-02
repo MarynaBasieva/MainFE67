@@ -1,0 +1,259 @@
+/* 1199px 991px 767px 600px 500px*/
+@media (min-width: 1200px) {
+	.for_page .container {
+		max-width: 1105px;
+	}
+	.number_projects .container {
+		max-width: 1091px;
+	}
+	.footer .container {
+		max-width: 1125px;
+	}
+}
+@media (max-width: 1199px) {
+	.video iframe,
+	.youtube {
+		height: 520px;
+	}
+	.number_projects .img {
+		margin-right: 4px;
+	}
+	.slider .owl-carousel .owl-item img {
+		width: auto;
+	}
+}
+@media (max-width: 991px) {
+	.slider {
+		padding: 60px 0;
+	}
+	.video iframe,
+	.youtube {
+		height: 380px;
+	}
+	.video {
+		padding: 60px 0;
+	}
+
+	.responsive_menu {
+		display: block;
+	}
+	.responsive_menu i {
+		color: #34547a;
+		font-size: 35px;
+		cursor: pointer;
+		transition: 0.5s linear;
+	}
+	.responsive_menu i:hover {
+		color: #03d5e4;
+	}
+	.nav_menu {
+		display: none;
+	}
+	.parent_responsive_menu {
+		display: flex;
+		justify-content: space-between;
+	}
+	.banner {
+		padding: 60px 0;
+	}
+	.banner_img {
+		padding-top: 0;
+		margin-bottom: 20px;
+	}
+	.text_banner h1 {
+		line-height: normal;
+		padding-bottom: 10px;
+		margin-bottom: 0;
+	}
+	.text_baner p {
+		padding-bottom: 0;
+		text-align: center;
+	}
+	.about h2 {
+		margin-bottom: 30px;
+	}
+	.btn_banner {
+		margin: 0 auto;
+	}
+	.number_projects {
+		padding: 50px 0;
+	}
+	.number_projects .num_clear > div {
+		margin: 10px 0;
+	}
+	.number_projects .img {
+		margin-right: -70px;
+	}
+	.skill {
+		padding: 60px 0;
+	}
+	.skill .row {
+		flex-direction: column-reverse;
+	}
+	.skill .skill_text {
+		margin-top: 60px;
+	}
+	.skill img {
+		margin: 0 auto;
+	}
+}
+@media (max-width: 767px) {
+	.slider .owl-carousel .owl-item img {
+		margin: 0 auto;
+	}
+	.video iframe,
+	.youtube {
+		height: 286px;
+	}
+	.youtube .play {
+		height: 70px;
+		width: 70px;
+	}
+	.box_gallery {
+		width: 50%;
+	}
+	.youtube .play:hover {
+		background-position: 0 -70px;
+	}
+	.number_projects .img {
+		margin-right: -17px;
+	}
+
+	.skill img {
+		max-width: 520px;
+	}
+	.correction_input {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.order_form input:nth-child(1) {
+		margin-right: 0px;
+	}
+	.order .order_form input {
+		margin-bottom: 20px;
+		margin: 10px auto;
+		width: 500px;
+	}
+	.order .order_form textarea {
+		width: 500px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.order {
+		padding: 60px 0;
+	}
+}
+@media (max-width: 600px) {
+	.order h2 {
+		margin-bottom: 30px;
+	}
+	.order .order_form input {
+		width: 400px;
+	}
+	.order .order_form textarea {
+		width: 400px;
+	}
+
+	.footer .correction_footer_text {
+		width: 200px;
+	}
+	.footer .correction_footer_icon {
+		width: 100px;
+	}
+}
+@media (max-width: 577px) {
+	.video iframe,
+	.youtube {
+		height: 250px;
+	}
+	.num_clear div:nth-child(3) {
+		display: none;
+	}
+	.num_clear div:nth-child(4) {
+		display: none;
+	}
+	.num_clear div:nth-child(5) {
+		display: none;
+	}
+	.num_clear div:nth-child(6) {
+		display: none;
+	}
+	.number_projects .img {
+		margin-right: -300px;
+	}
+	.skill img {
+		max-width: 450px;
+	}
+}
+@media (max-width: 500px) {
+	.about h2 {
+		font-size: 38px;
+	}
+	.text_banner h1 {
+		font-size: 38px;
+	}
+	.video iframe,
+	.youtube {
+		height: 214px;
+	}
+	.youtube .play {
+		height: 50px;
+		width: 50px;
+	}
+	.youtube .play:hover {
+		background-position: 0 -50px;
+	}
+}
+@media (max-width: 470px) {
+	.text_baner h1 {
+		font-size: 42px;
+	}
+	.video iframe,
+	.youtube {
+		height: 214px;
+	}
+	.box_gallery {
+		width: 100%;
+	}
+	.number_projects .img {
+		margin-right: -220px;
+	}
+	.skill img {
+		max-width: 400px;
+	}
+	.skill p::after {
+		width: 415px;
+	}
+	.skill p::before {
+		width: 320px;
+	}
+		.order .order_form input {
+			width: 350px;
+		}
+		
+		.order .order_form textarea {
+			width: 350px;
+		}
+}
+@media (max-width: 350px) {
+	.order .order_form input {
+		width: 270px;
+	}
+	.order .order_form textarea {
+		width: 270px;
+	}
+	.text_banner h1 {
+		font-size: 32px;
+	}
+	.about h2 {
+		font-size: 32px;
+	}
+	.video iframe,
+	.youtube {
+		height: 161px;
+	}
+	.number_projects .img {
+		margin-right: -140px;
+	}
+}

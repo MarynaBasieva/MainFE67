@@ -1,7 +1,0 @@
-User-agent: * 
-Allow: /aptimaze/
-Disallow: /admin/
-Disallow: /avatar/
-Sitemap: https://site.com.ua/sitemap_html.xml
-Sitemap: https://site.com.ua/sitemap_images.xml
-Sitemap: https://site.com.ua/sitemap_video.xml

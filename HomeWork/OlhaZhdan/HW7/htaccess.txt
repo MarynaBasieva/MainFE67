@@ -1,7 +1,0 @@
-<ifModule mod_rewrite.c>
-    Redirect 301 /eclairs/tproduct/142061454-105259176551-nabr-mn-eklerv-8-sht-1-zimov /eclairs
-    Redirect 301 /corporate/tproduct/195205607-989124735570-zefr-15-sht /zefir
-    Redirect 301 /cakes/tproduct/329579721-620165503311-musovii-tort-23 /cakes
-    Redirect 301 /tarts/tproduct/176058670-973825686091-kruasan-migdalevii /tarts
-    Redirect 301 /eclairs/tproduct/142061454-919260350961-nabr-bskvtnih-batonchikv-8-sht /tarts
-</ifModule>
