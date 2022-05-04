@@ -7,6 +7,9 @@ jQuery(document).ready(function () {
 	jQuery(".fancybox").fancybox();
 	
 	let carousel = jQuery('#slider_img');
+	let carousel2 = jQuery('#slider_img2');
+	let carousel3 = jQuery('#slider_img3');
+
 		
 	carousel.owlCarousel({
 		items: 2,
@@ -16,7 +19,7 @@ jQuery(document).ready(function () {
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: false,
+		nav: true,
 		navText: [''],
 		dots: false,
 		mouseDrag: true,
@@ -62,6 +65,117 @@ jQuery(document).ready(function () {
 		}
 	});
 	
+
+	
+	carousel2.owlCarousel({
+		items: 4,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		smartSpeed: 1000,
+		dotsSpeed: 1000,
+		loop: true,
+		nav: false,
+		navText: [''],
+		dots: false,
+		mouseDrag: true,
+		margin: 0,
+		stagePadding: 0,
+		autoWidth: false,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items: 1,
+				dots: true,
+				nav: false,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			479:{
+				items: 2,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			767:{
+				items: 3,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			991:{
+				items: 4,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			1099:{
+				items: 4,
+				dots: false,
+				mouseDrag: true
+			}
+		}
+	});
+
+	
+	carousel3.owlCarousel({
+		items: 1,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		smartSpeed: 1000,
+		dotsSpeed: 1000,
+		loop: true,
+		nav: false,
+		navText: [''],
+		dots: false,
+		mouseDrag: true,
+		margin: 0,
+		stagePadding: 0,
+		autoWidth: false,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items: 1,
+				dots: true,
+				nav: false,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			479:{
+				items: 1,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			767:{
+				items: 1,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			991:{
+				items: 1,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			1099:{
+				items: 1,
+				dots: false,
+				mouseDrag: true
+			}
+		}
+	});
+
 });
 
 'use strict';

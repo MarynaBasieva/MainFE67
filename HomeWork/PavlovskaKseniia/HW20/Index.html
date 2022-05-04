@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>HW20</title>
-        <meta name="viewport" content="width=device-width, intial-scale=1">
         <link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
         <link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
         <link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
@@ -29,12 +28,17 @@
             <header class="header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                            <div class="logo">
-                                <img src="img/logo.png" alt=""> 
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="logo_main">
+                                <div class="logo">
+                                    <img src="img/logo.png" alt=""> 
+                                </div>
+                                <div class="responsive_menu">
+                                    <i class="fas fa-bars"></i>
+                                </div>
                             </div>
                         </div>                        
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <nav class="nav_menu">
                                 <ul class="menu">
                                     <li class="item_menu">
@@ -64,7 +68,7 @@
             <section class="block_1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                        <div class="col-xl-7 col-lg-7 col-md-8 col-sm-12">
                             <h2>I design products</h2>
                             <h3>that delight and inspire people.</h3>
                             <p>Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing startups.</p>
@@ -74,7 +78,7 @@
 
                             <a href="pdf/commands-git.pdf" target="_blank">Download CV </a> <img src="img/arrow.png">
                         </div>
-                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="col-xl-5 col-lg-5 col-md-4 col-sm-12">
                             <img src="img/photo.jpg">
                         </div>
                     </div>
@@ -84,20 +88,22 @@
             <section class="block_2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6">
+                        <div class="col">
                             <p>Trusted by</p>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                            <img src="img/logo1.png">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                            <img src="img/logo2.png">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                            <img src="img/logo3.png">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                            <img src="img/logo4.png">
+                        <div class="owl-carousel" id="slider_img2">
+                            <div class="item_с2">
+                                <img src="img/logo1.png">
+                            </div>
+                            <div class="item_с2">
+                                <img src="img/logo2.png">
+                            </div>
+                            <div class="item_с2">
+                                <img src="img/logo3.png">
+                            </div>
+                            <div class="item_с2">
+                                <img src="img/logo4.png">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,13 +166,15 @@
             <section class="block_4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-4 col-md-12 col-sm-12">
-                            <h5>PROJECTS</h5>
-                            <h4>I bring results.</h4>
-                            <h4>My clients are proof.</h4>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <button class="b4_but">View all projects</button>
+                        <div class="bl_4">
+                            <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12">
+                                <h5>PROJECTS</h5>
+                                <h4>I bring results.</h4>
+                                <h4>My clients are proof.</h4>
+                            </div>
+                            <div class="col-xl-3 col-lg-2 col-md-12 col-sm-12">
+                                <button class="b4_but">View all projects</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -249,15 +257,17 @@
             <section class="block_8">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 bl_8_1">
-                            <img src="img/im1.jpg" alt="">
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 bl_8_2">                            
-                            <img src="img/im2.jpg" alt="">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 bl_8_3">                            
-                            <img src="img/im3.jpg" alt="">
-                            <img src="img/im4.jpg" alt="">  
+                        <div class="gallery">
+                            <div class="gal1">
+                                <img src="img/im1.jpg" alt=""> 
+                            </div>
+                            <div class="gal2">
+                                <img src="img/im2.jpg" alt="">
+                            </div>    
+                            <div class="gal3">               
+                                <img src="img/im3.jpg" alt="">
+                                <img src="img/im4.jpg" alt="">  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -300,35 +310,58 @@
                             <div class="block_9_0">
                                 <img src="img/work.png">
                                 <h5>Work Experience</h5>
+                            </div>                           
+                        
+                            <div class="main_rocket">
+                                <div class="rocket">
+                                    <div class="img_rocket">
+                                        <img src="img/rocket.png">
+                                    </div>
+                                    <div class="text_rocket">
+                                        <h3>SpaceFleet</h3>                     
+                                        <p>Senior Product Designer</p>
+                                    </div>
+                                </div>
+                                <div class="date_rocket">            
+                                    <p>• April 2019 - Current</p>
+                                </div>
+                                <div class="arrow_rocket">
+                                    <a href="#"><img src="img/arrow_up.png"></a>
+                                </div>
                             </div>
-                            
-                        <div class="bl_9">
-                            <img src="img/rocket.png">
-                            <div class="block_9_1">
-                                <h3>SpaceFleet</h3> 
-                                <a href="#"><img src="img/arrow_up.png"></a>
+                            <div class="main_rocket">
+                                <div class="rocket">
+                                    <div class="img_note">
+                                        <img src="img/note.png">
+                                    </div>
+                                    <div class="text_rocket">
+                                        <h3>MusicMash</h3>                     
+                                        <p>Information Architect</p>
+                                    </div>
+                                </div>
+                                <div class="date_rocket">            
+                                    <p>• April 2016 - May 2017</p>
+                                </div>
+                                <div class="arrow_rocket">
+                                    <a href="#"><img src="img/arrow_up.png"></a>
+                                </div>
                             </div>
-                            <div class="block_9_2">
-                                <p>Senior Product Designer</p>
-                                <p>• April 2019 - Current</p>
-                            </div>
-                        </div>
-
-                            <div class="block_9_1">
-                                <h3>MusicMash</h3> 
-                                <a href="#"><img src="img/arrow_up.png"></a>
-                            </div>
-                            <div class="block_9_2">
-                                <p>Information Architect</p>
-                                <p>• April 2016 - May 2017</p>
-                            </div>
-                            <div class="block_9_1">
-                                <h3>Kingdom</h3> 
-                                <a href="#"><img src="img/arrow_up.png"></a> 
-                            </div>
-                            <div class="block_9_2">
-                                <p>UI Designer</p>
-                                <p>• April 2016 - May 2017</p>
+                            <div class="main_rocket">
+                                <div class="rocket">
+                                    <div class="img_king">
+                                        <img src="img/king.png">
+                                    </div>
+                                    <div class="text_rocket">
+                                        <h3>Kingdom</h3>                     
+                                        <p>UI Designer</p>
+                                    </div>
+                                </div>
+                                <div class="date_rocket">            
+                                    <p>• April 2016 - May 2017</p>
+                                </div>
+                                <div class="arrow_rocket">
+                                    <a href="#"><img src="img/arrow_up.png"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -342,6 +375,34 @@
                             <h3>Testimonials</h3>
                             <h2>Word on the street</h2>
                         </div>
+
+
+                        <div class="owl-carousel" id="slider_img3">
+                            <div class="item_с3">
+                                <div class="c3_photo">                                    
+                                    <img src="img/jade.jpg">                                
+                                </div>
+                                <div class="c3_feedback">
+                                    <img src="img/decor.png">
+                                    <h4>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved complex problems with brilliant design.</h4>
+                                    <h6>John Frankin</h6>
+                                    <p>Founder, Double Bunch</p>
+                                </div>
+                            </div>
+                            <div class="item_с3">
+                                <div class="c3_photo">                                    
+                                    <img src="img/jade.jpg">                                
+                                </div>
+                                <div class="c3_feedback">
+                                    <img src="img/decor.png">
+                                    <h4>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved complex problems with brilliant design.</h4>
+                                    <h6>John Frankin</h6>
+                                    <p>Founder, Double Bunch</p>
+                                </div>
+                            </div>
+                        </div>
+
+<!-- 
                         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
                             <img src="img/jade.jpg" alt="">
                         </div>
@@ -350,7 +411,7 @@
                             <h4>Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved complex problems with brilliant design.</h4>
                             <h6>John Frankin</h6>
                             <p>Founder, Double Bunch</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -498,17 +559,17 @@
                         <p>4353 Delaware Avenue, San Francisco, USA</p>
                         <img src="img/mail.png"> <a href="mailto:hi@thefolio.com" class="mail">hi@thefolio.com</a>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 ft_bl">
                         <a href="/">About</a>
                         <a href="/">Contact</a>
                         <a href="/">Dribbble</a>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 ft_bl">
                         <a href="/">Services</a>
                         <a href="/">Blog</a>
                         <a href="/">Instagram</a>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 ft_bl">
                         <a href="/">Experience</a>
                         <a href="/">Projects</a>
                         <a href="/">Twitter</a>

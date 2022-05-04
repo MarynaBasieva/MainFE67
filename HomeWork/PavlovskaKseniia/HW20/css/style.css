@@ -44,7 +44,9 @@ img {
         color: #FF8A56;
         text-decoration: none;
     }
-
+.responsive_menu {
+    display: none;
+}
 /*header*/
 
 /*block 1*/
@@ -139,6 +141,10 @@ img {
     text-align: center;
     padding-bottom: 45px;
 }
+.item_с2 {
+    max-width: 100%;
+    margin: 0 50px 0 50px;
+}
 /*block 2*/
 
 .block_2_1 {
@@ -191,6 +197,7 @@ img {
 /*block 4*/
 .block_4 {
     padding-top: 150px;
+    width: 100%;
 }
 .block_4 h5 {
     font-size: 22px;
@@ -218,13 +225,17 @@ img {
         background: #FF8A56;
     }
 .bl_4 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 /*block 4*/
 
 /*block 5*/
 .block_5 {
     padding-left: 110px;
-}
+    padding-top: 70px;
+}    
 .owl-carousel .item {
     object-fit: cover;
     object-position: right top;
@@ -242,11 +253,13 @@ img {
     text-transform: uppercase;    
     color: #3C46FF;
     padding-bottom: 17px;
+    margin-bottom: 0;
 }
 .carousel h4 {
     font-size: 24px;
     line-height: 26px;   
     padding-bottom: 22px; 
+    margin-bottom: 0;
 }
 .carousel a {    
     font-size: 18px;
@@ -262,7 +275,8 @@ img {
 /*block 6*/
 .block_6 {
     background: #000;
-    padding-top: 42px;
+    padding-top: 242px;
+    margin-top: -187px;
 }
 .block_6 h5 {    
     font-size: 22px;
@@ -334,6 +348,7 @@ img {
     font-size: 22px;
     line-height: 40px;
     color: #666666;
+    text-align: justify;
 }
 /*block 7*/
 
@@ -341,16 +356,20 @@ img {
 .block_8 {
     padding-top: 110px;
 }
-.bl_8_1 {
-    width: 100%;
-    padding: 0;
+.block_8 .gallery {
+    display: flex;    
 }
-.bl_8_2 {   
-    overflow: hidden;
+.gallery img {    
+    margin-bottom: 20px;
+    padding-right: 16px;    
 }
-.bl_8_3 img {
-    margin-bottom: 15px;
-    padding: 0;
+.gal1 {
+    height: 626px;
+    width: 59%;
+} 
+.gal2 {
+    height: 626px;
+    width: 87%;
 }
 /*block 8*/
 
@@ -374,14 +393,11 @@ img {
     display: flex;
     justify-content: space-between;
 }
-.block_9_1 a img, {    
-    height: 100%;
-}
 .block_9_2 {
     padding-right: 60px;
 }
 .block_9_1 {
-    padding-top: 85px;
+    padding-top: 70px;
 }
 .block_9_1 h3 {
     font-size: 24px;
@@ -397,9 +413,81 @@ color: rgba(0, 0, 0, 0.6);
 .block_9_2:nth-child(7) {
     padding-bottom: 150px;
 }
+.bl_9 {
+    display: flex;
+}
+
+.rocket {
+    display: flex;
+    justify-content: space-between;
+}
+.main_rocket {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.text_rocket h3 {    
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+.text_rocket p {    
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.date_rocket {
+    padding-top: 33px;
+}
+.text_rocket {
+    padding-left: 20px;
+}
+.img_rocket {
+    background-color: #FFB4E9;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.img_rocket img {
+    position: relative;
+    top: 13px;
+    left: 15px;
+}
+.img_note {
+    background-color: #A5BEFF
+    ;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.img_note img {
+    position: relative;
+    top: 14px;
+    left: 17px;
+}
+.img_king {
+    background-color: #FFC960;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.img_king img {
+    position: relative;
+    top: 13px;
+    left: 14px;
+}
+.arrow_rocket {
+    width: 20px;
+}
+
 /*block 9*/
 
 /*block 10*/
+.block_10 {
+    padding-bottom: 160px;
+    padding-top: 76px;
+}
 .block_10 h3 {
     font-size: 22px;
     line-height: 22px;
@@ -413,34 +501,40 @@ color: rgba(0, 0, 0, 0.6);
     line-height: 59px;
     letter-spacing: 1px;
     margin-bottom: 0;
+    font-weight: bold;
 }
-.block_10 h4 {    
+.c3_feedback h4 {    
     font-size: 36px;
     line-height: 47px;
     padding-top: 34px;
     margin-bottom: 0;
     font-weight: bold;
 }
-.block_10 h6 {    
+.c3_feedback h6 {    
     font-size: 20px;
     line-height: 20px;
     font-weight: bold;
     margin-bottom: 0;
     padding-top: 110px;
 }
-.block_10 img {
+.c3_feedback img {
     padding-top: 26px;
     margin-bottom: 0;
+    max-width: 44px;
 }
-.block_10 p {    
+.c3_feedback p {    
     margin-bottom: 0;
 }
-.block_10 {
-    padding-bottom: 160px;
-    padding-top: 76px;
+.c3_feedback {
+    max-width: 585px;
+    padding-top: 90px;
 }
-.bl_10 {
-    padding-left: 140px;
+.block_10 .item_с3 {
+    display: flex;
+}
+.c3_photo {
+    margin-right: 150px;
+    padding-top: 85px;
 }
 /*block 10*/
 
@@ -562,3 +656,5 @@ color: rgba(0, 0, 0, 0.6);
     padding-bottom: 0;
 }
 /*footer*/
+
+
