@@ -10,9 +10,9 @@ jQuery(document).ready(function () {
 		
 	carousel.owlCarousel({
 		items: 4,
-		autoplay: false,
-		autoplayTimeout: 6000,
-		autoplayHoverPause: false,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
