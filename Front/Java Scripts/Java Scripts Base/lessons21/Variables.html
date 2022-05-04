@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Variables</title>
+</head>
+<script>
+	let  a = 5;
+         a = 6;
+	let  b = 7;
+	let x = a+b;
+	console.log(a+b);
+	console.log(x);
+	
+	let text;
+	text = "Text Hello";
+	console.log(text);
+	
+	//Оголошуємо декілька зміні
+	let user = "Nastya",
+		age = 30,
+		lastName = "Petrova";
+	
+	// Переназначення
+	let mess;
+	mess = "One";
+	mess = "Two";
+	console.log(mess);
+	
+	//Помилки оголошення зміних в let
+	let mess2 = "Hello";
+	//let mess2 = "Hello Hello";
+	console.log(mess2);
+	
+	//не можна називати зміні
+	/*let $ = 5;
+	let 123a = 6;
+	let - _;
+	let test-test;
+	let Імя;*/
+	//console.log($);
+	
+	
+	//Правильні зміні
+	let userName;
+	let test123;
+	let test_test2;
+	
+	//Константа
+	/*const myDate = "10.11.2013";
+	      myDate = "10.11.2015";
+	console.log(myDate);*/
+	
+	let d = "5",
+		f = "5",
+		g = d+f;
+	console.log(g);
+	
+	// зміна глобальна
+	var one = function foo (){
+		
+	}
+	
+	function foo2 (){
+		var two;// локальна зміна
+	}
+
+	
+	
+</script>
+<body>
+</body>
+</html>

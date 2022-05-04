@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operators</title>
+</head>
+<script>
+	//оператор числа називається(операнд або аргумент)
+	 let y=1;
+	y = -y;
+	console.log(y);
+	
+	
+	//бінарний коли застосовуємо дл двух операндив або аргументу
+	let a =3, b=2;
+	console.log(a-b);// коли використовується мінус на два числа до він стає бінарним, а чісло стає операндом
+	
+	console.log(5%2);//обчислення залишка
+	
+	//Степінь
+	console.log(2 ** 3);//8(2*2*2, 3 раза)
+	console.log(4 ** (1/2));//2
+	
+	//складення строк  + (бінарний -)
+	let str = "cat " + "is my frands" + "Your name Kitti";
+	console.log(str);
+	
+	console.log("1" + 2);//12
+	console.log(2 + "21");//221
+	console.log(2+3+"1");//2+3=5 + string 1 = 51
+	console.log("2"+2+2);//222
+	console.log(+"2"+2+2);// 2+2+2=6
+	console.log(Number("2")+2+2);// 2+2+2=6
+	
+	//унарний +
+	let x= 1;
+	console.log(+x);//1
+	
+	let cats = "5";
+	let mouses = "3";
+	
+	console.log(cats+mouses);//53
+	console.log(+cats + +mouses);//8
+	
+	
+	let num = 2*2+2;
+	console.log(num);//6
+	
+	// Побитові оператори (колі прісвоєння використовує арихметику)
+	let numNew = 4;
+	    numNew += 2;
+	    numNew += 4;
+	console.log(numNew);
+	
+	let numNew1 = "cat ";
+	    numNew1 += "mouse ";
+	    numNew1 += "dog";
+	console.log(numNew1);
+
+	
+	//Інкремент ++ / Декремент --
+	//Інкремент збільшує зміну числа на один більше
+	 let count = 2;
+	 count ++;
+	 console.log(count);
+	
+	//Декремент зменшує зміну числа на один менше
+	  let count2 = 2;
+	  count2 --;
+	  console.log(count2);\
+	
+</script>
+<body>
+</body>
+</html>
