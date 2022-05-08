@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Console</title>
+</head>
+<script>
+	console.log("Hello Hello");//строкові кавички використовувати (''), ("");
+	console.log(2*2);// числові значеннями без кавичек
+	console.log("2*2");//буде строковим значенням
+	console.dir(document.location);//console.dir(object);
+	console.info("console, на приклад");
+	
+	function test(x,y){
+		console.info("test('+x+', '+y+')");
+		return x+y;
+	}
+	test(1,1);
+	
+	console.assert('assert');
+	console.log(false, true);
+	console.warn("Warning");
+	console.error("This is the error");
+</script>
+<body>
+</body>
+</html>
