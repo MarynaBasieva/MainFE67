@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Method Number</title>
+</head>
+<script>
+	
+	//Method toString  - вертає число як строку
+	let num = 123;
+	//num.toString();
+	//(123).toString();
+	(100+23).toString();
+	console.log(num)
+	
+	//Method toExponential() - вертає строку с заокругленим числом
+	 let exp = 8.656;
+	 let resultExp = exp.toExponential(2);//8.66e+0
+	 console.log(resultExp);
+	
+	
+	// Method toFixed
+	let fix = 8.565;
+	//let result = fix.toFixed(0);//округлюємо
+	let result = fix.toFixed(2);//получить два знака после запятой
+	console.log(result);
+	
+	//Method ValueOf()
+	let ofVal = 123;
+	let resultOfVal = ofVal.valueOf();
+	console.log(resultOfVal);
+	
+	//Method Number(), parseInt(), parseFloat()
+	Number(true);//1
+	Number("5");//5
+	Number(" 10");//10
+	Number("10 ");//10
+	Number("10 20");//NaN
+	Number("Text");//NaN
+	
+	let text = "10";
+    let res = Number(text);
+	console.log(res + 10);
+	
+	//Method parseInt()
+	parseInt("10");//10
+	parseInt('10.33');//10
+	parseInt('10 20 30');//10
+	parseInt('10 text');//10
+	parseInt('text 10');//NaN
+	
+	//Method parseFloat()
+	parseFloat("10");//10
+	parseFloat('10.33');//10.33
+	parseFloat('10 20 30');//10
+	parseFloat('10 text');//10
+	parseFloat('text 10');//NaN
+	
+</script>
+<body>
+</body>
+</html>

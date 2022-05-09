@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>If Else</title>
+</head>
+<script>
+	/*if(параметр, умова){
+		умова буде завжди true;
+	}*/
+	
+	/*let number = 5;
+	let number2 = 2;
+	if(number > number2){
+		console.log("Yes");
+	}*/
+	
+	/*let year = prompt("В якому році ти родився?", "");
+	if(year == 1999){
+		alert("Yes");
+		alert("Yes Yes")
+	}*/
+	
+	/*let year = prompt("Скільки тобі років", "");
+	if(year >= 18){
+		alert("Yes");
+	}else{
+		alert("No");
+	}*/
+	
+	/*let year = prompt("Тобі є 18 років", "");
+	if(year < 18){
+		alert("Тобі рано немає 18 років");
+	}else if(year >=60){
+		alert("Підходить, але ви застарий");
+	}else{
+		alert("Правильно тобі є 18 років");
+	}*/
+	
+	//let num = ymova ? znacheny1 : znacheny2;
+	
+	let dayNumber = new Date().getDay();
+	
+  let day = (dayNumber === 0) ? 'Неділя':
+			(dayNumber === 1) ? 'Понеділок':
+			(dayNumber === 2) ? 'Вівторок':
+			(dayNumber === 3) ? 'Середа':
+			(dayNumber === 4) ? 'Четверг':
+			(dayNumber === 5) ? 'Пятніця':
+			(dayNumber === 6) ? 'Субота': 'немає такого дня';
+ console.log('To Day' + ":" + day.toUpperCase() + '.');
+</script>
+<body>
+</body>
+</html>

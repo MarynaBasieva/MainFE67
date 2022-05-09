@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerHTML</title>
+</head>
+
+<body>
+  <div>
+	<div id="test">Text1</div>
+	<div class="test2">Text2</div>
+	<div class="parent">Text3</div>
+  </div>
+</body>
+	<script>
+		let test = document.getElementById("test");
+		test.innerHTML="You Win";
+		
+		let test2 = document.querySelector('.test2');
+		test2.innerHTML += "<div class='name'>I am new tags</div>";
+		
+		let test3 = document.querySelector('.parent');
+		test3.innerHTML = "<div><b>Hello<br>Hello</b></div>";
+	</script>
+</html>
