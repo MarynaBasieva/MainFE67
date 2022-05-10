@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>hw22</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<meta content='width' name='MobileOptimized'/>
+	<meta content='yes' name='apple-mobile-web-app-capable'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="for_page">
+		<main class="page">
+			<div class="flag1" style=" display: flex ; flex-direction: row;">
+				<div class="france1"></div>
+				<div class="france2"></div>
+				<div class="france3"></div>
+			</div>
+			<br>
+			<br>
+			<div class="flag2" style=" display: flex ; flex-direction: row; border: solid 1px black; width: 192px;">
+				<div class="fin-1">
+					<div class="fin11"></div>
+					<div class="fin21"></div>
+					<div class="fin31"></div>
+				</div>
+				<div class="fin-2" >
+					<div class="fin12"></div>
+					<div class="fin22"></div>
+					<div class="fin32"></div>
+				</div>
+				<div class="fin-2" >
+					<div class="fin13"></div>
+					<div class="fin23"></div>
+					<div class="fin33"></div>
+				</div>		
+			</div>
+			<br>
+
+
+	<div id="name" style="border: solid 1px black ; height:50px; width: 100px;">текст</div>
+	<div id="age" style="border: solid 1px black ; height:50px; width: 100px;">текст</div>
+	<div id="work" style="border: solid 1px black ; height:50px; width: 100px;">текст</div>
+
+
+		</main>
+      	<footer>
+     	</footer>
+    </div>
+  </body>
+
+<script>
+																
+let france1 = document.querySelector('.france1');
+france1.style.background="blue";
+france1.style.width="100px";
+france1.style.height="200px";
+let france2 = document.querySelector('.france2');
+france2.style.background="white";
+france2.style.width="100px";
+france2.style.height="200px";
+let france3 = document.querySelector('.france3');
+france3.style.background="red";
+france3.style.width="100px";
+france3.style.height="200px";
+
+let fin11 = document.querySelector('.fin11');
+fin11.style.background="white";
+fin11.style.width="50px";
+fin11.style.height="30px";
+let fin21 = document.querySelector('.fin21');
+fin21.style.background="blue";
+fin21.style.width="50px";
+fin21.style.height="30px";
+let fin31 = document.querySelector('.fin31');
+fin31.style.background="white";
+fin31.style.width="50px";
+fin31.style.height="30px";
+
+let fin12 = document.querySelector('.fin12');
+fin12.style.background="blue";
+fin12.style.width="40px";
+fin12.style.height="30px";
+let fin22 = document.querySelector('.fin22');
+fin22.style.background="blue";
+fin22.style.width="40px";
+fin22.style.height="30px";
+let fin32 = document.querySelector('.fin32');
+fin32.style.background="blue";
+fin32.style.width="40px";
+fin32.style.height="30px";
+
+let fin13 = document.querySelector('.fin13');
+fin13.style.background="white";
+fin13.style.width="100px";
+fin13.style.height="30px";
+let fin23 = document.querySelector('.fin23');
+fin23.style.background="blue";
+fin23.style.width="100px";
+fin23.style.height="30px";
+let fin33 = document.querySelector('.fin33');
+fin33.style.background="white";
+fin33.style.width="100px";
+fin33.style.height="30px";
+
+let name = document.getElementById("name");
+name.innerHTML="Імя:";
+name.style.cssText="color:red; font-weight:bold";
+
+let age = document.getElementById("age");
+age.innerHTML="Вік:";
+age.style.cssText="color:orange; font-weight:bold; font-size:30px";
+let work = document.getElementById("work");
+work.innerHTML="Місто роботи:";
+work.style.cssText="color:blue; font-weight:bold";
+
+
+
+  </script>
+
+
+</html>

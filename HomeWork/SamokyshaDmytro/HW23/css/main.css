@@ -1,0 +1,441 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+.for-page {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.col {
+  padding: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+h1 {
+  margin: 0 !important;
+}
+h2 {
+  margin: 0 !important;
+}
+h4 {
+  margin: 0 !important;
+}
+
+/* SECTION-1 */
+.section-1 {
+  height: 81px;
+}
+.logo {
+  padding-top: 41px;
+  padding-bottom: 13px;
+}
+.nav {
+  padding-top: 36px;
+  padding-bottom: 12px;
+}
+.nav-link{
+
+  color: #000000;
+  transition: all 0.5s;
+}
+
+.nav-link:hover{
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+background-position-x: right;
+background-position-y: center;
+transition: all 0.5s;
+}
+
+.nav-item {
+font-family: "Roboto";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+}
+
+
+
+
+/* SECTION-1 */
+
+
+/* SECTION-2 */
+
+.section-2-h1 {
+  padding-top: 117px;
+}
+
+.section-2-h1 h1 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 82px;
+letter-spacing: 2px;
+color: #FF8A56;
+}
+
+.section-2-h1-text-p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.section-2-text {
+  padding-top: 27px;
+}
+.section-2-text-p {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 33px;
+color: #666666;
+}
+
+.section-2-btns {
+  padding-top: 38px;
+}
+
+.section-2-link{
+text-decoration: none;
+padding: 17px 30px 23px 30px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+color: #000000;
+transition: all 0.7s;
+}
+
+.section-2-link:hover{
+  text-decoration: none;
+  background-color: #000000;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+color: #FFFFFF;
+transition: all 0.7s;
+}
+
+.face {
+  padding-top: 70px;
+}
+
+/* SECTION-2 */
+
+
+/* SECTION-3 */
+
+.section-3 {
+  max-width: 862px;
+  margin: 0 auto;
+}
+
+.section-3-p {
+  text-align: center;
+  padding-top: 202px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+color: #000000;
+margin: 0;
+}
+
+.slider {
+  padding-top: 45px;
+
+}
+
+.item {
+  width: 141px; 
+  height: 31px;
+
+}
+
+
+
+
+/* SECTION-3 */
+
+
+
+/* SECTION-4 */
+
+.section-4 {
+  padding-top: 156px;
+
+}
+.section-4 h4{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 4px;
+text-transform: uppercase;
+color: #FF5E69;
+}
+
+.section-4 h2{
+  padding-top: 16px;
+  padding-left: 165px;
+  padding-right: 165px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+/* SECTION-4 */
+
+/* SECTION-5 */
+.section-5 {
+  padding-top: 115px;
+  max-width: 1098px;
+  margin: 0 auto;
+}
+
+.section-5-p-1 {
+  padding-top: 39px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 26px;
+color: #000000;
+}
+
+.section-5-p-2 {
+  padding-top: 25px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: #666666;
+}
+
+.section-5-ul {
+  padding-top: 21px;
+  padding-bottom: 100px;
+}
+
+.s5-item {
+padding-bottom: 10px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 28px;
+color: #000000;
+}
+/* SECTION-5 */
+
+
+/* SECTION-6 */
+.section-6 {
+
+  padding-top: 90px;
+}
+
+.section-6-title{
+  padding-top: 76px;
+}
+.section-6-title p{
+  margin: 0;
+}
+
+.section-6-title-1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #B16CEA;
+}
+
+.section-6-title-2 {
+  padding-top: 22px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.sect-6-btn-area {
+  padding-top: 133px;
+}
+
+.section-6-btn {
+
+width: 201px;
+height: 58px;
+background-color: #000000;
+
+}
+
+
+#sect-6-link{  
+text-decoration: none;
+padding: 17px 30px 23px 30px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+color: #FFFFFF;
+display: block;
+text-align: center;
+transition: all 0.7s;
+}
+
+#sect-6-link:hover{  
+  color: #000000;
+  background-color: #FFFFFF;
+  transition: all 0.7s;
+}
+
+/* SECTION-6 */
+
+
+/* SECTION-7 */
+
+.section-7 {
+  padding-top: 67px;
+  padding-bottom: 80px;
+
+}
+
+
+
+
+.s7slide-text1 {
+  padding-top: 35px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 14px;
+letter-spacing: 4px;
+text-transform: uppercase;
+color: #3C46FF;
+padding-left: 32px;
+}
+
+.s7slide-text2 {
+padding-top: 15px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 26px;
+color: #000000;
+padding-left: 32px;
+}
+
+.s7slide-text3 {
+  display: flex;
+padding-top: 21px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+color: #000000;
+padding-left: 32px;
+padding-bottom: 32px;
+}
+
+.s7arr {
+position: relative;
+width: 15px;
+height: 15px;
+border-radius: 0px;
+}
+
+.s7slide-text3 a{
+  text-decoration: none;
+  color: #000;
+  padding-right: 10px;
+  transition: all 1s
+}
+.s7slide-text3 a:hover{
+  text-decoration: none;
+  color: #ff0000;
+  padding-right: 30px;
+  transition: all 1s;
+}
+
+.s7textblock {
+  background-color: #FFFFFF;
+}
+
+/* SECTION-7 */
+
+
+/* SECTION-8 */
+
+.section-8 {
+  background: #000000;
+  padding-top: 276px;
+}
+
+/* SECTION-8 */
+
+/*______________FOOTER__________________________*/
+
+footer {
+  left: 0;
+  bottom: 0;
+  /* width: 100%; */
+
+}
+
