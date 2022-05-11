@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="flag1"></div>
+	<div class="flag2"></div>
+	<div class="flag3"></div>
+	<div class="flex1">
+		<div class="flagflex1"></div>
+		<div class="flagflex2"></div>
+		<div class="flagflex3"></div>
+	</div>
+	<div class="name"></div>
+	<div class="age"></div>
+	<div class="work"></div>
+</body>
+<script>
+																
+let flag1 = document.querySelector('.flag1');
+flag1.style.background="red";
+flag1.style.width="400px";
+flag1.style.height="100px";
+let flag2 = document.querySelector('.flag2');
+flag2.style.background="white";
+flag2.style.width="400px";
+flag2.style.height="100px";
+let flag3 = document.querySelector('.flag3');
+flag3.style.background="green";
+flag3.style.width="400px";
+flag3.style.height="100px";
+
+
+let flex1 = document.querySelector('.flex1');
+flex1.style.display='flex'
+flex1.style.margin='5px'
+let flagflex1 = document.querySelector('.flagflex1');
+flagflex1.style.background="blue";
+flagflex1.style.width="100px";
+flagflex1.style.height="300px";
+let flagflex2 = document.querySelector('.flagflex2');
+flagflex2.style.background="yellow";
+flagflex2.style.width="100px";
+flagflex2.style.height="300px";
+let flagflex3 = document.querySelector('.flagflex3');
+flagflex3.style.background="red";
+flagflex3.style.width="100px";
+flagflex3.style.height="300px";
+
+
+let name = document.querySelector(".name");
+name.innerHTML="Ім`я:";
+name.style.cssText="color:blue; font-weight:bold";
+
+let age = document.querySelector(".age");
+age.innerHTML="Вік:";
+age.style.cssText="color:green; font-weight:bold; font-size:30px";
+let work = document.querySelector(".work");
+work.innerHTML="Місце роботи:";
+work.style.cssText="color:orange; font-weight:bold";
+
+
+
+  </script>
+</html>

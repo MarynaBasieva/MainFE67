@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+	<div class="box1"></div>
+</body>
+<script>
+		// let day	=  if (dayNumber === 0){'Неділя'} 
+		// 	else if (dayNumber === 1) {'Понеділок'} 
+		// 	else if (dayNumber === 2) {'Вівторок'} 
+		// 	else if (dayNumber === 3) {'Середа'}
+		// 	else if (dayNumber === 4) {'Четверг'} 
+		// 	else if (dayNumber === 5) {'Пятниця'} 
+		// 	else if (dayNumber === 6) {'Субота'}  else {'Немає такого дня'};
+
+let dayNumber = new Date().getDay();
+
+	let day = (dayNumber === 0) ? "Неділя":
+	(dayNumber === 1) ? "Понеділок":
+	(dayNumber === 2) ? "Вівторок":
+	(dayNumber === 3) ? "Середа":
+	(dayNumber === 4) ? "Четвер":
+	(dayNumber === 5) ? "Пятниця":
+	(dayNumber === 6) ? "Субота": "немає такого дня";
+let box1 = document.querySelector('.box1');
+box1.innerHTML =  'Сьогодні ' + day.toUpperCase();
+</script>
+</html>
