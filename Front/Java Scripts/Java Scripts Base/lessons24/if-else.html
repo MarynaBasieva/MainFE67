@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>if else</title>
+</head>
+<style>
+	.parent{
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	.parent h2{
+		font-size: 30px;
+		color: #0B0B0B;
+		margin-bottom: 20px;
+		font-family: 'sans-serif';
+	}
+	form label{
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 5px;
+		display: block;
+	}
+	form input{
+		max-width: 300px;
+		width: 100%;
+		padding: 5px;
+		border: solid 1px #6c6c6c;
+		display: block;
+		font-size: 14px;
+	}
+	.buttonForm{
+		padding: 10px 0;
+		background: #138FDE;
+		color: #fff;
+		text-align: center;
+		display: block;
+		border: none;
+		cursor: pointer;
+		transition: 0.3s;
+		margin-top: 15px;
+		width: 120px;
+		border-radius: 5px;
+		
+	}
+	.buttonForm:hover{
+		background: #123F72;
+	}
+	.resault{
+		margin-top: 40px;
+		font-weight: bold;
+		color: #138FDE;
+	}
+</style>
+<body>
+	<div class="parent">
+		<h2>Дізнатися Число</h2>
+		<form>
+			<label>Ведіть число</label>
+			<input type="text" class="inputName" value="10"/>
+			<button onclick="funResualt()" class="buttonForm">Дізнатися</button>
+		</form>
+		 <div id="resault"></div>
+	</div>
+</body>
+	<script>
+		
+		let inputName = document.querySelector('.inputName').value;
+		let	resault = document.getElementById('resault');
+		inputName = Number(inputName);
+		
+		function funResualt(){
+			if(inputName == 10){
+				resault.innerHTML +="Число дорівнює 10";
+			}else if(inputName < 10){
+				resault.innerHTML +="Число меньше 10";
+			}else{
+				resault.innerHTML +="Число більше 10";
+			}
+		}
+		
+	/*	let buttons = document.querySelector('.buttonForm');
+		buttons.addEventListener('click',funResualt);*/
+		
+		
+	</script>
+</html>
