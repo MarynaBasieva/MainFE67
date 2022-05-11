@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+    
+<style>
+</style>
+
+<body>
+    <div class="block1">
+        Columbia
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        Ukraine
+        <div id="four"></div>
+        <div id="five"></div>
+    </div>
+    <div>
+        <div id="name">name</div>
+        <div class="age">age</div>
+        <div class="job">job</div>
+    </div>
+</body>
+
+<script>
+    let elem = document.getElementById("one");
+    elem.style.background="orange";
+    elem.style.width="500px";
+    elem.style.height="100px";
+    
+    let elem2 = document.getElementById("two");
+    elem2.style.background="blue";
+    elem2.style.width="500px";
+    elem2.style.height="50px";
+
+    let elem3 = document.getElementById("three");
+    elem3.style.background="red";
+    elem3.style.width="500px";
+    elem3.style.height="50px";
+    
+    
+    let elem4 = document.getElementById("four");
+    elem4.style.background="blue";
+    elem4.style.width="500px";
+    elem4.style.height="100px";
+    
+    let elem5 = document.getElementById("five");
+    elem5.style.background="yellow";
+    elem5.style.width="500px";
+    elem5.style.height="100px";
+
+
+    let name = document.getElementById("name");
+    name.innerHTML = "<div><b>My name is Nik</b></div>";
+    
+    let age = document.querySelector('.age');
+    age.innerHTML += "<div class='age2'><b>23</b></div>";
+
+    let job = document.querySelector('.job');
+    job.innerHTML = "<div><b>Limassol</b></div>";
+
+
+
+        
+    let dayNumber = new Date().getDay();
+    let day = (dayNumber === 0) ? 'Sunday':
+              (dayNumber === 1) ? 'Monday':
+              (dayNumber === 2) ? 'Tuesday':
+              (dayNumber === 3) ? 'Wednesday':
+              (dayNumber === 4) ? 'Thuesday':
+              (dayNumber === 5) ? 'Friday':
+              (dayNumber === 6) ? 'Saturday': 'I dont undestand you';
+    
+if (dayNumber == 0) {
+        console.log('Today is' + " " +"Sunday");
+} else if (dayNumber == 1) {
+        console.log('Today is' + " " +"Monday");
+} else if (dayNumber == 2) {
+        console.log('Today is' + " " +"Tuesday");
+} else if (dayNumber == 3) {
+        console.log('Today is' + " " +"Wednesday");
+}else if (dayNumber == 4) {
+        console.log('Today is' + " " +"Thuesday");
+}else if (dayNumber == 5) {
+        console.log('Today is' + " " +"Friday");
+}else if (dayNumber == 6){
+        console.log('Today is' + " " +"Saturday");
+}else if (dayNumber == 7) {
+        console.log("I dont undestand you");
+}else { 
+        console.log("I dont undestand you");
+}
+</script>  
+</html>
