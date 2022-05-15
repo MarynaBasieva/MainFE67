@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For in of</title>
+</head>
+<script>
+	//for  цикл
+	//є три способа використання for
+	console.log("===For===")
+	for(let i=0; i<=5; i++){
+		//console.log(i);//<= 0 1 2 3 4 5 || < 0 1 2 3 4
+		//if(i==3){
+			//continue;
+			//break;
+		//}
+		//data[i];
+		console.log(i);
+	}
+	
+	
+	const data = ['first','second','third'];
+	const user =[
+		{id:1, name: "Maryna", work: true},
+		{id:2, name: "Mukola", work: false},
+		{id:3, name: "Ivan", work: true}
+	];
+	
+	//   перебір значення ітераційних значень Array and Object
+	//  Для перебора масива використовувати не рекомендується 
+			console.log("==For in==");
+	
+			for(let i in user){
+				//console.log(i);
+				console.log(user[i]);
+			}
+	
+	//перебор значних ітерацій Array, Map,set
+	//не підходить для обєктів
+	console.log("===For of===");
+	for(let i of data){
+		console.log(i);
+	}
+	
+</script>
+<body>
+</body>
+</html>
