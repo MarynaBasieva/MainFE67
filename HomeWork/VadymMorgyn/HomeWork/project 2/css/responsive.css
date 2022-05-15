@@ -1,0 +1,374 @@
+/* 1199px 991px 767px 600px 500px*/
+@media (max-width: 1230px) {
+	.btn_book {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.brands .container {
+		max-width: 1050px;
+	}
+
+	.specialize .container {
+		max-width: 950px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.statistic_box_child {
+		padding-bottom: 108px;
+		padding-left: 18px;
+		width: 240px;
+	}
+
+
+	.ecosystem_title p:nth-child(3) {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 991px) {
+	.container_menu .menu_bar li a {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 14px;
+		color: #1C1C1C !important;
+		transition: all linear 0.6s;
+		text-align: center;
+		margin-top: 7px;
+		transition: linear 0.4s;
+	}
+
+	.container_menu .menu_bar li a:hover {
+		background-color: rgba(0, 0, 0, 0.459);
+	}
+
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, .55);
+		border-color: #6F2CFF;
+	}
+
+	.banner {
+		background: url(../img/banner_bg.svg) 200px 50%/contain no-repeat;
+		background-color: #F6BED9;
+		padding: 60px 0 60px 0;
+	}
+
+	.competitors_title {
+		padding: 60px 0;
+	}
+
+	.competitors_title h2 {
+		text-align: center;
+	}
+
+	.competitors_btn {
+		margin: 0 auto;
+		margin-bottom: 50px;
+		width: 340px;
+	}
+
+	.audited_methodology p {
+		text-align: center;
+	}
+
+	.audited_methodology a {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 15px;
+		color: #000000;
+		transition: linear 0.4s;
+		display: block;
+		margin: 0 auto;
+		width: 104px;
+	}
+
+	.statistic {
+		display: flex;
+		justify-content: center;
+	}
+
+	.commerce_child p {
+		max-width: 300px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.commerce {
+		padding-bottom: 40px;
+	}
+
+	.specialize .row div:nth-child(2),
+	.specialize .row div:nth-child(4),
+	.specialize .row div:nth-child(6) {
+		margin-right: 0px;
+	}
+
+	.specialize .row {
+		justify-content: center;
+	}
+
+	.specialize .row div:nth-child(6),
+	.specialize .row div:nth-child(7) {
+		margin-bottom: 30px;
+	}
+
+	.specialize {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.ecosystem_title h2 {
+		margin-top: 40px;
+		padding-bottom: 20px;
+
+	}
+
+
+	.ecosystem_title p:nth-child(3) {
+		margin-top: 0px;
+		margin-bottom: 45px;
+	}
+
+	.ecosystem_title h2 {
+		text-align: center;
+	}
+
+	.ecosystem_title p {
+		text-align: center;
+	}
+
+	.ecosystem_title a {
+		display: block;
+		width: 203px;
+		margin: 0 auto;
+	}
+
+	.ecosystem_img img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.book_demo {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+@media (max-width: 767px) {
+	.banner .text_banner .title_banner1 {
+		font-size: 44px;
+	}
+
+	.banner .text_banner .title_banner2 {
+		font-size: 44px;
+	}
+
+	.banner .text_banner p {
+		font-size: 16px;
+		max-width: 360px;
+	}
+
+	.form_banner .mail {
+		padding-left: 16px;
+		padding-right: 30px;
+	}
+
+	.form_banner .btn_mail {
+		padding: 12px 25px 12px 25px;
+	}
+
+	.slider {
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
+
+	.ecosystem {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.book_demo .form_banner {
+		width: 360px;
+		margin: 0 auto;
+	}
+
+	.brands {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.offers {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.product {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	.footer_logo p i {
+		left: 20px;
+	}
+
+	.brands .owl-next {
+		right: 0px;
+	}
+
+	.brands .owl-prev {
+		left: 0px;
+	}
+
+	.footer_link_child {}
+}
+
+@media (max-width: 577px) {}
+
+@media (max-width: 500px) {
+	.statistic {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.product_title p {
+		margin-bottom: 40px;
+	}
+
+	.ecosystem_title h2 {
+		margin-bottom: 0px;
+	}
+
+	.ecosystem_title p {
+		text-align: center;
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 470px) {
+	.banner .text_banner h3 {
+		text-align: center;
+	}
+
+	.banner .text_banner .title_banner1 {
+		text-align: center;
+	}
+
+	.banner .text_banner .title_banner2 {
+		text-align: center;
+	}
+
+	.banner .text_banner p {
+		max-width: 340px;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+	.form_banner .mail {
+		padding-left: 16px;
+		padding-right: 0px;
+	}
+
+	.form_banner {
+		width: 330px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.book_demo .form_banner {
+		width: 328px;
+	}
+
+	.footer_link_child {
+		margin-top: 20px !important;
+	}
+}
+
+@media (max-width: 350px) {
+	.form_banner .mail {
+		padding-left: 6px;
+		padding-right: 0px;
+		padding: 12px 5px 12px 5px;
+	}
+
+	.form_banner .btn_mail {
+		padding: 12px 5px 12px 5px;
+	}
+
+	.form_banner {
+		width: 310px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.competitors_btn {
+		margin: 0 auto;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+
+	.competitors_title .btn_book_child {
+		padding: 15px 15px 15px 15px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.competitors_btn a {
+		width: 170px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.product_btn .btn_product_child {
+		margin-right: 0px;
+		display: block;
+		width: 173px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+	.product_btn .btn_book_child {
+		display: block;
+		margin: 0 auto;
+		width: 173px;
+	}
+
+	element.style {}
+
+	.product_btn {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.brands .owl-prev,
+	.brands .owl-next {
+		position: absolute;
+		top: 38%;
+	}
+
+	.specialize_child {
+		padding: 20px 0 20px 0;
+	}
+
+	.book_demo .form_banner {
+		width: 283px;
+	}
+
+	.form_banner {
+		width: 282px;
+	}
+}
