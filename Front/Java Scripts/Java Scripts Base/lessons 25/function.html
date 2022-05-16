@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function</title>
+</head>
+<script>
+	//function nameFunc(params){
+	    //tilo
+	//}
+	//nameFunc();
+	console.log("===nameFunc===")
+	function nameFunc(){
+		console.log("Helllo");
+	}
+	nameFunc();
+	nameFunc();
+	
+	console.log("==varabile==");
+	
+	let user ="Maryna";
+	
+	function nameUser(){
+		user ="Dasha";
+		
+		let mess = "Hello, " + user;
+		console.log(mess);	
+	}
+	console.log(user);
+	nameUser();
+	console.log(user);
+	
+	console.log("===Params Function===");
+	//params function
+	function nameParam(name,text){
+		console.log(name + ': ' + text);
+	}
+	nameParam('Artur', "Hello");
+	nameParam('Dima', "How are you?");
+	
+	function sumRasult(a,b){
+		return a+b;
+	}
+	let result = sumRasult(1,2);
+	console.log(result);
+	
+	function ageFunc(age){
+		if(age>18){
+			return true;
+		}else{
+			return confirm('stop');
+		}
+	}
+	
+	
+</script>
+<body>
+</body>
+</html>

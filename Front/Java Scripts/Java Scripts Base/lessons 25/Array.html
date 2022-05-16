@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array</title>
+</head>
+<script>
+	//let arr = new Array();
+	//let arr = [];
+	//console.log(arr);
+	
+	let arr = ["Котик","Песик","Мишка",2,3,4,56,false];
+	console.log(arr);
+	
+	let arr2 = ["Cat","Dog","Mouse"];
+	arr2[0]="Hourse";
+	arr2[3]="Pets";
+	arr2[5]="Shake";//додаємо новий масив з індексом 5, і отримуємо в 4 індексі дирку і undefined(пусто )
+	delete arr2[1];//видаляє тільки значення і залишає індекс який відповідає undefined(пусто)
+	arr2.splice(1,1);//1-  значення який індекс видалємо, 2 - яку кількість ми видаляяємо з масива
+	arr2.pop();//видаляє останій елемент масива
+	arr2.push("Chiken");//добавляє значення в кінець масива
+	arr2.shift();// видаляє перше заначення в масиві з індексом , і той що був індекс 1 стає на його місце
+	arr2.unshift("Pig");//добавляяє значення масива в початок
+	console.log(arr2);
+	
+	//arr2.length
+	for(let i=0; i<arr2.length; i++){
+		document.write(arr2[i] + "<br/>");
+	}
+	let matrix =[
+		[1,2,3],
+		[4,5,6],
+		[7,8,9]
+	]
+	console.log(matrix);
+	console.log(matrix[1][2]);
+	
+	
+	
+	
+</script>
+<body>
+	<div class="fruit"></div>
+</body>
+	<script>
+		 let arr3 = ["Apple", "Mango", "Orange"];
+	arr3[3]="Avocado";
+	arr3[4]="Lemon";
+	arr3.splice(3,1);
+	arr3.push("Banan");
+	arr3.pop();
+	
+		//let fruit = document.querySelector('.fruit');
+		//fruit.innerHTML=arr3;
+		//let = newElement = document.querySelector('.fruit');
+	    for (let fruit of arr3){
+			document.write(fruit + "<br/>");
+		}
+	</script>
+</html>
