@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ToLocaleString</title>
+</head>
+<script>
+	//data.toLocalString(lang, option)
+	document.write(new Date()  + "<br />");
+	
+	let date = new Date().toLocaleString();
+	document.write(date + "<br />");
+	
+	let data = new Date();
+	document.write('Україньска:' + data.toLocaleString('uk') + '<br />');
+	document.write('Англійська:' + data.toLocaleString('en') + '<br />');
+	document.write('Русійський:' + data.toLocaleString('ru') + '<br />');
+	
+	
+	let localLang = new Date().toLocaleString("uk",{
+		year:'numeric',
+		month:'long',
+		day:'numeric',
+		weekday:'long',
+		timezone:'UTC',
+		hour:'numeric',
+		minute:'numeric',
+		second:'numeric'
+	});
+	document.write(localLang + "<br />");
+	
+	
+	let localLangOl = new Date();
+	let option={
+		year:'numeric',
+		month:'long',
+		day:'numeric',
+		weekday:'long'
+	};
+	
+	document.write(localLangOl.toLocaleString('uk', option) + "<br />");
+	document.write(localLangOl.toLocaleString('en', option) + "<br />");
+	document.write(localLangOl.toLocaleString('ru', option) + "<br />");
+	
+</script>
+<body>
+</body>
+</html>
