@@ -1,4 +1,11 @@
 /* 1199px 991px 767px 600px 500px*/
+@media (max-width: 1400px) {
+	.page {
+		padding-bottom: 652px;
+	}
+
+}
+
 @media (max-width: 1230px) {
 	.btn_book {
 		display: none;
@@ -29,6 +36,10 @@
 }
 
 @media (max-width: 991px) {
+	.page {
+		padding-bottom: 888px;
+	}
+
 	.container_menu .menu_bar li a {
 		font-family: 'Roboto';
 		font-style: normal;
@@ -231,7 +242,11 @@
 	.footer_link_child {}
 }
 
-@media (max-width: 577px) {}
+@media (max-width: 577px) {
+	.page {
+		padding-bottom: 1262px;
+	}
+}
 
 @media (max-width: 500px) {
 	.statistic {
@@ -256,6 +271,10 @@
 }
 
 @media (max-width: 470px) {
+	.page {
+		padding-bottom: 1382px;
+	}
+
 	.banner .text_banner h3 {
 		text-align: center;
 	}
