@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>flat flatMAp</title>
+</head>
+<script>
+	let array = [1, [2,[3]]].flat(Infinity);
+	for(let i of array){
+		console.log(i);
+	}
+	console.log(array);
+	
+	const duplicate = x => [x,x];
+	let resultMap = [2,3,4].map(duplicate);
+	let result = [2,3,4].map(duplicate).flat();
+	console.log(resultMap);
+	console.log(result);
+	
+	let flatMap = [2,3,4].flatMap(duplicate);
+	console.log(flatMap);
+	
+	const myArray = [[1],[2],[3],[4],[5]];
+	let myFlatMap= myArray.flatMap(arr => arr*10);
+	console.log(myFlatMap);
+	
+    const myFlat = [[1],[2],[3],[4],[5]];
+	let myFlatMapOne = myFlat.flat().map(arr2 => arr2*10);
+	console.log(myFlatMapOne);
+	
+	
+</script>
+<body>
+</body>
+</html>

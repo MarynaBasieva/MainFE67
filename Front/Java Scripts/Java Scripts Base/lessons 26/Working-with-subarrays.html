@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Working with subarrays</title>
+</head>
+
+<body>
+	<canvas id="canvas"></canvas>
+</body>
+<script>
+	//fill
+	console.log("==fill==");
+	let canvasNew = document.getElementById("canvas");
+	let result  = canvasNew.getContext("2d");
+	
+	result.beginPath();
+	result.rect(10,10,100,100);
+	result.fillStyle = "blue";
+	result.fill();
+	
+	result.beginPath();
+	result.rect(30,30,130,130);
+	result.fillStyle = "yellow";
+	result.fill();
+	
+	result.beginPath();
+	result.rect(50,50,150,150);
+	result.fillStyle = "red";
+	result.fill();
+	
+	
+	//slice
+	// array.slice(from,until)
+	
+	let array = [1,2,3, "text", 5.12, true];
+	let newArray = array.slice(0,3);
+	//let newArray = array.slice(-3,-1);
+	console.log(array);
+	console.log(newArray);
+	
+	//copyWithin
+	//arr.copyWithin(target,start[,end =this.length]);
+	
+	//let arr = [1,2,3,4,5].copyWithin(0,3);
+	//let arr = [1,2,3,4,5].copyWithin(0,3,4);
+	let arr = [1,2,3,4,5].copyWithin(0,-2,-1);
+	console.log(arr);
+	
+</script>
+</html>
