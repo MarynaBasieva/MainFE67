@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>hw25</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="for_page">
+		<main class="page">
+			<canvas id="canvas" style="width: 1000px; height: 500px;">
+
+			</canvas>
+		</main>
+      	<footer>
+			  <div id="salaryId">
+				  
+			  </div>
+     	 </footer>
+    </div>
+  </body>
+  <script>
+
+// -----------------------------------------------------------CANVAS|||||||||||||||||||||||>>>>>>
+
+
+let canvas1 = document.getElementById("canvas");
+let result = canvas1.getContext("2d")
+
+result.beginPath();
+result.rect(0, 0, 1000, 500);
+result.fillStyle = "#00CED1";
+result.fill();
+
+result.beginPath();
+result.arc(153,50,40,0,Math.PI*2, true);
+result.fillStyle = "#DC143C";
+result.fill();
+
+result.beginPath();
+result.moveTo(100, 50);
+result.lineTo(150, 75);
+result.lineTo(150, 25);
+result.fillStyle = "#1E90FF";
+result.fill();
+
+result.beginPath();
+result.moveTo(205, 50);
+result.lineTo(155, 75);
+result.lineTo(155, 25);
+result.fillStyle = "Navy";
+result.fill();
+
+result.beginPath();
+result.arc(140,50,5,0,Math.PI*2, true);
+result.fillStyle = "Navy";
+result.fill();
+
+result.beginPath();
+result.arc(165,50,5,0,Math.PI*2, true);
+result.fillStyle = "#1E90FF";
+result.fill();
+
+// -----------------------------------------------------------CANVAS|||||||||||||||||||||||>>>>>>
+
+
+const peoples=[												//М
+	{name:"Хтось 1", age:"75", salary: 99999},				//А
+	{name:"Байден 2", age:"45", salary: 1000},				//С
+	{name:"Байден 3", age:"12", salary: 1500},				//С
+	{name:"Байден 4", age:"43", salary: 2100},				//И
+	{name:"Байден 5", age:"42", salary: 7000},				//В
+	{name:"Байден 6", age:"65", salary: 7777},
+	{name:"Байден 7", age:"71", salary: 6342},
+	{name:"Байден 8", age:"26", salary: 4757},
+	{name:"Байден 9", age:"31", salary: 3467},
+	{name:"Байден 10", age:"29", salary: 5239}                    
+];
+
+
+
+let mapMans = peoples.map(person =>
+{
+	return `${person.name} (${person.salary})`
+}
+)
+document.write(mapMans);								//Вивели всіх з зарплатами
+
+let man = peoples.filter(person => {					//шукаєм максимальну зп
+	if (person.salary > 5000)
+	return true;
+}
+)
+document.write(man+"<br>");
+console.log(man);
+document.getElementById("salaryId").innerHTML = man;
+
+let mass = [10,34,56,23,34,45,"Text"];					//Копіюю масив
+let clone = Object.assign([], mass);
+console.log(clone);
+
+const duplicate = x => [x];
+let newMass =  [10,23,[2,3,4,5,[6,7,90]]].flatMap(duplicate);
+	console.log(newMass);
+
+
+</script>
+</html>
