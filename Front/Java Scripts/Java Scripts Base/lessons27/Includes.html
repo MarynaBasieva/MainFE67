@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>includes</title>
+</head>
+<script>
+	const transaction =['54657hfhfj6', 'hfjk56x', '65hjr6reu8', 'kgfjfk67', 'fjdsh7difh', '76dgsig4'];
+	let arr = [44,55,66,77,88,1,2,3,4];
+	//true
+	//false
+	let str = 'fjdsh7difh';
+	
+	if(arr.includes(55)){
+		console.log('yes');
+	}else{
+		console.log('no');
+	}
+	
+	let person = [
+		{"name":"Olena", "lastName":"Protrenko", age:44, year:1987},
+		{"name":"Oleg", "lastName":"Proto", age:15, year:1987},
+		{"name":"Pavlo", "lastName":"Petrov", age:35, year:2020},
+		{"name":"Olga", "lastName":"Petrova", age:45, year:2000},
+	]
+	
+	let newPerson = person.filter( item => {
+		return item.name.includes('O');
+	});
+	console.log(newPerson);
+	
+	//arr.includes(searchElement, fromIndex)
+	
+	let arrNew = [1,2,3,4,5,NaN];
+	console.log(arrNew.includes(2));//true
+	console.log(arrNew.includes(8));//false
+	console.log(arrNew.includes(3,2));//true
+	console.log(arrNew.includes(NaN));//true 
+	console.log(arrNew.indexOf(NaN));//-1
+</script>
+<body>
+</body>
+</html>

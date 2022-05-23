@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object</title>
+</head>
+<script>
+/*	let user = new Object();//синтаксиис конструктор обєкта
+	let user ={};//синтиксис літерал обєкта
+	console.log(user);
+	console.log(user2);*/
+	
+	let user ={//обєкт
+		name:"Olga",//ключ name : і значення яке зберігається в name: Olga
+		age:30
+	};
+	user.isAdmin =true;
+	delete user.age;
+	console.log(user);
+	
+	let user2 ={
+		name:"Olga",
+		age:30,
+		"last name": "Petrova"
+	};
+	console.log(user2);
+	
+	
+	const user3 ={
+		name:"Alla",
+		age:20,
+		"last name": "Volkova"
+	}
+	user3.name = "Valentuna";
+	console.log(user3.name);
+	console.log(user3["last name"])
+	delete user3["last name"];
+	console.log(user3);
+	
+	let key = "last name";
+	user3[key]= "Zolota";
+	console.log(user3);
+	
+	
+	
+	/*let person = {
+		name: "Vita",
+		age: 30
+	}
+	let key2 = prompt("Ведіть Ім'я", "name");
+	alert(person[key2]);*/
+	
+	let person = {
+		name: "Vita",
+		age: 30
+	}
+	let key2 = "name";
+	console.log(person.key2);//undefined
+	document.write(`тварина домашня: ${person.name}, <br> вік: ${person.age}`);
+	
+	function nameObj(name,age, lastName){
+		return{
+			name:name,
+			age:age,
+			"last name": lastName
+		};
+	}
+	let personUser = nameObj("Maya",30,"Vetkova");
+	console.log(personUser.name, personUser["last name"]);
+	
+	let userPer ={};
+	console.log(userPer);
+	
+	let userIn ={
+		name: "Arina",
+		age:30
+	}
+	console.log("age" in userIn);//true
+	console.log("lasName" in userIn);//false
+	
+	let userFor ={
+		name: "Arina",
+		age:30,
+		work: true
+	};
+	
+	for(let key in userFor){
+		console.log("====key====");
+		console.log(key);
+		console.log("====value====");
+		console.log(userFor[key]);
+	}
+	
+</script>
+<body>
+</body>
+</html>

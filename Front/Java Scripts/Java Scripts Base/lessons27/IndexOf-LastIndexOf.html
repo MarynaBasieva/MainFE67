@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IndexOf LastIndexOf</title>
+</head>
+<script>
+	/////indxeOf - виповнює пошук з початку масива до кінця масива
+	let last = [0,1,2,3,1,0];
+	
+	
+	console.log(last.indexOf(1));//1
+	console.log(last.lastIndexOf(1));//4
+	console.log(last.indexOf(4));//-1
+	
+	let foo = function findIndex(a,x){
+	 let resualt =[],
+		 len = a.length,
+		 position = 0;
+		
+		while(position < len){
+			position = a.indexOf(x, position);//Пошук
+			if(position === -1) break;
+			resualt.push(position);
+			position = position + 1;
+		}
+		return resualt//поверне масив індекса
+	}
+	findIndex(6,6);
+	
+	console.log(foo);
+</script>
+<body>
+</body>
+</html>

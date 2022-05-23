@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sort reverse</title>
+</head>
+<script>
+	//ASCII-код
+	
+	let arr2 = ['ac','ab','aa'];
+	arr2.sort();
+	console.log(arr2);
+	
+	
+	let arr = [6,4,14,5,144,9,1];
+	arr.sort();
+	console.log(arr);
+	
+	let array = [6,4,14,5,144,9,1];
+	let result = array.sort((a,b) => a-b);//6-4=2  4<14
+ 	console.log(result);
+	
+	/*let array = [6,4,14,5,144,9,1];
+	let result = array.sort(function(a,b){
+		a-b
+	});//6-4=2  4<14
+ 	console.log(result);*/
+	
+	
+	let array2 = [6,4,14,5,144,9,1];
+	let result2 = array2.sort((a,b) => b-a);//6-4=2  4<14
+ 	console.log(result2);
+	
+	
+	let person =[
+		{name:'Olga', age:20},
+		{name:'Misha', age:17},
+		{name:'Lena', age:12},
+	]
+	let resultArray = person.sort((a,b)=>a.age-b.age);
+	console.log(person)
+	
+	//reverse
+	
+	let rev = [1,2,3,4,"a","b","cat"];
+	console.log(rev.reverse());
+</script>
+<body>
+</body>
+</html>
