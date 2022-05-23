@@ -213,6 +213,19 @@
     }
 }
 @media (max-width: 600px) {
+    .header .h_left {
+        width: 50%;
+    }
+    .header .h_center {
+        width: 50%;
+        text-align: right;
+    }
+    .header .h_right {
+        padding-bottom: 8px;  
+    }
+    .header .header_but {    
+        margin-left: 0px;
+    }
     .block1 h1 {
         font-size: 29px;
         line-height: 29px;
