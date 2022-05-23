@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="300" height="200"
+            style=" border:1px solid #ccc;"></canvas>
+            <canvas id="myCanvas2" width="300" height="200"
+            style=" border:1px solid #ccc;"></canvas>
+            <div class="salary"></div>
+            <div class="num"></div>
+</body>
+<script>
+            let canvas = document.getElementById("myCanvas"), 
+                context = canvas.getContext("2d");
+            context.beginPath();
+            context.moveTo(30, 40);
+            context.lineTo(240, 80);
+            context.lineTo(30, 160);
+            context.closePath();
+            context.strokeStyle = "blue";
+            context.stroke();
+            let canvas2 = document.getElementById("myCanvas2"), 
+                context2 = canvas2.getContext("2d");
+            context2.beginPath();
+            context2.moveTo(240, 40);
+            context2.lineTo(30, 80);
+            context2.lineTo(240, 160);
+            context2.closePath();
+            context2.strokeStyle = "green";
+            context2.stroke();
+            const people =[
+                {name:"Гордій",surname:"Задорожній", age:"30", salary: 40000},
+                {name:"Андрій",surname:"Шевченок", age:"14", salary: 1000},
+                {name:"Олег",surname:"Мазнік", age:"50", salary: 50000},
+                {name:"Олена",surname:"Горбарчук", age:"10", salary: 2000},
+                {name:"Богдан",surname:"Дашков", age:"28", salary: 3500},
+                {name:"Артур",surname:"Турчак", age:"35", salary: 15000},
+                {name:"Петро",surname:"Труський", age:"15", salary: 4000},
+                {name:"Степан",surname:"Кавратка", age:"31", salary: 6000},
+                {name:"Іван",surname:"Бордунов", age:"42", salary: 25000},
+                {name:"Вітя",surname:"Сидоренко", age:"22", salary: 12000}
+                ];
+                 let salaryName = people.filter(person => {
+                    if(person.salary >= 5000){
+                        let test1 = document.querySelector('.salary');
+                        test1.style.background="blue";
+                        test1.style.color="white";
+                         test1.style.width="300px";
+
+                        return test1.innerHTML += `${person.name},${person.surname}, ${person.age}, ${person.salary}<br>`
+                    }
+                });
+                console.log("=================================" );
+                	const num = [10,34,56,23,34,45,'Text'];
+                    let newnum = num;
+                    let test2 = document.querySelector('.num');
+                     test2.innerHTML += newnum;
+                console.log("=================================" );;
+                const duplicate = x => [x,x];
+               let resultMap = [10,23,[2,3,4,5,[6,7,90]]].flat(Infinity).map(duplicate);
+               	console.log(resultMap);
+
+
+    //
+
+    
+
+</script>
+</html>
