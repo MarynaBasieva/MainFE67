@@ -1,0 +1,148 @@
+/* 1199px 991px 767px 600px 500px*/
+@media (min-width: 1200px) {
+	.for_page .container {
+		max-width: 1200px;
+	}
+
+	.for_page .banner .container {
+		max-width: 1168px;
+	}
+
+	.page .pricing .container,
+	.page .technology .container {
+		max-width: 1168px;
+	}
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+	.nav_menu {
+		display: flex;
+		align-items: center
+	}
+
+	.navbar-nav a {
+		margin-right: 0px;
+	}
+
+	.banner .text_banner {
+		padding: 0;
+		padding-bottom: 50px;
+
+	}
+
+	.statistic h3 {
+		font-size: 70px;
+	}
+
+	.technology2 .row {
+		flex-direction: column-reverse;
+	}
+
+	.pricing_child {
+		margin: 0 auto;
+		margin-top: 20px;
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 767px) {
+	.banner .text_banner p {
+		max-width: 100%;
+	}
+
+	.banner .text_banner h1 {
+		font-size: 55px;
+		line-height: 56px;
+	}
+
+	element.style {}
+
+	.banner .text_banner a {
+		display: block;
+		margin: 10px;
+	}
+
+	.banner .text_banner .btn_download {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.banner {
+		padding-top: 50px;
+	}
+
+	.features {
+		padding-top: 50px;
+	}
+
+	.statistic {
+		margin-top: 60px;
+		padding: 60px 0 60px 0;
+	}
+
+	.technology {
+		padding-top: 0px;
+	}
+
+	.technology2 {
+		padding-top: 0px;
+	}
+
+	.dark_mode {
+		padding-top: 60px;
+	}
+
+	.pricing {
+		padding: 50px 0;
+	}
+
+	.testimonials {
+		padding: 50px 0;
+	}
+
+	.download {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.faq {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.footer {
+		padding: 50px 0;
+		background-color: #F2F2F2;
+	}
+}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 577px) {}
+
+@media (max-width: 500px) {
+	.text_technology h3 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 470px) {
+
+	.faq .faq_box_child {
+		margin-top: 42px;
+		border-bottom: 2px solid black;
+	}
+
+	.faq_box_child2 {
+		margin-top: 16px;
+		border-bottom: 2px solid black;
+	}
+
+	.text_technology {
+		padding: 50px 0 50px 0px;
+	}
+}
+
+@media (max-width: 350px) {}
