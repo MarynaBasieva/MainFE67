@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+    <div class="people"></div>
+    <div class="copy"></div>
+    <canvas id="canvas"></canvas>
+</head>
+
+
+<script>     
+    const people =[
+        {name:'Emi', age: '30', salary:2400},
+        {name:'Nik', age: '13', salary:500},
+        {name:'Yan', age: '28', salary:17000},
+        {name:'Olga', age: '37', salary:4000},
+        {name:'Geogiy', age: '11', salary:7000},
+        {name:'Ivan', age: '68', salary:3000},
+        {name:'Petr', age: '51', salary:10000},
+        {name:'Eva', age: '37', salary:8000},
+        {name:'Orest', age: '29', salary:19000},
+        {name:'Jun', age: '18', salary:2000},
+    ]  
+    let salaryName = people.filter(person => {
+        if(person.salary >= 5000){
+            let result = document.querySelector('.people');
+            return result.innerHTML += person.name + person.salary  // + <br>
+        }
+    });
+
+    //////////////////////////
+    let copy = [10,34,56,23,34,45,"Text"];
+    let copy2= copy;
+    let copycopy = document.querySelector(".copy")
+    copycopy.innerHTML = copy2;
+
+    //////////////////////////
+    const duplicate = y => [y,y];
+    let flatMap = [10,23,[2,3,4,5,[6,7,90]]].flat(Infinity).map(duplicate);
+    console.log(flatMap);
+  
+    //////////////////////////
+    let canvasNew = document.getElementById("canvas");
+    let result = canvasNew.getContext("2d");
+
+    result.beginPath();
+    result.rect(10,10,100,70);
+    result.fillStyle = "blue";
+    result.fill();
+
+    result.beginPath()
+    result.rect(110,10,100,70);
+    result.fillStyle = "yellow";
+    result.fill();
+
+    result.beginPath();
+    result.rect(55,45,100,70);
+    result.fillStyle = "green";
+    result.fill();
+
+</script>
+
+<body>
+</body>
+
+</html>
+
+
