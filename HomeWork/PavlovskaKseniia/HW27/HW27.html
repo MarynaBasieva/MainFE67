@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>includes</title>
+</head>
+<script>
+	let people = [
+		{"name":'Олег', "surname": 'Барда', age:14, salary: 40000},
+		{"name":'Марина', "surname": 'Волинець', age:30, salary: 800000},
+		{"name":'Андрій', "surname": 'Харчук', age:44, salary: 3400},
+		{"name":'Тетяна', "surname": 'Колосова', age:16, salary: 1000},
+		{"name":'Даша', "surname": 'Горчакова', age:15, salary: 2300},
+		{"name":'Наталя', "surname": 'Лісова', age:28, salary: 25000},
+		{"name":'Павло', "surname": 'Ковальов', age:28, salary: 25000}
+	]	
+	let Search = people.filter( item => {
+		return item.name.includes('Тетяна');
+	});
+	console.log(Search);
+	
+	let Search2 = people.filter( item => {
+		return item.name.includes('Олег');
+	});
+	console.log(Search2);
+	
+
+    document.write(`Name: ${people.name}, <br> Surname: ${people.surname}`);
+</script>
+<body>
+</body>
+</html>
