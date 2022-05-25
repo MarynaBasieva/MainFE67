@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object 2</title>
+</head>
+<script>
+	//Тип даних Symbol
+	//створимо символ id с описом (імені) "id"
+	let id = Symbol("id");
+	let userInfo ={
+		name: "Maya",
+		age:30,
+		[id]: 'якийсь опис'
+	};
+	console.log(userInfo);
+	
+	let userInfo2 = {
+		name: "Maya",
+		age: 30,
+		adress:{
+			city: "Kiev",
+			street: "Lvivska"
+		}
+	};
+	console.log(userInfo2);
+	console.log(userInfo2.adress);
+	console.log(userInfo2.adress.city);
+	
+	//значення з зміної 
+	function makeFunc(name, age){
+		return{
+		    name : name,
+			age : age
+		}
+			
+	}
+	let user = makeFunc("Maya", 30);
+	console.log(user);
+	
+	let userInfo3 ={
+		name: "Olga",
+	}
+	console.log(userInfo3);
+	userInfo3.age = 30;
+	console.log(userInfo3);
+	userInfo3["I like milk"] = true;
+	console.log(userInfo3);
+	
+	userInfo3.adress = {
+		city: "Kiev",
+	    street: "Lvivska"
+	}
+	console.log(userInfo3);
+	
+	
+	userInfo4 = {
+		name: "Maya",
+		age:30
+	}
+	console.log(userInfo4);
+	
+	userInfo4.age = 18;
+	
+	console.log(userInfo4);
+	
+	//копіювання обєкта
+	// Прі копіювані обєкта в другу зміну
+	// сам обєкт не дублюється, а копіюється ссилка на нього
+	
+	let userInfo5 = {
+		name: "Olga",
+		age:30
+	}
+	console.log(userInfo5);
+	
+	let user2 = userInfo5;
+	console.log(user2);
+	
+	user2.age = 18;
+	console.log(userInfo5);
+	
+	//Object.assign(куди(обєкт), що (значення #1), що (значення#1)...);
+	let userInfo6 = {
+		name: "Olga",
+		age:30
+	}
+	let userNewAssin = Object.assign({['Last Name']:"Frolova", city:"Kiev"}, userInfo6);
+	//let userNewAssin = Object.assign({}, userInfo6);
+	
+	userNewAssin.age = 18;
+	console.log(userInfo6);
+	console.log(userNewAssin);
+	
+	
+	//Перевірка чи є значення
+	 let userInfo7 ={
+		 name: "Olga",
+		 age: 30,
+		/* adress:{
+			city: "Kiev",
+	        street: "Lvivska" 
+		 }*/
+	 }
+	//console.log(userInfo7.adress.city);
+	
+	/*if(userInfo7.age){
+		console.log(userInfo7.age);
+	}
+	*/
+	//Опциональна ципочка
+	//console.log(userInfo7?.adress?.city); // Якщо немає значення опціональна ципочка виводить помилку
+				
+				
+	// operator in для перевірки
+	
+	let userInfo8 ={
+		name:undefined,
+		age:30,
+		adress:{
+		  city: "Kiev",
+	      street: "Lvivska"
+		}
+     }
+	/*if("name" in userInfo8){
+		console.log(userInfo8.name);
+	}*/
+	
+	
+	// Цикл for in
+	let userInfo9 ={
+		name:"Olga",
+		age:30,
+		adress:{
+		  city: "Kiev",
+	      street: "Lvivska"
+		}
+     }
+	for(let key in userInfo9){
+		//key
+		console.log(key);
+		//value keys
+		console.log(userInfo9[key])
+	}
+
+	for(let key in userInfo9.adress){
+		//key
+		console.log(key);
+		//value keys
+		console.log(userInfo9.adress[key])
+	}
+	
+	//Method object
+	
+	let userInfo10 = {
+		name: "Olga",
+		age: 30,
+		adress:{
+		  city: "Kiev",
+	      street: "Lvivska"
+		},
+	
+		/*showInfo:function (){
+				console.log(`My name ${userInfo10.name}, age ${userInfo10.age}, my adress ${userInfo10.adress.city} ${userInfo10.adress.street}`);
+			}*/
+		showInfo(){
+				/*console.log(`My name ${userInfo10.name}, age ${userInfo10.age}, my adress ${userInfo10.adress.city} ${userInfo10.adress.street}`);*/
+			///let show = () =>{
+				console.log(`My name ${this.name}, age ${this.age}, my adress ${this.adress.city} ${this.adress.street}`);
+			//}
+			//show();
+				
+		
+		}
+	}
+	userInfo10.showInfo();
+	
+	let user4 = userInfo10;
+	
+	userInfo10 = null;
+	user4.showInfo();
+	//constructor function
+	
+	//Функція - конструктор являється звичайною функцією
+	//Тільки є два правила:
+	// 1) І'мя функції - конструктора повино почиинатися з великої букви
+	// 2) Функція -  коструктор повина визиваться при допомозі оператора "new"
+	
+	function UserInfo(name,age){
+		//this ={}; створюється пустий обєкт (не явно)
+		this.name = name;
+		this.age = age;
+		//return this; повертає обєкт (не явно)
+		
+	}
+	console.log(new UserInfo('Maryna', 30));
+	console.log(new UserInfo('Svetlana',45));
+	
+
+	
+</script>
+<body>
+</body>
+</html>

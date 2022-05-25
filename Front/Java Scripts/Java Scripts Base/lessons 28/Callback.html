@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Callback</title>
+</head>
+<script>
+	/*//Пріготовлення суші. Довгий процес
+	const SuhiMaster = makeSuhi("Filadelfia");
+	
+	//Читаємо книгу поки готуються суші
+	readBook();  
+	
+	//Ми їмо суші
+	eatSuhi(newSuhi);*/
+	
+	const foo = function(){
+		return "Hello return";
+	}
+	//console.log(foo());//Hello return 
+	
+	//console.log(foo);
+	
+	const getRun = function(name){
+		return name();// визвана функція в якості параметра
+	}
+	console.log(getRun(foo));
+	/////////////////////////////////////////////
+	const sushiMaster = function(title, sh){
+		console.log(`Заказ на приготовлення суші ${title} отриман. Починаємо готувати`) ;
+		setTimeout(sh, 3000);
+	}
+	
+	
+	
+	const readBook = function(){
+		console.log('Читаю книгу Гарі Потер')
+	} 
+	
+	const eatSushi = function(){
+		console.log('Ура! Суші готова, пора підкрипитися');
+	}
+	sushiMaster('Filadelfiy', eatSushi);
+	readBook();
+	
+	
+	
+</script>
+<body>
+</body>
+</html>
