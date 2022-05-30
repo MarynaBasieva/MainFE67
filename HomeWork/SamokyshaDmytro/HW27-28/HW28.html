@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>hw25</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="for_page">
+		<br class="page">
+			<div class="Result">
+
+			</div>
+		</br>
+	</br>
+		</br>
+			<div class="ResultFinish" >
+
+			</div>
+		</br>
+	</br>
+		</br>
+			<div class="mainNames" >
+
+			</div>
+		</main>
+      	<footer>
+
+     	 </footer>
+    </div>
+  </body>
+  <script>
+	let userJob = {
+		name: 'Jonh',
+		'last name': 'Snow',
+		age: 30,
+		salary : {
+			money: 5000,
+			'working days': 5,
+			vacation:{
+				'vacation salary':2000,
+				'vacation days':2
+			}
+		}	
+    }
+
+	for( let users in userJob){            // ???????????????????????
+		document.querySelector('.Result').innerHTML= (`name: ${userJob.name} </br> last name: ${userJob['last name']} </br> age: ${userJob.age} </br> salary:  </br>      salary money: ${userJob.salary.money}  </br>  salary working day:  ${userJob.salary['working days']} </br> vacation:  </br> salary vacation: ${userJob.salary.vacation['vacation salary']}  </br> vacation days: ${userJob.salary.vacation['vacation days']}`);
+	}	
+
+	var copy = Object.assign({}, userJob);
+	console.log(copy)
+
+	copy.name = 'Stephen',
+	copy['last name'] = 'King',
+	copy.age = 60,
+	copy.salary.money = 25000,
+	copy.salary['working days'] = 3,
+	copy.salary.vacation['vacation salary'] = 7500,
+	copy.salary.vacation['vacation days'] = 7
+
+	document.querySelector('.ResultFinish').innerHTML=(`name: ${copy.name} </br> last name: ${copy['last name']} </br> age: ${copy.age} </br> salary:  </br>      salary money: ${copy.salary.money}  </br>  salary working day:  ${copy.salary['working days']} </br> vacation:  </br> salary vacation: ${copy.salary.vacation['vacation salary']}  </br> vacation days: ${copy.salary.vacation['vacation days']}`);
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	let user = {};
+
+
+user.display = function(){
+     
+	document.querySelector('.ResultFinish').innerHTML=user.name;
+	document.querySelector('.ResultFinish').innerHTML=user.lastName;
+	document.querySelector('.ResultFinish').innerHTML=user.age;
+	document.querySelector('.ResultFinish').innerHTML=user.adres;
+
+};
+ 
+
+user.display();
+
+</script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>hw25</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="for_page">
+		<main class="page">
+		</main>
+      	<footer>
+     	 </footer>
+    </div>
+  </body>
+  <script>
+//////////////////////////////////////////////////////////Блок ДЗ 1
+
+	const usersFirst = ["Игорь","Марина","Андрей","Сергей","Даша"]
+	for (let allUsers of usersFirst){
+		console.log(allUsers)
+	}
+
+	const usersSecond = ["Игорь","Марина","Андрей","Сергей","Даша","Наталья","Яша"]
+	for (let allUsersSecond in usersSecond){
+		console.log(`Индекс: ${allUsersSecond}; Значение: ${usersSecond[allUsersSecond]};`)
+	}
+
+	const usesThird = ["Яша","Марина","Андрей","Сергей","Даша"]
+    console.log(usesThird.length)										//Длінна 1 числом
+	for (let mass = 1; mass <= usesThird.length; mass++){
+		console.log(mass)												//Через цикл  !!!не получилось?
+	}
+
+//////////////////////////////////////////////////////////Блок ДЗ 2
+
+const people = [
+  {name:'Игорь', age:14, salary: 400000},
+  {name:'Марина', age:30, salary: 800000},
+  {name:'Андрей', age:44, salary: 3400},
+  {name:'Сергей', age:16, salary: 1000},
+  {name:'Олег', age:15, salary: 2300},
+  {name:'Татьяна', age:28, salary: 25000},
+  {name: 'Яша', age:31, salary: 1110000}
+ ]
+
+// 	let somePeoples = ['Олег','Татьяна' ]
+// 	const filteredUsers = Object.keys(somePeoples)
+//     .filter(key => somePeoples.includes(key))
+//     .reduce((obj, key) => {
+//         obj[key] = somePeoples[key];
+//         return obj;
+//   }, {});
+
+// console.log(filteredUsers);
+ 
+
+
+
+</script>
+</html>
