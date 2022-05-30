@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 	let carousel = jQuery('#slider_img');
 		
 	carousel.owlCarousel({
-		items: 1,
+		items: 3,
 		center: true,
 		animateIn: "animate__bounceInRight",
 		animateOut: "animate__bounceOutLeft",
@@ -24,7 +24,7 @@ jQuery(document).ready(function () {
 		dots: true,
 		dotsEach: false,
 		mouseDrag: true,
-		margin: 350,
+		margin: 10,
 		stagePadding: 0,
 		autoWidth: true,
 		responsiveClass: true,
@@ -59,7 +59,7 @@ jQuery(document).ready(function () {
 				smartSpeed: 1000
 			},
 			1099:{
-				items: 1,
+				items: 3,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,

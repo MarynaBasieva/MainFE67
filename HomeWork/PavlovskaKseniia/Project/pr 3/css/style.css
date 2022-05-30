@@ -75,9 +75,11 @@ img {
 .block1 h1 {
     font-size: 48px;
     line-height: 53px;
-    text-align: center;    
+    text-align: center;
     color: #FFFFFF;
-    padding: 34px 133px;
+    padding: 34px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .block1 p {
     font-size: 14px;
@@ -91,13 +93,13 @@ img {
 .block1_logo {
     padding-top: 178px;
     margin: 0 auto;
-    width: 256px;
+    max-width: 256px;
 }
 /*block 1*/
 
 /*block 2*/
 .block2 {
-    padding: 100px 320px;
+    padding: 100px 0;
     background: #FAF8F0;
 }
 .orange {
@@ -135,11 +137,14 @@ img {
         background: #E08631;
         color: #FFFFFF;
     }
+.row_center{
+	justify-content: center;
+}
 /*block 2*/
 
 /*block 3*/
 .block3 {
-    padding: 140px 77px;
+    padding: 140px 0;
 }
 .block3 h2 {    
     font-size: 96px;
@@ -198,15 +203,13 @@ img {
 }
 .bl6_flex {
     display: flex;
+	padding-bottom: 42px;
 }
 .bl6_text p {
     margin-bottom: 0;
     padding-left: 16px;
 }
-.bl6_text,
-.bl6_flex img {
-    padding-bottom: 42px;
-}
+
 /*block 6*/
 
 /*block 7*/
@@ -240,7 +243,7 @@ img {
 .slider .owl-dots .owl-dot{
     width: 60px;
     height: 60px;
-    color: 52503B;
+    color: #52503B;
     border-radius: 30px;
     border: 2px solid #52503B;
     margin-right: 10px;
@@ -298,7 +301,8 @@ img {
     line-height: 36px;
     text-align: center;
     color: #52503B;
-    padding: 0 333px;
+        max-width: 540px;
+    margin: 0 auto;
 }
 .block10 p {
     font-size: 16px;
@@ -382,6 +386,7 @@ img {
     line-height: 20px;
     color: #52503B;
     padding: 16px 30px;
+	outline: none;
 }
 .submit {
     font-size: 14px;

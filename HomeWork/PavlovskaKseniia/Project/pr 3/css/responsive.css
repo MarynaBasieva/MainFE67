@@ -39,7 +39,7 @@
         background: #FAF8F0;
     }
     .block10 h3 {
-        padding: 0 100px;
+        padding: 0;
     }
     .block10 p {
         padding: 14px 153px 18px 153px;
@@ -67,7 +67,6 @@
     .block1 h1 {
         font-size: 43px;
         line-height: 53px;
-        padding: 24px 38px;
     }
     .block1 p {
         margin-bottom: 30px;
@@ -174,7 +173,6 @@
     .block1 h1 {
         font-size: 42px;
         line-height: 44px;
-        padding: 34px 90px;
     }
     .block2 {
         padding: 60px 0px;
@@ -213,6 +211,9 @@
     }
 }
 @media (max-width: 600px) {
+	.block2 p {
+    padding-top: 20px;
+	}
     .header .h_left {
         width: 50%;
     }
@@ -229,7 +230,6 @@
     .block1 h1 {
         font-size: 29px;
         line-height: 29px;
-        padding: 60px 15px 0 15px;
     }
     .block1 {
         padding: 25px 0;

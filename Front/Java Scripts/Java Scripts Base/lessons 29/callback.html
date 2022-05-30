@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>callback2</title>
+</head>
+<script>
+	
+	/*function call(){
+		setTimeout(function(){
+			console.log('Я тобі дзвоню'); 
+		},2000);
+	}
+	function answerphone(){
+		console.log('Залиште своє повідомлення');
+	}
+	call();
+	answerphone();*/
+	
+	function callTo(name,callback){
+		console.log('Привіт'+ " " + name);
+		callback();
+	}
+	callTo('Oleg', function(){
+		console.log('Після сигналу');
+	});
+	
+</script>
+<body>
+	<div class="box">Element 1</div>
+	<div class="box">Element 2</div>
+	<div class="box">Element 3</div>
+</body>
+	<script>
+		let box = document.querySelectorAll('.box');
+		box.forEach(function(item, count, arr){
+			item.style.backgroundColor ='pink';
+			item.style.marginBottom ='30px';
+			item.style.padding = '20px';
+		});
+		console.log(box);
+	</script>
+</html>

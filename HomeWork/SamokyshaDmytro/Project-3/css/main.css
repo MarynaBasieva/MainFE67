@@ -94,12 +94,16 @@ transition: all 1s;
   font-size: 50px;
 }
 .hidden {
-  display: flex;
+ /* display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
+  width: 130px;*/
+}
+.header .main-menu .navbar{
+	justify-content: center;
+
 }
 a i{
   transition: all 1s;
@@ -113,42 +117,51 @@ a i:hover{
 
 
 /* --------S2------- */
+
 .section-2 {
   padding-top: 50px;
+	
 }
-.s2-image{
+.baner{
+	background: rgb(152, 201, 220, 0.5) url("../img/s2-image.jpg") no-repeat;
+	background-position: top center;
+	padding: 200px 0;
+	padding: 100px 0;
+    border-radius: 10px;
+}
+/*.s2-image{
    border-radius: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-}
-.s2-h1-h2{
+}*/
+/*.s2-h1-h2{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-}
-h1{
+}*/
+.for_page h1{
   padding-top: 40px;
   font-family: 'El Messiri';
   font-style: normal;
-  font-weight: 700 !important;
-  font-size: 64px !important;
-  line-height: 140% !important;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
   text-align: center;
   color: #FFFFFF;
 }
-h3{
+.for_page h3{
   position: relative;
   max-width: 241px;
   margin: 0 auto;
   font-family: 'El Messiri';
   font-style: normal;
-  font-weight: 700 !important;
-  font-size: 24px !important;
-  line-height: 140% !important;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
   text-align: center;
   color: #FFFFFF;
 }
@@ -212,9 +225,31 @@ padding-bottom: 100px;
   right: -25px;
   top: 8px;
 }
+.s3-main-image{
+	position: relative;
+}
 .s3-main-image img {
   border-radius: 14px;
-  border-bottom: solid 6px #018ABE;
+	height: 460px;
+    object-fit: cover;
+    object-position: left top;
+	
+}
+.main_hover{
+	position: relative;
+}
+.main_hover:after{
+	content: "";
+	transition: 0.3s linear;
+    position: absolute;
+    height: 7px;
+    width: 99%;
+    background: #018ABE;
+    bottom: 0px;
+    left: 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+	opacity: 0;
 }
 /* .s3-main-image img::before{
   content: "";
@@ -334,7 +369,9 @@ border-radius: 10px;
   justify-content: center;
   border-radius: 10px;
   position: relative;
-  padding-bottom: 24px;
+}
+.main_hover:hover:after{
+	opacity: 1;
 }
 /* --------S3------- */
 
