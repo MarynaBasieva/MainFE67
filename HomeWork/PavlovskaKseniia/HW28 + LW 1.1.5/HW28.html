@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<script>
+
+    let userJob = {
+        name: "Petya",
+        surname: "Vasechkin",
+        age: 45,
+        Salary: {
+            pay: "2000$",
+            day: 247,
+        },
+        Vacation: {
+            pay: "100%",
+            day: 21,
+        }
+    }
+    document.write(`Name: ${userJob.name}, <br>Last Name: ${userJob.surname}, <br>Age: ${userJob.age}, <br><br>Salary: ${userJob.Salary.pay}, <br>Work day: ${userJob.Salary.day}, <br><br>Vacation: ${userJob.Vacation.pay}, <br>Vacation day: ${userJob.Vacation.day}`)
+
+    let ResultFinish = Object.assign({}, userJob)
+    console.log(ResultFinish);
+    
+    ResultFinish.name = "Olya",
+    ResultFinish.surname = "Ivanova",
+    ResultFinish.age = 14,
+    ResultFinish.Salary.pay = "300$",
+    ResultFinish.Salary.day = 132,
+    ResultFinish.Vacation.pay = "50%",
+    ResultFinish.Vacation.day = 150
+
+    console.log(ResultFinish)
+
+
+    function User_Three(name,surname,age,city){
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
+		this.city = city;
+		
+	}
+	console.log(new User_Three('Ivan', 'Romanov', 8, 'Kyiv'));
+	console.log(new User_Three('Viktor', 'Tatarin', 12, 'Vinnytsia'));
+	console.log(new User_Three('Dmytro', 'Harchuk', 19, 'Lviv'));
+	
+
+
+
+</script>
+<body>
+</body>
+</html>
