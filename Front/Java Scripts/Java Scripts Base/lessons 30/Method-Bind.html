@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bind()</title>
+</head>
+<script>
+	function promt(position,salary){
+		this.salary = salary;
+		this.position = position;
+		return this.position + 'earns' + this.salary + ' dolars';
+	}
+	
+	let junior = {
+		name: "Gery",
+		position: 'junior developer',
+		salary: 1000,
+	}
+	
+	let middle = {
+		name: "Maxim",
+		position: 'middle developer',
+		salary: 2000,
+	}
+	
+	let senior = {
+		name: "Mary",
+		position: 'senior developer',
+		salary: 3000,
+	}
+	
+	let resultAA = promt.bind(junior,1200);
+	let resultBB = promt.bind(middle,2200);
+	let resultCC = promt.bind(senior,3200);
+	
+	console.log(resultAA);
+	console.log(resultBB);
+	console.log(resultCC);
+	
+	
+	
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Call() and apply()</title>
+</head>
+<script>
+	
+	//this
+	let person ={
+		firstName: 'Valera',
+		lastName: 'Rubakov',
+		fullName: function(){
+			return this.firstName+ " " + this.lastName;
+		}
+	}
+	let result = person.fullName();
+	console.log(result);
+	
+	// Method Call
+	
+	let user = {
+		fullName: function(city, country){
+			return this.firstName + " " + this.lastName + ' ' + city + " " + country;
+		}
+	}
+	let user1 ={
+		firstName: 'Olga',
+		lastName: 'Volkova',
+	}
+	
+	let user2={
+		firstName: 'Maryana',
+		lastName: 'Petrova',
+	}
+	
+	let result2 = user.fullName.call(user1, 'Kiev', 'Pankova');
+	console.log(result2);
+	
+	//apply
+	
+	let user4 = {
+		fullName: function(city, country){
+			return this.firstName + " " + this.lastName + ' ' + city + " " + country;
+		}
+	}
+	let user5 ={
+		firstName: 'Olga',
+		lastName: 'Volkova',
+	}
+	
+	let user6={
+		firstName: 'Maryana',
+		lastName: 'Petrova',
+	}
+	
+	let result3 = user4.fullName.apply(user5,["Kiev","Pankova"]);
+	console.log(result3);
+	
+	
+</script>
+<body>
+</body>
+</html>

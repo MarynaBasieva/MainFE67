@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Arguments</title>
+</head>
+<script>
+	function sayHay(){
+		for(let i=0; i<arguments.length; i++){
+			console.log('Hello, ' + arguments[i]);
+		}
+	}
+	let person = sayHay("Lena", "Petr");
+	
+	console.log(person);
+	
+	function f(x){
+		x=5;
+		console.log(arguments[0]);
+	}
+	f(1);
+</script>
+<body>
+</body>
+</html>

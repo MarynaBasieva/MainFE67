@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Function Class</title>
+</head>
+<script>
+/*	const user = {
+		name: "Polina",
+		age:5,
+		speak: true
+	}
+	console.log(user);*/
+	
+	class Users{
+		static type = "Children";
+		
+		constructor(options){
+			this.name = options.name
+			this.age = options.age
+			this.speak = options.speak
+		}
+		voice(){
+			console.log('My name Polina');
+		}
+	}
+	/*const user = new Users({
+		name: 'Polina',
+		age:5,
+		speak: true
+	})*/
+	class Children extends Users{
+		static type = "child";
+	
+		constructor(options){
+			super(options)
+			this.color = options.color
+		}
+	voice(){
+		super.voice();
+		console.log("I am Polina child")
+	}
+	
+	get ageInfo(){
+		return this.age * 7;
+	}
+	
+	set ageInfo(newAge){
+		this.age = newAge;
+	}
+		
+	}
+	
+	const children = new Children({
+		name:'Sveta',
+		age:7,
+		speak: true,
+		color: 'blue'
+	})
+	console.log(children.ageInfo = 8);
+	console.log(children.ageInfo);
+	
+</script>
+<body>
+</body>
+</html>

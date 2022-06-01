@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yield</title>
+</head>
+<script>
+	function* nameGenerator(){
+		yield 1;
+		yield 2;
+		return 3;
+	}
+	//функція - генератор створює обєкт генератор
+	let generator = nameGenerator();
+	console.log(generator);
+	
+	//next  - метод який запускає значення yield
+	
+	// value із yield 
+	// done: true and false
+	
+	
+	function* nameGen(){
+		yield 1;
+		yield 2;
+		return 3;
+	}
+	let gener = nameGen();
+	let oneGenertion = gener.next();
+	let twoGenertion = gener.next();
+	let threeGenertion = gener.next();
+	console.log(JSON.stringify(oneGenertion));
+	console.log(JSON.stringify(twoGenertion));
+	console.log(JSON.stringify(threeGenertion));
+	
+	
+	function* generatorFoo(){
+		yield 1;
+		yield 2;
+		yield 3;
+	}
+	
+	let generatorNew = generatorFoo();
+	for(let value of generatorNew){
+		console.log(value);
+	}
+</script>
+<body>
+</body>
+</html>

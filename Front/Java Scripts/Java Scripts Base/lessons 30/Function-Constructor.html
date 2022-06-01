@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Function( ) Constructor</title>
+</head>
+<script>
+	function User(name){
+		this.name = name;
+		this.work = false;
+	}
+	let user = new User('Valera');
+	
+	console.log(user.name, user.work);
+	
+	
+/*	let user ={
+		name: 'Valera',
+		work: false
+	}*/
+	
+	let Man = function(name){
+		this.name = name;
+		this.speak = true;
+		
+		let age = "34";
+		
+		this.sayHay = function(){
+			return 'Hello my name,' + this.name + '. Me ' + age + ' years';
+		}
+	}
+	let valera = new Man('Valera');
+	let ira = new Man('Ira');
+	
+	console.log(valera);
+	console.log(valera.name);
+	console.log(valera.speak);
+	console.log(valera.sayHay());
+	//console.log(valera.age);
+	
+	
+	let myApp ={
+		Man: function(name){
+			this.name = name;
+			this.speak = true;
+		}
+	};
+	let goha = new myApp.Man('Gosha');
+	console.log(goha);
+	
+</script>
+<body>
+</body>
+</html>
