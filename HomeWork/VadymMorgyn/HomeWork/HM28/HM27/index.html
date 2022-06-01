@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="test"></div>
+</body>
+<script>
+	let word = ["one","two","three","four","five"];
+	for(let item of word){
+    console.log(item);
+  };
+console.log('====================================');
+let word2 = word;
+word2.push("six","seven");
+for (var item2 in word2) {
+  console.log(item2 + " = " + word2[item2]);
+};
+for (var item in word) {
+  console.log(item + " = " + word[item]);
+};
+console.log('====================================');
+let word3 = word2;
+word3.pop();
+word3.pop();
+for(let i=0; i<word3.length; i++){
+    if(i = word3.length){
+			console.log(i);
+		}
+};
+const people =[
+                {name:"Гордій",surname:"Задорожній", age:"30", salary: 40000},
+                {name:"Андрій",surname:"Шевченок", age:"14", salary: 1000},
+                {name:"Олег",surname:"Мазнік", age:"50", salary: 50000},
+                {name:"Олена",surname:"Горбарчук", age:"10", salary: 2000},
+                {name:"Богдан",surname:"Дашков", age:"28", salary: 3500},
+                {name:"Артур",surname:"Турчак", age:"35", salary: 15000},
+                {name:"Петро",surname:"Труський", age:"15", salary: 4000},
+                {name:"Степан",surname:"Кавратка", age:"31", salary: 6000},
+                {name:"Іван",surname:"Бордунов", age:"42", salary: 25000},
+                {name:"Татьяна",surname:"Сидоренко", age:"22", salary: 12000}
+                ];
+
+		let oleg = people.find(person => person.name === "Олег");
+		console.log(oleg);
+		let tanya = people.find(person => person.name === "Татьяна");
+		console.log(tanya);
+		
+		
+let newPeople = people.map(person=>{
+return `${person.name}  ${person.surname}`;
+ }); 
+ console.log(newPeople)
+ let test = document.querySelectorAll('.test')
+ test.innerHTML +=  `${newPeople.name} ${newPeople.surname}`;
+ document.write(`Імя: ${newPeople.name}, <br> прізвище: ${newPeople.surname}`);
+
+</script>
+</html>

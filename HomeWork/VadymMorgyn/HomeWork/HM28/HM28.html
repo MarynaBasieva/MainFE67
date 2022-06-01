@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="result"></div>
+	<div class="ResultFinish"></div>
+</body>
+<script>
+	let userJob = {
+		name: "Vadim",
+		lastName: "Morgyn",
+		age: 23,
+		sullary:{
+			wage: 15000,
+			workDay: 21,
+			holiday:{				
+			money: 20000,
+			holidayAmount: 18
+			}
+			
+		}
+	};
+	for (var key in userJob)  {
+			let test = document.querySelector('.result');
+			test.innerHTML += `${key}, ${userJob[key]}<br>`;
+
+	};
+	for (var key in userJob.sullary)  {
+			let test = document.querySelector('.result');
+			test.innerHTML += `${key}, ${userJob.sullary[key]}<br>`;
+	};
+	for (var key in userJob.sullary.holiday)  {
+			let test = document.querySelector('.result');
+			test.innerHTML += `${key}, ${userJob.sullary.holiday[key]}<br>`;
+	};
+	let newJob = Object.assign(userJob,{name: "Vadim22",	lastName: "Morgyn22",	age: 2322, sullary:	{	wage: 1500022,	workDay: 2122, holiday:{	money: 2000022, holidayAmount: 1822}}})
+	for (var key in newJob)  {
+			let test = document.querySelector('.ResultFinish');
+			test.innerHTML += `=============<br>${key}, ${newJob[key]}<br>`;
+	};
+		for (var key in newJob.sullary)  {
+			let test = document.querySelector('.ResultFinish');
+			test.innerHTML += `=============<br>${key}, ${newJob.sullary[key]}<br>`;
+	};
+		for (var key in newJob.sullary.holiday)  {
+			let test = document.querySelector('.ResultFinish');
+			test.innerHTML += `=============<br>${key}, ${newJob.sullary.holiday[key]}<br>`;
+	};
+
+	function UserInfo(name,lastName,age,adrres){
+		this.name = name;
+		this.lastName = lastName;	
+		this.age = age;	
+		this.adrres = adrres;	
+	};
+		console.log(new UserInfo('Vova', 'Kavratka', 21, 'Obyhiv'));
+	console.log(new UserInfo('Viktoria', 'Lan', 32, 'Lviv'));
+	console.log(new UserInfo('Dima', 'Petryk', 24, 'Harkiv'));
+</script>
+
+</html>
+
+

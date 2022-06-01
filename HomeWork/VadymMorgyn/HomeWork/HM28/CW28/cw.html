@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<script>
+	let user = {};
+	user.name = "Vadim";
+	user.age = 30;
+	user.name = "Petya";
+	delete user.name;
+	let user2 = {
+		name: "Вадим",
+		age: 30,
+		value:{			
+		eyes: "Синього кольору",		
+		weight: 86,
+		language: "Англійською"
+		},
+		showInfo(){
+			console.log(`Мене звати ${this.name}, мені ${this.age} років, очі ${this.value.eyes}, вага ${this.value.weight}, я умію розмовляти ${this.value.language}. `)}};
+			user2.showInfo();
+</script>
+<body>
+	
+</body>
+</html>
