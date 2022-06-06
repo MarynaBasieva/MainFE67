@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>recursive function</title>
+</head>
+<style>
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.yellow{
+		width: 100px;
+		height: 100px;
+		position: relative;
+		padding: 5px;
+		box-sizing: border-box;
+		background: #CDC733;
+	}
+	.button{
+		outline: none;
+		cursor: pointer;
+		transition: 0.3s linear;
+		background: #0A2D7C;
+		padding: 10px 0;
+		width: 200px;
+		color: #fff;
+		border: none;
+		margin-bottom: 20px;
+	}
+	.button:hover{
+		background: #2F1FEA;
+	}
+</style>
+<body>
+	<div class="container">
+		<button class="button">Move</button>
+		<div class="yellow"></div>
+	</div>
+</body>
+	<script>
+		let num = 0;
+		function muFoo(){
+			num++;
+			console.log(num);
+			if(num >= 10){
+				return num;
+			}
+			muFoo();
+		}
+		muFoo();
+		
+		let offset = 0;
+		
+		function move(){
+			document.querySelector('.yellow').style.left = offset + 'px';
+			offset = offset + 5;
+			if(offset > 200){
+				return offset;
+			}
+			setTimeout(move,500);
+		}
+		document.querySelector('.button').onclick = move;
+	</script>
+</html>
