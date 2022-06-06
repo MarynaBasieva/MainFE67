@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="test"></div>
+</body>
+<script>
+		let user = {
+		fullName: function(work, country, age){
+			return this.firstName + " " + this.lastName + ', work: ' + work + ", coutry: " + country + ", age: " + age;
+		}
+	}
+	let user1 ={
+		firstName: 'Olga',
+		lastName: 'Volkova',
+	};
+	let result = user.fullName.call(user1, "IT", "UA", 20);
+	console.log(result);
+	console.log(result);
+	let result2 = user.fullName.call(user1, "Taxi", "GER", 24);
+	console.log(result2);
+	console.log(result2);
+	let result3 = user.fullName.call(user1, "Office", "UA", 22);
+	console.log(result3);
+	console.log(result3);
+	let result4 = user.fullName.call(user1, "Vet", "UA", 28);
+	console.log(result4);
+	console.log(result4);
+	console.log("================");
+	console.log("================");
+	document.body.innerHTML += `${result}`;
+	class Parents{
+		static type = "Parents";
+		constructor(options){
+			this.name = options.name
+			this.lastName = options.lastName
+			this.age = options.age			
+		}
+	};
+	const Polina = new Parents({
+		name: 'Polina',
+		lastName: 'Zarina',
+		age: 32	
+	});
+	console.log(Parents.type);
+	console.log(Polina);
+	console.log("================");
+	console.log("================");
+	class Children extends Parents{
+		static type = "child";
+		constructor(options){
+			super(options)
+			this.childName = options.childName
+			this.childAge = options.childAge		
+		}
+	};
+	const Maria = new Children({
+		childName: 'Maria',
+		childAge: 12,
+		name: 'Polina',
+		lastName: 'Zarina',
+		age: 32	
+	});
+	console.log(Children.type);
+	console.log(Maria);
+	
+
+
+
+</script>
+</html>

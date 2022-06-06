@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+
+<div class="human"></div>
+
+	
+</body>
+	<script>
+		let Person = function (name, lastName) {
+			this.name = name;
+			this.lastName = lastName;
+			let yearBirth = 1998;
+			let address = "Київ";
+			this.work = true;
+			this.sayHay = function() {
+ 					return ' Мене звати ' + this.name + ' ' + this.lastName + ', я народився в '   + yearBirth + ' році, проживаю в місті ' + address +', робота: ' + this.work;				
+			}
+		};
+		let Egor = new Person('Єгор', 'Труський');
+		document.write(Egor.sayHay());
+
+		 
+	</script>
+</html>
