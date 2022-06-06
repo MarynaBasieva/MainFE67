@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+
+<script> 
+    let person = {
+        fullName: function(){
+            return this.name + " " + this.surname + ". <br>";
+        }
+    }
+    let person1 = {
+        name: "Ivan",
+        surname: "Petrov",
+    }
+    let person2 = {
+        name: "Eva",
+        surname: "Chernova",
+    }
+    let person3 = {
+        name: "Emmi",
+        surname: "Medvedeva",
+    }
+    let person4 = {
+        name: "Ira",
+        surname: "Barda",
+    }
+
+    let result = person.fullName.call(person2);
+    document.write(result);
+
+    let person5 = {
+        fullName: function(age, pet, petName){
+            return this.name + " " + this.surname + ", " + age + ", " + pet + " " + petName;
+        }
+    }
+
+    
+	let result2 = person5.fullName.apply(person3,["5","cat","Chester"]);
+	document.write(result2);
+
+
+    class parent {
+        static type = "children";
+
+        constructor (options){
+            this.name = options.name
+            this.age = options.age
+        }
+    }
+/*     const parents = new parents({
+        name: "Kseniia, Nik",
+        age: "32, 33"
+    })
+
+    console.log(parents);
+ */
+    class child extends parent {}
+
+    const children1 = new child ({
+        name: "Viktor",
+        age: 12
+    })
+    const children2 = new child ({
+        name: "Ivan",
+        age: 8
+    })    
+    const children3 = new child ({
+        name: "Dmytro",
+        age: 5
+    })
+
+    console.log(children1);    
+    console.log(children2);
+    console.log(children3);
+</script>
+    
+
+<body>
+
+</body>
+</html>
+
