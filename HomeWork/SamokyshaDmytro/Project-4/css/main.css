@@ -1,0 +1,701 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap');
+
+body ul {
+  list-style: none;
+}
+body a, li{
+  text-decoration: none;
+  cursor: pointer; 
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+body a:hover{
+  text-decoration: none;
+}
+body img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+body p{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #6B6B6B;
+}
+u{
+  color: #6B6B6B;
+}
+.for-page {
+  min-height: 100%;
+  position: relative;
+}
+body h1{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(26px + 54 * (100vw / 1440)) ;
+  line-height: 80px;
+  color: #FFFFFF;
+  padding-top: 20px;
+  z-index: 999;
+}
+body h2{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(16px + 22 * (100vw / 1440)) ;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+body h3{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(12px + 18 * (100vw / 1440)) ;
+  line-height: 44px;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  z-index: 999;
+}
+/* ------HEADER----- */
+.header{
+  position: absolute;
+  padding: 29px 0;
+height: 100px;
+width: 100%;
+}
+.main-logo-container{
+  max-width: 112px;;
+  height: 100%;
+  padding-left: 20px;
+  animation: logo 3s ease-out;
+}
+@keyframes logo{
+  from{
+margin-left: -430px;
+  }
+  to{
+    margin-top: 0px;
+  }
+}
+.header .flex-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main-menu-li{
+  padding-left: 30px;
+}
+.main-menu-li:first-child{
+  padding-left: 0;
+}
+.main-menu-li a:hover{
+animation: innerTextLink4 ease-in 1s alternate infinite;
+}
+@keyframes innerTextLink4{
+  from{
+    color: #ea2fff;
+  }
+  to{
+    color: #ff007b;
+  }
+}
+.hidden{
+  display: none;
+}
+.fa-bars::before{
+  font-size: 40px;
+}
+/* ------HEADER----- */
+
+
+/* --------B1------- */
+
+.banner-1{
+  width: 100%;
+  height:100vh;
+  background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+  border-radius: 0px;
+  padding: 198px 0;
+}
+.main-block{
+  padding-left: 20px;
+  max-height: 245px;
+  position: relative;
+  z-index: 1;
+}
+.main-block h1{
+  animation: logo1 2s ease-out;
+}
+.main-block h3{
+  animation: logo2 4s ease-out;
+}
+.main-block a{
+  padding: 20px 40px;
+  background: #FC0A7E;
+  border-radius: 3px;
+  transition: 0.5s all ease-out;
+  animation: logo3 4s ease-out;
+}
+@keyframes logo1{
+  from{
+margin-left: -430px;
+  }
+  to{
+    margin-left: 0px;
+  }
+}
+@keyframes logo2{
+  from{
+margin-left: -430px;
+  }
+  to{
+    margin-left: 0px;
+  }
+}
+@keyframes logo3{
+  from{
+margin-left: -530px;
+  }
+  to{
+    margin-left: 0px;
+  }
+}
+.main-block a:hover{
+  color: #FFFFFF;
+  background:  linear-gradient(-287.15deg, #450e4b4a 0%, #3c0c4122 24.48%, rgb(207, 0, 100) 100%), #cf0064;
+  box-shadow: #1B1B1B -5px 1px 2px;
+}
+
+.bnr-2-mainImage-container {
+  /* padding-top: 40px; */
+  position: inherit;
+max-width: 652px;
+max-height: 680px;
+/* animation: anima 5s ease-out infinite alternate; */
+transform: scale(1.18);
+}
+/* @keyframes anima{
+  from{
+transform: scale(1.6);
+  }
+  to {
+    transform: scale(1.8);
+  }
+} */
+.banner-1 #main-shape{
+
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  animation: shape-anima 1s linear alternate infinite;
+}
+@keyframes shape-anima{
+  from{
+transform: translateY(0);
+  }
+  to {
+    transform: translateY(8px) ;
+  }
+}
+#main-shape:hover{
+  animation: shape-anima-hov 0.2s ease-in alternate infinite;
+}
+@keyframes shape-anima-hov {
+  from{
+transform:  translateY(-5px);
+  }
+  to {
+    transform:  translateY(8px) ;
+  }
+}
+/* --------B1------- */
+
+
+/* --------B2------- */
+.banner-2{
+  position: relative;
+  padding-top: 80px;
+  background-color: #1B1B1B;
+}
+.banner-2-p{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: #A8A8A8;
+  text-align: center;
+}
+.banner-2-h2{
+  max-width: 607px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+.banner-2-image-container{
+  max-width: 1200px;
+}
+/* #bnr-2{
+
+} */
+/* --------B2------- */
+
+
+/* --------B3------- */
+/* Основа баннера №3 */
+.banner-3{
+  padding-top: 80px;
+  padding-bottom: 118px;
+  /* background: #E5E5E5; */
+}
+.banner-3 .row {
+  justify-content: center;
+}
+.baner-3-p-1{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #A8A8A8;
+  margin: 0;
+}
+.baner-3-h2-1{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(16px + 22 * (100vw / 1440)) ;
+  line-height: 48px;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 25px 0;
+}
+.baner-3-p-2{
+  font-family: 'Gothic A1';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+color: #6B6B6B;
+margin: 0;
+}
+.banner-3 .banner-3-inner-left-text{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-3 .b3text-con-left{
+
+  max-width: 450px;
+  padding-left: 58px;
+  padding-right: 86px;
+}
+.banner-3 .banner-3-inner-right-img{
+
+max-width: 558px;
+display: flex;
+justify-content: center;
+}
+.banner-3 .banner-3-inner-right-text{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-3 .b3text-con-right{
+
+  max-width: 450px;
+  padding-left: 58px;
+  padding-right: 86px;
+}
+.banner-3 .banner-3-inner-left-img{
+
+max-width: 558px;
+display: flex;
+justify-content: center;
+}
+.banner-3 .banner-3-padding{
+ padding-top: 160px;
+}
+
+/* Підбаннер з трьома картками */
+.pages-cards{
+  padding-top: 159px;
+}
+.pages-card{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 432px;
+  max-height: 209px;
+  text-align: center;
+}
+.pages-card-p1{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  padding: 40px 0 17px 0;
+}
+
+/* Підбаннер з чотирьма значеннями */
+.pages-values{
+padding-top: 160px;
+}
+.pages-values-box{
+display: flex;
+flex-direction: column;
+align-content: center;
+align-items: center;
+}
+.pages-values-p1{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(25px + 34 * (100vw / 1440)) ;
+  line-height: 90px;
+  text-align: center;
+  color: #333333;
+}
+.pages-values-p2{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(14px + 4 * (100vw / 1440)) ;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+.pages-values-p2-last{
+  font-family: 'Gothic A1';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+body > div > main > section.banner-3 > div > div > div:nth-child(14) > div > p.baner-3-p-2 > a > u > b:hover{
+  text-decoration: none;
+  animation: innerTextLink 0.3s  alternate infinite;
+  }
+body > div > main > section.banner-3 > div > div > div:nth-child(17) > div > p.baner-3-p-2 > a > u > b:hover{
+text-decoration: none;
+animation: innerTextLink 0.3s  alternate infinite;
+}
+@keyframes innerTextLink{
+  from{
+    color: #3C0C41;
+  }
+  to{
+    color: #cf0064;
+  }
+}
+
+/* Карусель */
+#slider_img{
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+.owl-item{
+    max-width: 720px;
+  max-height: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-img{
+  max-width: 58px;
+}
+.item-img img{ 
+  width: 58px;
+}
+.owl-item p{
+  max-width: 700px;
+  font-family: 'Gothic A1';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 40px;
+text-align: center;
+color: #6B6B6B;
+padding: 63px 0px 17px 0px;
+}
+.item-menu{
+display: flex;
+position: relative;
+flex-direction: row;
+ 
+}
+
+.item-menu a{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #6B6B6B;
+  transition: all 1s ease-in;
+}
+#joshua{
+  text-decoration: none;
+  font-weight: 700;
+  color: #6B6B6B;
+  transition: all 1s ease-out;
+}
+#NYT{
+  text-decoration: none;
+  font-weight: 700;
+  color: #6B6B6B;
+  transition: all 1s ease-out;
+}
+.item-menu span{
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+}
+/* Список компаній */
+.company-list-block{
+  max-width: 1296px;
+}
+#company-list-img{
+  object-fit: contain;
+}
+.owl-dots{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    padding: 88px 0 21px 0;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  border-radius: 79px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: rgba(34, 34, 34, 0.4);
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  /* padding: 12px 0 21px 0; */
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #222222;
+}
+/* Кінець третього баннеру */
+
+/* --------B3------- */
+.banner-3-end{
+background-image: url("../img/banner-3-end.png");
+background-size: cover;
+    width: 100%;
+    height: 518px;
+    object-fit: cover;
+    padding-bottom: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* --------B5------- */
+
+.banner-5{
+  background: linear-gradient(276.18deg, #6E28B1 0%, rgba(0, 0, 0, 0) 100%), #FC0A7E;
+border-radius: 0px;
+width: 100%;
+background-size: cover;
+max-height: 474px;
+}
+.vectors{
+background-image: url("../img/Group.png");
+background-size: cover;
+}
+.b-5-h2-box{
+  padding-top: 164px;
+padding-bottom: 60px;
+}
+.b-5-btn-1-box{
+    padding-bottom: 155px;
+    padding-right: 10px;
+}
+.b-5-btn-2-box{
+  padding-bottom: 155px;
+}
+#b-5-btn-1{
+  padding: 20px 40px;
+  background: #FC0A7E;
+  border-radius: 3px;
+  transition: 0.5s all ease-out;
+}
+#b-5-btn-2{
+  padding: 20px 40px;
+  border: 1px solid #B04BB3;
+  transition: 0.5s all ease-out;
+}
+#b-5-btn-1:hover{
+  color: #FFFFFF;
+  background:  linear-gradient(-270deg, #450e4b4a 0%, #3c0c4122 24.48%, rgb(207, 0, 100) 100%), #FC0A7E;
+  box-shadow: #1B1B1B -5px 1px 3px;
+ animation: main-a-anima 3s alternate  infinite;
+}
+#b-5-btn-2:hover{
+  border: none;
+  color: #FFFFFF;
+  background:  linear-gradient(270deg, #450e4b4a 0%, #3c0c4122 24.48%, rgb(207, 0, 100) 100%), #FC0A7E;
+  box-shadow: #1B1B1B 5px 1px 3px;
+ animation: main-a-anima 3s alternate  infinite;
+}
+/* --------B5------- */
+
+
+/* --------B6------- */
+.banner-6{
+  padding: 89px 0 71px 0;
+  background: #1B1B1B;
+}
+.banner-6 h2{
+  font-family: 'Gothic A1';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.banner-6 p{
+  font-family: 'Gothic A1';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+color: #6B6B6B;
+  padding-bottom: 40px;
+}
+.form-wrap{
+  max-width: 465px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+}
+.banner-6 .emailForm{
+  height: 70px;
+  background: #FFFFFF;
+box-shadow: 0px 0px 0px #FC0A7E;
+border-radius: 3px 0px 0px 3px;
+box-shadow: none;
+}
+.banner-6 .emailForm:focus{
+  box-shadow: none;
+}
+#button-addon2{
+  background: #FC0A7E;
+  width: 153px;
+  padding: 22px 0;
+  font-family: 'Gothic A1';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #000000;
+line-height: 26px;
+text-align: center;
+border-radius: 0px 3px 3px 0px;
+border: none;
+transition: all 0.5s;
+}
+#button-addon2:focus{
+  box-shadow: none;
+}
+#button-addon2:hover{
+  color: white;
+  border-radius: 0px 25px 25px 0px;
+  transition: all 0.5s;
+  animation: innerTextLink3 1s alternate infinite ;
+}
+@keyframes innerTextLink3{
+  from{
+    color: #e600ff;
+  }
+  to{
+    color: #000000;
+  }
+}
+/* --------B6------- */
+
+
+/* ------FOOTER----- */
+footer {
+  left: 0;
+bottom: 0;
+/* _________________________________ */
+background: #1B1B1B;
+height: 242px;
+}
+.footer-nav{
+  padding-top: 29px;
+padding-bottom: 40px;
+}
+footer ul li {
+  padding-right: 30px;
+}
+footer ul li:last-child {
+  padding-right: 1px;
+}
+/*OTHERS*/
+footer ul li a{
+  font-family: 'Gothic A1';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+text-align: center;
+color: #6B6B6B;
+}
+body > div > footer > div > div > div > div.footer-nav.text-center > div > ul > li:hover{
+  animation: innerTextLink2 1s alternate infinite ;
+}
+@keyframes innerTextLink2{
+  from{
+    color: #ea2fff;
+  }
+  to{
+    color: #ff007b;
+  }
+}

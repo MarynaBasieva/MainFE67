@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW31</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	  <div class="container" style="max-width: 900px; margin: 0 auto">
+		<div id="box1">	  
+
+		</div>
+					<button class="butn" style="cursor: pointer; outline: none; left:400px; top: 400px">Батон наліво</button>
+					<button class="butn1" style="cursor: pointer; outline: none; left:400px; top: 350px">Батон впарво</button>
+					<button class="butn2" style="cursor: pointer; outline: none; left:400px; top: 350px">Батон вниз</button>
+					<button class="butn3" style="cursor: pointer; outline: none; left:400px; top: 350px">Батон вверх</button>
+			<div class="kolo" style="position: relative; width: 200px; height: 200px; border: 20px solid #ffffff; background: violet; border-radius:50%"></div>
+		</div>
+
+		
+
+		<div class="container2" style="padding-top: 400px; width: 1200px; margin: 0 auto; ">
+			<div class="card"></div>
+
+		</div>
+<div class="boxForClass">
+
+		</div>
+  </body>
+
+<script>    
+// __________________________________Трикутники та коло_________________________________________        
+class Component {
+       constructor(selector){
+           this.$elem = document.querySelector(selector)
+       }
+   }
+   class Box extends Component {
+       constructor(options){
+            super(options.selector)
+                this.$elem.style.width = options.sizeWidth + 'px';
+                this.$elem.style.height = options.sizeHeight + 'px';
+                this.$elem.style.background = options.background; 
+				this.$elem.style.border = options.border + 'px';
+				this.$elem.style.borderBottom = options.borderBottom + 'px';
+				this.$elem.style.opacity = options.opacity;  
+				this.$elem.style.border = options.border;
+				this.$elem.style.borderBottom = options.borderBottom;
+				this.$elem.style.borderTop = options.borderTop;
+				this.$elem.style.borderLeft = options.borderLeft;
+				this.$elem.style.borderRight = options.borderRight;
+       }
+   }
+
+   const box1 = new Box({
+	selector: '#box1',
+	sizeWidth: 1,
+    sizeHeight: 1,
+	border: '100px solid transparent',
+	borderBottom: '100px solid red',
+	// borderTop: '100px double green',
+	borderLeft:'100px dotted yellow',
+	borderRight: '100px ridge blue'
+   })
+
+
+let toRight = 0;
+function move(){
+	document.querySelector('.kolo').style.right = toRight + 'px';
+	toRight = toRight + 5;
+	if (toRight > 200){
+		return toRight;
+	}
+	setTimeout(move, 50);
+}
+document.querySelector('.butn').onclick = move;
+
+let toLeft = 0;
+function move1(){
+	document.querySelector('.kolo').style.left = toLeft + 'px';
+	toLeft = toLeft + 5;
+	if (toLeft > 200){
+		return toLeft;
+	}
+	setTimeout(move1, 50);
+}
+document.querySelector('.butn1').onclick = move1;
+
+let toBottom = 0;
+function move2(){
+	document.querySelector('.kolo').style.top = toBottom + 'px';
+	toBottom = toBottom + 5;
+	if (toBottom > 200){
+		return toBottom;
+	}
+	setTimeout(move2, 50);
+}
+document.querySelector('.butn2').onclick = move2;
+
+
+
+let toTop = 0;
+function move3(){
+	document.querySelector('.kolo').style.bottom = toTop + 'px';
+	toTop = toTop + 5;
+	if (toTop > 200){
+		return toTop;
+	}
+	setTimeout(move3, 50);
+}
+document.querySelector('.butn3').onclick = move3;
+
+// _______________________________Класи_________________________________________________
+
+class FirstClass{
+		static type = "parent";
+		constructor(options){
+			this.name = options.name
+			this.age = options.age
+		}	
+	}
+	const user = new FirstClass({
+		name: 'Dmytro',
+		age: 45
+	});
+
+	class SecondClass extends FirstClass{
+		static type = "child";
+		constructor(options){
+			super(options)
+			this.name = options.name
+      this.age = options.age
+		}
+	}
+	const cat = new SecondClass({
+		name:'Cat',
+		age:3,
+	})
+	const dog = new SecondClass({
+		name:'Dog',
+		age:8,
+	})
+	const bird = new SecondClass({
+		name:'Bird',
+		age:5,
+	})
+	console.log(cat, dog, bird);
+	document.write(cat.name + ' ' + cat.age + '<br>' +
+	dog.name + ' ' + dog.age + '<br>' +
+	bird.name + ' ' + bird.age + '<br>')
+
+// _______________________________________________________________________________________________________
+// let year = prompt('Введіть поточну дату');
+// today =  new Date();
+// someday = new Date();
+// today.setFullYear(2021);
+// someday.setFullYear(year);
+// if (someday<today){
+// 	text = "2021 не наступив";
+// }else{
+// 	text = "2021 наступив";
+// }
+// alert(text);
+
+
+// let date = new Date();
+//     let month = date.getMonth();
+//     let month2 = ['Cічень','Лютий','Березень','Квітень','Травень',"Червень", 'Липень','Серпень',"Вересень", 'Жовтень','Листопад',"Грудень"];
+//     document.write(month2[month] + "<br>");
+
+</script>
+         
+
+</html>

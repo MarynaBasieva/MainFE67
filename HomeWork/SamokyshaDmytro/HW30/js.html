@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW29</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	  <div class="first"></div>
+    <div class="second"></div>
+  </body>
+
+<script>            
+
+let Man1 = {
+  name: 'Dmytro',
+  lastName: 'Dmytrovich',
+  age: 40,
+  salary:  50000 
+}
+let Man2 = {
+  name: 'Oleg',
+  lastName: 'Olegovich',
+  age: 30,
+  salary: 30000 
+}
+let Man3 = {
+  name: 'Yasha',
+  lastName: 'Yashovich',
+  age: 20,
+  salary: 80000 
+}
+let Man4 = {
+  name: 'Igor',
+  lastName: 'Igorovich',
+  age: 50,
+  salary: 3000
+}
+
+let User = {
+  fullName: function(city, country, index){
+    return 'Name: ' + this.name + '    Last Name: ' + this.lastName + '    Age: ' + this.age + '    Salary: ' + this.salary + '    Місто: ' + city + '    Країна: ' + country + '   ' + index;
+  }
+}
+
+let result1 = User.fullName.call(Man1);
+let result2 = User.fullName.call(Man2);
+let result3 = User.fullName.call(Man3);
+let result4 = User.fullName.call(Man4);
+document.write(result1, '<br>', result2,  '<br>', result3, '<br>', result4)
+document.write('<br>'+'<br>'+'<br>')
+
+let result5 = User.fullName.apply(Man1,["Kiev","Kikvidze", 8000]);
+	document.write(result5+'<br>'+'<br>');
+
+// _______________________________________________________________________________________
+
+class Parents{
+		static type = "parent";
+		constructor(options){
+			this.name = options.name
+			this.age = options.age
+		}	
+	}
+	const user7 = new Parents({
+		name: 'Yasko',
+		age: 5,
+	});
+  console.log(user7.name, user7.age)
+
+	class Children extends Parents{
+		static type = "child";
+		constructor(options){
+			super(options)
+			this.name = options.name
+      this.age = options.age
+		}
+	}
+	const popugay = new Children({
+		name:'Yasha',
+		age:2,
+	})
+	console.log(popugay);
+
+// ______________________________________________________________________________________
+// function User (name, lastName, age, salary){
+//   this.name = 'Імя: ' + name;
+//   this.lastName = 'Прізвище: ' +  lastName;
+//   this.age = 'Вік: ' +  age;
+//   this.salary = 'Зарплата: ' +  salary
+// }
+
+// let Man1 = new User('Dmytro', 'Dmytrovich', 40, 50000);
+// let Man2 = new User('Oleg', 'Lobanovsky', 50, 5000);
+// let Man3 = new User('Yasha', 'Ptaha', 20, 80000);
+// let Man4 = new User('Igor', 'Golubov', 33, 25000);
+
+// console.log(Man1.name, Man1.lastName, Man1.age, Man1.salary);
+// document.write(Man1.name + '<br>', Man1.lastName + '<br>', Man1.age + '<br>', Man1.salary + '<br>')
+// document.write('<br>')
+// document.write(Man2.name + '<br>', Man2.lastName + '<br>', Man2.age + '<br>', Man2.salary + '<br>')
+// document.write('<br>')
+// document.write(Man3.name + '<br>', Man3.lastName + '<br>', Man3.age + '<br>', Man3.salary + '<br>')
+// document.write('<br>')
+// document.write(Man4.name + '<br>', Man4.lastName + '<br>', Man4.age + '<br>', Man4.salary + '<br>')
+// _______________________________________________________________________________________________________
+
+</script>
+         
+
+</html>
