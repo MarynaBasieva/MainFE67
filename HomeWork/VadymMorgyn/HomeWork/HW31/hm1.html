@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.circle{
+	width: 100px;
+	height: 100px;
+	border-bottom: black solid 5px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+	}
+	.button{
+		outline: none;
+		cursor: pointer;
+		transition: 0.4s linear;
+		background: #004cff;
+		padding: 10px 0;
+		width: 200px;
+		color: #fff;
+		border: none;
+		margin: 10px;
+		margin-bottom: 20px;
+	}
+	.button2{
+		outline: none;
+		cursor: pointer;
+		transition: 0.4s linear;
+		background: #004cff;
+		padding: 10px 0;
+		width: 200px;
+		color: #fff;
+		border: none;
+		margin: 10px;
+		margin-bottom: 20px;
+	}
+	.button:hover{
+		background: #00ffff;
+	}
+	.button2:hover{
+		background: #00ffff;
+	}
+</style>
+<body>
+	<div id="box1"></div>
+	<div class="container">
+		<button class="button">Go</button>
+		<button class="button2">Back</button>
+		<div class="circle"></div>
+	</div>
+</body>
+<script>
+	class Component{
+			constructor(selector){
+				this.$elem = document.querySelector(selector)
+			}
+		};
+		class Box extends Component{
+			constructor(options){
+				super(options.selector)
+				this.$elem.style.width = options.sizeWidth + 'px';
+				this.$elem.style.height = options.sizeHeight + 'px';
+				this.$elem.style.background = options.background;
+				this.$elem.style.border = options.border;
+				this.$elem.style.borderTop = options.borderTop;
+				this.$elem.style.borderLeft = options.borderLeft;
+				this.$elem.style.borderRight = options.borderRight;
+			}
+		}
+	const box1 = new Box({
+		selector: '#box1',
+		sizeWidth: 0,
+    sizeHeight: 0,
+    borderLeft: '150px solid transparent',
+    borderRight: '150px solid transparent',
+    borderTop: '300px solid #f95959',
+		background: "yellow"
+		});
+			let offset = 0;
+		
+		function move(){
+			document.querySelector('.circle').style.left = offset + 'px';
+			offset = offset + 5;
+			if(offset > 1000){
+				return offset;
+			}
+			setTimeout(move,10);
+		}
+		document.querySelector('.button').onclick = move;
+
+		
+		function move2(){
+			document.querySelector('.circle').style.left = offset + 'px';
+			offset = offset - 5;
+			if(offset < 1){
+				return offset;
+			}
+			setTimeout(move2,10);
+		}
+		document.querySelector('.button2').onclick = move2;
+</script>
+</html>
