@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+
+<style>
+    .block {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .buttonR {
+        padding: 15px 5px;
+        background: cornflowerblue;
+        width: 100px;
+        border: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+        transition: 0.3s;
+    }
+        .buttonR:hover {
+            background: rgb(34, 69, 135);
+        }
+    .buttonL {
+        padding: 15px 5px;
+        background: greenyellow;
+        width: 100px;
+        border: none;
+        margin-bottom: 10px;
+        color: aliceblue;
+        transition: 0.3s;
+    }
+        .buttonL:hover {
+            background: rgb(63, 120, 6);
+        }
+    .ball {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        position: relative;
+        padding: 10px;
+        box-sizing: border-box;
+        background: darkorange;
+    }
+</style>
+
+<body>
+    <div class="block">
+        <button class="buttonR">Tap-there</button>
+        <button class="buttonL">Tap-back</button>
+        <div class="ball"></div>
+    </div>
+</body>
+
+<script> 
+
+    let There = 0;
+    
+    function moveR(){
+        document.querySelector('.ball').style.left = There + 'px';
+        There = There + 5;
+        if(There > 300){
+            return There;
+        }
+        setTimeout(moveR,15);
+    }
+    document.querySelector('.buttonR').onclick = moveR;
+
+
+
+    let Back = 0;
+    
+    function moveL(){
+        document.querySelector('.ball').style.right = Back + 'px';
+        Back = 0;
+        if(Back > 0){
+            return Back;
+        }
+        setTimeout(moveL,15);
+    }
+    document.querySelector('.buttonL').onclick = moveL;
+
+
+
+</script>
+    
+
+</html>
+
