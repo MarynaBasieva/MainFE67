@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+
+<style>
+</style>
+
+<body>
+    <div class="triple"></div>
+</body>
+
+<script> 
+
+class Component {
+       constructor(selector){
+           this.$elem = document.querySelector(selector)
+       }
+   }
+   class Box extends Component {
+       constructor(options){
+            super(options.selector)
+                this.$elem.style.width = options.sizeWidth + 'px';                
+                this.$elem.style.height = options.sizeHeight + 'px';
+                this.$elem.style.borderTop = options.borderTop;   
+                this.$elem.style.borderRight = options.borderRight;           
+       }
+   }
+
+   const triple = new Box({
+        selector: '#triple',
+        sizeWidth: 0,
+        sizeHeight: 0,
+        borderTop: '200px solid green',
+        borderRight: '200px solid transparent'
+   })
+
+</script>
+    
+
+</html>
+
