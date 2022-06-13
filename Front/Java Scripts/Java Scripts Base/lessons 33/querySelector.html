@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>querySelector</title>
+</head>
+
+<body>
+	<ul>
+		<li>One</li>
+		<li>Two</li>
+	</ul>
+	<ul>
+		<li>Finish All</li>
+		<li>Finish End</li>
+	</ul>
+</body>
+	<script>
+		let element = document.querySelectorAll('ul>li:last-child');
+		for(let i of element){
+			console.log(i.innerHTML);
+		}
+	</script>
+</html>

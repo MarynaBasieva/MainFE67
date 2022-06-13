@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>regualar3</title>
+</head>
+<script>
+	//Квантіфікатори
+	// {n} ,де кількість символів
+	
+	//let pattern = /\w{3}/;
+	//let pattern = /\w{3,10}/;// від 3 до 10 символів буде шукати
+	//? = {0,1} - 0 або 1 нам зустрічається
+	//* = {0,} - нуль або більше нуля
+	//. - любий символ
+	
+	//let str = "Академія академія акад акаддемія academy";
+	
+	/*let patternOne = /акад?мія/ig;
+	let patternTwo = /акад*мія/ig;
+	
+	console.log(str.match(patternOne)); 
+	console.log(str.match(patternTwo)); */
+	
+	let link = '<a href="https://domain.com.ua" class="name">Click me</a>';
+	
+	let patternThree = /href=".+"/gi;
+	console.log(link.match(patternThree));
+	//['href="https://domain.com.ua" class="name"']
+	
+	let patternFour = /href=".+?"/gi;
+	console.log(link.match(patternFour));
+	//['href="https://domain.com.ua"']
+	
+</script>
+<body>
+</body>
+</html>

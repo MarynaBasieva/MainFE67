@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getElementByName</title>
+</head>
+
+<body>
+	<button id="btnName">Click me</button>
+	<form>
+		<input type="text" name="my input" />
+		<input type="text" name="my input" />
+		<input type="text" name="my input" />
+	</form>
+</body>
+	<script>
+		function FuncName(){
+			let inputs = document.getElementsByName('my input');
+			for(let i=0; i< inputs.length; i++){
+				inputs[i].style.border="2px solid green";
+			}
+			
+			inputs[0].value = "Cat";
+			inputs[1].value = "Mouse";
+			inputs[2].value = "Dog";
+		}
+		let btnName = document.getElementById("btnName");
+		btnName.addEventListener('click', FuncName);
+	</script>
+</html>

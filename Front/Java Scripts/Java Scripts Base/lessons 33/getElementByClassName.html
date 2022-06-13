@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getElementByClassName</title>
+</head>
+
+<body>
+	<div class="oneClass"></div>
+	<div class="twoClass"></div>
+	<button onclick="changeColorYellow('yellow')">Нажми і отримаєш колір прапора</button>
+	<button onclick="changeColorBlue('blue')">Нажми і отримаєш колір прапора</button>
+</body>
+	<script>
+		function changeColorYellow(newColorYellow){
+			let oneClass = document.getElementsByClassName("oneClass");
+			let twoClass = document.getElementsByClassName("twoClass");
+			
+			oneClass[0].style.backgroundColor = newColorYellow;
+			oneClass[0].style.width = 200 + "px";
+			oneClass[0].style.height = 50 + "px";
+		}
+		function changeColorBlue(newColorBlue){
+			let twoClass = document.getElementsByClassName("twoClass");
+			
+			twoClass[0].style.backgroundColor = newColorBlue;
+			twoClass[0].style.width = 200 + "px";
+			twoClass[0].style.height = 50 + "px";
+		}
+	</script>
+</html>

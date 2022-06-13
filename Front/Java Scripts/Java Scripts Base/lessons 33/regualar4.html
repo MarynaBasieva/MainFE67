@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>regualar 4</title>
+</head>
+<script>
+	let acad = "1990 - рік в якому хтось народився, а 1997 в якому дівчинка народилась - 1998";
+	
+	let pattern = /\d+/g;//  ^/\d+/g; - NULL вони разом не працюють
+	//^ - пошук знаходиться з початку строки
+	//$ - пошук з кінця строки 
+	
+	console.log(acad.match(pattern));
+	
+	
+	let textName = "1990 - рік в якому хтось народився, \n а 1997 в якому дівчинка народилась - 1998";
+	
+	//m -флаг для пошуку повномірного тексту
+	let patterOne = /\d+$/gm;
+	console.log(textName.match(patterOne));
+	document.write(textName);
+	
+</script>
+<body>
+</body>
+</html>

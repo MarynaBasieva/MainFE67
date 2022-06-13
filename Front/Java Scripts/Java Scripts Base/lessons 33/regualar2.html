@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>regualar2</title>
+</head>
+<script>
+	let str = 'Продовжуємо вчити про регулярні вирази';
+	let pattern = /про/g;
+	
+	
+	/**
+	  Синтаксис
+	  **\d - люба цифра 
+	  **\s -пробіл
+	  **\w - слово, буква
+	  **\b - границя слова
+	  **
+	*/
+	
+	let patterDigit = /\d\g/;//пошук цифри
+	let paternStr = /HTML\d/;//пошук строки HTML з цифрою
+	
+	/**Інвентори
+	  **\D - не цифра
+	  **\S -не пробіл
+	  **\W - не слово(сюди підходять тільки російські слова)
+	  **
+	**/
+	
+	/*Спеціальні символи - . () /\ ./\//
+	*/
+	
+	/**
+	**[]
+	**[-]
+	** - ^ - 
+	**/
+	
+	let nameStr = "@gmail test@gmail.com gmail.com basieva@gmail.com";
+	console.log(nameStr.match(/[a-zA-Z_09]+@[a-z]+\.\w+/g));
+</script>
+<body>
+</body>
+</html>

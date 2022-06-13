@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>regualar1</title>
+</head>
+<script>
+		//i - флаг для регістронезалежного пошука
+	    //g - шукає всі співпадіння с функції match
+	
+	
+	 let regOne = "Починаємо вчити регулярні вирази Очин вирази";
+	 let patternOne = /очин/ig;
+	 console.log(regOne.search(patternOne));//search шукає співпадіння в строці і вертає позицію найденої строки
+	 console.log(regOne.match(patternOne)); // match повертає масив(назву, позицію, індекс) строку де знайшли співпадіння
+	
+	
+	let regTwo = "Починаємо вчити регулярні вирази Очин вирази";
+	let patternTwo = /очин/gi;
+	
+	console.log(regTwo.split(" "));
+	console.log(regTwo.replace("", "-"));
+	console.log(regTwo.replace(/ /g, "-"));
+	console.log(regTwo.replace(/вчити/, "$$"));
+	console.log(regTwo.replace(/вчити/i, "Будемо вчити і вчити завжди $&"));
+	//$& - властивості які дозволяють додати в строку фазу (наприклад змінити слово на словосполучення)
+	
+	let exThree = "Академія академія academy";
+	
+	function myExFunc(match, offset, str){
+		return match.toUpperCase();
+	}
+	console.log(exThree.replace(/академія/, myExFunc));
+	
+	function secondFunc(match, firstParam, seconParam, offset, str){
+		return seconParam + " " + firstParam;
+	}
+	console.log(exThree.replace(/(академія) (academy)/, secondFunc));
+	 
+	 
+	  
+</script>
+<body>
+</body>
+</html>

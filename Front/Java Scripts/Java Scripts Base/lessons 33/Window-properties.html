@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Window properties</title>
+</head>
+
+<body>
+	<button onClick="OpenW()">Відкрити вікно</button>
+	<button onClick="WinOpen()">Відкрити вікно newClosed</button>
+	<button onClick="CheckWin()">Перевірити чи  вікно відкрите</button>
+	 <div class="message"></div>
+	
+   <div>
+	   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/wT1Uk7did0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="frame1"></iframe></p>
+	   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/58LhXyXVbCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen name="frame2"></iframe></p>
+   </div>
+</body>
+	<script>
+		function OpenW(){
+			let win = window.open("","win", "width=200, height=200, top=200, left=300");
+			win.document.write("текст нового вікна");
+			win.opener.document.write("Текст батьківського вікна");
+		}
+		
+		let newClosed;
+		
+		function WinOpen(){
+			newClosed= window.open("", "win", "width=200, height=200, top=200, left=300");
+		}
+		function CheckWin(){
+			if(!newClosed){
+				document.querySelector(".message").innerHTML="Вікно newClosed не було відкрите";
+			}else if(newClosed.closed){
+				document.querySelector(".message").innerHTML="Вікно newClosed закрите";
+			}else{
+				document.querySelector(".message").innerHTML="Вікно newClosed в даний час відкрито";
+			}
+		}
+		
+		document.write(frames[0].name + "<br/>");
+		document.write(frames[1].name);
+	</script>
+</html>
