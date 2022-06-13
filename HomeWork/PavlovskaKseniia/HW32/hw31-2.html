@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+
+  </body>
+
+<script>    
+
+class Parents{
+		static type = "parent";
+		constructor(options){
+			this.name = options.name
+			this.age = options.age
+		}	
+	}
+	const user = new Parents({
+		name: 'Kseniia, Nik',
+		age: '33, 32'
+	});
+
+	class Child extends Parents{
+        static type = "childred";
+        constructor(options){
+            super(options)
+            this.name = options.name
+            this.age = options.age
+		}
+	}
+	const son1 = new Child({
+		name:'Viktor',
+		age: 12,
+	})
+	const son2 = new Child({
+		name:'Ivan',
+		age: 8,
+	})
+	const son3 = new Child({
+		name:'Dmytro',
+		age: 5,
+	})
+	console.log(son1, son2, son3);
+	document.write(son1.name + ' ' + son1.age + '<br>' + son2.name + ' ' + son2.age + '<br>' + son3.name + ' ' + son3.age + '<br>')
+
+</script>
+         
+
+</html>
