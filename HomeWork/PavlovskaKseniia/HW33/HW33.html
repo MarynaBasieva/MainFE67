@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+    
+
+<body>
+    <div class="oneClass"></div>
+    <div class="twoClass"></div>
+    <div class="threeClass"></div>
+    <div class="fourClass"></div>
+    <div class="fiveClass"></div>
+    <div class="sixClass"></div>
+    <div class="sevenClass"></div>
+    <button onclick="changeColorRed('red')">Чапля</button>
+    <button onclick="changeColorOrange('orange')">Осінь</button>
+    <button onclick="changeColorYellow('yellow')">Жде</button>
+    <button onclick="changeColorGreen('green')">Завзято</button>
+    <button onclick="changeColorBlue('blue')">Буде</button>
+    <button onclick="changeColorDarkBlue('darkblue')">Сани</button>
+    <button onclick="changeColorPurple('purple')">Фарбувати</button>
+
+</body>
+<script>     
+    function changeColorRed(newColorRed){
+        let oneClass = document.getElementsByClassName("oneClass");
+        let twoClass = document.getElementsByClassName("twoClass");
+        let threeClass = document.getElementsByClassName("threeClass");
+        let fourClass = document.getElementsByClassName("fourClass");
+        let fiveClass = document.getElementsByClassName("fiveClass");
+        let sixClass = document.getElementsByClassName("sixClass");
+        let sevenClass = document.getElementsByClassName("sevenClass");
+
+        oneClass[0].style.background = newColorRed;
+        oneClass[0].style.width = 500 + "px";
+        oneClass[0].style.height = 20 + "px";
+    }   
+    function changeColorOrange(newColorOrange){
+        let twoClass = document.getElementsByClassName("twoClass");
+
+        twoClass[0].style.background = newColorOrange;
+        twoClass[0].style.width = 500 + "px";
+        twoClass[0].style.height = 20 + "px";
+    }
+    function changeColorYellow(newColorYellow){
+        let threeClass = document.getElementsByClassName("threeClass");
+
+        threeClass[0].style.background = newColorYellow;
+        threeClass[0].style.width = 500 + "px";
+        threeClass[0].style.height = 20 + "px";
+    }
+    function changeColorGreen(newColorGreen){
+        let fourClass = document.getElementsByClassName("fourClass");
+
+        fourClass[0].style.background = newColorGreen;
+        fourClass[0].style.width = 500 + "px";
+        fourClass[0].style.height = 20 + "px";
+    }
+    function changeColorBlue(newColorBlue){
+        let fiveClass = document.getElementsByClassName("fiveClass");
+
+        fiveClass[0].style.background = newColorBlue;
+        fiveClass[0].style.width = 500 + "px";
+        fiveClass[0].style.height = 20 + "px";
+    }
+    function changeColorDarkBlue(newColorDarkBlue){
+        let sixClass = document.getElementsByClassName("sixClass");
+
+        sixClass[0].style.background = newColorDarkBlue;
+        sixClass[0].style.width = 500 + "px";
+        sixClass[0].style.height = 20 + "px";
+    }
+    function changeColorPurple(newColorPurple){
+        let sevenClass = document.getElementsByClassName("sevenClass");
+
+        sevenClass[0].style.background = newColorPurple;
+        sevenClass[0].style.width = 500 + "px";
+        sevenClass[0].style.height = 20 + "px";
+    }
+</script>
+
+
+</html>
+

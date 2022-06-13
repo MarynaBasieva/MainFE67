@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+    
+
+
+<body>
+    <button onclick="OpenW()">Тап-тап</button>
+    <button onclick="WinOpen()">Тик-тик</button>
+    <button onclick="CheckWin()">Перевірити вікно</button>
+    <div class="message"></div>
+</body>
+<script>     
+    function OpenW(){
+        let win = window.open("", "win", "width=300, height=400, top=300, left=500");
+        win.document.write("Хелоу! І чого ти тикаєш в мене, га?");
+    }
+
+    let TikTik;
+
+    function WinOpen(){
+        TikTik= window.open("https://ollgames.ru/wp-content/uploads/2017/04/Red-Button-Push.jpg", "win", "width=300, height=400, top=300, left=500");
+    }
+    function CheckWin(){
+        if(!TikTik){
+            document.querySelector(".message").innerHTML="Вікно TikTik ще не відкривали";
+        }else if(TikTik.closed){            
+            document.querySelector(".message").innerHTML="Вікно TikTik закрили";
+        }else{
+            document.querySelector(".message").innerHTML="Вікно TikTik відкрито, шукайте)";}
+    }
+</script>
+
+
+</html>
+
