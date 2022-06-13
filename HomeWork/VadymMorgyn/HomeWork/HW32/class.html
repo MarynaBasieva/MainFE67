@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	// _______________________________class_________________________________________________
+
+class FirstCl{
+		static type = "parent";
+		constructor(options){
+			this.name = options.name
+			this.age = options.age
+		}	
+	}
+	const user = new FirstCl({
+		name: 'Vadim',
+		age: 23
+	});
+
+	class SecondCl extends FirstCl{
+		static type = "child";
+		constructor(options){
+			super(options)
+			this.name = options.name
+      this.age = options.age
+		}
+	}
+	const masha = new SecondCl({
+		name:'Masha',
+		age:3,
+	})
+	const vlad = new SecondCl({
+		name:'Vlad',
+		age:8,
+	})
+	const ira = new SecondCl({
+		name:'Ira',
+		age:5,
+	})
+	console.log(masha, vlad, ira);
+	document.write('My name is '+ masha.name + '. Age: ' + masha.age + '<br>' )
+	document.write('My name is '+ vlad.name + '. Age: ' + vlad.age + '<br>' )
+	document.write('My name is '+ ira.name + '. Age: ' + ira.age + '<br>' )
+
+</script>
+</html>
