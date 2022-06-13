@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>hw32</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+	*{
+		padding: 0;
+		margin: 0 auto;
+	}
+	body{
+		background: #0e8beab1
+	}
+	.container{
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	p{
+		color: #fff;
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	input{
+		border:none;
+		padding: 5px 10px;
+		display: block;
+		outline: none;
+		background: #fff;
+		transition: 0.3s linear;
+		font-size: 14px;
+		margin-bottom: 20px;
+		width: 200px;
+	}
+	input:placeholder{
+		color: #fff;
+		background: transparent;
+	}
+	button{
+		background: #333;
+		color: #fff;
+		display: block;
+		width: 222px;
+		transition: 0.3s linear;
+		outline: none;
+		padding: 10px 0;
+		text-align: center;
+		border:none;
+		cursor: pointer;
+		border-radius: 25px;
+	}
+	button:hover{
+		background: #18930898;
+	}
+	#result{
+		color: rgb(255, 0, 0);
+		margin-bottom: 20px;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+	}
+	#myInput{
+		background-color: aqua;
+		border: 3px solid;
+		border-color: blue;
+		border-radius: 25px;
+	}
+</style>
+
+<body>
+
+	<div class="container">
+		<p>Ведіть число від 5 до 15:</p> 
+			<input id="myInput" type="text" placeholder="Ведіть число" />
+			<button onClick="myFunction()">Перевірка введених даних</button>
+			<div id="result"></div>
+	</div>
+	
+</body>
+		<script>
+
+			
+		function myFunction(){
+			let message, x;
+		    message = document.getElementById("result");
+			message.innerHTML = "";
+			x = document.getElementById("myInput").value;
+			
+			try{
+				if(x == "") throw "пусто";
+				if(isNaN(x)) throw "не число";
+				x = Number(x);
+				if(x < 5) throw "мало";
+				if(x > 15) throw 'багато'; 
+			}
+			catch(err){
+				message.innerHTML = "Якось" + " " + err;
+			}
+			// if(x = "") document.getElementById("myInput").style.borderColor = 'black'
+			if(isNaN(x)) document.getElementById("myInput").style.borderColor = 'orange'
+			if(x < 5)  document.getElementById("myInput").style.borderColor = 'red'
+			if(x > 15) document.getElementById("myInput").style.borderColor = 'red'
+			if(x > 5 && x < 15 ) document.getElementById("myInput").style.borderColor = 'green'
+		} 
+
+
+	</script>
+         
+
+</html>
