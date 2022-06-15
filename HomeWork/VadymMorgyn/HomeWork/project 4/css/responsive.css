@@ -1,0 +1,32 @@
+/* 1199px 991px 767px 600px 500px*/
+@media (min-width: 1200px) {
+	.header .container {
+		max-width: 1146px;
+	}
+
+	.banner2 .container,
+	.banner .container {
+		max-width: 1350px;
+	}
+
+	.carousel1 .container {
+		max-width: 1220px;
+	}
+
+	.clientsSay .container {
+		max-width: 1200px;
+	}
+
+	@media (max-width: 1199px) {}
+
+	@media (max-width: 991px) {}
+
+	@media (max-width: 600px) {}
+
+	@media (max-width: 577px) {}
+
+	@media (max-width: 500px) {}
+
+	@media (max-width: 470px) {}
+
+	@media (max-width: 350px) {}
