@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Method Blur</title>
+</head>
+
+<body>
+	<button onClick="openW()">Відкрити вікно</button>
+</body>
+	<script>
+		let win;
+		function openW(){
+			win = window.open();
+			
+			win.blur();
+			win.document.write('Я нове вікно');
+		}
+	</script>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>setInterval</title>
+</head>
+
+<body onLoad="start()">
+	<div id="timeStart">тут буде час</div>
+	<input type="button" value="Stop" onClick="stop()" />
+</body>
+	<script>
+		function time(){
+			let data = new Date();
+			let hours = data.getHours();
+			let minutes = data.getMinutes();
+			let seconds = data.getSeconds();
+			let times = hours + ":" + minutes + ":" + seconds;
+			document.getElementById("timeStart").innerHTML = times;
+		}
+		
+		function start(){
+			id=setInterval("time()", 1000);
+		}
+		function stop(){
+			clearInterval(id);
+		}
+	</script>
+</html>

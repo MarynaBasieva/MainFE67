@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Location - methods</title>
+</head>
+
+<body>
+	<a href="javascript:myWindowOpen()">Відкрити вікно</a><br>
+	<button  onClick="myWindowAssign()">Загрузити url https://sinoptik.ua/</button><br>
+	<a href="javascript:myWindowReplace()">Замінити url https://mainacademy.ua/</a><br>
+	<button onClick="newParent()">Загрузити новий документ</button>
+	<button onClick="newParentReload()">Перезагрузити сторінку</button>
+	<button onClick="replaceDoc()">Замінити поточну сторінку на другу</button>
+</body>
+	<script>
+		document.write("Строка запроса:" + location.href + "<br>");
+		document.write("Шлях до ресурсу:" + location.pathname + "<br>");
+		document.write("Схема:" + location.origin + "<br>");
+		document.write("Протокол:" + location.protocol + "<br>");
+		document.write("Порт:" + location.port + "<br>");
+		document.write("Хост:" + location.host + "<br>");
+		document.write("Імя Хоста:" + location.hostname + "<br>");
+		document.write("Хеш:" + location.hash + "<br>");
+		document.write("Пошук:" + location.search + "<br>");
+		
+		// Method assign
+		//location.href = "https://test.com.ua/about";
+		//location.assign("https://test.com.ua/contacts");
+		
+		//location.replace("SetInterval.html");
+		
+		
+		function newParent(){
+			window.location.assign("https://sinoptik.ua/");
+		}
+		
+		function newParentReload(){
+			window.location.reload();
+		}
+		
+		function replaceDoc(){
+			window.location.replace("https://sinoptik.ua/");
+		}
+		
+		let myWindow;
+		function myWindowOpen(){
+			if(!myWindow){
+				myWindow = window.open("https://www.google.com.ua/", "width=400, height=500");
+			}
+		}
+		function myWindowAssign(){
+			if(myWindow){
+				myWindow.window.location.assign("https://sinoptik.ua/");
+			}
+		}
+		
+		function myWindowReplace(){
+			if(myWindow){
+				myWindow.window.location.replace("https://mainacademy.ua/");
+			}
+		}
+		
+		
+		
+	
+	</script>
+</html>

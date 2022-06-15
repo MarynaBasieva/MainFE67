@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Close Method</title>
+</head>
+
+<body>
+	<button class="open">Відкрити</button>
+	<button class="close">Закрити</button>
+</body>
+	 <script>
+		 let win;
+		 function OpenWin(){
+			 win = window.open("about:blank", "win", "width=200, height=200, top=400, left=400");
+			 win.document.write("Maryna");
+		 }
+		 function CloseWin(){
+			 if(win != null){
+				 win.close();
+			 }
+		 }
+		 
+		 let open = document.querySelector(".open");
+		 open.addEventListener('click', OpenWin);
+		 
+		 let close = document.querySelector(".close");
+		 close.addEventListener('click', CloseWin);
+	 </script>
+</html>

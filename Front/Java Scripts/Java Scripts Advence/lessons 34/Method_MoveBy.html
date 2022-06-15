@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Method moveBy</title>
+</head>
+
+<body>
+	<button onClick="OpenW()">Відкрити</button>
+	<button onClick="MoveW()">Перетягнути</button>
+</body>
+	<script>
+		let win;
+		function OpenW(){
+			win = window.open("","win","width=200, height=300");
+			win.document.write("Нове вікно");
+		}
+		function MoveW(){
+			win.moveBy(300,200);
+			win.focus();
+		}
+	</script>
+</html>
