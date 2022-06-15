@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+
+<head>
+</head>
+    <style>
+        body{
+            border-top: solid 1px black;
+        }
+    </style>
+
+<body>
+	<div class="box" style="border: 1px solid black ; width: 200px;">
+    <div class="oneColor"></div>
+	<div class="twoColor"></div>
+    <div class="threeColor"></div>
+    </div>
+	<button onclick="changeColorOne('red')">1 колір прапора</button>
+	<button onclick="changeColorTwo('white')">2 колір прапора</button>
+	<button onclick="changeColorThree('red')">3 колір прапора</button>
+</body>
+	<script>
+		function changeColorOne(newColor){
+			let oneColor = document.getElementsByClassName("oneColor");
+
+			oneColor[0].style.backgroundColor = newColor;
+			oneColor[0].style.width = 200 + "px";
+			oneColor[0].style.height = 50 + "px";
+		};
+		function changeColorTwo(newColor){
+	    let twoColor = document.getElementsByClassName("twoColor");
+			
+			twoColor[0].style.backgroundColor = newColor;
+			twoColor[0].style.width = 200 + "px";
+			twoColor[0].style.height = 50 + "px";
+		};
+        function changeColorThree(newColor){
+	    let threeColor = document.getElementsByClassName("threeColor");
+			
+			threeColor[0].style.backgroundColor = newColor;
+			threeColor[0].style.width = 200 + "px";
+			threeColor[0].style.height = 50 + "px";
+		};
+	</script>
+
+
+</html>
+

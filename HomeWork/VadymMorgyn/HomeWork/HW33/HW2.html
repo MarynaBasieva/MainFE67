@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<button onClick="WinOpen()">Відкрити нове вікно</button>
+    <button onClick="OpenWin()">Регулярні вирази</button>
+	<button onClick="CheckWin()">перевірка</button>
+	 <div class="message"></div>
+	
+</body>
+	<script>		
+		
+		function WinOpen(){
+			let newWin = window.open("", "win", "width=300, height=400, top=300, left=500,");
+            newWin.document.write("текст нового вікна");
+		}
+        function OpenWin(){
+        let regular = window.open("https://learn.javascript.ru/regular-expressions", "win", "width=300, height=400, top=300, left=1000");
+         }
+		function CheckWin(){
+			if(!newWin){
+				document.querySelector(".message").innerHTML="Вікно newWin не було відкрите";
+			}else if(newWin.closed){
+				document.querySelector(".message").innerHTML="Вікно newWin закрите";
+			}else{
+				document.querySelector(".message").innerHTML="Вікно newWin в даний час відкрито";
+			}
+		}
+		
+	</script>
+</html>
