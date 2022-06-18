@@ -250,9 +250,14 @@ span.psw {
 }
 
 /*Header*/
+.menu_burger i {
+	display: none;
+}
+
 .header {
 	padding-top: 21px;
 	padding-bottom: 24px;
+	background-color: #0f1724;
 }
 
 .nav_menu {
@@ -315,6 +320,7 @@ span.psw {
 .banner {
 	padding-top: 50px;
 	padding-bottom: 90px;
+	background-color: #0e1623;
 }
 
 .banner .banner_text {
@@ -392,6 +398,7 @@ span.psw {
 /*carusel*/
 .carousel1 {
 	padding-bottom: 230px;
+	background-color: #0e1623;
 }
 
 .carousel1 .item {
@@ -417,6 +424,7 @@ span.psw {
 
 .banner2 .banner_text {
 	padding-top: 178px;
+	background-color: #020a17;
 }
 
 .banner2 .banner_text p {
@@ -466,6 +474,7 @@ span.psw {
 /*carusel2*/
 .carousel2 {
 	padding-bottom: 235px;
+	background: #020a17;
 }
 
 .carousel2 .owl-carousel .owl-item img {
@@ -483,6 +492,7 @@ span.psw {
 	align-items: center;
 	flex-direction: column;
 	padding: 30px 30px;
+	max-height: 405px;
 }
 
 .carousel2 .owl-carousel .item h3 {
@@ -509,10 +519,31 @@ span.psw {
 	margin-bottom: 0;
 }
 
+.carousel2 .owl-dots {
+	display: flex;
+	justify-content: center;
+}
+
+.carousel2 .owl-dots .owl-dot {
+
+	width: 15px;
+	height: 15px;
+	background-color: #172031;
+	margin: 5px;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-top: 50px;
+}
+
+.carousel2 .owl-dots .owl-dot.active {
+	background-color: #2d3647;
+}
+
 /*carusel2*/
 /*clientsSay*/
 .clientsSay {
 	padding-bottom: 170px;
+	background: #020a17;
 }
 
 .clientsSay .clientsSay_text {
@@ -554,7 +585,7 @@ span.psw {
 /*clientsSay*/
 /*footer*/
 .footer {
-	background-color: rgb(0, 0, 0);
+	background-color: #08101d;
 	padding-bottom: 147px;
 	padding-top: 78px;
 }
