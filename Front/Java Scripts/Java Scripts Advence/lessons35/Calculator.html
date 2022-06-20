@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+</head>
+<style>
+	.main-calculator{
+		width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		background: #3E0477;
+		padding: 20px;
+		border: solid 2px #000;
+		margin-top: 100px;
+	}
+	.operation-block button{
+		width: 40px;
+		height: 40px;
+		margin: 20px;
+		border: none;
+		outline: none;
+		transition:all 0.3s linear;
+		background:#000;
+		color: #fff;
+		font-size: 20px;
+		text-align: center;
+		cursor: pointer;
+	}
+	.operation-block button:hover{
+		background: #053998;
+	}
+	.input-block{
+		display: inline-block;
+		padding: 10px;
+	}
+	.input-block input{
+		outline: none;
+		padding: 10px;
+	}
+	.input-block label{
+		display: block;
+		color: #fff;
+		margin-bottom: 6px;
+	}
+</style>
+<body>
+	<div class="main-calculator">
+		<div class="operation-block">
+			<button id="buttonPlus">+</button>
+			<button id="buttonMinus">-</button>
+			<button id="buttonMultiply">*</button>
+			<button id="buttonDevide">/</button>
+		</div>
+		<hr />
+		<div class="form-inputs">
+			<form>
+				<div class="input-block">
+					<label>Number 1</label>
+					<input type="number" id="number1" value="15" />
+				</div>
+				
+				<div class="input-block">
+					<label>Number 2</label>
+					<input type="number" id="number2" value="10" />
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+	<script>
+	    let buttonPlus = document.getElementById("buttonPlus");
+		let buttonMinus = document.getElementById("buttonMinus");
+		let buttonMultiply = document.getElementById("buttonMultiply");
+        let buttonDevide = document.getElementById("buttonDevide");
+		
+		let input1 = document.getElementById('number1');
+			let input2 = document.getElementById('number2');
+		
+		function getNumber1(){
+			return Number(input1.value);
+		}
+		
+		function getNumber2(){
+			return Number(input2.value);
+		}
+		
+		function makeOperation(operationCode){
+			let result;
+			if(operationCode === '+'){
+			   result = getNumber1() + getNumber2();
+			}else if(operationCode === '-'){
+			   result = getNumber1() - getNumber2();
+			}else if(operationCode === '*'){
+			   result = getNumber1() * getNumber2();
+			}else if(operationCode === '/'){
+			   result = getNumber1() / getNumber2();
+			}else{
+				alert('operation is not defaned');
+			}
+			console.log(result);
+		}
+		
+		function omButtonPlusClick(){
+			makeOperation('+');
+		}
+		function omButtonMinusClick(){
+			makeOperation('-');
+		}
+		function omButtonMultiplyClick(){
+			makeOperation('*');
+		}
+		function omButtonDevideClick(){
+			makeOperation('/');
+		}
+		
+		buttonPlus.addEventListener('click', omButtonPlusClick);
+		buttonMinus.addEventListener('click', omButtonMinusClick);
+		buttonMultiply.addEventListener('click', omButtonMultiplyClick);
+		buttonDevide.addEventListener('click', omButtonDevideClick);
+	</script>
+</html>
