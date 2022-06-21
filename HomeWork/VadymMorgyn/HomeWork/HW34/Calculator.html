@@ -101,7 +101,7 @@
 			}else if(operationCode === '/'){
 			   result = getNumber1() / getNumber2();
 			}else if(operationCode === '%'){
-				result = (getNumber1() - getNumber2()) / getNumber1() * 100 + " %";
+				result = 100 - ((getNumber1() - getNumber2()) / getNumber1() * 100)  + " %";
 			}else{
 				alert('operation is not defaned');
 			}
