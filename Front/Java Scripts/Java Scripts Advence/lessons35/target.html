@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>target currentTarget</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+	  background: #E453C2;	
+	}
+	.wrapper{
+		margin-top: 100px;
+	}
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.parent_btn{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.btn{
+		background: #000;
+		text-align: center;
+		padding: 10px 20px;
+		color: #fff;
+		outline: none;
+		border:none;
+		transition: all 0.3s linear;
+		margin-right: 5px;
+		display: block;
+		width: 150px;
+		cursor: pointer;
+		
+	}
+	.btn:hover{
+		background: #152268;
+	}
+	img{
+		width: 300px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+</style>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_960_720.png" alt="title" title="title" />
+			<div class="parent_btn">
+				<button data-num="1" class="btn">Click<strong>1</strong></button>
+				<button data-num="2" class="btn">Click<strong>2</strong></button>
+				<button data-num="3" class="btn">Click<strong>3</strong></button>
+				<button data-num="4" class="btn">Click<strong>4</strong></button>
+			</div>
+		</div>
+	</div>
+</body>
+	<script>
+		let buttons = document.querySelectorAll('.btn');
+		
+		let handlerClick = (event) =>{
+			console.log("target >", event.target);
+			console.log("curentarget >", event.currentTarget);
+			console.log(event.target === event.currentTarget);
+			//event.stopPropagation();
+		}
+		
+		window.addEventListener('click', function(event){
+			console.log("Window Click", event.target);
+		}, {capture: true});
+		
+		buttons.forEach(button => {
+			button.addEventListener('click',handlerClick);
+		});
+		
+		let img = document.querySelector('img');
+		img.addEventListener('mouseover', (event) => {
+			console.log(event.currentTarget);
+			console.log(this);
+		});
+	</script>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form error</title>
+</head>
+<style>
+	.erorr{
+		border: solid 1px red;
+	}
+	button{
+		cursor: pointer;
+		display: block;
+		width: 221px;
+		padding: 10px;
+	}
+	input{
+		display: block;
+		width: 200px;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+</style>
+<body>
+	<div>
+		<input value="Maryna" id="first-name" />
+	</div>
+	<div>
+		<input value="Basieva" id="last-name" />
+	</div>
+	<div>
+		<input value="Kiev" id="adress" />
+	</div>
+	<div>
+		<button id="send">Send</button>
+	</div>
+</body>
+	<script>
+		function addEororClass(elementId){
+			let element = document.getElementById(elementId);
+			element.className="erorr";
+		}
+		
+		function addErorClassInputs(){
+			addEororClass('first-name');
+			addEororClass('last-name');
+			addEororClass('adress');
+		}
+		
+		//addErorClassInputs();
+		//window.setTimeout(addErorClassInputs, 2000);
+		
+		let send = document.getElementById("send");
+		send.addEventListener('click', addErorClassInputs);
+	</script>
+</html>
