@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slider</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: 'Roboto', sans-serif;
+		height: 100vh;
+	}
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100vw;
+		height: 100vh;
+	}
+	.sidebar{
+		height: 100%;
+		width: 35%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: transform 0.5s ease-in-out;
+	}
+	.sidebar > div{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+	.sidebar h2{
+		font-size: 40px;
+		margin-bottom: 10px;
+		margin-top: -30px;
+	}
+	.main-slider{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 35%;
+		width: 65%;
+		transition: transform 0.5s ease-in-out;
+	}
+	.main-slider > div{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height: 100%;
+		width: 100%;
+	}
+	button{
+		background: #fff;
+		border: none;
+		color: #aaa;
+		cursor: pointer;
+		font-size: 16px;
+		padding: 15px;
+	}
+	button:hover{
+		color: #222;
+	}
+	button:focus{
+		outline: none;
+	}
+	.container .controls button{
+		position: absolute;
+		left: 35%;
+		top:50%;
+		z-index: 100;
+	}
+	.container .controls .down-button{
+		transform: translateX(-100%);
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.container .controls .up-button{
+		top: 37%;
+    	left: 38%;
+		transform: translateX(-100%);
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	
+</style>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div style="background: linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%);">
+				<h2>Show in the desert 1</h2>
+				<p>Love, slide & One 1</p>
+			</div>
+			
+			<div style="background: linear-gradient(215.32deg, #ffeb3b -1%, #9E0706 124%);">
+				<h2>Show in the desert 2</h2>
+				<p>Love, slide & One 2</p>
+			</div>
+			
+			<div style="background: linear-gradient(221.87deg, #088064 1%, #00bcd4 128%);">
+				<h2>Show in the desert 3</h2>
+				<p>Love, slide & One 3</p>
+			</div>
+			
+			<div style="background: linear-gradient(220.16deg, #3f51b5 -8%, #00bcd4 138%);">
+				<h2>Show in the desert 4</h2>
+				<p>Love, slide & One 4</p>
+			</div>
+		</div>
+		
+		<div class="main-slider">
+			<div style="background: url('https://kartinkin.net/uploads/posts/2021-07/thumbs/1625181672_36-kartinkin-com-p-fon-pod-vodoi-krasivie-foni-36.jpg');"></div>
+			<div style="background: url('https://kartinkin.net/uploads/posts/2021-07/thumbs/1625181676_2-kartinkin-com-p-fon-pod-vodoi-krasivie-foni-2.jpg');"></div>
+			<div style="background: url('https://funart.pro/uploads/posts/2021-04/1617492751_27-p-oboi-podvodnii-fon-28.jpg');"></div>
+			<div style="background: url('https://wallpapers-fenix.eu/full/141205/081301833.jpg');"></div>
+		</div>
+		<div class="controls">
+			<button class="down-button">
+				<i class="fas fa-arrow-down"></i>
+			</button>
+			<button class="up-button">
+				<i class="fas fa-arrow-up"></i>
+			</button>
+		</div>
+	</div>
+</body>
+	<script>
+		let upBtn = document.querySelector('.up-button');
+		let downBtn = document.querySelector('.down-button');
+		let sidebar = document.querySelector('.sidebar');
+		let container = document.querySelector('.container');
+		let mainSlider = document.querySelector('.main-slider');
+		let slidesCount = mainSlider.querySelector('div').length;
+		
+		let activeSlideIndex = 0;
+		
+		sidebar.style.top=`-${ (slidesCount - 1) * 100}vh`;
+		
+		upBtn.addEventListener('click', ()=>{
+			changeSlide('up');
+		});
+		
+		downBtn.addEventListener('click', ()=>{
+			changeSlide('down');
+		});
+		
+		function changeSlide (direction){
+			if(direction === 'up'){
+				activeSlideIndex++;
+				if(activeSlideIndex === slidesCount){
+					activeSlideIndex = 0;
+				}
+			}else if(direction === 'down'){
+					activeSlideIndex--;
+				if(activeSlideIndex < 0){
+					activeSlideIndex = slidesCount - 1;
+				}
+			}
+				let height = container.clientHeight;
+				mainSlider.style.transform = `translateY(-${activeSlideIndex * height}px)`;
+				sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`;
+		}
+	</script>
+</html>

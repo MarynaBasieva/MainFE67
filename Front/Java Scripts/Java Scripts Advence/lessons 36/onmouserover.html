@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onmouserover</title>
+</head>
+<style>
+	img{
+		width: 400px;
+	}
+</style>
+<body>
+	<p onMouseMove="this.style.color='yellow'" onMouseOut="this.style.color='blue'">Наведи на текст</p>
+	<img src="https://www.5.ua/media/pictures/original/146560.jpg?t=1534932390" alt="flag" title="flag" id="flag" />
+</body>
+	<script>
+		flag.onmouseover = function(){
+			this.src = "https://kg.ua/sites/default/files/styles/photo_default/public/news3/u-sumah-pidnyaly-chervono-chornyj-prapor.jpg?itok=LHDIvCNK";
+			this.alt = this.title = "Flag red and black";
+			console.log(flag);
+		}
+		flag.onmouseout = function(){
+			this.src = "https://uapress.info/content/news/2015/8/91998/big2/156005c5baf40ff51a327f1c34f2975b1440315897.jpg";
+			this.alt = this.title ="flag mix";
+			console.log(flag);
+		}
+	</script>
+</html>

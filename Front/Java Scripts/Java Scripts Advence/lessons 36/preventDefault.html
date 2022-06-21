@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>preventDefault</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.nav{
+		background: #140B89;
+	}
+	.nav ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav ul li a{
+		display: block;
+		padding: 10px 20px;
+		color: #fff;
+		text-decoration: none;
+		transition: all 0.3s linear;
+	}
+	.nav ul li a:hover{
+		background: #023016;
+	}
+	.form button,
+	.form input,
+	.form label{
+		display: block;
+	}
+</style>
+<body>
+	<nav class="nav">
+		<div class="container">
+			<ul>
+				<li><a class="item_first" href="https://sinoptik.ua/">Link 1</a></li>
+				<li><a href="https://sinoptik.ua/">Link 2</a></li>
+				<li><a href="https://sinoptik.ua/">Link 3</a></li>
+				<li><a href="https://sinoptik.ua/">Link 4</a></li>
+				<li><a href="https://sinoptik.ua/">Link 5</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+			<div class="content"></div>
+			<form class="form" action="#" method="post">
+				<input class="name" type="text" id="name" name="name" />
+				<label for="name">Ведіть своє І`мя</label>
+
+				<button type="submit">Готово</button>
+			</form>
+	</div>
+</body>
+	<script>
+		let item = document.querySelector('.item_first');
+		let content = document.querySelector('.content');
+		
+		item.onclick = function(event){
+			event.preventDefault();
+			
+			content.classList.add('show');
+		}
+		
+		
+		
+		
+		let form = document.querySelector('.form');
+		let name = document.querySelector('.name');
+		
+		form.onsubmit = function(event){
+			if(name.value !== "Я людина"){
+				event.preventDefault();
+				console.log("Ви не людина");
+			}
+		};
+		
+		
+		
+		
+		
+		
+	</script>
+</html>

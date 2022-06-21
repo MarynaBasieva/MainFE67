@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag</title>
+</head>
+  <style>
+	  .elem{
+		  width: 150px;
+		  height: 150px;
+		  background: #A32BB5;
+		  margin: 40px auto;
+		  text-align: center;
+		  line-height: 150px;
+	  }
+	  .area{
+		  width: 200px;
+		  height: 200px;
+		  border: 10px solid #A32BB5;
+		  margin: 10px auto;
+		  padding: 10px;
+	  }
+  </style>
+<body>
+	<div class="elem" draggable="true">Тяни</div>
+	<div class="area">Кидай</div>
+</body>
+	<script>
+		let elem = document.querySelector('.elem');
+		let area = document.querySelector('.area');
+		//elem
+		//dragstart - яка виникає в момент початку захвата елемента
+		
+		 elem.addEventListener('dragstart', function(){
+			 console.log('start');
+		 });
+		
+		//dragend - виникає в момент відпускання єлемента
+		
+		elem.addEventListener('dragend', function(){
+			console.log('end');
+		});
+		
+		//drag -виникає в стані перетягування якщо єлемент зажатий мішкою і не двигаеться
+		
+		elem.addEventListener('drag', function(){
+			console.log('Drag');
+		});
+		
+		
+		
+		//area
+		//dragenter - подія наступає при заході курсора перетягуємого елемента в пріймающий блок
+		
+		area.addEventListener('dragenter', function(){
+			console.log('Enter');
+		});
+		
+		
+		//dragleave - подія наступає коли перетягуємий елемент покидає цілевий блок
+		
+		area.addEventListener('dragleave', function(){
+			console.log('Leave');
+		});
+		
+		
+		//dragover - подія наступає в процесі руху перетягуємого елемента внутрі
+		
+		area.addEventListener('dragover',function(){
+			event.preventDefault();
+			console.log('Over');
+		});
+		
+		//drop - подія наступає коли ми відпускаємо елемент при одному подіях якщо прописаний (dragover і прописаний в ньому preventDefault)  за допомогою метода appendChild добавляємо один елемент в кінець другого
+		
+		area.addEventListener('drop', function(event){
+			console.log('Drop');
+			this.appendChild(elem);
+		});
+		
+		
+		
+		
+	</script>
+</html>
