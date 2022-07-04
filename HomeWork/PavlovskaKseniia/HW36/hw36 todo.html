@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>NAME</title>
+<head>
+</head>
+    
+<style>
+.exempel-parent{
+    border: 2px solid rgb(84, 13, 13);
+    color: #000;
+    display: flex;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.exempel-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+}
+.example-draggable{
+    background: mediumorchid;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.example-dropzone{
+    background: darkolivegreen;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <div class="exempel-parent">
+        <div class="exempel-origin">
+            <div id="draggable-1" 
+                class="example-draggable" 
+                draggable="true"
+                ondragstart="onDragStart(event)">
+                1
+            </div>
+            <div id="draggable-2" 
+                class="example-draggable" 
+                draggable="true"
+                ondragstart="onDragStart(event)">
+                2
+            </div>
+            <div id="draggable-3" 
+                class="example-draggable" 
+                draggable="true"
+                ondragstart="onDragStart(event)">
+                3
+            </div>
+        </div>
+        <div class="example-dropzone"
+            onDragOver="onDragOver(event);"
+            ondrop="onDrop(event)">
+            Номер 1
+        </div>
+        <div class="example-dropzone"
+            onDragOver="onDragOver(event);"
+            ondrop="onDrop(event)">
+            Номер 2
+        </div>
+        <div class="example-dropzone"
+            onDragOver="onDragOver(event);"
+            ondrop="onDrop(event)">
+            Номер 3
+        </div>
+    </div>
+</body>
+
+<script>  
+    function onDragStart(event){
+        event.dataTransfer
+        .setData('text/plain', event.target.id);
+
+        event
+            .currentTarget
+            .style
+            .background= 'yellow';
+    }
+    function onDragOver(event){
+        event.preventDefault();
+    }
+    function onDrop(event){
+        let id = event
+        .dataTransfer
+        .getData('text');
+
+        let draggableElement = document.getElementById(id);
+        let dropzone = event.target;
+        dropzone.appendChild(draggableElement);
+        event
+        .dataTransfer
+        .clearData();
+    }
+</script>
+</html>
+
