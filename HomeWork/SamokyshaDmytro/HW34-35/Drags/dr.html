@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drags</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'/>
+<meta content='true' name='HandheldFriendly'/>
+<link type="text/css" href="css/main.css" rel="stylesheet"/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+	.exempel-parent{
+		border:3px solid #ff00004e;
+		color: #000;
+		display: flex;
+		font-weight: bold;
+		font-family: sans-serif;
+		flex-direction: column-reverse;
+		width: 1400px;
+		height: 80vh;
+		margin: 0 auto;
+		align-items: center
+
+	}
+	.exempel-origin{
+		flex-basis: 100%;
+		flex-grow: 1;
+		padding: 10px;
+	}
+	.example-draggable{
+		background: #4f8ad2;
+		font-weight: normal;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		padding: 10px;
+		width: 200px;
+		height: 5vh;
+		text-align: center;
+	}
+	.example-dropzone{
+
+		top: 0;
+		background: #6dec76;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+	}
+	.color1{
+		margin-top: 25px;
+		width: 100px;
+		height: 20px;
+		background-color:#4f8ad2 ;
+		text-align: center;
+	}
+	.color2{
+		margin-top: 25px;
+		width: 100px;
+		height: 20px;
+		background-color:orange ;
+		text-align: center;
+	}
+	/* .color3{
+		margin-top: 25px;
+		width: 100px;
+		height: 20px;
+		background-color:#4f8ad2 ;
+		text-align: center;
+	} */
+</style>
+<body>
+	<div class="color1">Не виконано</div>
+	<div class="color2">Виконано</div>
+	<!-- <div class="color3">Виконано</div> -->
+	<div class="exempel-parent" ondragover="onDragOver(event);"
+	ondrop="onDrop(event);" aria-valuetext="Зроблені справи" >
+	<p>Список справ</p>
+		<div class="exempel-origin">
+			<div id="draggable-1" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				Зробити роботу
+			</div>
+			
+			<div id="draggable-2" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				Приготувати їжу
+			</div>
+			
+			<div id="draggable-3" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				Прибрати житло
+			</div>
+			
+			<div id="draggable-4" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				Зробити уроки з дітьми
+			</div>
+			<div id="draggable-5" 
+				class="example-draggable" 
+				draggable="true"
+				ondragstart="onDragStart(event);">
+				Помить машину
+	 		  </div>
+	 		<div id="draggable-6" 
+				class="example-draggable" 
+				draggable="true"
+				ondragstart="onDragStart(event);">
+				Оплатить рахунки
+ 			 </div>
+			<div id="draggable-7" 
+				class="example-draggable" 
+				draggable="true"
+				ondragstart="onDragStart(event);">
+				Сходить за покупками
+			</div>
+		</div>
+		
+		<div class="example-dropzone"
+			 ondragover="onDragOver(event);"
+			 ondrop="onDrop(event);">
+			<p> Виконані справи</p>
+		</div>
+	</div>
+</body>
+	<script>
+		function onDragStart(event){
+			event.dataTransfer
+			.setData('text/plain', event.target.id);
+			
+			event
+			  .currentTarget
+			  .style
+			  .backgroundColor= 'orange';
+		}
+		function onDragOver(event){
+			event.preventDefault();
+		}
+		function onDrop(event){
+			let id = event
+			.dataTransfer
+			.getData('text');
+			
+			let draggableElement = document.getElementById(id);
+			let dropzone = event.target;
+			dropzone.appendChild(draggableElement);
+		    
+			event
+			  .dataTransfer
+			  .clearData();
+		}
+	</script>
+</html>

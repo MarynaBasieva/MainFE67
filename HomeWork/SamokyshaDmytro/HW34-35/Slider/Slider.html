@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slider</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'/>
+<meta content='true' name='HandheldFriendly'/>
+<link type="text/css" href="css/main.css" rel="stylesheet"/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-family: 'Roboto', sans-serif;
+		height: 100vh;
+	}
+	.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(1, 1, 1);
+  z-index: 999;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color:#182846;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+
+    background-color:#259e2f;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+/* ------------------------------------------------- */
+	.container{
+		position: relative;
+		overflow: hidden;
+		width: 100vw;
+		height: 100vh;
+	}
+	.sidebar{
+		height: 100%;
+		width: 35%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: transform 0.5s ease-in-out;
+	}
+	.sidebar > div{
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+	.sidebar h2{
+		font-size: 40px;
+		margin-bottom: 10px;
+		margin-top: -30px;
+	}
+	.main-slider{
+		height: 100%;
+		position: absolute;
+		top: 0;
+
+		width: 100%;
+		transition: transform 0.5s ease-in-out;
+	}
+	.main-slider > div{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height: 100%;
+		width: 100%;
+	}
+	button{
+		background: rgba(255, 255, 255, 0.641);
+		border: none;
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+		font-size: 15px;
+		padding: 15px;
+		transition: all 0.4s ease-in-out;
+	}
+	button:hover{
+		color: rgb(255, 255, 255);
+	}
+	button:focus{
+		outline: none;
+	}
+	.container .controls{
+		position: relative;
+	}
+	.container .controls button{
+		position: absolute;
+		left: 35%;
+		top:50%;
+		z-index: 100;
+	}
+	.container .controls .down-button{
+		transform: translate(-100%, 60vh);
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.container .controls .up-button{
+		transform: translate(1%, 40vh);
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	
+</style>
+<body>
+	<div class="preloader">
+		<div class="preloader__row">
+		  <div class="preloader__item"></div>
+		  <div class="preloader__item"></div>
+		</div>
+	  </div>
+	<div class="container">
+		<div class="sidebar">
+			<div style="background: linear-gradient(308deg, #64612885 -26%, #8d969978 145%);">
+				<h2>Show in the desert 1</h2>
+				<p>Love, slide & One 1</p>
+			</div>
+			
+			<div style="background: linear-gradient(270deg, #606c0080 -26%, #77889db0 145%);">
+				<h2>Show in the desert 2</h2>
+				<p>Love, slide & One 2</p>
+			</div>
+			
+			<div style="background: linear-gradient(0deg, #6fe4ffad 1%, #2097ff91 128%);">
+				<h2>Show in the desert 3</h2>
+				<p>Love, slide & One 3</p>
+			</div>
+			
+			<div style="background: linear-gradient(358deg, #0f1220c4 -8%, #7d95b194 138%);">
+				<h2>Show in the desert 4</h2>
+				<p>Love, slide & One 4</p>
+			</div>
+		</div>
+		
+		<div class="main-slider">
+			<div style="background: url('https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg'); background-repeat: no-repeat; background-position: right; background-size: cover;"></div>
+			<div style="background: url('https://images.pexels.com/photos/8844759/pexels-photo-8844759.jpeg'); background-repeat: no-repeat; background-position: right; background-size: cover;"></div>
+			<div style="background: url('https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg'); background-repeat: no-repeat; background-position: right; background-size: cover;"></div>
+			<div style="background: url('https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg'); background-repeat: no-repeat; background-position: right; background-size: cover;"></div>
+		</div>
+		<div class="controls">
+			<button class="down-button">
+				<i class="fas fa-arrow-down"></i>
+			</button>
+			<button class="up-button">
+				<i class="fas fa-arrow-up"></i>
+			</button>
+		</div>
+	</div>
+</body>
+	<script>
+
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+}
+
+
+
+// ----------------------------------
+
+		let upBtn = document.querySelector('.up-button');
+		let downBtn = document.querySelector('.down-button');
+		let sidebar = document.querySelector('.sidebar');
+		let container = document.querySelector('.container');
+		let mainSlider = document.querySelector('.main-slider');
+		let slidesCount = mainSlider.querySelector('div').length;
+		
+		let activeSlideIndex = 0;
+		
+		sidebar.style.top=`${ (slidesCount - 1) * 100}vh`;
+		sidebar.style.zIndex = '2';
+		mainSlider.style.zIndex = '1';
+		upBtn.addEventListener('click', ()=>{
+			changeSlide('up');
+		});
+		
+		downBtn.addEventListener('click', ()=>{
+			changeSlide('down');
+		});
+		
+		function changeSlide (direction){
+			if(direction === 'up'){
+				activeSlideIndex++;
+				if(activeSlideIndex === slidesCount){
+					activeSlideIndex =  0;
+				}
+				
+				if(activeSlideIndex > 0){
+				activeSlideIndex =  0;
+				}
+				
+			}else if(direction === 'down'){
+					activeSlideIndex--;
+				// if(activeSlideIndex < 0){
+				// 	activeSlideIndex =  0;
+				// }
+				if(activeSlideIndex < -3){
+				activeSlideIndex =  0;
+				}
+			}
+				let height = container.clientHeight;
+				mainSlider.style.transform = `translateY(${activeSlideIndex * height}px)`;
+				sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`;
+		}
+
+
+		// ____________________________________
+
+  
+	</script>
+</html>

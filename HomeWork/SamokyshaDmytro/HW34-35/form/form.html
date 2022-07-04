@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slider</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'/>
+<meta content='true' name='HandheldFriendly'/>
+<link type="text/css" href="css/main.css" rel="stylesheet"/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+		*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.nav{
+		background: #140B89;
+	}
+	.nav ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav ul li a{
+		display: block;
+		padding: 10px 20px;
+		color: #fff;
+		text-decoration: none;
+		transition: all 0.3s linear;
+	}
+	.nav ul li a:hover{
+		background: #023016;
+	}
+	.form button,
+	.form input,
+	.form label{
+		display: block;
+	}
+	
+</style>
+<body>
+	
+	<div class="container">
+		<div class="content"></div>
+		<form class="form" action="#" method="post">
+			<input class="name" type="text" id="name" name="name" />
+			<label for="name">Ведіть своє І`мя</label>
+
+			<button type="submit">Готово</button>
+		</form>
+		<div class="result"></div>
+</div>
+
+</body>
+	<script>
+
+
+		let form = document.querySelector('.form');
+		let name = document.querySelector('.name');
+		let result = document.querySelector('.result');
+
+
+		form.onsubmit = function(event){
+			if(name.value !== name.match(/[a-zA-Z_09]+@[a-z]+\.\w+/g)){
+				event.preventDefault();
+				result.innerHTML = 'no email';
+				document.querySelector('.result').style.border = '3px red solid';
+			}
+		};
+		
+
+	</script>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aperture</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<link type="text/css" href="css/main-forms.css" rel="stylesheet"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+<!-- ------------------------------------прелоадер -->
+
+	<div class="preloader">
+		<div class="preloader__row">
+		  <div class="preloader__item"></div>
+		  <div class="preloader__item"></div>
+		</div>
+	  </div>
+<!-- ---------------------------------------------------------------------------preloader--> 
+    <div class="for_page">
+		<main class="page">
+			
+<!-------------------------------------------------------------------------------------------Fform-1-->
+<section class="section-5">
+	<div class="container">
+		<div class="row justify-content-around">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 s5HiddenTittle">
+				<div class="s5-text-block">
+					<h3>Calculează asigurarea</h3>
+					<p>Completează formularul de mai jos.</p>
+				</div>
+			</div>
+
+
+
+
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-md-flex flex-md-column  align-items-md-center">
+				
+						<div class="card-s5">
+							<div class="s5-icon-in-card">
+								<img class="s5IconsJS1"  src="../Project-6/img/gallaryBlue.png" alt="">
+							</div>
+							<div  class="s5-text-card">
+								<p class="s5-cardText-1">
+									ÎNCARCĂ POZE CU PAȘAPORTUL TEHNIC
+								</p>
+								<p class="s5-cardText-2">
+									Încarcă poze cu pașaportul tehnic față și verso al autovehiculului, lasă-ne datele de contact și vei primi oferta de preț exact în doar câteva minute.
+								</p>
+							</div>
+							<div class="s5-plus">
+								<a class="plus-link" href="">
+									<span class="plus radius">
+									</span>
+								</a>	
+							</div>
+						</div>
+						<div class="down-flex">
+							<div class="download">
+								<a class="download-link" href=""></a>
+								<p class="downloadText">ÎNCARCĂ POZA</p>
+							</div>
+							<form class="form-1" action="">
+								<input class="numberTel" type="tel" placeholder="Număr de telefon">
+								<input class="email" type="email" placeholder="E-mail">
+							</form>
+							<button class="form-btn">Trimite</button>
+						</div>
+			</div>
+
+			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12  d-md-flex flex-md-column align-items-md-center">
+				<div class="card-s5 card-s51">
+					<div class="s5-icon-in-card">
+						<img class="s5IconsJS2" src="../Project-6/img/penBlue.png" alt="">
+					</div>
+					<div class="s5-text-card">
+						<p class="s5-cardText-1">
+							COMPLETEAZĂ MANUAL
+						</p>
+						<p class="s5-cardText-2">
+							Lasă-ne detaliile mai jos și vei primi oferta de preț exact în doar câteva minute.
+						</p>
+					</div>
+					<div class="s5-plus">
+						<a class="plus-link" href="">
+							<span class="plus radius">
+							</span>
+						</a>					
+					</div>
+				</div>	
+				<div class="down-flex">
+					<form class="form-2" action="">
+						<input id="idndID" class="idnp" type="number" placeholder="IDNP">
+						<input class="num" type="number" placeholder="Numărul de inmatriculare">
+						<input class="numberTel" type="tel" placeholder="Număr de telefon">
+						<input class="email" type="email" placeholder="E-mail">
+					</form>
+					<button class="form-btn">Calculează</button>
+				</div>
+				
+
+			</div>
+
+							
+			</div>
+
+		</div>
+	</div>
+</section>	
+	
+<!-------------------------------------------------------------------------------------------form-1-->
+
+		</main>
+      	<footer>
+    	</footer>
+    </div>
+
+  </body>
+
+  <script>
+// -----------------------------------прелоадер
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+
+
+// -----------------------------------прелоадер
+// ------------------------------------ховер на 5 блок--------
+ let s5p1 = document.querySelectorAll('.s5-cardText-1')[0];
+ let s5p2 = document.querySelectorAll('.s5-cardText-2')[0];
+ let cardS5 = document.querySelectorAll('.card-s5')[0];
+ let cardS51 = document.querySelectorAll('.card-s51')[0];
+ let icons1 = document.querySelectorAll('.s5IconsJS1')[0];
+
+
+
+ cardS5.addEventListener('mouseover', () => {
+    document.querySelectorAll('.s5-cardText-1')[0].style.color = 'white'
+	document.querySelectorAll('.s5-cardText-2')[0].style.color = 'white'
+});
+cardS5.addEventListener('mouseout', () => {
+    document.querySelectorAll('.s5-cardText-1')[0].style.color = '#001A49'
+	    document.querySelectorAll('.s5-cardText-2')[0].style.color = '#001A49'
+});
+
+
+cardS51.addEventListener('mouseover', () => {
+    document.querySelectorAll('.s5-cardText-1')[1].style.color = 'white'
+	 document.querySelectorAll('.s5-cardText-2')[1].style.color = 'white'
+});
+cardS51.addEventListener('mouseout', () => {
+    document.querySelectorAll('.s5-cardText-1')[1].style.color = '#001A49'
+	document.querySelectorAll('.s5-cardText-2')[1].style.color = '#001A49'
+});
+
+
+</script>
+
+</html>
