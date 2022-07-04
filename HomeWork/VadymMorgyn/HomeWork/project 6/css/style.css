@@ -1,0 +1,838 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+.for_page a:focus,
+.for_page a:active {
+	outline: none;
+}
+
+.for_page nav,
+.for_page footer,
+.for_page header,
+.for_page aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+.for_page input,
+.for_page button,
+.for_page textarea {
+	font-family: inherit;
+}
+
+.for_page input::-ms-clear {
+	display: none;
+}
+
+.for_page button {
+	cursor: pointer;
+}
+
+.for_pagebutton::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.for_page a,
+.for_page a:visited {
+	text-decoration: none;
+}
+
+.for_page a:hover {
+	text-decoration: none;
+}
+
+.for_page ul li {
+	list-style: none;
+}
+
+.for_page img {
+	vertical-align: top;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+/*---------header-----------*/
+.header {
+	padding-top: 28px;
+	padding-bottom: 25px;
+}
+
+.menu_bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav_menu .nav_child {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-right: 30px;
+	transition: 0.5s linear;
+}
+
+.nav_menu .nav_child:last-child {
+	margin-right: 0;
+}
+
+.nav_menu .nav_child:hover {
+	text-decoration: underline;
+	color: #dd7d00;
+}
+
+.basket a {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-left: 26px;
+	position: relative;
+}
+
+.basket a::before {
+	content: "";
+	position: absolute;
+	background: url("../img/shop.png") no-repeat;
+	width: 16px;
+	height: 20px;
+	top: -4px;
+	left: -26px;
+}
+
+.basket a span {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 18px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: black;
+	padding: 1px 6px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	-o-border-radius: 9px;
+}
+
+/*---------header-----------*/
+/*--------banner------------*/
+.banner {
+	background: #060628;
+	margin: 0px;
+}
+
+.banner_img {}
+
+.banner .banner_child {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	padding: 159px 0;
+	margin: 0px;
+	background: url('../img/banner_img.jpg') 50%/ cover no-repeat;
+}
+
+.banner .banner_child h2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.banner .banner_child h3 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 47px;
+	line-height: 60px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.banner .banner_child p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 48px;
+}
+
+.banner .banner_child a {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	padding: 5px 24px;
+	background: white;
+	transition: 0.5s linear;
+}
+
+.banner .banner_child a:hover {
+	text-decoration: underline;
+	background-color: #dd7d00;
+}
+
+/*----------banner----------*/
+/*---------story-----------*/
+.story {
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+
+.story .story_text {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.story .story_text h2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	color: #1D1F2E;
+	max-width: 578px;
+	margin-bottom: 16px;
+}
+
+.story .story_text p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	color: rgba(29, 31, 46, 0.7);
+	max-width: 658px;
+	margin-bottom: 21px;
+}
+
+.story .story_text a {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 28px;
+	text-align: center;
+	color: #A25F4B;
+	border-bottom: solid 2px rgba(162, 95, 75, 0.2);
+	padding: 0 4px;
+	padding-bottom: 2px;
+	transition: 0.5s linear;
+
+}
+
+.story .story_text a:hover {
+	color: #000000;
+	border-bottom: solid 2px rgb(162, 95, 75);
+}
+
+/*----------story----------*/
+/*-----------Mugs-----shop----*/
+.line {
+	max-width: 120px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-bottom: 100px;
+}
+
+.line::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #ECECED;
+	top: 9px;
+	left: -45px;
+}
+
+.line::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #ECECED;
+	top: 9px;
+	right: -45px;
+}
+
+.mugs_child h3 {
+	margin-top: 35px;
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #1D1F2E;
+}
+
+.mugs_child p {
+	margin-top: 5px;
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	color: rgba(29, 31, 46, 0.7);
+}
+
+.mugs .mugs_child2 p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 32px;
+	text-align: center;
+	color: #A25F4B;
+}
+
+.mugs .mugs_child2 p span {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	text-decoration-line: line-through;
+	color: rgba(29, 31, 46, 0.4);
+	margin-left: 5px;
+}
+
+.mugs {
+	padding-bottom: 116px;
+}
+
+.mb {
+	margin-bottom: 45px;
+}
+
+.mugs_child a {
+	position: relative;
+}
+
+.mugs_child a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0;
+	background-color: rgba(255, 255, 255, 0.788);
+	top: -1px;
+	transition: 0.7s linear;
+}
+
+.mugs_child a:hover::before {
+	height: 84%;
+}
+
+.mugs_child a::after {
+	content: "-Buy me-";
+	color: transparent;
+	font-size: 26px;
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 900;
+	transition: 0.5s linear;
+	text-shadow: 0px 0px 20px white;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%);
+	position: absolute;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+.mugs_child a:hover::after {
+
+	transition: 0.5s linear;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.459);
+	padding: 5px 10px;
+}
+
+/*----------Mugs---shop-------*/
+/*----------ation----------*/
+.action {
+	padding-bottom: 130px;
+}
+
+
+.action_title h2 {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-bottom: 100px;
+}
+
+.action_title h2::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #ECECED;
+	top: 9px;
+	left: 225px;
+}
+
+.action_title h2::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #ECECED;
+	top: 9px;
+	right: 225px;
+}
+
+.action_img {
+	display: flex;
+	max-height: 280px;
+}
+
+.action .img_duo {
+	margin-left: 20px;
+}
+
+.action .img_duo img {
+	height: 130px;
+}
+
+.action .img_duo img:first-child {
+	margin-bottom: 20px;
+}
+
+
+
+.action_text h2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-top: 5px;
+	margin-left: 70px;
+}
+
+.action_text h3 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 50px;
+	color: #1D1F2E;
+	margin: 15px 0;
+	max-width: 237px;
+	margin-left: 70px;
+}
+
+.action_text p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(29, 31, 46, 0.7);
+	max-width: 300px;
+	margin-bottom: 38px;
+	margin-left: 70px;
+}
+
+.action_text a {
+
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 10px 24px;
+	background-color: #1D1F2E;
+	transition: 0.5s linear;
+	margin-left: 70px;
+}
+
+.action_text a:hover {
+	background-color: #A25F4B;
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+/*----------action----------*/
+/*---------bg-----------*/
+.bg {
+	padding: 170px 0;
+	width: 100%;
+	background: url('../img/bg.jpg') 0 0/cover no-repeat;
+}
+
+/*---------bg-----------*/
+/*---------stories-----------*/
+.stories {
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+
+.stories .action_title h2::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #ECECED;
+	top: 9px;
+	left: 265px;
+}
+
+.stories .action_title h2::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #ECECED;
+	top: 9px;
+	right: 265px;
+}
+
+.stories_child img {
+	max-width: 300px;
+	max-height: 300px;
+	margin-bottom: 25px;
+}
+
+.stories_child h2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	color: #1D1F2E;
+	margin-bottom: 10px;
+}
+
+.stories_child p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: rgba(29, 31, 46, 0.7);
+	margin-bottom: 16px;
+}
+
+.stories_child span {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+}
+
+/*--------stories------------*/
+/*---------subscribe-----------*/
+.subscribe {
+	padding-top: 100px;
+	padding-bottom: 103px;
+	background-color: #1D1F2E;
+}
+
+.subscribe .subscribe_box h2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.subscribe .subscribe_box h2::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #D2D2D51A;
+	top: 9px;
+	left: 265px;
+}
+
+.subscribe .subscribe_box h2::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 30px;
+	background: #D2D2D51A;
+	top: 9px;
+	right: 265px;
+}
+
+.subscribe .subscribe_box h3 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 43px;
+}
+
+.link_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subscribe .subscribe_box .link1 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 18px 40px;
+	border: 1px solid #2F303E;
+	margin-right: 10px;
+	transition: 0.5s linear;
+}
+
+.subscribe .subscribe_box .link1:hover {
+	text-decoration: underline;
+	background-color: #dd7d00;
+	color: black;
+}
+
+.subscribe .subscribe_box .link2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 18px 25px;
+	background: #FFFFFF;
+	transition: 0.5s linear;
+}
+
+.subscribe .subscribe_box .link2:hover {
+	background-color: #dd7d00;
+	text-decoration: underline;
+	color: white;
+}
+
+/*----------subscribe----------*/
+/*---------footer-----------*/
+.footer {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.footer_child1 {}
+
+.footer_child1 img {
+	margin-bottom: 22px;
+}
+
+.footer_child1 h3 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(29, 31, 46, 0.7);
+	margin-bottom: 81px;
+}
+
+.footer_child1 p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(29, 31, 46, 0.3);
+}
+
+.footer_child2 p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-bottom: 22px;
+}
+
+.footer_child2 .link {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 22px;
+	color: rgba(29, 31, 46, 0.7);
+	margin-bottom: 11px;
+	transition: 0.4s linear;
+}
+
+.footer_child2 .link:last-child {
+	margin-bottom: 0;
+}
+
+.footer_child2 .link:hover {
+	text-decoration: underline;
+	color: #dd7d00;
+}
+
+.footer_child2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_child3 p {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #1D1F2E;
+	margin-bottom: 22px;
+}
+
+.footer_child3 h2 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(29, 31, 46, 0.7);
+	margin-bottom: 16px;
+}
+
+.footer_child3 a {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 36px;
+	color: #1D1F2E;
+	transition: 0.5s linear;
+}
+
+.footer_child3 a:hover {
+	text-decoration: underline;
+	color: #dd7d00;
+}
+
+.footer_child3 h3 {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(29, 31, 46, 0.3);
+	margin-top: 55px;
+}
+
+/*----------footer----------*/

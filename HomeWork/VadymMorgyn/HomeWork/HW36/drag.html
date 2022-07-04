@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.elem{
+		width: 200px;
+		height: 200px;
+		background-color: blue;
+		margin: 40px auto;
+		text-align: center;
+		line-height: 200px;
+	}
+	.area{
+		width: 250px;
+		height: 250px;
+		border: 10px solid black;
+		padding: 10px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.exempel-parent{
+		border:2px solid #0004ff;
+		color: #000;
+		display: flex;
+	}
+	.exempel-origin{
+		flex-basis: 100%;
+		flex-grow: 1;
+		padding: 15px;
+	}
+	.example-draggable{
+		background: #00f351;
+		font-weight: normal;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		padding: 15px;
+	}
+	.example-dropzone{
+		background: #eeea00;
+		flex-basis: 100%;
+		flex-grow: 1;
+		padding: 20px;
+	}
+</style>
+<body>
+	<div class="elem" draggable="true">Тягнути</div>
+	<div class="area">Кидати</div>
+	<div class="exempel-parent">
+		<div class="exempel-origin">
+			<div id="draggable-1" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				----------------- 1 ----------------
+			</div>
+			
+			<div id="draggable-2" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				----------------- 2 ----------------
+			</div>
+			
+			<div id="draggable-3" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				----------------- 3 ----------------
+			</div>
+			
+			<div id="draggable-4" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				----------------- 4 ----------------
+			</div>
+			<div id="draggable-4" 
+				 class="example-draggable" 
+				 draggable="true"
+				 ondragstart="onDragStart(event);">
+				----------------- 5 ----------------
+			</div>
+		</div>
+		
+		<div class="example-dropzone"
+			 ondragover="onDragOver(event);"
+			 ondrop="onDrop(event);">
+			Зона кидання
+		</div>
+	</div>
+</body>
+<script>
+let elem = document.querySelector('.elem');
+let area = document.querySelector('.area');
+elem.addEventListener('dragstart', function(){
+	console.log("start")
+});
+elem.addEventListener('dragend', function(){
+	console.log("dragend")
+});
+elem.addEventListener('drag', function(){
+	console.log("drag")
+});
+area.addEventListener('dragenter', function(){
+			console.log('Enter');
+		});
+		
+		
+		
+		area.addEventListener('dragleave', function(){
+			console.log('Leave');
+		});
+		
+		
+		area.addEventListener('dragover',function(){
+			event.preventDefault();
+			console.log('Over');
+		});
+		
+		//==================================================
+		area.addEventListener('drop', function(event){
+			console.log('Drop');
+			this.appendChild(elem);
+		});
+			function onDragStart(event){
+			event.dataTransfer
+			.setData('text/plain', event.target.id);
+			
+			event
+			  .currentTarget
+			  .style
+			  .backgroundColor= 'blue';
+		}
+		function onDragOver(event){
+			event.preventDefault();
+		}
+		function onDrop(event){
+			let id = event
+			.dataTransfer
+			.getData('text');
+			
+			let draggableElement = document.getElementById(id);
+			let dropzone = event.target;
+			dropzone.appendChild(draggableElement);
+		    
+			event
+			  .dataTransfer
+			  .clearData();
+		}
+</script>
+</html>

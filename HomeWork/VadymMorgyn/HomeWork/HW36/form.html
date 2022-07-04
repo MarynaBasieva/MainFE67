@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.nav{
+		background: #140B89;
+	}
+	.nav ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav ul li a{
+		display: block;
+		padding: 10px 20px;
+		color: #fff;
+		text-decoration: none;
+		transition: all 0.3s linear;
+	}
+	.nav ul li a:hover{
+		background: #023016;
+	}
+	.form button,
+	.form input,
+	.form label{
+		display: block;
+	}
+	.form button{
+		margin: 0 auto;
+		padding: 10px 20px;
+		background-color: black;
+		color: white;
+		margin-top: 20px;
+		display: block;
+		width: 300px;
+		transition: 0.5s linear;
+	}
+	.form button:hover{
+		background-color: gray;
+	}
+		.form label{
+			margin-bottom: 20px;
+			text-align: center;
+		}
+			.form input{
+				margin: 0 auto;
+				width: 200px;
+				background-color: rgba(0, 0, 0, 0.466);
+				border: 2px rgb(129, 129, 129) solid;
+				padding: 10px 15px;
+				color: white;
+			}
+</style>
+<body>
+		<div class="container">
+			<div class="content"></div>
+			<form class="form" action="#" method="post">
+				<label for="name">Ведіть свою Пошту</label>
+				<input id="myInput" class="name" type="text" id="name" name="name" />
+				
+
+				<button type="submit">Готово</button>
+			</form>
+			<div id="result"></div>
+	</div>
+</body>
+<script>
+		let form = document.querySelector('.form');
+		let name = document.querySelector('.name');
+		let y = document.getElementById("myInput");	
+		let message = document.getElementById("result");
+	let filter1 = /(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)/gm;
+		form.onsubmit = function(event){
+			let ok = filter1.exec(name.value);
+				if(!ok) {
+					event.preventDefault();
+				message.innerHTML = "Ви вели" + " " + "не mail";
+				message.style.color = "red";
+				message.style.textAlign = "center";
+				message.style.marginTop = "20px"
+				y.style.border = "red solid 2px";		
+				};
+
+			};
+			
+
+</script>
+</html>
