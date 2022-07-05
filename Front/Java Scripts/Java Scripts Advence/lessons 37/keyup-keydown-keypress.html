@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>keyup, keydown, keypress</title>
+</head>
+
+<body>
+	<div>
+		<input id="upper" type="text" size="2" />
+	</div>
+</body>
+	<script>
+		//event.type  для keypress
+		/*function getKey(event){
+			if(event.which == null){
+				if(event.keyCode < 32) return null; // спец символ
+				return String.fromCharCode(event.keyCode)
+			}
+			
+			if(event.which != 0 && event.charCode != 0){//Всі крім IE
+				if(event.keyCode < 32) return null; 
+				return String.fromCharCode(event.which);
+			}
+			return null;
+		}*/
+		////////////////////////////////////////////////////////////////
+		
+		document.getElementById("upper").onkeypress = function(event){
+			//спец не звязані і не відпрацьовані
+			if(event.ctrlKey || event.altKey || event.metaKey) return;
+			let char = getChar(event);
+			
+			if(!char) return;
+			this.value = char.toUpperCase();
+			return false;
+		}
+		
+		
+		
+		
+	</script>
+</html>

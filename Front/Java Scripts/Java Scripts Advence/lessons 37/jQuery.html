@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="box"> 
+		<button class="btn">Закрити текст</button>
+		<p>Lorem ipsum dolar</p>
+		<p class="hoverPara">lorem ipsum dolar</p>
+		<div class="show">Показати текст тут або скрити</div>
+		<div class="hide">Показати текст тут або скрити</div>
+		<button class="show_btn">Показати</button>
+		<button class="hide_btn">Скрити</button>
+	</div>
+	
+	
+</body>
+	
+	<script>
+		$(document).ready(function(){
+			
+			$(".btn").click(function(){
+				$('p').hide('slow');
+			});
+			
+			$(".hoverPara").hover(function(){
+				console.log("Ви знаходитесь на елементі p");
+			},
+			function(){
+				console.log("Ви не знаходитесь на елементі p");
+			});
+			
+			
+			
+			
+			
+			
+		});
+		
+		
+		
+		
+		/*$(селектор).дія();
+		$(p.test) $(p:first) $(ul li:first-child(5)) $([href]) $([target!="blank"])
+		$(this).hide(); - скривався елемент
+		$("p").hide(); - скривався всі елементи p
+		$(".test").hide(); -  скривався всі елементи класу test
+		$("#test").hide(); -  скривався всі елементи id test*/
+	</script>
+</html>

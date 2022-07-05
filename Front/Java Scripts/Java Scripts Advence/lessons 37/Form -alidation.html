@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Validation</title>
+</head>
+
+<body>
+	<form name="form" action="action.php" onsubmit="return validateForm()" method="post">
+		<label>І`мя</label>
+		<input type="text" name="fullName" required />
+		<input type="submit" value="Submit" />
+	</form>
+	
+	<div>
+		<input id="myInput" type="number" min="100" max="300" required />
+		<button onClick="myFunck()">Відправити </button>
+
+		<div id="result"></div>
+	</div>
+	
+	<div>
+		<input id="inputVal" type="number" max="100" />
+		<button onClick="maxFunck()">Відправити</button>
+		
+		<div id="resultFull"></div>
+	</div>
+		  
+</body>
+	
+	<script>
+		function validateForm(){
+			let n = document.forms["form"]["fullName"].value;
+			if(n == ""){
+				console.log("Що необхідно вести і`мя");
+				return false;
+			}
+		}
+		
+		
+		////////////////////////////////////////////////////////
+		
+		function myFunck(){
+			let myInput = document.getElementById("myInput");
+			if(!myInput.checkValidity()){
+				document.getElementById("result").innerHTML = myInput.validationMessage;
+			}
+		}
+		///////////////////////////////////////////////////////
+		let inputVal = document.getElementById("inputVal");
+		function maxFunck(){
+			let txt = "";
+			if(inputVal.validity.rangeOverflow){
+				txt = "Значення занато велике";
+			}
+			document.getElementById('resultFull').innerHTML = txt;
+		}
+	</script>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Change, input, cut, copy, paste</title>
+</head>
+
+<body>
+	<h2>onChange</h2>
+		<div>
+			<input type="text" onChange="console.log(this.value)" />
+			<button type="button">button</button>
+		</div>
+	
+	<h2>onInput</h2>
+	
+	 <div>
+		 <input type="text" id="input">
+		 onInput: <span id="result"></span>
+	 </div>
+	
+	<h2>cut, copy, paste</h2>
+	<input type="text" id="input2"/>
+	
+</body>
+	<script>
+		input.oninput = function(){
+			result.innerHTML = input.value;
+		};
+		
+		/////////////////////////////////////
+		
+		input2.oncut = input2.oncopy = input2.onpaste = function(event){
+			console.log(event.type + '-' +event.clipboardData.getData('text/plain'));
+			return false;
+		};
+	</script>
+</html>

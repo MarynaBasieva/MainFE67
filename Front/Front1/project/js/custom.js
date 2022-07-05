@@ -103,4 +103,7 @@ r(function(){
             this.parentNode.replaceChild(iframe, this);
         }
     }
+	jQuery('.responsive_menu').click(function(){
+		jQuery(".nav_menu").toggle('slow');
+	});
 });
