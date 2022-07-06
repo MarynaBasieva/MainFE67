@@ -575,7 +575,7 @@ padding-left: 40px;
   background: url('../img/4-image.jpg');
   width: 50%;
   height: 540px;
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: right;
 }
