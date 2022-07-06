@@ -35,6 +35,7 @@ img{
 			color: #34547A;
 			transition: 0.5s;
 		}
+           .nav_menu ul li.active a,
 			.nav_menu ul li a:hover{
 				text-decoration: none;
 				color: #03d5e4;

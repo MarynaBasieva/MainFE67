@@ -106,4 +106,15 @@ r(function(){
 	jQuery('.responsive_menu').click(function(){
 		jQuery(".nav_menu").toggle('slow');
 	});
+	
+
+	(function(){
+	jQuery('.nav_menu ul.sub-menu li a').click(function () {
+        jQuery('.nav_menu ul.sub-menu li').removeClass('active');
+        jQuery(this).parent().addClass('active');
+        return true;
+    });
+}) ();
+	
+	
 });

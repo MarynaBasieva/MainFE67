@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+</head>
+
+<body>
+</body>
+	<script>
+		let user = {
+			name: "Alena",
+			age:30,
+		
+		
+		toString(){
+			return`{name: "${this.name}", ${this.age}}`;
+		}
+	   };
+		console.log(user);
+		
+		
+		//JSON.stringify - для перетворення обєктів в JSON
+		//JSON.parse - для перетворення JSON в обєкти
+		
+		
+		let person = {
+			name:'Ira',
+			age:30,
+			doctor: true,
+			work: ['review', 'appointment', 'treatment'],
+			wife:null
+		};
+		
+		let jsonNew = JSON.stringify(person);
+		console.log(jsonNew);
+		
+		//JSON
+		
+let json ='{"name":"Artem","age":25,"lastName":"Kartun","arr":[1,2,3,4]}';
+		console.log(json);
+		let result = JSON.parse(json);
+		console.log(result);
+		
+	</script>
+</html>

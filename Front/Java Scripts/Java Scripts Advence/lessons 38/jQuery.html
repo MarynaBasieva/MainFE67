@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+	.animationBox,
+	.animation{
+		font-size: 30px;
+		background: #8B06BD;
+		color: #fff;
+		padding: 20px;
+		width: 300px;
+		position: relative;
+		margin-top: 20px;
+	}
+	.btm_animBox,
+	.btm_anim{
+		width: 200px;
+		text-align: center;
+		background: #000;
+		color: #fff;
+		font-size: 18px;
+		padding: 6px 0;
+		margin-top: 10px;
+		cursor: pointer;
+		
+	}
+	img{
+		display: block
+	}
+</style>
+<body>
+	<div class="box"> 
+		<img class="imgName" src="https://uolcareers.co.uk/wp-content/uploads/IMG-LOGO-HOMEPAGE.png" />
+		<div></div>
+		<button class="btn">Закрити текст</button>
+		<p class="fadeInClasess">Lorem ipsum dolar</p>
+	
+		<button class="fadeTo_btn">fadeTo</button>
+		<div class="fadeTo_text">Показати текст тут або скрити</div>
+		
+		<button class="slideClick">Slide Click</button>
+		<ul class="Slide">
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+			<li>list4</li>
+		</ul>
+		
+		<p class="hoverPara">lorem ipsum dolar</p>
+		<div class="hide">Показати текст тут або скрити</div>
+		<button class="show_btn">Показати</button>
+		
+		
+		<div class="animation">jQuery</div>
+		<div class="btm_anim">Animation</div>
+		
+		
+		<div class="animationBox">Box</div>
+		<div class="btm_animBox">Box Animation</div>
+		
+		
+		<button class="OpenAnim">Open Anim</button>
+		<button class="StopAnim">Stop Anim</button>
+		<ul class="SlideStop">
+			test
+			<li>list1</li>
+			<li>list2</li>
+			<li>list3</li>
+			<li>list4</li>
+		</ul>
+		
+	</div>
+	
+	
+</body>
+	
+	<script>
+		$(document).ready(function(){
+			$(".imgName").after("Текст після картинки");
+			$(".imgName").before ("Текст перед картинкою");
+			///fadeToggle
+			$('.btn').click(function(){
+				$('.fadeInClasess').fadeToggle(1000); 
+			});
+			$('.fadeTo_btn').click(function(){
+				$('.fadeTo_text').fadeTo(1000); 
+			});
+		  	//SlideDown() slideUP() SlideToggle
+			$('.slideClick').click(function(){
+				$('.Slide').slideToggle(1000); ///slow, () , 1000
+			});
+			
+			//animate
+			
+			//$(селектор).animate({param},speed,callback)
+			//height:'toggle', 
+			$(".btm_anim").click(function(){
+				let anim = $('.animation');
+				anim.animate({opacity:'0.4',height:'200px', width:"350px"}, "slow");
+				anim.animate({opacity:'0.8',height:'200px', width:"350px"}, "slow");
+				anim.animate({opacity:'0.5',height:'100px', width:"200px"}, "slow");
+				anim.animate({opacity:'0.8',height:'100px', width:"100px"}, "slow");
+			});
+			
+			
+			$(".btm_animBox").click(function(){
+				let animBox = $('.animationBox');
+				animBox.animate({left:'100px'}, "slow");
+				animBox.animate({fontSize:'50px'}, "slow");
+			});
+			
+			$(".OpenAnim").click(function(){
+				$(".SlideStop").slideToggle(1000);
+			});
+			$(".StopAnim").click(function(){
+				$(".SlideStop").stop();
+			});
+			
+			//append prepend after before
+			function appendText(){
+				let text1 = "<p>Text1</p>";
+				let text2 = $("<p></p>").text("Text.");
+				let text3 = document.createElement("p");
+				text3.innerHTML = "Text.";
+				$("body").append(text1, text2, text3);
+			}
+			///remove empty
+			
+			
+			$("ul.SlideStop li").remove();
+			
+			//addClass removeClass toggleClass css 
+				(function(){
+				jQuery('.nav_menu ul.sub-menu li a').click(function () {
+					jQuery('.nav_menu ul.sub-menu li').removeClass('active');
+					jQuery(this).parent().addClass('active');
+					return true;
+				});
+			}) ();
+			
+		});
+		
+	</script>
+</html>
