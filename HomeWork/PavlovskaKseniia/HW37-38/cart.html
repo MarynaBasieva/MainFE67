@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HW37-38</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link type="text/css" href="css/style.css" rel="stylesheet"/>
+    <link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+    <link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+    
+    
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body_cart">
+    <section class="cart_block1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h1>Оформление заказа</h1>
+                    <h3>Ваши данные</h3>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <form>
+                        <input type="text" id="name" name="name" class="input" placeholder="ФИО" required>
+                        <input type="text" id="phone" name="phone" class="input" placeholder="Контактный телефон" required>
+                        <input type="text" id="postcode" name="postcode" class="input" placeholder="Индекс" required>
+                        <p class="agree"><input type="radio" name="radio" required>Даю согласие на обработку персональных данных</p>
+                        <button class="but_cart" type="submit">Регистрация <img src="img/arrow_r_w.svg"></button>
+
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+
+                        <input type="text" id="address" name="address"class="input" placeholder="Ваш адреc" required>
+                        <input type="email" id="mail" name="mail" class="input" placeholder="Электронная почта" required>
+                        <textarea type="text" name="comment" class="textarea" placeholder="Комментарий"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart_block2">
+        <div class="container">
+            <div class="row">  
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h2>Выберите способ доставки</h2>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">   
+                    <p class="radio"><input type="radio" name="radio">НоваПошта</p>
+                    <p class="deliv">Доставка 1-3 дня</p>
+                    <a href="https://novaposhta.ua/ru/basic_tariffs">Стоимость</a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">      
+                    <p class="radio"><input type="radio" name="radio">Justin</p>
+                    <p class="deliv">Доставка 2-3 дня</p>
+                    <a href="https://justin.ua/calculate">Стоимость</a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">     
+                    <p class="radio"><input type="radio" name="radio">УкрПошта</p>
+                    <p class="deliv">Доставка 2-4 дня, от 15грн</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">  
+                    <p class="radio"><input type="radio" name="radio">Курьер</p>
+                    <p class="deliv">Доставка в течение дня</p>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 delivery">
+                    <img src="img/idea.svg">
+                    <p>Сроки доставки указаны при условии наличия товара. Заказ, сделанный со вт по чт отправляется в пт. Заказ, сделанный с пт по вс отправляется в пн</p>
+                </div>
+            </div>                    
+        </div>
+    </section>
+
+    
+
+
+
+    <section class="cart_block3">
+        <div class="container">
+            <div class="row">  
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h2>Выберите способ оплаты</h2>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">   
+                    <p class="radio"><input type="radio" name="radio">Банковская карта</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">      
+                    <p class="radio"><input type="radio" name="radio">Наложенный платёж</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">     
+                    <p class="radio"><input type="radio" name="radio">Наличными курьеру</p>
+                </div>          
+            </div>                    
+        </div>
+    </section>
+
+    <div class="cart_block4 container">
+        <div class="buy">
+            <a href="#">Подтвердить</a>
+            <img src="img/arrow_right.svg">
+        </div>
+    </div>
+</body>
+</html>
+
