@@ -1,0 +1,23 @@
+/* 1199px 991px 767px 600px 500px*/
+
+@media (min-width: 1215px) {
+	.form .container {
+		max-width: 906px;
+	}
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 600px) {}
+
+@media (max-width: 577px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 470px) {}
+
+@media (max-width: 350px) {}

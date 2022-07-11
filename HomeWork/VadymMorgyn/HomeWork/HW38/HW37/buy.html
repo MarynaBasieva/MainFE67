@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>index</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+
+
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="for_page bg">
+			<div class="page">
+				<header class="header">
+					<div class="container">
+						
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 head">
+							<div class="burger"><i class="fa-solid fa-bars"></i></div>
+							<div class="btn_menu">
+								<form action="action.php">
+									<button class="btn_menu_item"><i class="fa-solid fa-magnifying-glass"></i></button>									
+									<input type="search" placeholder="Поиск">
+								</form>
+								<a class="btn_menu_item" href="#"><i class="fa-solid fa-user"></i></a>
+								<a class="btn_menu_item" href="#"><i class="fa-solid fa-heart"></i></a>
+								<a class="btn_menu_item" href="form.html"><i class="fa-solid fa-bag-shopping"></i></a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<main class="main">
+					<section class="back">
+						<div class="container">
+							<div class="row">
+								<div class="col back_box">
+									<div class="btn_close">
+										<a class="close"><i class="fa-solid fa-arrow-left-long"></i></a>
+									</div>
+									<div class="crumbs">
+										<a href="#">Главная/</a>
+										<a href="index.html">Женщинам/</a>
+										<a>Блузки и рубашки</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="catalog_item">
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 title">
+									<h2>Блузка женская </h2>
+									<p>Арт 06578990-086</p>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 img">
+									<div class="big_img">
+										<img src="img/img1.png" alt="404">
+									</div>
+									<div class="btn_bigImg"><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></div>
+									<div class="small_img">
+										<img src="img/img2.png" alt="404">
+										<img src="img/img3.png" alt="404">
+										<img src="img/img4.png" alt="404">
+										<img src="img/img5.png" alt="404">
+									</div>
+									<div class="btn_smallImg"><a href="#"><i class="fa-solid fa-arrow-right-long"></i></a></div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text">
+									<button class="size call">Таблица розмеров</button>
+									<div class="wraper_modal1" >
+											<div class="modal1">
+											<div class="closed_box"><a class="closed"><i class="fa-solid fa-arrow-left-long"></i></a></div>
+											<h2>Таблица для определения женских размеров</h2>	
+											<img src="img/modal.jpg" alt="404">
+											<p>Все модели, предоставленные на страницах чаще соответсвуют размерам</p>
+											<p>т.к. замеров для каждой модели у нас нет, мы предоставляем размерную таблицу поставщика, 
+												но по ней могут быть минимальные расхождени, она не 100% идёт под модель
+											</p>
+											<p>Маркировка S, M, L, XL у каждого поставщика своя, у кого-то 42-S, у кого-то 42-M</p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+			<footer class="footer"></footer>
+		</div>
+
+					
+</div>		
+	</body>
+	<script>
+		$(document).ready(function(){
+			$(".call").click(function(){
+				$(".wraper_modal1").show('slow');
+			});
+			
+			$(".closed, .wraper_modal1").click(function(){
+				$('.wraper_modal1').hide(1000);
+			});
+		});
+			let closeBtn = document.querySelector('.close');
+	 function back(){
+			 window.history.back ();
+		 };
+		 closeBtn.addEventListener('click', back);
+	</script>
+</html>
+
