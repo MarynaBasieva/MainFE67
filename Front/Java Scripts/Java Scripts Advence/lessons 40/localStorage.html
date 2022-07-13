@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>localStorage</title>
+</head>
+<script>
+	
+	//save localStorge
+	localStorage.setItem('myKey', 'myValue');
+	
+	// console valu
+	let localValue = localStorage.getItem('myKey');
+	console.log(localValue);
+	
+	//delete
+	localStorage.removeItem('myKey');
+	
+	//clear localStorge all
+	localStorage.clear();
+	
+	localStorage["Ключ"] = "Значення";
+	localStorage["Ключ"];
+	delete localStorage ["Ключ"];
+	
+	
+	
+	//////////////////////////////////////////////////
+	
+	let person = {
+		name: "Olena",
+		lastName: "Voronova",
+		age:30,
+		adress:"City Kiev"
+	}
+	
+	let obj = JSON.stringify(person);
+	
+	localStorage.setItem("muKey", obj);
+	
+	let returnObj = JSON.parse(localStorage.getItem("muKey"));
+	
+	try{
+		localStorage.setItem('ключ', 'значення ');
+	}catch(e){
+		if(e == QUOTA_EXCEEDED_ERR){
+			console.log("Люміт перевищенний");
+		}	
+	}
+	/*
+	setItem(key,value) - зберегти елемент як пару ключ/ значення
+	
+	getItem(key,value) - отримати значення по ключу
+	
+	removeItem(key) - видалити елемент
+	
+	clear() - очистити і видалити все
+	
+	key(index) - отримати ключ на основі його індексу
+	
+	length - повертає загальну кількість збережених елемнтів
+	*/
+	
+	
+	//sessionStorage
+	
+	sessionStorage.setItem('sessionStorage', 1);
+	console.log(sessionStorage.getItem(sessionStorage));
+</script>
+<body>
+</body>
+</html>

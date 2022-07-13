@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax</title>
+</head>
+
+<body>
+	<div id="result">Ajax працює</div>
+	<button onClick="loadXML()">Текст зміниться</button>
+</body>
+	<script>
+		function loadXML(){
+			let xhr;
+			if(window.XMLHttpRequest){
+				xhr = new XMLHttpRequest();
+			}else{
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xhr.open("GET", 'ajax.txt', false);
+		    xhr.send();
+		    document.getElementById("result").innerHTML=xhr.responseText;
+		}
+		
+		
+	</script>
+</html>

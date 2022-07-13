@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Symbol</title>
+</head>
+<script>
+	//const symbol = symbol();
+	
+	//const symbol = Symbol("Basieva Maryna");
+	//console.log(symbol);
+	//console.log(Symbol("Basieva Maryna") === Symbol("Basieva Maryna"));
+	
+	//const symbol = new Symbol();
+	//console.log(symbol);
+	
+	//const BasievaMaryna =  Symbol.for("Basieva Maryna");
+	//console.log(Symbol.for("Basieva Maryna") == BasievaMaryna);
+	
+	
+	
+	let foo = Symbol('foo');
+	let myObj={};
+	
+	myObj['foo'] = 'bar';
+	myObj[foo] = 'bar2';
+	
+	myObj.foo;
+	Object.keys(myObj);
+	Object.getOwnPropertyNames(myObj);
+	
+	
+	for(let key in myObj){
+		console.log(`${key} = ${myObj[key]}`);
+	}
+	console.log(myObj);
+</script>
+<body>
+</body>
+</html>

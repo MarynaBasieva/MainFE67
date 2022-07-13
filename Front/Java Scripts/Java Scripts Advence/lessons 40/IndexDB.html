@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IndexDB</title>
+</head>
+
+<body>e
+	<div id="app">IndexDB notes</div>
+</body>
+	<script>
+		let indexDB;
+		let indexDBReq = indexedDB.open('Mainacad', 1);
+		
+		indexDBReq.onupgradenneded = (event) =>{
+			indexDB = event.target.result;
+			
+			let notes = indexDB.createObjectStore('notes', {autoIncrement: true});
+		}
+		
+		indexDBReq.onsuccess = (event) =>{
+			indexDB = event.target.result;
+			
+			addStickyNote(indexDB, 'Hello world first time');
+			addStickyNote(indexDB, 'Hello world second time');
+			addStickyNote(indexDB, 'Hello world third time');
+		}
+		
+		indexDBReq.onerror = (event) =>{
+			console.log('error opening database' + event.target.errorCode);
+		}
+		
+		
+		const addStickyNote = (indexDB, massage)=>{
+			let tx = indexDB.transaction(['notes'], 'readwrite');
+			let store = tx.objectStore('notes');
+			
+			let note = {text: message, timestamp: Date.now()};
+			store.add(note);
+			
+			tx.oncomplete = () =>{
+				console.log('stored note!');
+			}
+			
+			tx.onerror = (event) =>{
+				console.log('error stored note!' + event.target.errorCode);
+			}
+			
+		} 
+	</script>
+</html>
