@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Карта товара</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<link href="../Project-5/vendor/fontawesome/css/all.css" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  </head>
+
+  <body>
+	<!-- preload -->
+
+<!-- ---------------------------------------------------------------------------------------------MODAL-->
+<!-- <div class="modal" id="mainmodal">
+<form class="formflex">
+		<input class="input" type="text" placeholder="Name" title="Name">
+		<input class="input" type="text" placeholder="Last Name" title="Last Name">
+		<input class="input" type="tel" placeholder="Telephone" title="Telephone">
+		<input class="input" type="email" placeholder="@mail" title="@mail">
+		<input type="submit" class="input btn" title="S E N D">
+
+		<button class="modal-cls">X</button>
+	</form>
+			
+		<div class="overlay">
+
+	</div>
+</div>   -->
+
+
+<!-- ---------------------------------------------------------------------------------------------MODAL-->
+    <div class="for_page">
+
+		<main class="page">	
+
+<!-- ---------------------------------------------------------------------------------------------HEADER-->
+			<header class="header">
+								<!-- <div class="eclipse">
+		</div>	 -->
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-7 col-lg-7 col-md-7 col-sm-3">
+							<div class="gamburger">
+								<button id="nav-icon4">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<nav class="menu">
+									<ul class="menuList">
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-9">
+							<div class="search">
+								<div class="inputs-box">
+									<div class="h-icons">
+										<button type="button"  class="lens"><img src="../Project-5/img/lens.svg" alt="Searsh"></button>
+									</div>
+										<input id="inputSearch"  type="text" placeholder="Пошук" max="20">
+								</div>
+									<div class="h-icon">
+											<button type="button" class="profile"><img src="../Project-5/img/profile.svg" alt="Profile"></button>
+									</div>
+									<div class="h-icon3">
+											<button type="button" class="heart"><img src="../Project-5/img/heart.svg" alt="Favorites"></button>
+									</div>
+									<div class="h-icon3">
+											<button type="button" class="bag"><img src="../Project-5/img/bag.svg" alt="Bag"></button>
+											<!-- <span class="counter"></span> -->
+									</div>
+
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</header>
+<!------------------------------------------------------------------------------------------------HEADER-->
+<!------------------------------------------------------------------------------------------------SECTION-1-->
+			<section class="s1">
+				<div class="container">
+					<div class="row">
+
+							<div class="circle">
+							</div>
+
+						<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+							<div class="box-button-to-left">
+								<button class="btnToLeft">
+								</button>
+								
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+							<div class="navigationBox">
+								<ul itemscope itemtype="https://schema.org/BreadcrumbList">
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a href="/" title="Главная" itemprop="item">
+											<span itemprop="name">Головна </span>
+											<meta itemprop="position" content="0">
+										</a></li>
+										<span _ngcontent-c87="" class="breadcrumb__list_break ng-star-inserted">/</span>
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a href="/rozdil/" title="Раздел" itemprop="item">
+											<span itemprop="name">Жінкам</span>
+											<meta itemprop="position" content="1">
+										</a></li>
+										<span _ngcontent-c87="" class="breadcrumb__list_break ng-star-inserted">/</span>
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a href="/rozdil/pidrozdil/" title="Подраздел" itemprop="item">
+											<span itemprop="name">Блузки та сорочки</span>
+											<meta itemprop="position" content="2">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+<!------------------------------------------------------------------------------------------------SECTION-1-->
+
+<!------------------------------------------------------------------------------------------------SECTION-2-->
+			<section class="section-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="item-name-box">
+								<h2 class="item-name">Жіноча блузка</h2>
+								<p class="article">Арт 06578990-086</p>
+							</div>
+						</div>
+						<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+							<div class="main-slider">
+								<div class="main-slider-item">
+									<div class="main-item">
+										<button class="main-slider-btn">
+											<img src="../Project-5/img/arr-right.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="main-slider-little-items">
+									<div class="main-slide-small-box1">
+									</div>
+									<div class="main-slide-small-box2">
+									</div>
+									<div class="main-slide-small-box3">
+									</div>
+									<div class="main-slide-small-box4">
+									</div>
+									<button class="main-slider-btn2">
+										<img src="../Project-5/img/arr-right.svg" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="box-button-to-left box-button-to-up">
+								<button class="btnToLeft btnToUp">
+								</button>							
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+							<div class="flex-main">
+								<h2 class="price">500 грн</h2>
+								<div class="colors">
+									<h3 class="h3colors">Кольори</h3>
+									<div class="colors-flex">
+										<span class="inner-colors color-1"></span>
+										<span class="inner-colors color-2"></span>
+										<span class="inner-colors color-3"></span>
+										<span class="inner-colors color-4"></span>
+										<span class="inner-colors color-5"></span>
+									</div>
+								</div>
+								<div class="sizes">
+									<h3 class="h3sizes">Розмір</h3>
+									<div class="sizesItemsBox">
+										<button class="boxSizesSpan S"><p>S</p></button>
+										<button class="boxSizesSpan M"><p>M</p></button>
+										<button class="boxSizesSpan L"><p>L</p></button>
+										<button class="boxSizesSpan XL"><p>XL</p></button>
+									</div>
+									<div class="sizesBox">
+										<button class="aSizes">Таблиця розмірів</button>
+									</div>
+								</div>
+								<div class="cart">
+									<button class="main-cart">В корзину<i class="fa-solid fa-bag-shopping"></i></button>
+									<button class="main-like"><i class="fa-regular fa-heart"></i></button>
+								</div>
+								<div class="stars">
+									<div class="star star1"><i class="fa-solid fa-star"></i></div>
+									<div class="star star3"><i class="fa-solid fa-star"></i></div>
+									<div class="star star3"><i class="fa-solid fa-star"></i></div>
+									<div class="star star4"><i class="fa-solid fa-star"></i></div>
+									<div class="star star5"><i class="fa-solid fa-star"></i></div>
+								</div>
+								<div class="sizesBox OtzivFlex">
+									<a class="aSizes" href="">Дивитися всі відгуки</a>
+									<a class="aSizes aSizes2" href="">Додати відгук</a>
+								</div>
+								<div class="opys-box">
+									<h3 class="opys-title">Опис</h3>
+									<p class="opys">Тут буде якийсь невеликий опис товару. Тут буде якийсь невеликий опис товару. Тут буде якийсь невеликий опис товару. Тут буде якийсь невеликий опис товару.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+<!------------------------------------------------------------------------------------------------SECTION-2-->
+
+
+
+<!------------------------------------------------------------------------------------------------SECTION-3-->
+			<section class="section-3">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<h2 class="s3-h2">Відгуки про товар</h2>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+							<div class="s3-slide">
+								<div class="s3-slide-flex">
+									<div class="s3-clide-img-box">
+										<div class="s3img"></div>
+									</div>
+									<div class="s3-slide-inner-flex">
+										<div class="s3-stars">
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+										</div>
+										<p class="s3-p">
+											Плаття сіло чудово. Хороший матеріал. Буду замовляти ще, залишилась дуже задоволена.
+										</p>
+										<div class="s3-inner-last-flex">
+											<p>Анна Котлова</p>
+											<p>23.05.2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+							<div class="s3-slide">
+								<div class="s3-slide-flex">
+									<div class="s3-clide-img-box">
+										<div class="s3img2"></div>
+									</div>
+									<div class="s3-slide-inner-flex">
+										<div class="s3-stars next-stars">
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+										</div>
+										<p class="s3-p">
+											Замовляю завжди одяг в цьому магазині! Хороші ціни, хороша якість! Приємні менеджери! Все швидко, доступно, зручно! Дякую.
+										</p>
+										<div class="s3-inner-last-flex">
+											<p>Христина Василюк</p>
+											<p>23.05.2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+							<div class="s3-btn-flex">
+								<div class="s3-btn-container">
+									<button class="s3-btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+							<button class="s3-btn-arr">
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+<!------------------------------------------------------------------------------------------------SECTION-3-->
+			<section class="section-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+							<h2>З цими товаром також купують</h2>
+						</div>
+						<div class="col">
+							<div class="owl-carousel" id="slider_img1">
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img1">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img2">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img3">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img4">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+<!------------------------------------------------------------------------------------------------SECTION-4-->
+
+<!------------------------------------------------------------------------------------------------SECTION-4-->
+		</main>
+
+
+      	<!-- <footer>
+     	</footer> -->
+
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+
+    </div>
+	<div class="preloader">
+		<div class="preloader__row">
+		  <div class="preloader__item"></div>
+		  <div class="preloader__item"></div>
+		</div>
+	  </div>
+
+	  <div class="modal-sizes">
+		<div class="contr">
+			<div class="modalWrap">
+				<div class="box-button-to-left BTNbtn">
+					<button class="btnToLeft">
+					</button>
+				</div>
+				<h2 class="modal2h2" >Таблиця для визначення жіночих розмірів</h2>
+				<div class="modalSizeImgBox">
+					<div class="modalSizeImg">
+	
+					</div>
+				</div>	
+				<div class="pppFlex">
+					<p class="modalp1 ppp">Всі моделі, представленні на сторінках часто збігаються з розмірами</p>
+					<p class="modalp2 ppp">Так як замірів для кожної моделі у нас немає, ми представляємо таблицю розмірів постачальника.</p>
+					<p class="modalp3 ppp">Маркування S, M, L, XL у кожного постачальника своє, у когось 42-S, у когось 42-V</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="main-form">
+		<div class="container-form">
+			<section class="form1">
+				<div class="row">
+					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-11">
+						<h2>Оформлення замовлення</h2>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-1">
+						<div class="formBtnBox">
+							<button class="btnFormX"><i class="fa-solid fa-xmark"></i></button>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-11">
+						<h3>Ваші дані</h3>
+					</div>
+				</div>
+			</section>
+			<section class="form2">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+						<input class="formInputAll formInput1" type="text" placeholder="ПІБ" required>
+						<input  class="formInputAll formInput2" type="tel" placeholder="Контактний телефон" required>
+						<input  class="formInputAll formInput3" type="text" placeholder="Індекс" required>
+						<div class="f1flex">
+							<input class="f2checkBox" type="checkbox">
+							<label class="f2checkBoxLabel" for="f2checkBox">Даю згодну на обробку персональних даних</label>
+						</div>
+						<button class="submit1"></button>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+						<input class="formInputAll formInput4" type="tel" placeholder="Адреса (тільки Україна)" required>
+						<input  class="formInputAll formInput5" type="email" placeholder="Електронна адреса" required>
+						<textarea name="com"  class="formInputAll formInput6" placeholder="Коментар"></textarea>
+					</div>
+				</div>
+			</section>
+			<section class="form3">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<h3>Оберіть спосіб доставки</h3>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Укрпошта</label>
+
+							</div>
+								<p>Доставка 2-3 дні</p>
+								<a href="@!">Вартість</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Нова пошта</label>
+
+							</div>
+								<p>Доставка 2-3 дні</p>
+								<p>Вартість 70 грн</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Нова пошта + кур'єр</label>
+
+							</div>
+								<p>Доставка протягом 2-3 днів</p>
+								<p>Вартість 300 грн</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Укрпошта + кур'єр</label>
+
+							</div>
+								<p>Доставка протягом 5-7 днів</p>
+								<p>Вартість 200 грн</p>
+						</div>
+					</div>
+					<div class="info">
+						<img src="../Project-5/img/!.svg" alt="">
+						<p>Термін доставки при умові наявності товару. Замовлення, зроблене з вівторка по четвер відправляється в понеділокю Замовлення, здійснене с пятниці по неділю відправляється в пятницю.</p>
+					</div>
+
+
+
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<h3>Оберіть спосіб оплати</h3>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="pay" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Банківська карта</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="pay" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Наложений платіж. Оплата при отриманні</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="pay" class="dostavkka" id="dost1">
+								<label for="dost1" class="labelDost">Оплата онлайн</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	  
+  </body>
+
+ <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+   <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	 <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	  <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	   <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	    <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	
+  <script>
+
+// preload
+$(document).ready(function(){
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+};
+
+
+
+// burger
+
+
+	$('#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+
+	$('.gamburger').click(function(){
+		$('.menu').toggle('slow');
+	});
+
+// MODAL 1
+
+
+			$('.aSizes').click(function(){
+				$('.modal-sizes').show('500'); 
+			});
+
+			$('.btnToLeft').click(function(){
+				$('.modal-sizes').fadeOut('500'); 
+			});
+});
+</script>
+
+</html>
