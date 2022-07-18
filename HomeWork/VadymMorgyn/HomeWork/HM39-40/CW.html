@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<script>
+	let car = {
+		name: "Suzuki",
+		model: "Vitara",
+		year:2007,
+		color: "black",
+		HP: 145,
+		Fuel: "Disel"
+	}
+
+	let obj = JSON.stringify(car);
+	localStorage.setItem("carKey", obj);
+	localStorage.setItem("key1", "item1");
+	localStorage.setItem("key2", "item2");
+	localStorage.setItem("key3", "item3");
+	localStorage.setItem("key4", "item4");
+	localStorage.setItem("key5", "item5");
+	let returnObj = JSON.parse(localStorage.getItem("carKey"));
+	try{
+		localStorage.setItem("key", "item");
+	} catch(e){
+		if(e == QUOTA_EXCEEDED_ERR){
+			console.log("Max Limit");
+		}
+	}
+</script>
+<body>
+	
+</body>
+</html>
