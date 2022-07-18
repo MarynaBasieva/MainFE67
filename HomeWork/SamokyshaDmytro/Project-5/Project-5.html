@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Aperture</title>
+    <title>Карта товара</title>
     <meta name='viewport' content='width=device-width,initial-scale=1'/>
 	<meta content='true' name='HandheldFriendly'/>
 	<link type="text/css" href="css/main.css" rel="stylesheet"/>
@@ -16,7 +16,10 @@
 	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<link href="../Project-5/vendor/fontawesome/css/all.css" rel="stylesheet">
 
 	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
 	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
@@ -25,12 +28,15 @@
 	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
   </head>
 
   <body>
+	<!-- preload -->
+
 <!-- ---------------------------------------------------------------------------------------------MODAL-->
-<div class="modal" id="mainmodal">
+<!-- <div class="modal" id="mainmodal">
 <form class="formflex">
 		<input class="input" type="text" placeholder="Name" title="Name">
 		<input class="input" type="text" placeholder="Last Name" title="Last Name">
@@ -44,547 +50,535 @@
 		<div class="overlay">
 
 	</div>
-</div>  
+</div>   -->
+
 
 <!-- ---------------------------------------------------------------------------------------------MODAL-->
     <div class="for_page">
-		<main class="page">
+
+		<main class="page">	
+
 <!-- ---------------------------------------------------------------------------------------------HEADER-->
 			<header class="header">
+								<!-- <div class="eclipse">
+		</div>	 -->
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between ">
-							<div class="main-logo-container">
-								<a href=""><img src="../Project-5/img/Logo.svg" alt="logo"></a>
-							</div>				
-							<nav class="main-menu">
-								<ul class="main-menu-ul navbar" >									
-									<li class="main-menu-li li-before">
-										<a class="main-menu-a nav-a-hover-style" href="">Business areas</a>
-									</li>
-									<li class="main-menu-li li-before">
-										<a class="main-menu-a nav-a-hover-style" href="">Featured images</a>
-									</li>
-									<li class="main-menu-li li-before">
-										<a class="main-menu-a nav-a-hover-style" href="">Gear cage</a>
-									</li>
-									<li class="main-menu-li li-before">
-										<a class="main-menu-a nav-a-hover-style" href="">Contact</a>
-									</li>
-										<li class="main-menu-li">
-											<a id="last-item-menu" class="main-menu-a list-item-link" data-easy-toggle="#mainmodal" data-easy-rcoe data-easy-class="show" href="">Get template</a>
+						<div class="col-xl-7 col-lg-7 col-md-7 col-sm-3">
+							<div class="gamburger">
+								<button id="nav-icon4">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<nav class="menu">
+									<ul class="menuList">
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
 										</li>
-								</ul>
-							</nav>
-							<div class="hidden">
-								<div class="responsive-menu">
-									<a href=""><i class="fas fa-bars"></i></a>								
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+										<li class="menuListItem">
+											<a class="link-sub-menu" href="@!">Пункт меню</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-9">
+							<div class="search">
+								<div class="inputs-box">
+									<div class="h-icons">
+										<button type="button"  class="lens"><img src="../Project-5/img/lens.svg" alt="Searsh"></button>
+									</div>
+										<input id="inputSearch"  type="text" placeholder="Пошук" max="20">
 								</div>
-							</div>				
+									<div class="h-icon">
+											<button type="button" class="profile"><img src="../Project-5/img/profile.svg" alt="Profile"></button>
+									</div>
+									<div class="h-icon3">
+											<button type="button" class="heart"><img src="../Project-5/img/heart.svg" alt="Favorites"></button>
+									</div>
+									<div class="h-icon3">
+											<button type="button" class="bag"><img src="../Project-5/img/bag.svg" alt="Bag"></button>
+											<!-- <span class="counter"></span> -->
+									</div>
+
+							</div>
 						</div>
 					</div>	
 				</div>	
 			</header>
 <!------------------------------------------------------------------------------------------------HEADER-->
-
-
-
-<!---------------------------------------------------------------------------------------------SECTION-1-->
-			<section class="section-1">
-				<div class="s1-icons">
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i1.svg" alt="">
-						</div>
-						<p class="s1-icon-p">1/2000s</p>
-					</div>
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i2.svg" alt="">
-						</div>
-						<p class="s1-icon-p">f/11</p>
-					</div>
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i3.svg" alt="">
-						</div>
-						<p class="s1-icon-p">100</p>
-					</div>
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i4.svg" alt="">
-						</div>
-						<p class="s1-icon-p">Iceland</p>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row justify-content-end">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-							<div class="s1-text-block">
-								<h3>
-									Photographer & Filmmaker
-								</h3>
-								<h1>
-									Aperture Studios
-								</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-1-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-2-->
-			<section class="section-2">
+<!------------------------------------------------------------------------------------------------SECTION-1-->
+			<section class="s1">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-							<h2>What we do.
-							</h2>
-							<p class="s2-p1-1">The areas that we're specialized in.</p>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-							<div class="s2-img-container">
-								<img src="../Project-5/img/s2-img-1.jpg" alt="">
 
-								<div class="s2-text-con">
-									<p class="s2-main-text">Product Photography</p>
-									<p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-									<div class="s2-btn">
-										<div class="s2-btn-inner">									
-											<a href="#">Read more</a>	
-										</div>
-						
-									</div>
-									<div class="s2-titles">
-
-									</div>
-								</div>
+							<div class="circle">
 							</div>
 
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-							<div class="s2-img-container">
-								<img src="../Project-5/img/s2-img-2.jpg" alt="">
-								<div class="s2-text-con">
-									<p class="s2-main-text">Product Photography</p>
-									<p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-									<div class="s2-btn">
-										<div class="s2-btn-inner">									
-											<a href="#">Read more</a>	
-										</div>
-						
-									</div>
-									<div class="s2-titles">
-
-									</div>
-								</div>
+						<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+							<div class="box-button-to-left">
+								<button class="btnToLeft">
+								</button>
+								
 							</div>
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-							<div class="s2-img-container">
-								<img src="../Project-5/img/s2-img-3.jpg" alt="">
-								<div class="s2-text-con">
-									<p class="s2-main-text">Product Photography</p>
-									<p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-									<div class="s2-btn">
-										<div class="s2-btn-inner">									
-											<a href="#">Read more</a>	
-										</div>
-						
-									</div>
-									<div class="s2-titles">
-
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-							<div class="s2-img-container">
-								<img src="../Project-5/img/s2-img-4.jpg" alt="">
-								<div class="s2-text-con">
-									<p class="s2-main-text">Product Photography</p>
-									<p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-									<div class="s2-btn">
-										<div class="s2-btn-inner">									
-											<a href="#">Read more</a>	
-										</div>
-						
-									</div>
-									<div class="s2-titles">
-
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-					
-
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-2-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-3-->
-			<section class="section-3">
-				<div class="s1-icons">
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i1.svg" alt="">
-						</div>
-						<p class="s1-icon-p">1''</p>
-					</div>
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i2.svg" alt="">
-						</div>
-						<p class="s1-icon-p">f/16</p>
-					</div>
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i3.svg" alt="">
-						</div>
-						<p class="s1-icon-p">400</p>
-					</div>
-					<div class="shape">
-						<div class="s1-icon">
-							<img src="../Project-5/img/s1i4.svg" alt="">
-						</div>
-						<p class="s1-icon-p">Japan</p>
-					</div>
-				</div>
-				<div class="container s3-container">
-					<div class="row d-flex flex-column align-content-end">
-						<div class="col-xl-3 col-lg-3 col-lg-4 col-sm-6">
-							<div class="s3-padding">
-								<p class="s3-title">Sunset at Mount Fuji</p>
-								<p class="s3-text">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-3-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-4-->
-
-			<section class="section-4">
-						<div class="s4-image"><div class="s1-icons">
-									<div class="shape">
-										<div class="s1-icon">
-											<img src="../Project-5/img/s1i1.svg" alt="">
-										</div>
-										<p class="s1-icon-p">1''</p>
-									</div>
-									<div class="shape">
-										<div class="s1-icon">
-											<img src="../Project-5/img/s1i2.svg" alt="">
-										</div>
-										<p class="s1-icon-p">f/16</p>
-									</div>
-									<div class="shape">
-										<div class="s1-icon">
-											<img src="../Project-5/img/s1i3.svg" alt="">
-										</div>
-										<p class="s1-icon-p">400</p>
-									</div>
-									<div class="shape">
-										<div class="s1-icon">
-											<img src="../Project-5/img/s1i4.svg" alt="">
-										</div>
-										<p class="s1-icon-p">Japan</p>
-									</div>
-								</div>
-						</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-6 col-lg-6 col-sm-10 col-xs-12">
-							<div class="s4-text-block">
-								<p class="s4p1">The Gear cage</p>
-								<h3>The tools that we use.</h3>
-								<p class="s4p2">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
-								<div class="s2-btn">
-									<div class="s2-btn-inner">									
-										<a href="#">Read more</a>	
-									</div>
-					
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			
-	
-
-			
-			</section>
-
-<!--------------------------------------------------------------------------------------------SECTION-4-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-5-->
-			<section class="section-5">
-			<div class="s1-icons">
-				<div class="shape">
-					<div class="s1-icon">
-						<img src="../Project-5/img/s1i1.svg" alt="">
-					</div>
-					<p class="s1-icon-p">1/400s</p>
-				</div>
-				<div class="shape">
-					<div class="s1-icon">
-						<img src="../Project-5/img/s1i2.svg" alt="">
-					</div>
-					<p class="s1-icon-p">f/3,5</p>
-				</div>
-				<div class="shape">
-					<div class="s1-icon">
-						<img src="../Project-5/img/s1i3.svg" alt="">
-					</div>
-					<p class="s1-icon-p">100</p>
-				</div>
-				<div class="shape">
-					<div class="s1-icon">
-						<img src="../Project-5/img/s1i4.svg" alt="">
-					</div>
-					<p class="s1-icon-p">Costa Rica</p>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row row-flex">
-					<div class="col-xl-3 col-lg-3 col-lg-3 col-sm-6 s5-padding-left">
-						<div class="s5-padding">
-							<p class="s5-title">Monstera Leafs</p>
-							<p class="s5-text">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-5-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-6-->
-			<section class="section-6">
-				<div class="container container-6">
-					<div class="row justify-content-center align-items-center">
-						<div class="col-xl-12 col-lg-12 col-lg-12 col-sm-12">
-							<h3>Past clients</h3>
-							<p>Trusted by your favourite companies</p>
-						</div>
-						<div class="col-xl-2 col-lg-2 col-lg-2 col-sm-4 d-sm-flex    justify-content-sm-center">
-							<div class="s6-logo-cont">
-								<img src="../Project-5/img/s6logo1.svg" alt="">
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-2 col-lg-2 col-sm-4 d-sm-flex justify-content-sm-center">
-							<div class="s6-logo-cont">
-								<img src="../Project-5/img/s6logo2.svg" alt="">
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-2 col-lg-2 col-sm-4 d-sm-flex justify-content-sm-center">
-							<div class="s6-logo-cont">
-								<img src="../Project-5/img/s6logo3.svg" alt="">
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-2 col-lg-2 col-sm-4 d-sm-flex justify-content-sm-center">
-							<div class="s6-logo-cont">
-								<img src="../Project-5/img/s6logo4.svg" alt="">
-							</div>
-						</div>
-						<div class="col-xl-2 col-lg-2 col-lg-2 col-sm-4 d-sm-flex justify-content-sm-center">
-							<div class="s6-logo-cont">
-								<img src="../Project-5/img/s6logo5.svg" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-6-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-7-->
-			<section class="section-7">
-	<div class="s1-icons">
-		<div class="shape">
-			<div class="s1-icon">
-				<img src="../Project-5/img/s1i1.svg" alt="">
-			</div>
-			<p class="s1-icon-p">6''</p>
-		</div>
-		<div class="shape">
-			<div class="s1-icon">
-				<img src="../Project-5/img/s1i2.svg" alt="">
-			</div>
-			<p class="s1-icon-p">f/11</p>
-		</div>
-		<div class="shape">
-			<div class="s1-icon">
-				<img src="../Project-5/img/s1i3.svg" alt="">
-			</div>
-			<p class="s1-icon-p">800</p>
-		</div>
-		<div class="shape">
-			<div class="s1-icon">
-				<img src="../Project-5/img/s1i4.svg" alt="">
-			</div>
-			<p class="s1-icon-p">Nepal</p>
-		</div>
-	</div>
-	<div class="container s7-container">
-		<div class="row row-flex">
-			<div class="col-xl-3 col-lg-3 col-lg-3 col-sm-6 s7-padding-left">
-				<div class="s7-padding">
-					<p class="s7-title">Star fall in the Himalayas</p>
-					<p class="s7-text">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-7-->
-
-
-
-<!--------------------------------------------------------------------------------------------SECTION-8-->
-			<section class="section-8">
-				<div class="container">
-					<div class="row justify-content-center align-items-center">
-						<div class="col-xl-12 col-lg-12 col-lg-12 col-sm-12 s8-text-block">
-							<h2>Need help with photography or videography?</h2>
-							<h3>We're here for you!</h3>
-							<div class="s8-btn">
-								<div class="s2-btn-inner">									
-									<a href="#">Get in touch</a>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-<!--------------------------------------------------------------------------------------------SECTION-8-->
-		</main>
-
-
-      	<footer>
-			<div class="container">
-				<div class="row justify-content-between footer-border-1">
-
-					<div class="col-xl-5 col-lg-4 col-md-4 col-sm-12 p-xl-0 p-lg-0 p-md-0 p-sm-0">
-						<div class="main-logo-container-2">
-							<a href=""><img src="../Project-5/img/Logo.svg" alt="logo"></a>
-						</div>	
-						<p class="f-p-under-logo">Photographers & videographers capturing the world around us.</p>
-					</div>
-					<div class="col-xl-4 col-lg-5 col-md-5 col-sm-12  d-flex p-0">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-							<div class="foo-m">
-								<p class="foot-p-for-ul-1">Business areas</p>
-								<ul class="foot-ul-1">
-									<li class="foot-ul-1-li">
-										<a href="@">Product Photography</a>
-									</li>
-									<li class="foot-ul-1-li">
-										<a href="@">Architecture Photography</a>
-									</li>
-									<li class="foot-ul-1-li">
-										<a href="@">Drone Photography</a>
-									</li>
-									<li class="foot-ul-1-li">
-										<a href="@">Wildlife Photography</a>
+						<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+							<div class="navigationBox">
+								<ul itemscope itemtype="https://schema.org/BreadcrumbList">
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a href="/" title="Главная" itemprop="item">
+											<span itemprop="name">Головна </span>
+											<meta itemprop="position" content="0">
+										</a></li>
+										<span _ngcontent-c87="" class="breadcrumb__list_break ng-star-inserted">/</span>
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a href="/rozdil/" title="Раздел" itemprop="item">
+											<span itemprop="name">Жінкам</span>
+											<meta itemprop="position" content="1">
+										</a></li>
+										<span _ngcontent-c87="" class="breadcrumb__list_break ng-star-inserted">/</span>
+									<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+										<a href="/rozdil/pidrozdil/" title="Подраздел" itemprop="item">
+											<span itemprop="name">Блузки та сорочки</span>
+											<meta itemprop="position" content="2">
+										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-							<p class="foot-p-for-ul-1">Pages</p>
-							<ul class="foot-ul-1">
-								<li class="foot-ul-1-li">
-									<a href="@">Gear cage</a>
-								</li>
-								<li class="foot-ul-1-li">
-									<a href="@">Featured images</a>
-								</li>
-								<li class="foot-ul-1-li">
-									<a href="@">Contact</a>
-								</li>
-								<li class="foot-ul-1-li">
-									<a href="@">Style guide</a>
-								</li>
-								<li class="foot-ul-1-li">
-									<a href="@">Instructions</a>
-								</li>
-								<li class="foot-ul-1-li">
-									<a href="@">Changelog</a>
-								</li>
-					
-							</ul>
-						</div>
-
 					</div>
-					
-				</div>		
-				<div class="row  justify-content-between  footer-border-1 align-items-center new-border">
-					<div class="col-xl-5 col-lg-4 col-md-4 col-sm-12 p-xl-0 p-lg-0 p-md-0 p-sm-0">
-						<p class="f-p-under-logo2">Subscribe to our newsletter</p>
-						<p class="f-p-under-logo">Read about all the things we do.</p>
-					</div>
-					<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 d-flex p-0 position-form">
-						<div class="d-flex gap-2 form-rel align-items-center position-form2">
-							<div class="form-rel">
-								<input id="newsletter1" type="email" class="form-control forma" placeholder="" required>
-								<button  class="subsc" type="button"></button>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="row  justify-content-between">
-					<div class="col-xl-5 col-lg-4 col-md-4 col-sm-4 p-xl-0 p-lg-0 p-md-0 p-sm-0">
-						<p class="f-p-under-logo3">© Aperture Photography, Inc. All rights reserved.
-							Licensing
-							.</p>
-					</div>
-					<div class="col-xl-5 xol-lg-5 col-md-5 d-flex p-0 justify-content-end align-items-center">
-						<div class="col-xl-3 col-lg-5 col-md-5 col-sm-12 d-flex justify-content-between fff-padding">
-							<div class="f-ic-con">
-								<i class="fab fa-twitter"><a href="@"></a></i>
-							</div>
-							<div class="f-ic-con">
-								<i class="fab fa-instagram"><a href="@"></a></i>
-							</div>
-							<div class="f-ic-con">
-								<i class="fab fa-facebook-f"><a href="@"></a></i>
-							</div>
-						</div>
-					</div>
-
 				</div>
 
-			</div>
-     	</footer>
+			</section>
+<!------------------------------------------------------------------------------------------------SECTION-1-->
+
+<!------------------------------------------------------------------------------------------------SECTION-2-->
+			<section class="section-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<div class="item-name-box">
+								<h2 class="item-name">Жіноча блузка</h2>
+								<p class="article">Арт 06578990-086</p>
+							</div>
+						</div>
+						<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+							<div class="main-slider">
+								<div class="main-slider-item">
+									<div class="main-item">
+										<button class="main-slider-btn">
+											<img src="../Project-5/img/arr-right.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="main-slider-little-items">
+									<div class="main-slide-small-box1">
+									</div>
+									<div class="main-slide-small-box2">
+									</div>
+									<div class="main-slide-small-box3">
+									</div>
+									<div class="main-slide-small-box4">
+									</div>
+									<button class="main-slider-btn2">
+										<img src="../Project-5/img/arr-right.svg" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="box-button-to-left box-button-to-up">
+								<button class="btnToLeft btnToUp">
+								</button>							
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+							<div class="flex-main">
+								<h2 class="price">500 грн</h2>
+								<div class="colors">
+									<h3 class="h3colors">Кольори</h3>
+									<div class="colors-flex">
+										<span class="inner-colors color-1"></span>
+										<span class="inner-colors color-2"></span>
+										<span class="inner-colors color-3"></span>
+										<span class="inner-colors color-4"></span>
+										<span class="inner-colors color-5"></span>
+									</div>
+								</div>
+								<div class="sizes">
+									<h3 class="h3sizes">Розмір</h3>
+									<div class="sizesItemsBox">
+										<button class="boxSizesSpan S"><p>S</p></button>
+										<button class="boxSizesSpan M"><p>M</p></button>
+										<button class="boxSizesSpan L"><p>L</p></button>
+										<button class="boxSizesSpan XL"><p>XL</p></button>
+									</div>
+									<div class="sizesBox">
+										<button class="aSizes">Таблиця розмірів</button>
+									</div>
+								</div>
+								<div class="cart">
+									<a href="../Project-5/form.html" class="main-cart">В корзину<i class="fa-solid fa-bag-shopping"></i></a>
+									<button class="main-like"><i class="fa-regular fa-heart"></i></button>
+								</div>
+								<div class="stars">
+									<div class="star star1"><i class="fa-solid fa-star"></i></div>
+									<div class="star star3"><i class="fa-solid fa-star"></i></div>
+									<div class="star star3"><i class="fa-solid fa-star"></i></div>
+									<div class="star star4"><i class="fa-solid fa-star"></i></div>
+									<div class="star star5"><i class="fa-solid fa-star"></i></div>
+								</div>
+								<div class="sizesBox OtzivFlex">
+									<a class="aSizes" href="">Дивитися всі відгуки</a>
+									<a class="aSizes aSizes2" href="">Додати відгук</a>
+								</div>
+								<div class="opys-box">
+									<h3 class="opys-title">Опис</h3>
+									<p class="opys">Тут буде якийсь невеликий опис товару. Тут буде якийсь невеликий опис товару. Тут буде якийсь невеликий опис товару. Тут буде якийсь невеликий опис товару.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+<!------------------------------------------------------------------------------------------------SECTION-2-->
+
+
+
+<!------------------------------------------------------------------------------------------------SECTION-3-->
+			<section class="section-3">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+							<h2 class="s3-h2">Відгуки про товар</h2>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+							<div class="s3-slide">
+								<div class="s3-slide-flex">
+									<div class="s3-clide-img-box">
+										<div class="s3img"></div>
+									</div>
+									<div class="s3-slide-inner-flex">
+										<div class="s3-stars">
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+										</div>
+										<p class="s3-p">
+											Плаття сіло чудово. Хороший матеріал. Буду замовляти ще, залишилась дуже задоволена.
+										</p>
+										<div class="s3-inner-last-flex">
+											<p>Анна Котлова</p>
+											<p>23.05.2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+							<div class="s3-slide">
+								<div class="s3-slide-flex">
+									<div class="s3-clide-img-box">
+										<div class="s3img2"></div>
+									</div>
+									<div class="s3-slide-inner-flex">
+										<div class="s3-stars next-stars">
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+											<div class="star star1 next-stars"><i class="fa-solid fa-star"></i></div>
+										</div>
+										<p class="s3-p">
+											Замовляю завжди одяг в цьому магазині! Хороші ціни, хороша якість! Приємні менеджери! Все швидко, доступно, зручно! Дякую.
+										</p>
+										<div class="s3-inner-last-flex">
+											<p>Христина Василюк</p>
+											<p>23.05.2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+							<div class="s3-btn-flex">
+								<div class="s3-btn-container">
+									<button class="s3-btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+							<button class="s3-btn-arr">
+							</button>
+						</div>
+
+
+
+<!-- коментари!!!!! -->
+
+
+
+
+						<div class="coment">
+
+							<form action="#" method="post" class="cometFormaMain" name="form" onsubmit="return false">
+								<h3>Залишити відгук</h3>
+								<p class="coment-form">
+									<textarea name="comment" id="comment" cols="45" rows="8" placeholder="Ваш коментар" aria-required="true" required></textarea>
+								</p>
+								<!-- <p class="coment-form-author">
+									<input type="text" id="author" name="author" placeholder="Ім'я" size="30" aria-required="true" required>
+								</p> -->
+								<p class="coment-submit">
+									<input type="submit" name="com-submit" class="com-submit-btn"  value="Відправити">
+								</p>
+							</form>
+						</div>
+						<div class="newcom">
+							<p></p>
+						</div>
+
+
+
+
+<!-- коментари!!!!! -->
+
+
+					</div>
+				</div>
+			</section>
+<!------------------------------------------------------------------------------------------------SECTION-3-->
+			<section class="section-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+							<h2>З цими товаром також купують</h2>
+						</div>
+						<div class="col">
+							<div class="owl-carousel" id="slider_img1">
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img1">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img2">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img3">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+								<div class="item"  data-merge="5">
+									<div class="s4-img-box">
+										<div class="s4-img4">
+										</div>
+									</div>
+									<div class="s4-text-box">
+										<p>500 грн</p>
+										<div class="s4-inner-text-box-1">
+											<p>Сукня жуноча класична</p>
+											<div class="s4-spans">
+												<button><img src="..//Project-5/img/heart.svg" alt=""></button>
+												<button class="s4-sp-btn"><img src="..//Project-5/img/bag.svg" alt=""></button>
+											</div>
+										</div>
+										<div class="s4-inner-text-box-2">
+											<button class="s4-btn-arr">
+											</button>
+											<div class="s4-starsBox">
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+												<div class="star star2 next-stars"><i class="fa-solid fa-star"></i></div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+<!------------------------------------------------------------------------------------------------SECTION-4-->
+
+<!------------------------------------------------------------------------------------------------SECTION-4-->
+		</main>
+
+
+      	<!-- <footer>
+     	</footer> -->
+
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- ІНШЕ!!!!!!!!!!!!!!!!!!!!!! -->
+
     </div>
+	<div class="preloader">
+		<div class="preloader__row">
+		  <div class="preloader__item"></div>
+		  <div class="preloader__item"></div>
+		</div>
+	  </div>
 
+	  <div class="modal-sizes">
+		<div class="contr">
+			<div class="modalWrap">
+				<div class="box-button-to-left BTNbtn">
+					<button class="btnToLeft">
+					</button>
+				</div>
+				<h2 class="modal2h2" >Таблиця для визначення жіночих розмірів</h2>
+				<div class="modalSizeImgBox">
+					<div class="modalSizeImg">
+	
+					</div>
+				</div>	
+				<div class="pppFlex">
+					<p class="modalp1 ppp">Всі моделі, представленні на сторінках часто збігаються з розмірами</p>
+					<p class="modalp2 ppp">Так як замірів для кожної моделі у нас немає, ми представляємо таблицю розмірів постачальника.</p>
+					<p class="modalp3 ppp">Маркування S, M, L, XL у кожного постачальника своє, у когось 42-S, у когось 42-V</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	  
   </body>
 
+ <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+   <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	 <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	  <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	   <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	    <!-- КОД!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	
   <script>
 
-!function () { "use strict"; document.addEventListener("click", function (t) { const e = t.target.closest("[data-easy-toggle]"); if (e) { t.preventDefault(); let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); try { document.querySelectorAll("[data-easy-toggle]").forEach(t => { t.hasAttribute("data-easy-parallel") || t === e || document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class")) }), document.querySelector(a).classList.toggle(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } } if (!e) { let e = document.querySelectorAll("[data-easy-rcoe]");
-Array.from(e).forEach.call(e, function (e) { let a = e.getAttribute("data-easy-toggle"), s = e.getAttribute("data-easy-class"); if (!t.target.closest(a)) try { document.querySelector(a).classList.remove(s) } catch (t) { console.warn("EasyToggler.js : Блок " + a + " не существует") } }) } }) }();
+// preload
+$(document).ready(function(){
 
-	
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+};
+
+// burger
+$('#nav-icon4').click(function(){
+	$('.menu').toggle('slow');
+});
+
+// MODAL 1
+$('.aSizes').click(function(){
+	$('.modal-sizes').show('500'); 
+});
+
+$('.btnToLeft').click(function(){
+	$('.modal-sizes').fadeOut('500'); 
+});
+
+// coments
+// $('.s3-btn-arr').click(function(){
+// 	$('.coment').toggle('slow');
+// });
+
+
+	$(document).on('click', '.s3-btn-arr', function() {
+		let form = $('.cometFormaMain');
+		form.css('display', 'block');
+		$('.s3-btn-arr').replaceWith(form)
+	});
+	$(document).on('click', '.com-submit-btn', function(){
+		let comment = $('#comment').val();
+		$('<p>'+comment+'</p>').appendTo('.newcom')
+	})
+});
+
 
 </script>
 

@@ -3,21 +3,7 @@ jQuery(document).ready(function () {
 
     'use strict';
 	
-	$(document).ready(
-		function(){
-			$(window).resize(function(){
-				var height = $(window).height();
-				$('.section-1').css({
-					'height':height
-				});
-			}).resize();
-		}
-	);
-	// $(document).ready(function(){
-	// 	$(".responsive-menu").click(function(event){
-	// 		$(".responsive-menu").toggleClass("active");
-	// 	});
-	// });
+	
 	
 	jQuery(".fancybox").fancybox();
 	
@@ -26,11 +12,11 @@ jQuery(document).ready(function () {
 	carousel.owlCarousel({
 		items: 1,
 		center: true,
-		animateIn: "animate__bounceInRight",
-		animateOut: "animate__bounceOutLeft",
-		autoplay: true,
+		// animateIn: "animate__bounceInRight",
+		// animateOut: "animate__bounceOutLeft",
+		autoplay: false,
 		autoplayTimeout: 2500,
-		autoplayHoverPause: true,
+		autoplayHoverPause: false,
 		smartSpeed: 5000,
 		dotsSpeed: 1000,
 		loop: true,
@@ -39,9 +25,10 @@ jQuery(document).ready(function () {
 		dots: true,
 		dotsEach: false,
 		mouseDrag: true,
-		margin: 350,
+		margin: 80,
 		stagePadding: 0,
 		autoWidth: true,
+		merge:true,
 		responsiveClass: true,
 		responsiveBaseElement:".myCustomWrapper",
 		responsive:{
@@ -53,33 +40,33 @@ jQuery(document).ready(function () {
 				autoplay: false,
 				smartSpeed: 1000,
 				margin: 10,
-				width:200
+
 			},
 			479:{
-				items: 1,
+				items: 2,
 				dots: true,
 				mouseDrag: true,
 				autoplay: false,
 				smartSpeed: 1000,
-				width:200
+
 			},
 			767:{
-				items: 1,
-				dots: true,
+				items: 4,
+				dots: false,
 				mouseDrag: true,
 				autoplay: false,
 				smartSpeed: 1000
 			},
 			991:{
-				items: 1,
-				dots: true,
+				items: 4,
+				dots: false,
 				mouseDrag: true,
 				autoplay: false,
 				smartSpeed: 1000
 			},
 			1099:{
-				items: 1,
-				dots: true,
+				items: 4,
+				dots: false,
 				mouseDrag: true,
 				autoplay: false,
 				smartSpeed: 2000

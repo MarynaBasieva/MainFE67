@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма замовлення</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link type="text/css" href="css/responsive.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/bootstrap4/css/bootstrap-grid.min.css" rel="stylesheet"/>
+	<link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<link href="../Project-5/vendor/fontawesome/css/all.css" rel="stylesheet">
+
+	<link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"  type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" />
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body>
+	<!-- preload -->
+
+<!---------------------------------------------------------------------------------------------MODAL-->
+    <div class="for_page">
+
+		<main class="page">	
+
+<!-- --------------------------------------------------------------------------------->
+<div class="main-form">
+	<div class="container-form">
+		<section class="form1">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8 col-md-8 col-sm-11">
+					<h2>Оформлення замовлення</h2>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-1">
+					<div class="formBtnBox">
+						<a href="../Project-5/Project-5.html"  class="btnFormX"><i class="fa-solid fa-xmark"></i></a>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-8 col-md-8 col-sm-11">
+					<h3>Ваші дані</h3>
+				</div>
+			</div>
+		</section>
+		<section class="form2">
+			<form action="#" method="post" class="FORMA1">
+				<div class="row">
+				
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+					
+						<input class="formInputAll formInput1 name" type="text" placeholder="ПІБ" required>
+						<input  class="formInputAll formInput2 telephone" type="tel" placeholder="Контактний телефон" required>
+						<input  class="formInputAll formInput3 index" type="text" placeholder="Індекс" required>
+						<div class="f1flex">
+							<input class="f2checkBox" type="checkbox" required>
+							<label class="f2checkBoxLabel" for="f2checkBox">Даю згодну на обробку персональних даних</label>
+						</div>
+						<button class="submit1"></button>
+				
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+
+						<input class="formInputAll formInput4" type="tel" placeholder="Адреса (тільки Україна)" required>
+						<input  class="formInputAll formInput5"  id="exampleInputEmail1" aria-describedby="emailHelp"  type="email" placeholder="Електронна адреса" required>
+						<textarea name="com"  class="formInputAll formInput6" 	placeholder="Коментар"></textarea>	
+
+					</div>
+				
+			</div>
+			</form>
+		</section>
+		<section class="form3">
+			<form action="#" method="post" class="FORMA2">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<h3>Оберіть спосіб доставки</h3>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Укрпошта</label>
+
+							</div>
+								<p>Доставка 2-3 дні</p>
+								<a href="@!">Вартість</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Нова пошта</label>
+
+							</div>
+								<p>Доставка 2-3 дні</p>
+								<p>Вартість 70 грн</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Нова пошта + кур'єр</label>
+
+							</div>
+								<p>Доставка протягом 2-3 днів</p>
+								<p>Вартість 300 грн</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="rd" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Укрпошта + кур'єр</label>
+							</div>
+								<p>Доставка протягом 5-7 днів</p>
+								<p>Вартість 200 грн</p>
+						</div>
+					</div>
+					<div class="info">
+						<img src="../Project-5/img/!.svg" alt="">
+						<p>Термін доставки при умові наявності товару. Замовлення, зроблене з вівторка по четвер відправляється в понеділокю Замовлення, здійснене с пятниці по неділю відправляється в пятницю.</p>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<h3>Оберіть спосіб оплати</h3>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="pay" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Банківська карта</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="pay" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Наложений платіж. Оплата при отриманні</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+						<div class="radioBlock">
+							<div class="radionFlex">
+								<input type="radio" name="pay" class="dostavkka" id="dost1" required>
+								<label for="dost1" class="labelDost">Оплата онлайн</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="mainBtnForm">
+							<button class="btnMainbtnForm">Підтвердити</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+		</div>
+	</div>
+	  
+  </body>
+
+	
+  <script>
+
+// preload
+$(document).ready(function(){
+
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+};
+});
+
+
+
+    let form1 = document.querySelector('.FORMA1');
+    let name = document.querySelector('.name');
+	let telephone = document.querySelector('.telephone');
+	let index = document.querySelector('.index');
+    let email = document.querySelector('.email');
+    let result = document.querySelector('.result');
+
+    form1.onsubmit = function(event){
+        if(name.value !== "Людина", email.value !== "@gmail.com" ){
+            event.preventDefault();
+            name.innerHTML = "Ви ввели некорректне значення";
+            result.innerHTML = "Ви ввели некорректне значення";
+            document.querySelector('.name').style.border = '1px solid red';
+            document.querySelector('.email').style.border = '1px solid red';
+            document.querySelector('.result').style.color = 'red';
+        }
+
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const form  = document.getElementsByTagName('form')[0];
+
+// 	const email = document.getElementById('mail');
+// 	const emailError = document.querySelector('#mail + span.error');
+	
+// 	email.addEventListener('input', function (event) {
+// 	  // Каждый раз, когда пользователь что-то вводит,
+// 	  // мы проверяем, являются ли поля формы валидными
+	
+// 	  if (email.validity.valid) {
+// 		// Если на момент валидации какое-то сообщение об ошибке уже отображается,
+// 		// если поле валидно, удаляем сообщение
+// 		emailError.textContent = ''; // Сбросить содержимое сообщения
+// 		emailError.className = 'error'; // Сбросить визуальное состояние сообщения
+// 	  } else {
+// 		// Если поле не валидно, показываем правильную ошибку
+// 		showError();
+// 	  }
+// 	});
+	
+// 	form.addEventListener('submit', function (event) {
+// 	  // Если поле email валдно, позволяем форме отправляться
+	
+// 	  if(!email.validity.valid) {
+// 		// Если поле email не валидно, отображаем соответствующее сообщение об ошибке
+// 		showError();
+// 		// Затем предотвращаем стандартное событие отправки формы
+// 		event.preventDefault();
+// 	  }
+// 	});
+	
+// 	function showError() {
+// 	  if(formInput5.validity.valueMissing) {
+// 		// Если поле пустое,
+// 		// отображаем следующее сообщение об ошибке
+// 		formInput5.textContent = 'You need to enter an e-mail address.';
+// 	  } else if(formInput5.validity.typeMismatch) {
+// 		// Если поле содержит не email-адрес,
+// 		// отображаем следующее сообщение об ошибке
+// 		formInput5.textContent = 'Entered value needs to be an e-mail address.';
+// 	  } else if(formInput5.validity.tooShort) {
+// 		// Если содержимое слишком короткое,
+// 		// отображаем следующее сообщение об ошибке
+// 		formInput5.textContent = `Email should be at least ${ formInput5.minLength } characters; you entered ${ formInput5.value.length }.`;
+// 	  }
+	
+// 	  // Задаём соответствующую стилизацию
+// 	  emailError.className = 'error active';
+// 	}
+</script>
+
+</html>
