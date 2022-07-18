@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chat</title>
+</head>
+<style>
+	.messageBox{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.messageBox p {
+		border: 2px solid red;
+		border-radius: 10px;
+		padding: 15px;
+
+		
+
+	}
+	p input {
+		width: 80%;
+		background-color: rgba(128, 128, 128, 0.356);
+		padding: 10px;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		color: rgb(255, 0, 0);
+	}
+	p {
+		text-align: center;
+	}
+</style>
+	
+<body>
+	<p>Ведіть повідомлення:</p>
+	<p><input id="message" type="text" /></p>
+	<div class="messageBox"></div>
+</body>
+	
+<script>
+	let massage = document.getElementById("message");
+	let messageBox = document.querySelector(".messageBox");
+	massage.addEventListener("keyup", function(chat){
+		if(chat.keyCode == 13){
+			let newLine = document.createElement("p");
+			newLine.appendChild(document.createTextNode(this.value));
+			messageBox.appendChild(newLine);
+			this.value="";
+		}
+	});
+</script>
+</html>
