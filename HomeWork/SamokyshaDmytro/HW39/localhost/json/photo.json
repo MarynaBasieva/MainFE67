@@ -1,0 +1,34 @@
+[
+	{
+	  "NameID": 1,
+	  "title":"Фільм 1",
+	  "url":"http://localhost/img/marvel1.png",
+	  "price": "500 гривнь"
+		
+	},
+	{
+	  "NameID": 2,
+	  "title":"Фільм 2",
+	  "url":"http://localhost/img/marvel2.jpeg",
+	  "price": "500 гривнь"		
+	},
+	{
+	  "NameID": 3,
+	  "title":"Фільм 3",
+	  "url":"http://localhost/img/marvel3.jpeg",
+	  "price": "500 гривнь"	
+	},
+	{
+	  "NameID": 4,
+	  "title":"Фільм 4",
+	  "url":"http://localhost/img/marvel4.jpeg",
+	  "price": "500 гривнь"		
+	},
+	{
+	  "NameID": 5,
+	  "title":"Фільм 5",
+	  "url":"http://localhost/img/marvel5.jpeg",
+	  "price": "500 гривнь"		
+	}
+
+]
