@@ -1,20 +1,20 @@
 /*Обнуление*/
-* {
+.for_page * {
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
 
 *,
-*:before,
-*:after {
+.for_page *:before,
+.for_page *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-:focus,
-:active {
+.for_page :focus,
+.for_page :active {
 	outline: none;
 }
 
@@ -79,6 +79,13 @@ body {
 	width: auto;
 	height: auto;
 	max-width: 100%;
+}
+
+.for_page h1,
+.for_page h2,
+.for_page h3,
+.for_page h4 {
+	text-decoration: none;
 }
 
 /*--------------------*/
@@ -580,11 +587,9 @@ body {
 	line-height: 21px;
 	color: #514A7E;
 	transition: 0.5s linear;
+	cursor: pointer;
 }
 
-.size:hover {
-	color: black;
-}
 
 .wraper_modal1 {
 	display: none;
@@ -646,4 +651,202 @@ body {
 	font-size: 20px;
 	line-height: 23px;
 	color: #7D7D7D;
+}
+
+.text h2 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 87.3%;
+	color: #121212;
+}
+
+.text h3 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	color: #121212;
+
+}
+
+.color_box {
+	display: flex;
+}
+
+.color_child {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin-right: 10px;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+.color-white {
+	background-color: white;
+	border: 2px solid rgb(0, 0, 0);
+	transition: 0.3s linear;
+}
+
+.color-black {
+	background-color: rgb(0, 0, 0);
+	border: 2px solid rgba(109, 109, 109, 0.877);
+	transition: 0.3s linear;
+}
+
+.color-green {
+	background-color: green;
+	border: 2px solid rgb(0, 0, 0);
+	transition: 0.3s linear;
+}
+
+.color-purple {
+	background-color: purple;
+	border: 2px solid rgb(0, 0, 0);
+	transition: 0.3s linear;
+}
+
+.color-yellow {
+	background-color: yellow;
+	border: 2px solid rgb(0, 0, 0);
+	transition: 0.3s linear;
+}
+
+.color_child:hover {
+	border: 2px solid rgb(17, 0, 255);
+}
+
+.size_box {
+	display: flex;
+}
+
+.size__child {
+	border: solid 1px #514A7E;
+	margin-right: 14px;
+	height: 42px;
+	width: 30px;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 20px;
+	cursor: pointer;
+
+}
+
+
+
+.size1 .size__child h4 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #514A7E;
+
+
+}
+
+.size__child p {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 8px;
+	line-height: 8px;
+	color: #7D7D7D;
+}
+
+.text h2 {
+	margin-bottom: 40px;
+}
+
+.color h3 {
+	margin-bottom: 20px;
+}
+
+.size1 h3 {
+	margin-bottom: 20px;
+}
+
+.buy_btn {
+	display: flex;
+	padding-bottom: 41px;
+	padding-top: 20px;
+}
+
+.buy_btn button {
+	padding: 9px 29px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	color: #FFFDF5;
+	background: #514A7E;
+	border: 1px solid #514A7E;
+	transition: 0.5s linear;
+}
+
+.buy_btn button i {
+	margin-left: 5px;
+	font-size: 16px;
+}
+
+.buy_btn button:hover {
+	border: 1px solid #000000;
+	color: #00aeff;
+}
+
+.buy_btn span {
+	font-size: 37px;
+	margin-left: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.size:hover {
+	color: #00aeff;
+}
+
+.star {
+	padding-bottom: 20px;
+}
+
+.star span {
+	color: #514A7E;
+	font-size: 20px;
+	margin-right: 10px;
+	transition: 0.5s linear;
+	cursor: pointer;
+}
+
+.star span:hover {
+	color: yellow;
+}
+
+.reviews a {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	color: #514A7E;
+	transition: 0.5s linear;
+	margin-right: 50px;
+	text-decoration: underline;
+}
+
+.reviews a:last-child {
+	margin-right: 0;
+}
+
+.reviews a:hover {
+	color: #00aeff;
+}
+
+.reviews {
+	margin-bottom: 46px;
 }

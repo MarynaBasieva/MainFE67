@@ -1,0 +1,64 @@
+[
+	{
+	  "NameID": 1,
+	  "title":"Смартфон Xiaomi Redmi Note 11 4/64Gb Graphite Gray",
+	  "url":"http://HM38-39/img/mobil1.webp",
+		"price":"7 999 ₴"
+		
+	},
+	{
+	  "NameID": 2,
+	  "title":"Смартфон Xiaomi Redmi Note 11 4/128Gb Star Blue",
+	  "url":"http://HM38-39/img/mobil2.webp",
+		"price":"8 999 ₴"
+		
+	},
+	{
+	  "NameID": 3,
+	  "title":"Смартфон Xiaomi Redmi Note 10S 6/64GB Onyx Gray",
+	  "url":"http://HM38-39/img/mobil3.webp",
+		"price":"8 799 ₴"
+		
+	},
+	{
+	  "NameID": 4,
+	  "title":"Смартфон Samsung Galaxy A53 5G 6/128Gb Black (SM-A536EZKDSEK)",
+	  "url":"http://HM38-39/img/mobil4.webp",
+		"price":"15 999 ₴"
+		
+	},
+	{
+	  "NameID": 5,
+	  "title":"Смартфон Samsung Galaxy M53 5G 6/128GB Green (SM-M536BZGDSEK)",
+	  "url":"http://HM38-39/img/mobil5.webp",
+		"price":"16 999 ₴"		
+	},
+	{
+	  "NameID": 6,
+	  "title":"Смартфон Xiaomi Redmi Note 11 4/64Gb Graphite Gray",
+	  "url":"http://HM38-39/img/mobil1.webp",
+		"price":"7 999 ₴"
+		
+	},
+	{
+	  "NameID": 7,
+	  "title":"Смартфон Xiaomi Redmi Note 11 4/128Gb Star Blue",
+	  "url":"http://HM38-39/img/mobil2.webp",
+		"price":"8 999 ₴"
+		
+	},
+	{
+	  "NameID": 8,
+	  "title":"Смартфон Xiaomi Redmi Note 11 4/128Gb Star Blue",
+	  "url":"http://HM38-39/img/mobil2.webp",
+		"price":"8 999 ₴"
+		
+	},
+	{
+	  "NameID": 9,
+	  "title":"Смартфон Samsung Galaxy A53 5G 6/128Gb Black (SM-A536EZKDSEK)",
+	  "url":"http://HM38-39/img/mobil4.webp",
+		"price":"15 999 ₴"
+		
+	}
+]

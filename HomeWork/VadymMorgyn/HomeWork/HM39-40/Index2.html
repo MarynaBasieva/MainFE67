@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+	<!--<script type="text/javascript" src="xhr.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+	.form{
+		margin-top: 100px;
+	}
+	
+</style>
+<body>
+<section class="form">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+	  <form id="loginForm">
+		  <div class="form-group">
+			  <label class="sr-only">Логін</label>
+			  <input type="text" class="form-control" name="login" id="login" placeholder="Логін" />
+		  </div>
+		  
+		  <div class="form-group">
+			  <label class="sr-only">Пароль</label>
+			  <input type="text" class="form-control" name="pass" id="pass" placeholder="Пароль" />
+		  </div>
+			<button type="submit" class="btn btn-primary">Вхід</button>
+			<div class="fail"></div>
+			</div>
+		  
+		  
+			
+	  
+	  </form>
+		</div>
+		
+	</div>
+</div>
+</section>	
+	
+	
+	<script>
+		let form = document.getElementById('loginForm');
+		
+		form.onsubmit = function(event){
+			event.preventDefault();
+			
+			let login = document.getElementById("login").value;
+			let pass = document.getElementById("pass").value;
+			login1 = String(login);
+			pass1 =	String(pass);
+		
+		console.log(login + " " + pass);
+		
+		let xhr = new XMLHttpRequest();
+		xhr.open("GET", 'login.php?login' + login + '&pass' + pass, true);
+		let fail = document.querySelector(".fail");
+		xhr.send(document);
+		
+
+
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState !=4) return;
+
+			if(xhr.status !=200){
+				console.log(xhr.status + ": " + xhr.statusText);
+			}else{
+				console.log(xhr.responseText);
+				fail.innerHTML += xhr.responseText;
+				fail.style.color="red";
+				fail.style.margin="10px 0px";
+				
+			}
+		}
+	}
+	</script>
+</body>
+</html>

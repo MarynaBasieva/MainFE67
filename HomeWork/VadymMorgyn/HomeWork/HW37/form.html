@@ -31,6 +31,7 @@
 					<div class="container">
 						<div class="form_title">
 							<h2>Оформление заказа</h2>
+							<a class="close"><i class="fa-solid fa-xmark"></i></a>
 						</div>
 					</div>
 				</header>
@@ -38,7 +39,7 @@
 					<section class="input">
 						<div class="container">
 							<form action="form.php" name="form" id="form_id">
-								<div class="row">
+								<div class="row before_img">
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 input_text">
 										<h3>Ваши данные</h3>
 									</div>
@@ -54,6 +55,50 @@
 									<input class="input_text" type="text" placeholder="Электронная почта" name="mail" required>
 									<textarea name="coment" id="coment" placeholder="Комментарий"></textarea>
 								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 delivery">
+									<div class="radio_box">
+										<input type="radio" id="delivery_item" name="delivery">
+										<label>Укрпошта</label>
+										<p>Доставка 2-3 дня<br> Стоимость 20 грн</p>
+									</div>
+									<div class="radio_box">
+										<input type="radio" id="delivery_item" name="delivery">
+										<label>Нова пошта</label>
+										<p>Доставка на отделение 2-3 дня<br> Стоимость 30 грн</p>
+									</div>									
+									<div class="radio_box">
+										<input type="radio" id="delivery_item" name="delivery">
+										<label>Укрпошта + кур'єр</label>
+										<p>Доставка в течение 4-х дней<br> Стоимость 50 грн</p>
+									</div>
+									<div class="radio_box">
+										<input type="radio" id="delivery_item" name="delivery">
+										<label>Нова пошта + кур'єр</label>
+										<p>Доставка в течение 3-х дней<br> Стоимость 70 грн</p>
+									</div>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 info">
+									<img src="img/cloud.png" alt="404">
+									<p>Сроки доставки указаны при условии наличия товара. Заказ, сделанный со вт по чт отправляется в пн. Заказ, сделанный с пт по вс отправляется в пт</p>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 input_text">
+										<h3>Выберите способ оплаты</h3>
+									</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 delivery payment">
+										<div class="radio_box">
+										<input type="radio" id="payment_item" name="payment">
+										<label>Банковская<br> карта</label>
+									</div>	
+									<div class="radio_box">
+										<input type="radio" id="payment_item" name="payment">
+										<label>Наложенный платёж. <br>Оплата при получении</label>
+									</div>	
+									<div class="radio_box">
+										<input type="radio" id="payment_item" name="payment">
+										<label>Оплата ЕРИП</label>
+									</div>				
+								</div>
+								<button type="submit" class="submit">Подтвердить</button> 
 							</div>
 							</form>
 						</div>
@@ -63,4 +108,12 @@
 			<footer class="footer"></footer>
 		</div>
 </body>
+<script>
+	let closeBtn = document.querySelector('.close');
+	 function back(){
+			 window.history.back ();
+		 };
+		 closeBtn.addEventListener('click', back);
+
+</script>
 </html>
