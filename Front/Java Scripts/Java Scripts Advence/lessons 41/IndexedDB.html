@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IndexedDB</title>
+</head>
+
+<body>
+</body>
+<script>
+	
+/*	let db;
+	let request = window.indexedDB.open("MyTestDAtabase");
+	
+	request.onerror = event =>{
+		console.log("Why didn`t you aloww my web app to use IndexDB");
+	};
+	
+	request.onsuccess = event =>{
+		db = event.target.result;
+	};
+	
+	db.onerror = event =>{
+		console.log("Database error:" + event.target.errorCode);
+	}
+	
+	request.onupgradeneeded = event =>{
+		let db = event.target.result;
+		
+		let objectStore = db.createObjectStore("name", {keyPath: "myKey"});
+	}
+	
+	const customerData =[
+		{ssn: "444-44-4444", name:"Olena", age:35, email: "olena@gmail.com"},
+		{ssn: "777-77-7777", name:"Viktor", age:33, email: "viktor@gmail.com"}
+	];
+	*/
+	
+	/////////////////////////////////////////////////////////
+	
+	const dbName = "polis";
+	
+	let request  = indexedDB.open(dbName, 3);
+	
+	
+	request.onerror = event =>{
+		console.log("Why didn`t you aloww my web app to use IndexDB");
+	};
+	
+	request.onupgradeneeded = event =>{
+		/*const customerData =[
+		{ssn: "444-44-4444", name:"Olena", age:35, email: "olena@gmail.com"},
+		{ssn: "777-77-7777", name:"Viktor", age:33, email: "viktor@gmail.com"}
+		];*/
+		let db = event.target.result;
+		
+		let objectStore = db.createObjectStore("customers", {keyPath: "ssn"});
+		
+		objectStore.createIndex("name", "name", {unique: false});
+		
+		objectStore.createIndex("email", "email", {unique: true});
+		
+		
+		objectStore.transaction.oncomplete = event =>{
+			let customerObjectStore = db.transaction("customers", "readwrite").objectStore("customers");
+			customerData.forEach(function(customers){
+				customerObjectStore.add(customer.name);
+			});
+		}
+	}
+	
+	
+	
+	
+</script>
+</html>
